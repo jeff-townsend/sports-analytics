@@ -6,17 +6,17 @@ nfl.pbp <-
   load_pbp(seasons = c(2020:2022)) %>%
   filter(game_seconds_remaining == 3600)
 
+# run season-level loop
 pyth.exp <- 2.37
 k.factor <- 64
 hfa <- 20
-
-# run season loop
 s <- 2020
 for(s in 2020:2022)
   {
     nfl.games <-
       nfl.pbp %>%
-      distinct(game_id, week, season, home_team, away_team, home_score, away_score, spread_line, result, location) %>%
+      filter(season == s) %>%
+      distinct(game_id, week, home_team, away_team, home_score, away_score, spread_line, result, location) %>%
       mutate(home_win = ifelse(result > 0, 1, ifelse(result < 0, 0, 0.5)),
              away_win = 1 - home_win,
              home_pyth = home_score^pyth.exp / (home_score^pyth.exp + away_score^pyth.exp),
@@ -24,8 +24,8 @@ for(s in 2020:2022)
     
     # initiate variables/tables for loop
     nfl.elo <-
-      rbind(nfl.games %>% filter(week == 1) %>% select(home_team, week, season) %>% rename(team = home_team),
-            nfl.games %>% filter(week == 1) %>% select(away_team, week, season) %>% rename(team = away_team)) %>%
+      rbind(nfl.games %>% filter(week == 1) %>% select(home_team, week) %>% rename(team = home_team),
+            nfl.games %>% filter(week == 1) %>% select(away_team, week) %>% rename(team = away_team)) %>%
       mutate(pre_elo = 1500,
              elo_delta = 0)
     nfl.results <- data.frame(matrix(ncol = 10, nrow = 0))
@@ -34,7 +34,7 @@ for(s in 2020:2022)
                                "home_elo_delta", "away_elo_delta", "log_loss")
     
     
-    # run weekly loop
+    # run week-level loop
     w <- 1
     for(w in 1:22)
       {
