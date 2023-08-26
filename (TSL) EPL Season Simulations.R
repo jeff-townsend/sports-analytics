@@ -3,14 +3,13 @@ library(ggthemes)
 
 library(readxl)
 epl.schedule.load <- read_excel("Data Analysis/Team Super League/2023-24 EPL Schedule.xlsx", 
-                                col_types = c("numeric", "date", "text", "text"))
+                                col_types = c("numeric", "date", "text", "text", "numeric",
+                                              "numeric", "numeric", "numeric"))
 epl.team.strength <- read_excel("Data Analysis/Team Super League/2023-24 EPL Team Strength.xlsx")
 tsl.teams <- read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx")
 tsl.scoring <- data.frame(placement = c(1:20),
                           tsl_points = c(80, 60, 40, 40, 25, 20, 16, 14, 12, 10,
                                          8, 7, 6, 5, 4, 3, 2, 0, 0, 0))
-
-# start with 39/39/22 probabilities
 
 epl.schedule <-
   epl.schedule.load %>%
@@ -18,10 +17,11 @@ epl.schedule <-
   rename(home_win_rate = win_rate) %>%
   inner_join(epl.team.strength %>% select(team, win_rate), by = c("away" = "team")) %>%
   rename(away_win_rate = win_rate) %>%
-  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) /
-                         (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate) * .78,
-         draw_prob = .22,
-         away_win_prob = .78 - home_win_prob)
+  mutate(home_win_prob = ifelse(completed == 1, home_win,
+                                  (home_win_rate - home_win_rate * away_win_rate) /
+                                  (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate) * .78),
+         draw_prob = ifelse(completed == 1, draw, .22),
+         away_win_prob = ifelse(completed == 1, away_win, .78 - home_win_prob))
 
 simulations <- 25000
 epl.seasons <- data.frame(id = c(1:(nrow(epl.schedule)*simulations)),
@@ -93,9 +93,9 @@ tsl.summary %>%
 
 ggplot(tsl.summary, aes(x = tsl_net, fill = owner)) +
   geom_density(alpha = .75) +
-  geom_vline(xintercept = 50.2, color = "#FF2700") +
-  geom_vline(xintercept = 29.7, color = "#77AB43") +
-  geom_vline(xintercept = 31.8, color = "#008FD5") +
+  geom_vline(xintercept = 55.3, color = "#FF2700") +
+  geom_vline(xintercept = 27.1, color = "#77AB43") +
+  geom_vline(xintercept = 29.4, color = "#008FD5") +
   theme_fivethirtyeight() +
   theme(legend.title = element_blank()) +
   ggtitle("EPL TSL Performance")
