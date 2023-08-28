@@ -13,16 +13,18 @@ tsl.scoring <- data.frame(placement = c(1:20),
 
 epl.schedule <-
   epl.schedule.load %>%
+  mutate(completed = ifelse(week <= 3, completed, 0)) %>%
   inner_join(epl.team.strength %>% select(team, win_rate), by = c("home" = "team")) %>%
   rename(home_win_rate = win_rate) %>%
   inner_join(epl.team.strength %>% select(team, win_rate), by = c("away" = "team")) %>%
   rename(away_win_rate = win_rate) %>%
   mutate(home_win_prob = ifelse(completed == 1, home_win,
-                                  (home_win_rate - home_win_rate * away_win_rate) /
+                                (home_win_rate - home_win_rate * away_win_rate) /
                                   (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate) * .78),
          draw_prob = ifelse(completed == 1, draw, .22),
          away_win_prob = ifelse(completed == 1, away_win, .78 - home_win_prob))
 
+set.seed(811)
 simulations <- 25000
 epl.seasons <- data.frame(id = c(1:(nrow(epl.schedule)*simulations)),
                           season_id = rep(c(1:simulations), each = nrow(epl.schedule)),
@@ -72,11 +74,12 @@ team.summary <-
   group_by(team, owner, cost) %>%
   summarize(avg_points = mean(points),
             avg_tsl_points = mean(tsl_points),
+            league_title = mean(ifelse(placement == 1, 1, 0)),
+            top_4 = mean(ifelse(placement <= 4, 1, 0)),
+            top_10 = mean(ifelse(placement <= 10, 1, 0)),
+            relegation = mean(ifelse(placement >= 18, 1, 0)),
             avg_tsl_net = mean(tsl_points - cost))
-            #league_title = mean(ifelse(placement == 1, 1, 0)),
-            #top_4 = mean(ifelse(placement <= 4, 1, 0)),
-            #top_10 = mean(ifelse(placement <= 10, 1, 0)),
-            #relegation = mean(ifelse(placement >= 18, 1, 0)))
+View(team.summary %>% arrange(desc(avg_tsl_points)))
 
 tsl.summary <-
   team.performance %>%
@@ -87,15 +90,17 @@ tsl.summary <-
   ungroup() %>%
   mutate(tsl_net = tsl_points - tsl_cost)
 
-tsl.summary %>%
+tsl.averages <-
+  tsl.summary %>%
   group_by(owner) %>%
   summarize(average = mean(tsl_net))
 
 ggplot(tsl.summary, aes(x = tsl_net, fill = owner)) +
   geom_density(alpha = .75) +
-  geom_vline(xintercept = 55.3, color = "#FF2700") +
-  geom_vline(xintercept = 27.1, color = "#77AB43") +
-  geom_vline(xintercept = 29.4, color = "#008FD5") +
+  geom_vline(xintercept = tsl.averages$average[1], color = "#FF2700") +
+  geom_vline(xintercept = tsl.averages$average[2], color = "#77AB43") +
+  geom_vline(xintercept = tsl.averages$average[3], color = "#008FD5") +
   theme_fivethirtyeight() +
   theme(legend.title = element_blank()) +
-  ggtitle("EPL TSL Performance")
+  ggtitle("EPL TSL Performance - Matchweek 3")
+tsl.averages
