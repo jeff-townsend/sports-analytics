@@ -5,6 +5,7 @@ nfl.schedule.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL S
 nfl.teams <-
   read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx") %>%
   filter(league == "NFL")
+nfl.team.strength.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL Team Strength.xlsx", sheet = "Team Strengths")
 tsl.scoring <- data.frame(placement = c(1:16),
                           tsl_points = c(32, 28, 25, 22, 19, 17, 15,
                                          8, 7, 6, 5, 4, 3, 2, 1, 0))
@@ -15,13 +16,50 @@ games.import <- read_excel("Data Analysis/Team Super League/NFL Playoff Games.xl
 matchups.import <- read_excel("Data Analysis/Team Super League/NFL Playoff Matchups.xlsx")
 
 
+nfl.schedule.base <-
+  nfl.schedule.import %>%
+  inner_join(nfl.team.strength.import, by = c("home_team" = "team")) %>%
+  rename(home_win_rate = win_rate) %>%
+  inner_join(nfl.team.strength.import, by = c("away_team" = "team")) %>%
+  rename(away_win_rate = win_rate) %>%
+  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+                         (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
+         away_win_prob = 1 - home_win_prob)
+
+# fix win rates to account for SOS
+nfl.sos <-
+  rbind(
+        nfl.schedule.base %>%
+          group_by(home_team) %>%
+          summarize(cum_sos = sum(away_win_rate)) %>%
+          rename(team = home_team) %>%
+          ungroup(),
+        nfl.schedule.base %>%
+          group_by(away_team) %>%
+          summarize(cum_sos = sum(home_win_rate)) %>%
+          rename(team = away_team) %>%
+          ungroup()
+        ) %>%
+  group_by(team) %>%
+  summarize(sos = sum(cum_sos) / 17)
+  
+nfl.team.strength <-
+  nfl.team.strength.import %>%
+  inner_join(nfl.sos, by = "team") %>%
+  mutate(adj_win_rate = sos / 0.5 * win_rate)
+
 nfl.schedule <-
   nfl.schedule.import %>%
-  mutate(home_win_prob = .5,
+  inner_join(nfl.team.strength %>% select(team, adj_win_rate), by = c("home_team" = "team")) %>%
+  rename(home_win_rate = adj_win_rate) %>%
+  inner_join(nfl.team.strength %>% select(team, adj_win_rate), by = c("away_team" = "team")) %>%
+  rename(away_win_rate = adj_win_rate) %>%
+  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob)
 
 set.seed(907)
-simulations <- 1000
+simulations <- 10000
 nfl.seasons <- data.frame(id = c(1:(nrow(nfl.schedule)*simulations)),
                           season_id = rep(c(1:simulations), each = nrow(nfl.schedule)),
                           week = nfl.schedule$week,
@@ -172,12 +210,12 @@ super.bowl <-
   mutate(points_per_win = 20,
          afc_win_prob = .5,
          nfc_win_prob = 1 - afc_win_prob,
-         rng = runif(nrow(super.bowl)),
+         rng = runif(nrow(afc.winners)),
          winner = ifelse(rng < afc_win_prob, afc_team, nfc_team))
 
 regular.season.scoring <-
   team.performance %>%
-  select(season_id, team, tsl_points)
+  select(season_id, team, wins, tsl_points)
 
 playoff.scoring <-
   rbind(
@@ -200,12 +238,15 @@ team.summary <-
          total_tsl_points = tsl_season_points + tsl_playoff_points,
          sb_winner = ifelse(tsl_playoff_points == 50, 1, 0),
          conf_champion = ifelse(tsl_playoff_points >= 30, 1, 0),
+         won_division = ifelse(tsl_season_points >= 22, 1, 0),
          made_playoffs = ifelse(tsl_season_points >= 15, 1, 0)) %>%
   group_by(team) %>%
-  summarize(avg_season_points = mean(tsl_season_points),
+  summarize(avg_wins = mean(wins),
+            avg_season_points = mean(tsl_season_points),
             avg_playoff_points = mean(tsl_playoff_points),
             avg_total_points = mean(total_tsl_points),
             sb_rate = mean(sb_winner),
             conf_champ_rate = mean(conf_champion),
+            div_win_rate = mean(won_division),
             playoff_rate = mean(made_playoffs)) %>%
   ungroup()
