@@ -20,9 +20,11 @@ hfa <- 0.03 ## use 53% win rate for home teams
 nfl.schedule.base <-
   nfl.schedule.import %>%
   inner_join(nfl.team.strength.import, by = c("home_team" = "team")) %>%
-  rename(home_win_rate = (win_rate + hfa / 2)) %>%
+  rename(home_win_rate = win_rate) %>%
+  mutate(home_win_rate = home_win_rate + hfa / 2) %>%
   inner_join(nfl.team.strength.import, by = c("away_team" = "team")) %>%
-  rename(away_win_rate = (win_rate - hfa / 2)) %>%
+  rename(away_win_rate = win_rate) %>%
+  mutate(away_win_rate = away_win_rate - hfa / 2) %>%
   mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
            (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob)
@@ -49,25 +51,33 @@ nfl.team.strength <-
   inner_join(nfl.sos, by = "team") %>%
   mutate(adj_win_rate = sos / 0.5 * win_rate)
 
-nfl.schedule <-
-  nfl.schedule.import %>%
-  inner_join(nfl.team.strength %>% select(team, adj_win_rate), by = c("home_team" = "team")) %>%
-  rename(home_win_rate = (adj_win_rate + hfa / 2)) %>%
-  inner_join(nfl.team.strength %>% select(team, adj_win_rate), by = c("away_team" = "team")) %>%
-  rename(away_win_rate = (adj_win_rate - hfa / 2)) %>%
+set.seed(907)
+simulations <- 10000
+nfl.schedule <- data.frame(id = c(1:(nrow(nfl.schedule.import)*simulations)),
+                           season_id = rep(c(1:simulations), each = nrow(nfl.schedule.import)),
+                           week = nfl.schedule.import$week,
+                           home_team = nfl.schedule.import$home_team,
+                           away_team = nfl.schedule.import$away_team)
+
+nfl.team.seasons <- data.frame(id = c(1:(nrow(nfl.team.strength)*simulations)),
+                               season_id = rep(c(1:simulations), each = nrow(nfl.team.strength)),
+                               team = nfl.team.strength$team,
+                               team_win_rate = nfl.team.strength$adj_win_rate,
+                               season_win_rate = rnorm(nrow(nfl.team.strength)*simulations,
+                                                       mean = 17*nfl.team.strength$adj_win_rate,
+                                                       sd = 2) / 17)
+                           
+nfl.seasons <-
+  nfl.schedule %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "home_team" = "team")) %>%
+  mutate(home_win_rate = season_win_rate + hfa / 2) %>%
+  select(-season_win_rate) %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "away_team" = "team")) %>%
+  mutate(away_win_rate = season_win_rate - hfa / 2) %>%
+  select(-season_win_rate) %>%
   mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
            (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob)
-
-set.seed(907)
-simulations <- 10000
-nfl.seasons <- data.frame(id = c(1:(nrow(nfl.schedule)*simulations)),
-                          season_id = rep(c(1:simulations), each = nrow(nfl.schedule)),
-                          week = nfl.schedule$week,
-                          home_team = nfl.schedule$home_team,
-                          away_team = nfl.schedule$away_team,
-                          home_win_prob = nfl.schedule$home_win_prob,
-                          away_win_prob = nfl.schedule$away_win_prob)
 
 nfl.simulations <-
   nfl.seasons %>%
@@ -260,4 +270,4 @@ rs.performance <-
   mutate(prop = freq / simulations)
 
 rs.performance %>%
-  filter(team == "Los Angeles Chargers")
+  filter(team == "Kansas City Chiefs")
