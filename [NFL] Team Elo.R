@@ -3,9 +3,12 @@ library(nflreadr)
 
 # set up the data
 starting.season <- 2012
+ending.season <- 2023
 nfl.pbp <-
-  load_pbp(seasons = c(starting.season:2022)) %>%
-  filter(game_seconds_remaining == 3600)
+  load_pbp(seasons = c(starting.season:ending.season)) %>%
+  filter(game_seconds_remaining == 3600) %>%
+  distinct(game_id, season, week, home_team, away_team, home_score, away_score, spread_line, total_line, result, location)
+gc()
 
 # initiate tables/variables for loop
 nfl.elo <- data.frame(team = character(),
@@ -33,16 +36,16 @@ nfl.results <- data.frame(game_id = character(),
 pyth.exp <- 3.25
 k.factor <- 48
 hfa <- 42
-yoy.reg <- 0.55
+yoy.reg <- 0
 
 # run season-level loop
 s <- starting.season
-for(s in starting.season:2022)
+for(s in starting.season:ending.season)
 {
   nfl.games <-
     nfl.pbp %>%
     filter(season == s) %>%
-    distinct(game_id, week, home_team, away_team, home_score, away_score, spread_line, total_line, result, location) %>%
+    select(-season) %>%
     mutate(home_win = ifelse(result > 0, 1, ifelse(result < 0, 0, 0.5)),
            away_win = 1 - home_win,
            home_implied_score = total_line/2 + spread_line/2,
@@ -155,8 +158,10 @@ for(s in starting.season:2022)
                                   home_expectation, home_elo_delta, away_elo_delta, spread_log_loss, elo_log_loss))
     
     w <- w + 1
+    gc()
   }
   s <- s + 1
+  gc()
 }
 
 nfl.final.elo <-
@@ -182,7 +187,7 @@ mean(nfl.results$home_elo_delta)
 yoy.elo <-
   nfl.final.elo %>%
   mutate(next_season = season + 1) %>%
-  inner_join(nfl.final.elo,
+  inner_join(nfl.final.elo %>% filter(season < 2023),
              by = c("team", "next_season" = "season")) %>%
   rename(prior_season = season,
          prior_final_elo = final_elo.x,
