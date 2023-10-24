@@ -36,7 +36,7 @@ nfl.results <- data.frame(game_id = character(),
 pyth.exp <- 3.25
 k.factor <- 48
 hfa <- 42
-yoy.reg <- 0
+yoy.reg <- 0.55
 
 # run season-level loop
 s <- starting.season
