@@ -1,4 +1,5 @@
 library(tidyverse)
+library(ggthemes)
 
 library(readxl)
 nfl.schedule.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL Schedule.xlsx")
@@ -6,6 +7,7 @@ nfl.teams <-
   read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx") %>%
   filter(league == "NFL")
 nfl.team.strength.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL Team Strength.xlsx", sheet = "Team Strengths")
+tsl.teams <- read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx")
 tsl.scoring <- data.frame(placement = c(1:16),
                           tsl_points = c(32, 28, 25, 22, 19, 17, 15,
                                          8, 7, 6, 5, 4, 3, 2, 1, 0))
@@ -48,8 +50,10 @@ nfl.sos <-
 
 nfl.team.strength <-
   nfl.team.strength.import %>%
-  inner_join(nfl.sos, by = "team") %>%
-  mutate(adj_win_rate = sos / 0.5 * win_rate)
+  left_join(nfl.sos, by = "team") %>%
+  mutate(adj_win_rate = ifelse(!is.na(sos), sos, 0.5) / 0.5 * win_rate,
+         exp_wins = win_rate * 17,
+         adj_wins = adj_win_rate * 17)
 
 set.seed(907)
 simulations <- 10000
@@ -59,14 +63,19 @@ nfl.schedule <- data.frame(id = c(1:(nrow(nfl.schedule.import)*simulations)),
                            home_team = nfl.schedule.import$home_team,
                            away_team = nfl.schedule.import$away_team)
 
+alpha = 5.25
+beta = alpha / (8.5 / 17) - alpha
+sqrt((alpha*beta / ((alpha + beta)^2 * (alpha + beta + 1)))) * 17
+
 nfl.team.seasons <- data.frame(id = c(1:(nrow(nfl.team.strength)*simulations)),
                                season_id = rep(c(1:simulations), each = nrow(nfl.team.strength)),
                                team = nfl.team.strength$team,
                                team_win_rate = nfl.team.strength$adj_win_rate,
-                               season_win_rate = rnorm(nrow(nfl.team.strength)*simulations,
-                                                       mean = 17*nfl.team.strength$adj_win_rate,
-                                                       sd = 2) / 17)
-                           
+                               season_win_rate = rbeta(nrow(nfl.team.strength)*simulations,
+                                                   shape1 = alpha,
+                                                   shape2 = alpha / nfl.team.strength$adj_win_rate - alpha)) %>%
+                    mutate(season_wins = season_win_rate * 17)
+
 nfl.seasons <-
   nfl.schedule %>%
   inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "home_team" = "team")) %>%
@@ -106,27 +115,23 @@ team.performance <-
          losses = 17 - wins) %>%
   select(-wins.x, -wins.y) %>%
   inner_join(nfl.teams %>% select(team, conference, division), by = "team") %>%
-  group_by(season_id, conference) %>%
-  mutate(conference_placement = rank(desc(wins), ties.method = "random")) %>%
-  ungroup() %>%
   group_by(season_id, conference, division) %>%
-  mutate(division_placement = rank(conference_placement)) %>%
+  mutate(division_placement = rank(desc(wins), ties.method = "random")) %>%
   ungroup() %>%
+  group_by(season_id, conference) %>%
+  mutate(conference_placement = rank(desc(ifelse(division_placement == 1, wins*6, wins)), ties.method = "random")) %>%
   inner_join(tsl.scoring, by = c("conference_placement" = "placement"))
 
 division.winners <-
   team.performance %>%
   filter(division_placement == 1) %>%
-  group_by(season_id, conference) %>%
-  mutate(seed = rank(conference_placement)) %>%
+  rename(seed = conference_placement) %>%
   ungroup()
 
 wildcard.teams <-
   team.performance %>%
   filter(division_placement > 1) %>%
-  group_by(season_id, conference) %>%
-  mutate(seed = rank(conference_placement) + 4) %>%
-  ungroup() %>%
+  rename(seed = conference_placement) %>%
   filter(seed <= 8) %>%
   mutate(team = ifelse(seed == 8, "BYE", team))
 
@@ -144,7 +149,14 @@ wildcard.round <-
   rename(away_team = team) %>%
   select(season_id, id, game_id, round_id, points_per_win, home_seed, home_team, away_seed, away_team, conference) %>%
   rename(matchup_id = id) %>%
-  mutate(home_win_prob = ifelse(away_team == "BYE", 1, .5),
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "home_team" = "team")) %>%
+  mutate(home_win_rate = season_win_rate + hfa / 2) %>%
+  select(-season_win_rate) %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "away_team" = "team")) %>%
+  mutate(away_win_rate = season_win_rate - hfa / 2) %>%
+  select(-season_win_rate) %>%
+  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob,
          rng = runif(2*simulations*(nrow(matchups.import %>% filter(round_id == 1)))),
          winner = ifelse(rng < home_win_prob, home_team, away_team),
@@ -169,7 +181,14 @@ divisional.round <-
   rename(away_team = team) %>%
   select(season_id, id, game_id, round_id, points_per_win, home_seed, home_team, away_seed, away_team, conference) %>%
   rename(matchup_id = id) %>%
-  mutate(home_win_prob = .5,
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "home_team" = "team")) %>%
+  mutate(home_win_rate = season_win_rate + hfa / 2) %>%
+  select(-season_win_rate) %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "away_team" = "team")) %>%
+  mutate(away_win_rate = season_win_rate - hfa / 2) %>%
+  select(-season_win_rate) %>%
+  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob,
          rng = runif(2*simulations*(nrow(matchups.import %>% filter(round_id == 2)))),
          winner = ifelse(rng < home_win_prob, home_team, away_team),
@@ -194,7 +213,14 @@ conference.championship <-
   rename(away_team = team) %>%
   select(season_id, id, game_id, round_id, points_per_win, home_seed, home_team, away_seed, away_team, conference) %>%
   rename(matchup_id = id) %>%
-  mutate(home_win_prob = .5,
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "home_team" = "team")) %>%
+  mutate(home_win_rate = season_win_rate + hfa / 2) %>%
+  select(-season_win_rate) %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "away_team" = "team")) %>%
+  mutate(away_win_rate = season_win_rate - hfa / 2) %>%
+  select(-season_win_rate) %>%
+  mutate(home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
          away_win_prob = 1 - home_win_prob,
          rng = runif(2*simulations*(nrow(matchups.import %>% filter(round_id == 3)))),
          winner = ifelse(rng < home_win_prob, home_team, away_team),
@@ -218,8 +244,15 @@ nfc.winners <-
 super.bowl <-
   afc.winners %>%
   inner_join(nfc.winners, by = "season_id") %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "afc_team" = "team")) %>%
+  mutate(afc_win_rate = season_win_rate) %>%
+  select(-season_win_rate) %>%
+  inner_join(nfl.team.seasons %>% select(season_id, team, season_win_rate), by = c("season_id", "nfc_team" = "team")) %>%
+  mutate(nfc_win_rate = season_win_rate) %>%
+  select(-season_win_rate) %>%
   mutate(points_per_win = 20,
-         afc_win_prob = .5,
+         afc_win_prob = (afc_win_rate - afc_win_rate * nfc_win_rate) / 
+           (afc_win_rate + nfc_win_rate - 2 * afc_win_rate * nfc_win_rate),
          nfc_win_prob = 1 - afc_win_prob,
          rng = runif(nrow(afc.winners)),
          winner = ifelse(rng < afc_win_prob, afc_team, nfc_team))
@@ -262,12 +295,58 @@ team.summary <-
             playoff_rate = mean(made_playoffs)) %>%
   ungroup()
 
-rs.performance <-
-  team.performance %>%
-  group_by(team, wins) %>%
-  summarize(freq = n()) %>%
-  ungroup() %>%
-  mutate(prop = freq / simulations)
+# rs.performance <-
+#   team.performance %>%
+#   group_by(team, wins) %>%
+#   summarize(freq = n()) %>%
+#   ungroup() %>%
+#   mutate(prop = freq / simulations)
 
-rs.performance %>%
-  filter(team == "Kansas City Chiefs")
+# rs.performance %>%
+#   filter(team == "Detroit Lions")
+# sd(rs.performance$prop)
+
+# View(
+#   team.summary %>%
+#     inner_join(nfl.teams, by = "team") %>%
+#     filter(conference == "NFC",
+#            division == "South") %>%
+#     arrange(desc(div_win_rate))
+# )
+
+tsl.rs.summary <-
+  regular.season.scoring %>%
+  inner_join(tsl.teams, by = "team") %>%
+  group_by(season_id, owner) %>%
+  summarize(tsl_cost = sum(cost),
+            tsl_rs_points = sum(tsl_points)) %>%
+  ungroup()
+
+tsl.po.summary <-
+  playoff.scoring %>%
+  inner_join(tsl.teams, by = "team") %>%
+  group_by(season_id, owner) %>%
+  summarize(tsl_po_points = sum(tsl_points)) %>%
+  ungroup()
+
+tsl.summary <-
+  tsl.rs.summary %>%
+  left_join(tsl.po.summary, by = c("season_id", "owner")) %>%
+  mutate(tsl_po_points = ifelse(!is.na(tsl_po_points), tsl_po_points, 0),
+         tsl_points = tsl_rs_points + tsl_po_points,
+         tsl_net = tsl_points - tsl_cost)
+
+tsl.averages <-
+  tsl.summary %>%
+  group_by(owner) %>%
+  summarize(average = mean(tsl_net))
+
+ggplot(tsl.summary, aes(x = tsl_net, fill = owner)) +
+  geom_density(alpha = .75) +
+  geom_vline(xintercept = tsl.averages$average[1], color = "#FF2700") +
+  geom_vline(xintercept = tsl.averages$average[2], color = "#77AB43") +
+  geom_vline(xintercept = tsl.averages$average[3], color = "#008FD5") +
+  theme_fivethirtyeight() +
+  theme(legend.title = element_blank()) +
+  ggtitle("NFL TSL Preseason Projections")
+tsl.averages
