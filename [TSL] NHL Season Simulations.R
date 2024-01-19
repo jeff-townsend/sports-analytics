@@ -70,4 +70,7 @@ standings <-
   mutate(points = points.x + points.y) %>%
   select(season_id, team, conference, division, points) %>%
   group_by(season_id, conference, division) %>%
-  mutate(division_placement = rank(desc(points), ties.method = "random"))
+  mutate(division_placement = rank(desc(points), ties.method = "random")) %>%
+  ungroup() %>%
+  group_by(season_id, conference) %>%
+  mutate(conference_placement = rank(desc(ifelse(division_placement == 1, points+164, points-division_placement/100)), ties.method = "random"))
