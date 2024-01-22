@@ -92,8 +92,84 @@ wildcard.teams <-
   select(season_id, team, conference, division) %>%
   mutate(seed = 4)
 
-division.playoffs <- rbind(standings %>%
-                             filter(division_placement <= 3) %>%
-                             select(season_id, team, conference, division, division_placement) %>%
-                             rename(seed = division_placement),
-                           wildcard.teams)
+wildcard.seeding <- rbind(standings %>%
+                            filter(division_placement <= 3) %>%
+                            select(season_id, team, conference, division, division_placement) %>%
+                            rename(seed = division_placement),
+                          wildcard.teams)
+
+wildcard.round <-
+  matchups.import %>%
+  inner_join(rounds.import %>% select(id, points_per_win), by = c("round_id" = "id")) %>%
+  filter(round_id == 1) %>%
+  inner_join(wildcard.seeding, by = c("home_seed" = "seed")) %>%
+  rename(home_team = team) %>%
+  inner_join(wildcard.seeding, by = c("season_id", "away_seed" = "seed", "conference", "division")) %>%
+  rename(away_team = team) %>%
+  select(season_id, id, series_id, round_id, points_per_win,
+         home_seed, home_team, away_seed, away_team, conference, division) %>%
+  rename(matchup_id = id) %>%
+  mutate(home_win_rate = 0.5,
+         away_win_rate = 1 - home_win_rate,
+         home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
+         away_win_prob = 1 - home_win_prob,
+         rng = runif(4*simulations*(nrow(matchups.import %>% filter(round_id == 1)))),
+         winner = ifelse(rng < home_win_prob, home_team, away_team),
+         winner_reseed = home_seed) %>%
+  ungroup()
+
+divisional.seeding <-
+  wildcard.round %>%
+  select(season_id, winner, conference, division, winner_reseed) %>%
+  rename(team = winner,
+         seed = winner_reseed)
+
+divisional.round <-
+  matchups.import %>%
+  inner_join(rounds.import %>% select(id, points_per_win), by = c("round_id" = "id")) %>%
+  filter(round_id == 2) %>%
+  inner_join(divisional.seeding, by = c("home_seed" = "seed")) %>%
+  rename(home_team = team) %>%
+  inner_join(divisional.seeding, by = c("season_id", "away_seed" = "seed", "conference", "division")) %>%
+  rename(away_team = team) %>%
+  select(season_id, id, series_id, round_id, points_per_win,
+         home_seed, home_team, away_seed, away_team, conference, division) %>%
+  rename(matchup_id = id) %>%
+  mutate(home_win_rate = 0.5,
+         away_win_rate = 1 - home_win_rate,
+         home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
+         away_win_prob = 1 - home_win_prob,
+         rng = runif(4*simulations*(nrow(matchups.import %>% filter(round_id == 2)))),
+         winner = ifelse(rng < home_win_prob, home_team, away_team),
+         winner_reseed = home_seed) %>%
+  ungroup()
+
+conference.seeding <-
+  divisional.round %>%
+  select(season_id, winner, conference, winner_reseed) %>%
+  rename(team = winner,
+         seed = winner_reseed)
+
+# fix fact that both seeds = 1
+conference.finals <-
+  matchups.import %>%
+  inner_join(rounds.import %>% select(id, points_per_win), by = c("round_id" = "id")) %>%
+  filter(round_id == 3) %>%
+  inner_join(divisional.seeding, by = c("home_seed" = "seed")) %>%
+  rename(home_team = team) %>%
+  inner_join(divisional.seeding, by = c("season_id", "away_seed" = "seed", "conference")) %>%
+  rename(away_team = team) %>%
+  select(season_id, id, series_id, round_id, points_per_win,
+         home_seed, home_team, away_seed, away_team, conference, division) %>%
+  rename(matchup_id = id) %>%
+  mutate(home_win_rate = 0.5,
+         away_win_rate = 1 - home_win_rate,
+         home_win_prob = (home_win_rate - home_win_rate * away_win_rate) / 
+           (home_win_rate + away_win_rate - 2 * home_win_rate * away_win_rate),
+         away_win_prob = 1 - home_win_prob,
+         rng = runif(4*simulations*(nrow(matchups.import %>% filter(round_id == 2)))),
+         winner = ifelse(rng < home_win_prob, home_team, away_team),
+         winner_reseed = home_seed) %>%
+  ungroup()
