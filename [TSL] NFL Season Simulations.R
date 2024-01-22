@@ -13,9 +13,9 @@ tsl.scoring <- data.frame(placement = c(1:16),
                                          8, 7, 6, 5, 4, 3, 2, 1, 0))
 
 ## import playoff matchup data
-rounds.import <- read_excel("Data Analysis/Team Super League/NFL Playoff Rounds.xlsx")
-games.import <- read_excel("Data Analysis/Team Super League/NFL Playoff Games.xlsx")
-matchups.import <- read_excel("Data Analysis/Team Super League/NFL Playoff Matchups.xlsx")
+rounds.import <- read_excel("Data Analysis/Team Super League/Playoff Rounds.xlsx", sheet = "NFL")
+games.import <- read_excel("Data Analysis/Team Super League/Playoff Games.xlsx", sheet = "NFL")
+matchups.import <- read_excel("Data Analysis/Team Super League/Playoff Matchups.xlsx", sheet = "NFL")
 
 hfa <- 0.03 ## use 53% win rate for home teams
 
@@ -72,9 +72,9 @@ nfl.team.seasons <- data.frame(id = c(1:(nrow(nfl.team.strength)*simulations)),
                                team = nfl.team.strength$team,
                                team_win_rate = nfl.team.strength$adj_win_rate,
                                season_win_rate = rbeta(nrow(nfl.team.strength)*simulations,
-                                                   shape1 = alpha,
-                                                   shape2 = alpha / nfl.team.strength$adj_win_rate - alpha)) %>%
-                    mutate(season_wins = season_win_rate * 17)
+                                                       shape1 = alpha,
+                                                       shape2 = alpha / nfl.team.strength$adj_win_rate - alpha)) %>%
+  mutate(season_wins = season_win_rate * 17)
 
 nfl.seasons <-
   nfl.schedule %>%
@@ -294,6 +294,18 @@ team.summary <-
             div_win_rate = mean(won_division),
             playoff_rate = mean(made_playoffs)) %>%
   ungroup()
+
+# team.actuals <- data.frame(team = c("Baltimore Ravens", "Detroit Lions",
+#                                     "Kansas City Chiefs", "San Francisco 49ers"),
+#                            wins = c(13, 10, 11, 13))
+# 
+# simulation.matches <-
+#   team.performance %>%
+#   inner_join(team.actuals, by = c("team", "wins")) %>%
+#   inner_join(playoff.scoring %>% filter(tsl_points >= 15), by = c("season_id", "team")) %>%
+#   inner_join(nfl.team.seasons, by = c("season_id", "team")) %>%
+#   group_by(team) %>%
+#   summarize(estimated_win_rate = mean(season_win_rate))
 
 # rs.performance <-
 #   team.performance %>%
