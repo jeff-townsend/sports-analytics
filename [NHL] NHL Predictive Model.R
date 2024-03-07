@@ -49,8 +49,8 @@ stats.total <-
   filter(season < 2023,
          season != 2012,
          season != 2019,
-         season != 2020)
-  group_by(season, team) %>%
+         season != 2020) %>%
+group_by(season, team) %>%
   summarize(win_rate = mean(result),
             gd_all = mean(gd_all),
             sd_all = mean(sd_all),
@@ -137,7 +137,7 @@ stats.shr <-
          odd_win_rate_delta = odd_win_rate - odd_xwin_rate,
          even_win_rate_delta = even_win_rate - even_xwin_rate)
 
-ggplot(stats.shr, aes(x = even_opp_shpct, y = odd_opp_shpct)) +
+ggplot(stats.shr, aes(x = even_opp_shpct_5on5, y = odd_opp_shpct_5on5)) +
   stat_poly_line() +
   stat_poly_eq(use_label(c("eq", "R2"))) +
   geom_point()
@@ -171,7 +171,7 @@ stats.wr <-
                  sd_5on5 = odd_sd_5on5,
                  adj_sd_5on5 = odd_adj_sd_5on5,
                  pdo_5on5 = odd_pdo_5on5)
-        ) %>%
+  ) %>%
   mutate(gd_other = gd_all - gd_5on5,
          sd_other = sd_all - sd_5on5,
          adj_sd_other = adj_sd_all - adj_sd_5on5)
@@ -215,6 +215,10 @@ team.ratings <-
             gd_other = mean(gd_all) - mean(gd_5on5)) %>%
   ungroup() %>%
   mutate(rating_all = wr.mod.all$coefficients[1] + wr.mod.all$coefficients[2]*adj_sd_all +
-                      wr.mod.all$coefficients[3]*pdo_all,
+           wr.mod.all$coefficients[3]*pdo_all,
          rating_5on5 = wr.mod.5on5$coefficients[1] + wr.mod.5on5$coefficients[2]*adj_sd_5on5 +
-                       wr.mod.5on5$coefficients[3]*pdo_5on5 + wr.mod.5on5$coefficients[4]*gd_other)
+           wr.mod.5on5$coefficients[3]*pdo_5on5 + wr.mod.5on5$coefficients[4]*gd_other)
+
+write_csv(team.ratings %>%
+            select(team, adj_sd_5on5, pdo_5on5, gd_other, rating_5on5),
+          "Downloads/nhl_ratings.csv")
