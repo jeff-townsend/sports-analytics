@@ -1,6 +1,7 @@
 library(readr)
 library(tidyverse)
 library(ggpmisc)
+library(ggthemes)
 
 #teams.import <- read_csv("Data Analysis/NHL/teams_2008-2023.csv")
 team.games.import <- read_csv("Downloads/all_teams.csv")
@@ -61,10 +62,10 @@ group_by(season, team) %>%
             adj_sd_5on5 = mean(adj_sd_5on5),
             pdo_5on5 = mean(gf_5on5) / mean(sf_5on5) + (1 - mean(ga_5on5) / mean(sa_5on5)))
 
-ggplot(stats.total, aes(x = gd_all, y = win_rate)) +
-  stat_poly_line() +
-  stat_poly_eq(use_label(c("eq", "R2"))) +
-  geom_point()
+# ggplot(stats.total, aes(x = gd_all, y = win_rate)) +
+#   stat_poly_line() +
+#   stat_poly_eq(use_label(c("eq", "R2"))) +
+#   geom_point()
 
 gd.wr.lm <- lm(win_rate ~ gd_all, data = stats.total)
 summary(gd.wr.lm)
@@ -137,9 +138,9 @@ stats.shr <-
          odd_win_rate_delta = odd_win_rate - odd_xwin_rate,
          even_win_rate_delta = even_win_rate - even_xwin_rate)
 
-ggplot(stats.shr, aes(x = even_opp_shpct_5on5, y = odd_opp_shpct_5on5)) +
+ggplot(stats.shr, aes(x = even_adj_sd_5on5, y = odd_adj_sd_5on5)) +
   stat_poly_line() +
-  stat_poly_eq(use_label(c("eq", "R2"))) +
+  stat_poly_eq(use_label("R2")) +
   geom_point()
 
 stats.wr <-
@@ -219,6 +220,22 @@ team.ratings <-
          rating_5on5 = wr.mod.5on5$coefficients[1] + wr.mod.5on5$coefficients[2]*adj_sd_5on5 +
            wr.mod.5on5$coefficients[3]*pdo_5on5 + wr.mod.5on5$coefficients[4]*gd_other)
 
+## create google sheet output
 write_csv(team.ratings %>%
             select(team, adj_sd_5on5, pdo_5on5, gd_other, rating_5on5),
           "Downloads/nhl_ratings.csv")
+
+ggplot(stats.shr, aes(x = even_adj_sd_5on5, y = odd_adj_sd_5on5)) +
+  stat_poly_line() +
+  stat_poly_eq(use_label("R2")) +
+  geom_point() +
+  theme_fivethirtyeight() +
+  ggtitle("Split-Half Reliability: 5-on-5 Score-Adjusted Shot Differential",
+          subtitle = "Comparison between even- and odd-numbered games; data since 08-09, only including team seasons with 82 games") +
+  theme(plot.subtitle = element_text(face = "italic",
+                                     size = 10)) +
+  annotate("text", x = 5, y = 19, label = "Chicago's 09-10 season", size = 3) +
+  geom_segment(aes(x = 8, y = 18, xend = 9.5, yend = 16),
+               linewidth = 0.5,
+               color = "red",
+               arrow = arrow(length = unit(0.15, "cm")))
