@@ -1,0 +1,7 @@
+id,round.name,round.abr,points,points.per.win
+1,Round of 64,R64,320,10
+2,Round of 32,R32,320,20
+3,Sweet 16,S16,320,40
+4,Elite Eight,E8,320,80
+5,Final Four,F4,320,160
+6,Championship,NC,320,320
