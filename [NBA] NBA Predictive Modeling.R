@@ -2,8 +2,10 @@ library(rvest)
 library(tidyverse)
 library(lubridate)
 
+setwd("/Users/jtownsend/Downloads")
+
 # decide how far back to go
-starting.season <- 2022
+starting.season <- 2023
 ending.season <- 2024
 
 # use game dates to determine whether it's a playoff game
@@ -22,16 +24,18 @@ colnames(bref.df) <- col.names
 ### loop through each season month
 
 season <- starting.season
-m <- 10
+m <- 1
 
 for(season in starting.season:ending.season)
 {
   
-  for(m in 10:21)
+  season.df <- data.frame(matrix(ncol = 13, nrow = 0))
+  colnames(season.df) <- col.names
+  
+  for(m in 1:12)
   {
     
-    mm <- ifelse(m > 12, m - 12, m)
-    month <- tolower(month.name[mm])
+    month <- tolower(month.name[m])
     url <- paste0("https://www.basketball-reference.com/leagues/NBA_", season, "_games-", month, ".html")
     
     webpage <- NULL
@@ -60,7 +64,7 @@ for(season in starting.season:ending.season)
       month.df <- as.data.frame(cbind(game.id, season, dates, data), stringsAsFactors = FALSE)
       colnames(month.df) <- col.names
       
-      bref.df <- rbind(bref.df, month.df)
+      season.df <- rbind(season.df, month.df)
       
     }
     
@@ -68,10 +72,18 @@ for(season in starting.season:ending.season)
     
   }
   
+  write.csv(season.df, paste0("basketball_reference_games_", season, ".csv"))
+  bref.df <- rbind(bref.df, season.df)
+  
   season <- season + 1
-  m <- 10
+  m <- 1
   
 }
+
+bref.df <-
+  bref.df %>%
+  filter(!is.na(away_points)) %>%
+  arrange(game_id)
 
 ### end of loop
 
@@ -110,7 +122,7 @@ merge.df <-
   group_by(season, team) %>%
   mutate(game_number = rank(game_date))
 
-games.df <-
+games.tmp <-
   merge.df %>%
   arrange(game_id) %>%
   mutate(is_win = ifelse(points > points_allowed, 1, 0)) %>%
@@ -127,13 +139,16 @@ games.df <-
             suffix = c("", "_prior")) %>%
   mutate(days_rest = as.numeric(game_date - game_date_prior) - 1) %>%
   select(-game_date_prior)
+
 games.df <-
-  games.df %>%
-  inner_join(games.df %>%
+  games.tmp %>%
+  inner_join(games.tmp %>%
                select(game_id, season, team, days_rest),
              by = c("game_id", "season", c("opponent" = "team")),
              suffix = c("","_opp")) %>%
-  mutate(rest_diff = days_rest - days_rest_opp)
+  mutate(rest_diff = days_rest - days_rest_opp,
+         rest_diff_bucket = ifelse(rest_diff > 2, 2,
+                                   ifelse(rest_diff < -2, -2, rest_diff)))
 
 rs.games.df <-
   games.df %>%
@@ -144,16 +159,12 @@ rs.games.df <-
   ungroup() %>%
   mutate(is_odd = ifelse(game_number%%2 == 1, 1, 0))
 
-View(
-rs.games.df %>%
-  mutate(rest_diff_bucket = ifelse(rest_diff > 2, 2,
-                                   ifelse(rest_diff < -2, -2, rest_diff))) %>%
-  group_by(is_home, rest_diff_bucket) %>%
+exp.pds <-
+  games.df %>%
+  group_by(is_home, rest_diff_bucket, game_type) %>%
   summarize(gp = n(),
             win_rate = mean(is_win),
-            pd = mean(points) - mean(points_allowed)) %>%
-  filter(is_home == 1)
-)
+            pd = mean(points) - mean(points_allowed))
 
 ## summarize regular season data
 
