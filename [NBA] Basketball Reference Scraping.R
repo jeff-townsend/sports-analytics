@@ -6,7 +6,7 @@ setwd("/Users/jtownsend/Downloads")
 
 # initialize data frame
 
-season <- 2024
+season <- 2022
 season.df <- data.frame(matrix(ncol = 13, nrow = 0))
 col.names <- c("game_id", "season", "game_date", "start_time", "away_team", "away_points",
                "home_team", "home_points", "box_score", "overtimes", "attendance", "arena", "notes")
@@ -33,11 +33,13 @@ for(m in 1:12)
       webpage %>% 
       html_nodes("table#schedule > tbody > tr > th") %>% 
       html_text()
+    dates <- dates[! dates == "Playoffs"]
     
     game.id <-
       webpage %>% 
       html_nodes("table#schedule > tbody > tr > th") %>%
       html_attr("csk")
+    game.id <- game.id[!is.na(game.id)]
     
     data <-
       webpage %>% 
@@ -58,4 +60,7 @@ for(m in 1:12)
 
 season.df <- season.df %>% arrange(game_id)
 season.df$game_date <- mdy(season.df$game_date)
-write.csv(season.df, paste0("basketball_reference_games_", season, ".csv"))
+
+#season.df <- season.df %>% filter(month(game_date) != 9)
+
+write.csv(season.df, paste0("basketball_reference_games_", season, ".csv"), row.names = FALSE)
