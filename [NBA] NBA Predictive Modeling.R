@@ -3,7 +3,8 @@ library(tidyverse)
 library(lubridate)
 library(ggthemes)
 
-setwd("/Users/jtownsend/Downloads")
+#setwd("/Users/jtownsend/Downloads")
+setwd("/Users/Jeff/Documents/Data Analysis/NBA")
 
 starting.season <- 2010
 ending.season <- 2024
@@ -16,7 +17,7 @@ colnames(bref.df) <- col.names
 s <- starting.season
 
 for(s in starting.season:ending.season)
-  {
+{
   bref.import <-
     read_csv(paste0("basketball_reference_games_", s, ".csv"),
              col_types = cols(game_date = col_date(format = "%Y-%m-%d"),
@@ -131,11 +132,14 @@ ggplot(matchup.df, aes(x = matchup_pd, y = adj_pd)) +
 matchup.agg <-
   matchup.df %>%
   group_by(combined_game_number) %>%
-  summarize(error = mean(matchup_pd_error),
-            n = n())
+  summarize(n = n(),
+            mov = mean(abs(pd)),
+            error = mean(matchup_pd_error)) %>%
+  ungroup() %>%
+  mutate(rel_error = error - mov)
 
-ggplot(matchup.agg, aes(x = combined_game_number, y = error)) +
+ggplot(matchup.agg, aes(x = combined_game_number, y = rel_error)) +
   geom_line() +
   geom_smooth() +
   theme_fivethirtyeight() +
-  ggtitle("Prediction error during an 82-game NBA season")
+  ggtitle("Relative prediction error during an 82-game NBA season")
