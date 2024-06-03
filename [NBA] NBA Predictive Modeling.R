@@ -4,7 +4,7 @@ library(lubridate)
 library(ggthemes)
 
 #setwd("/Users/jtownsend/Downloads")
-setwd("/Users/Jeff/Documents/Data Analysis/NBA/Basketball Reference")
+#setwd("/Users/Jeff/Documents/Data Analysis/NBA")
 
 starting.season <- 2009
 ending.season <- 2024
@@ -18,8 +18,9 @@ s <- starting.season
 
 for(s in starting.season:ending.season)
 {
+  myfile <- paste0("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NBA/basketball_reference_games_", s, ".csv")
   bref.import <-
-    read_csv(paste0("basketball_reference_games_", s, ".csv"),
+    read_csv(myfile,
              col_types = cols(game_date = col_date(format = "%Y-%m-%d"),
                               notes = col_character())) %>%
     mutate(overtimes = ifelse(!is.na(overtimes), overtimes, ""),
@@ -98,18 +99,24 @@ games.df <-
 stats.df <-
   games.df %>%
   group_by(season, team) %>%
-  mutate(game_number_desc = rank(desc(game_number)),
-         season_pd = cumsum(pd) - pd) %>%
+  mutate(games_remaining = rank(desc(game_number)) - 1,
+         season_pd_prior = cumsum(pd) - pd,
+         season_pd_post = cumsum(pd)) %>%
   ungroup() %>%
-  mutate(avg_pd = ifelse(game_number == 1, 0, season_pd / (game_number - 1))) %>%
-  select(season, team, game_number, game_number_desc, season_pd, avg_pd)
+  mutate(avg_pd_prior = ifelse(game_number == 1, 0, season_pd_prior / (game_number - 1)),
+         avg_pd_post = season_pd_post / game_number) %>%
+  select(season, team, game_number, season_pd_prior, avg_pd_prior, season_pd_post, avg_pd_post, games_remaining)
 
 yoy.df <-
   stats.df %>%
-  filter(game_number_desc == 1) %>%
-  select(season, team, avg_pd) %>%
+  filter(games_remaining == 0) %>%
+  select(season, team, avg_pd_post) %>%
+  rename(avg_pd = avg_pd_post) %>%
   mutate(prior_season = season - 1) %>%
-  inner_join(stats.df %>% filter(game_number_desc == 1) %>% select(season, team, avg_pd),
+  inner_join(stats.df %>%
+               filter(games_remaining == 0) %>%
+               select(season, team, avg_pd_post) %>%
+               rename(avg_pd = avg_pd_post),
              by = c("prior_season" = "season", "team"),
              suffix = (c("","_prior")))
 
@@ -118,6 +125,7 @@ summary(yoy.pd.mod)
 
 yoy.df$preseason_pd <- predict(yoy.pd.mod, newdata = yoy.df)
 
+pd.padding <- 15
 pred.games.df <-
   games.df %>%
   filter(season >= 2010) %>%
@@ -132,26 +140,30 @@ pred.games.df <-
   inner_join(yoy.df %>% select(season, team, preseason_pd) %>% rename(preseason_pd_opp = preseason_pd),
              by = c("season", "opponent" = "team")) %>%
   # add season-to-date stats
-  inner_join(stats.df %>% select(season, team, game_number, avg_pd),
+  inner_join(stats.df %>%
+               select(season, team, game_number, avg_pd_prior) %>%
+               rename(avg_pd = avg_pd_prior),
              by = c("season", "team", "game_number")) %>%
   # add opponent's season-to-date stats
-  inner_join(stats.df %>% select(season, team, game_number, avg_pd) %>% rename(avg_pd_opp = avg_pd),
+  inner_join(stats.df %>%
+               select(season, team, game_number, avg_pd_prior) %>%
+               rename(avg_pd_opp = avg_pd_prior),
              by = c("season", "opponent" = "team", "game_number_opp" = "game_number")) %>%
   # # add last 25 game stats
-      # mutate(game_number25 = ifelse(game_number <= 25, 1, game_number - 25)) %>%
-      # inner_join(pd.df, by = c("season", "team", c("game_number25" = "game_number")), suffix = c("", "25")) %>%
-      # mutate(avg_pd25 = ifelse(game_number == 1, 0, (season_pd - season_pd25) / (game_number - game_number25))) %>%
-      # select(-game_number25, -season_pd25) %>%
-      # # add opponent's last 25 game stats
-      # mutate(game_number_opp25 = ifelse(game_number_opp <= 25, 1, game_number_opp - 25)) %>%
-      # inner_join(pd.df %>% rename(season_pd_opp = season_pd),
-      #            by = c("season", "opponent" = "team", "game_number_opp25" = "game_number"), suffix = c("", "25")) %>%
-      # mutate(avg_pd_opp25 = ifelse(game_number_opp == 1, 0, (season_pd_opp - season_pd_opp25) / (game_number_opp - game_number_opp25))) %>%
-      # select(-game_number_opp25, -season_pd_opp25) %>%
+  # mutate(game_number25 = ifelse(game_number <= 25, 1, game_number - 25)) %>%
+  # inner_join(pd.df, by = c("season", "team", c("game_number25" = "game_number")), suffix = c("", "25")) %>%
+  # mutate(avg_pd25 = ifelse(game_number == 1, 0, (season_pd - season_pd25) / (game_number - game_number25))) %>%
+  # select(-game_number25, -season_pd25) %>%
+  # # add opponent's last 25 game stats
+  # mutate(game_number_opp25 = ifelse(game_number_opp <= 25, 1, game_number_opp - 25)) %>%
+  # inner_join(pd.df %>% rename(season_pd_opp = season_pd),
+  #            by = c("season", "opponent" = "team", "game_number_opp25" = "game_number"), suffix = c("", "25")) %>%
+  # mutate(avg_pd_opp25 = ifelse(game_number_opp == 1, 0, (season_pd_opp - season_pd_opp25) / (game_number_opp - game_number_opp25))) %>%
+  # select(-game_number_opp25, -season_pd_opp25) %>%
   
   # add padded stats
-  mutate(padded_pd = (avg_pd * (game_number - 1) + 20*preseason_pd) / (game_number + 19),
-         padded_pd_opp = (avg_pd_opp * (game_number_opp - 1) + 20*preseason_pd_opp) / (game_number_opp + 19)) %>%
+  mutate(padded_pd = (avg_pd * (game_number - 1) + pd.padding*preseason_pd) / (game_number + pd.padding - 1),
+         padded_pd_opp = (avg_pd_opp * (game_number_opp - 1) + pd.padding*preseason_pd_opp) / (game_number_opp + pd.padding - 1)) %>%
   # calculate matchup metrics
   mutate(combined_game_number = (season_game_number + season_game_number_opp) / 2,
          rest_diff = days_rest - days_rest_opp,
@@ -213,14 +225,48 @@ matchup.agg <-
   ungroup() %>%
   mutate(rel_error = error - mov,
          rel_preseason_error = preseason_error - mov,
-         rel_padded_error = padded_error - mov)
+         rel_padded_error = padded_error - mov) %>%
+  mutate(explained_error = -(error - mov) / mov)
 
-ggplot(matchup.agg, aes(x = combined_game_number, y = rel_error)) +
+ggplot(matchup.agg, aes(x = combined_game_number, y = rel_padded_error)) +
   geom_line() +
   geom_smooth() +
   theme_fivethirtyeight() +
   labs(title = "Relative prediction error during an 82-game NBA season",
-       subtitle = "Using season-to-date point differential as a predictor") +
-  theme(plot.subtitle = element_text(face = "italic")) +
-  scale_y_continuous(limits = c(-3, 3),
-                     breaks = seq(-3, 3, by = 0.5))
+       subtitle = "Using padded season-to-date point differential as a predictor") +
+  theme(plot.subtitle = element_text(face = "italic"))
+
+# example of padded PD using 2024 Cavs
+cavs24 <-
+  rbind(
+    pred.games.df %>%
+    filter(season == 2024,
+           team == "Cleveland Cavaliers",
+           game_type == "Regular Season") %>%
+    select(season, team, game_number, avg_pd) %>%
+    rename(value = avg_pd) %>%
+    mutate(metric = "Actual PD"),
+    pred.games.df %>%
+      filter(season == 2024,
+             team == "Cleveland Cavaliers",
+             game_type == "Regular Season") %>%
+      select(season, team, game_number, preseason_pd) %>%
+      rename(value = preseason_pd) %>%
+      mutate(metric = "Projected PD"),
+    pred.games.df %>%
+      filter(season == 2024,
+             team == "Cleveland Cavaliers",
+             game_type == "Regular Season") %>%
+      select(season, team, game_number, padded_pd) %>%
+      rename(value = padded_pd) %>%
+      mutate(metric = "Padded PD")
+  )
+
+ggplot(cavs24, aes(x = game_number, y = value, col = metric)) +
+  geom_line() +
+  theme_fivethirtyeight() +
+  labs(title = "Cleveland Cavaliers' metrics during the 2024 NBA season") +
+  xlab("Game Number") +
+  ylab("Point Differential") +
+  theme(legend.title = element_blank(),
+        axis.title = element_text())
