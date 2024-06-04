@@ -64,3 +64,12 @@ season.df$game_date <- mdy(season.df$game_date)
 #season.df <- season.df %>% filter(month(game_date) != 9)
 
 write.csv(season.df, paste0("basketball_reference_games_", season, ".csv"), row.names = FALSE)
+
+## boxscore scraping
+
+url <- paste0("https://www.basketball-reference.com/boxscores/202310240DEN.html")
+webpage <- read_html(url)
+
+away.stats <- html_table(html_nodes(webpage, "table"))[[1]][-c(1,7),]
+home.stats <- html_table(html_nodes(webpage, "table"))[[9]][-c(1,7),]
+
