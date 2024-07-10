@@ -1,0 +1,381 @@
+﻿week,date,home,away,home_win,draw,away_win,completed
+1,8/11/23,Burnley,Manchester City,0,0,1,1
+1,8/12/23,Newcastle United,Aston Villa,1,0,0,1
+1,8/12/23,Bournemouth,West Ham,0,1,0,1
+1,8/12/23,Brighton,Luton Town,1,0,0,1
+1,8/12/23,Sheffield United,Crystal Palace,0,0,1,1
+1,8/12/23,Everton,Fulham,0,0,1,1
+1,8/12/23,Arsenal,Nottingham Forest,1,0,0,1
+1,8/13/23,Chelsea,Liverpool,0,1,0,1
+1,8/13/23,Brentford,Tottenham,0,1,0,1
+1,8/14/23,Manchester United,Wolverhampton,1,0,0,1
+2,8/18/23,Nottingham Forest,Sheffield United,1,0,0,1
+2,8/19/23,Manchester City,Newcastle United,1,0,0,1
+2,8/19/23,Tottenham,Manchester United,1,0,0,1
+2,8/19/23,Wolverhampton,Brighton,0,0,1,1
+2,8/19/23,Liverpool,Bournemouth,1,0,0,1
+2,8/19/23,Luton Town,Burnley,0,0,0,0
+2,8/19/23,Fulham,Brentford,0,0,1,1
+2,8/20/23,West Ham,Chelsea,1,0,0,1
+2,8/20/23,Aston Villa,Everton,1,0,0,1
+2,8/21/23,Crystal Palace,Arsenal,0,0,1,1
+3,8/25/23,Chelsea,Luton Town,1,0,0,1
+3,8/26/23,Brighton,West Ham,0,0,1,1
+3,8/26/23,Arsenal,Fulham,0,1,0,1
+3,8/26/23,Manchester United,Nottingham Forest,1,0,0,1
+3,8/26/23,Brentford,Crystal Palace,0,1,0,1
+3,8/26/23,Everton,Wolverhampton,0,0,1,1
+3,8/26/23,Bournemouth,Tottenham,0,0,1,1
+3,8/27/23,Newcastle United,Liverpool,0,0,1,1
+3,8/27/23,Burnley,Aston Villa,0,0,1,1
+3,8/27/23,Sheffield United,Manchester City,0,0,1,1
+4,9/1/23,Luton Town,West Ham,0,0,1,1
+4,9/2/23,Brighton,Newcastle United,1,0,0,1
+4,9/2/23,Burnley,Tottenham,0,0,1,1
+4,9/2/23,Brentford,Bournemouth,0,1,0,1
+4,9/2/23,Manchester City,Fulham,1,0,0,1
+4,9/2/23,Chelsea,Nottingham Forest,0,0,1,1
+4,9/2/23,Sheffield United,Everton,0,1,0,1
+4,9/3/23,Arsenal,Manchester United,1,0,0,1
+4,9/3/23,Crystal Palace,Wolverhampton,1,0,0,1
+4,9/3/23,Liverpool,Aston Villa,1,0,0,1
+5,9/17/23,Everton,Arsenal,0,0,1,1
+5,9/16/23,Tottenham,Sheffield United,1,0,0,1
+5,9/16/23,Manchester United,Brighton,0,0,1,1
+5,9/16/23,Aston Villa,Crystal Palace,1,0,0,1
+5,9/16/23,West Ham,Manchester City,0,0,1,1
+5,9/16/23,Fulham,Luton Town,1,0,0,1
+5,9/16/23,Wolverhampton,Liverpool,0,0,1,1
+5,9/16/23,Newcastle United,Brentford,1,0,0,1
+5,9/17/23,Bournemouth,Chelsea,0,1,0,1
+5,9/18/23,Nottingham Forest,Burnley,0,1,0,1
+6,9/23/23,Burnley,Manchester United,0,0,1,1
+6,9/23/23,Brentford,Everton,0,0,1,1
+6,9/23/23,Crystal Palace,Fulham,0,1,0,1
+6,9/23/23,Chelsea,Aston Villa,0,0,1,1
+6,9/23/23,Luton Town,Wolverhampton,0,1,0,1
+6,9/23/23,Manchester City,Nottingham Forest,1,0,0,1
+6,9/24/23,Sheffield United,Newcastle United,0,0,1,1
+6,9/24/23,Liverpool,West Ham,1,0,0,1
+6,9/24/23,Brighton,Bournemouth,1,0,0,1
+6,9/24/23,Arsenal,Tottenham,0,1,0,1
+7,9/30/23,Tottenham,Liverpool,1,0,0,1
+7,9/30/23,Manchester United,Crystal Palace,0,0,1,1
+7,9/30/23,West Ham,Sheffield United,1,0,0,1
+7,9/30/23,Newcastle United,Burnley,1,0,0,1
+7,9/30/23,Everton,Luton Town,0,0,1,1
+7,9/30/23,Bournemouth,Arsenal,0,0,1,1
+7,9/30/23,Wolverhampton,Manchester City,1,0,0,1
+7,9/30/23,Aston Villa,Brighton,1,0,0,1
+7,10/1/23,Nottingham Forest,Brentford,0,1,0,1
+7,10/2/23,Fulham,Chelsea,0,0,1,1
+8,10/7/23,Crystal Palace,Nottingham Forest,0,1,0,1
+8,10/7/23,Fulham,Sheffield United,1,0,0,1
+8,10/7/23,Burnley,Chelsea,0,0,1,1
+8,10/7/23,Manchester United,Brentford,1,0,0,1
+8,10/7/23,Everton,Bournemouth,1,0,0,1
+8,10/7/23,Wolverhampton,Aston Villa,0,1,0,1
+8,10/7/23,Luton Town,Tottenham,0,0,1,1
+8,10/8/23,Arsenal,Manchester City,1,0,0,1
+8,10/8/23,Brighton,Liverpool,0,1,0,1
+8,10/8/23,West Ham,Newcastle United,0,1,0,1
+9,10/21/23,Chelsea,Arsenal,0,1,0,1
+9,10/21/23,Nottingham Forest,Luton Town,0,1,0,1
+9,10/21/23,Manchester City,Brighton,1,0,0,1
+9,10/21/23,Brentford,Burnley,1,0,0,1
+9,10/21/23,Newcastle United,Crystal Palace,1,0,0,1
+9,10/21/23,Bournemouth,Wolverhampton,0,0,1,1
+9,10/21/23,Liverpool,Everton,1,0,0,1
+9,10/22/23,Aston Villa,West Ham,1,0,0,1
+9,10/22/23,Sheffield United,Manchester United,0,0,1,1
+9,10/23/23,Tottenham,Fulham,1,0,0,1
+10,10/27/23,Crystal Palace,Tottenham,0,0,0,0
+10,10/28/23,Wolverhampton,Newcastle United,0,0,0,0
+10,10/28/23,Aston Villa,Luton Town,0,0,0,0
+10,10/28/23,Arsenal,Sheffield United,0,0,0,0
+10,10/28/23,Bournemouth,Burnley,0,0,0,0
+10,10/28/23,Chelsea,Brentford,0,0,0,0
+10,10/29/23,Manchester United,Manchester City,0,0,0,0
+10,10/29/23,Brighton,Fulham,0,0,0,0
+10,10/29/23,Liverpool,Nottingham Forest,0,0,0,0
+10,10/29/23,West Ham,Everton,0,0,0,0
+11,11/4/23,Sheffield United,Wolverhampton,0,0,0,0
+11,11/4/23,Manchester City,Bournemouth,0,0,0,0
+11,11/4/23,Nottingham Forest,Aston Villa,0,0,0,0
+11,11/4/23,Luton Town,Liverpool,0,0,0,0
+11,11/4/23,Burnley,Crystal Palace,0,0,0,0
+11,11/4/23,Everton,Brighton,0,0,0,0
+11,11/4/23,Newcastle United,Arsenal,0,0,0,0
+11,11/4/23,Tottenham,Chelsea,0,0,0,0
+11,11/4/23,Brentford,West Ham,0,0,0,0
+11,11/4/23,Fulham,Manchester United,0,0,0,0
+12,11/11/23,Brighton,Sheffield United,0,0,0,0
+12,11/11/23,Aston Villa,Fulham,0,0,0,0
+12,11/11/23,Crystal Palace,Everton,0,0,0,0
+12,11/11/23,Liverpool,Brentford,0,0,0,0
+12,11/11/23,West Ham,Nottingham Forest,0,0,0,0
+12,11/11/23,Bournemouth,Newcastle United,0,0,0,0
+12,11/11/23,Chelsea,Manchester City,0,0,0,0
+12,11/11/23,Manchester United,Luton Town,0,0,0,0
+12,11/11/23,Arsenal,Burnley,0,0,0,0
+12,11/11/23,Wolverhampton,Tottenham,0,0,0,0
+13,11/25/23,Everton,Manchester United,0,0,0,0
+13,11/25/23,Luton Town,Crystal Palace,0,0,0,0
+13,11/25/23,Fulham,Wolverhampton,0,0,0,0
+13,11/25/23,Newcastle United,Chelsea,0,0,0,0
+13,11/25/23,Tottenham,Aston Villa,0,0,0,0
+13,11/25/23,Sheffield United,Bournemouth,0,0,0,0
+13,11/25/23,Brentford,Arsenal,0,0,0,0
+13,11/25/23,Manchester City,Liverpool,0,0,0,0
+13,11/25/23,Nottingham Forest,Brighton,0,0,0,0
+13,11/25/23,Burnley,West Ham,0,0,0,0
+14,12/2/23,West Ham,Crystal Palace,0,0,0,0
+14,12/2/23,Burnley,Sheffield United,0,0,0,0
+14,12/2/23,Chelsea,Brighton,0,0,0,0
+14,12/2/23,Arsenal,Wolverhampton,0,0,0,0
+14,12/2/23,Newcastle United,Manchester United,0,0,0,0
+14,12/2/23,Liverpool,Fulham,0,0,0,0
+14,12/2/23,Bournemouth,Aston Villa,0,0,0,0
+14,12/2/23,Brentford,Luton Town,0,0,0,0
+14,12/2/23,Manchester City,Tottenham,0,0,0,0
+14,12/2/23,Nottingham Forest,Everton,0,0,0,0
+15,12/5/23,Fulham,Nottingham Forest,0,0,0,0
+15,12/5/23,Luton Town,Arsenal,0,0,0,0
+15,12/5/23,Wolverhampton,Burnley,0,0,0,0
+15,12/5/23,Brighton,Brentford,0,0,0,0
+15,12/5/23,Everton,Newcastle United,0,0,0,0
+15,12/5/23,Tottenham,West Ham,0,0,0,0
+15,12/5/23,Aston Villa,Manchester City,0,0,0,0
+15,12/5/23,Crystal Palace,Bournemouth,0,0,0,0
+15,12/5/23,Sheffield United,Liverpool,0,0,0,0
+15,12/6/23,Manchester United,Chelsea,0,0,0,0
+16,12/9/23,Luton Town,Manchester City,0,0,0,0
+16,12/9/23,Sheffield United,Brentford,0,0,0,0
+16,12/9/23,Fulham,West Ham,0,0,0,0
+16,12/9/23,Tottenham,Newcastle United,0,0,0,0
+16,12/9/23,Brighton,Burnley,0,0,0,0
+16,12/9/23,Crystal Palace,Liverpool,0,0,0,0
+16,12/9/23,Everton,Chelsea,0,0,0,0
+16,12/9/23,Aston Villa,Arsenal,0,0,0,0
+16,12/9/23,Wolverhampton,Nottingham Forest,0,0,0,0
+16,12/9/23,Manchester United,Bournemouth,0,0,0,0
+17,12/16/23,Arsenal,Brighton,0,0,0,0
+17,12/16/23,Bournemouth,Luton Town,0,0,0,0
+17,12/16/23,West Ham,Wolverhampton,0,0,0,0
+17,12/16/23,Newcastle United,Fulham,0,0,0,0
+17,12/16/23,Nottingham Forest,Tottenham,0,0,0,0
+17,12/16/23,Brentford,Aston Villa,0,0,0,0
+17,12/16/23,Chelsea,Sheffield United,0,0,0,0
+17,12/16/23,Manchester City,Crystal Palace,0,0,0,0
+17,12/16/23,Liverpool,Manchester United,0,0,0,0
+17,12/16/23,Burnley,Everton,0,0,0,0
+18,12/23/23,Nottingham Forest,Bournemouth,0,0,0,0
+18,12/23/23,Liverpool,Arsenal,0,0,0,0
+18,12/23/23,Manchester City,Brentford,0,0,0,0
+18,12/23/23,Wolverhampton,Chelsea,0,0,0,0
+18,12/23/23,Tottenham,Everton,0,0,0,0
+18,12/23/23,Fulham,Burnley,0,0,0,0
+18,12/23/23,Crystal Palace,Brighton,0,0,0,0
+18,12/23/23,Luton Town,Newcastle United,0,0,0,0
+18,12/23/23,Aston Villa,Sheffield United,0,0,0,0
+18,12/23/23,West Ham,Manchester United,0,0,0,0
+19,12/26/23,Newcastle United,Nottingham Forest,0,0,0,0
+19,12/26/23,Brentford,Wolverhampton,0,0,0,0
+19,12/26/23,Burnley,Liverpool,0,0,0,0
+19,12/26/23,Arsenal,West Ham,0,0,0,0
+19,12/26/23,Everton,Manchester City,0,0,0,0
+19,12/26/23,Manchester United,Aston Villa,0,0,0,0
+19,12/26/23,Sheffield United,Luton Town,0,0,0,0
+19,12/26/23,Brighton,Tottenham,0,0,0,0
+19,12/26/23,Bournemouth,Fulham,0,0,0,0
+19,12/26/23,Chelsea,Crystal Palace,0,0,0,0
+20,12/30/23,Crystal Palace,Brentford,0,0,0,0
+20,12/30/23,West Ham,Brighton,0,0,0,0
+20,12/30/23,Manchester City,Sheffield United,0,0,0,0
+20,12/30/23,Luton Town,Chelsea,0,0,0,0
+20,12/30/23,Wolverhampton,Everton,0,0,0,0
+20,12/30/23,Fulham,Arsenal,0,0,0,0
+20,12/30/23,Tottenham,Bournemouth,0,0,0,0
+20,12/30/23,Aston Villa,Burnley,0,0,0,0
+20,12/30/23,Nottingham Forest,Manchester United,0,0,0,0
+20,12/30/23,Liverpool,Newcastle United,0,0,0,0
+21,1/13/24,Brentford,Nottingham Forest,0,0,0,0
+21,1/13/24,Chelsea,Fulham,0,0,0,0
+21,1/13/24,Burnley,Luton Town,0,0,0,0
+21,1/13/24,Sheffield United,West Ham,0,0,0,0
+21,1/13/24,Bournemouth,Liverpool,0,0,0,0
+21,1/13/24,Manchester United,Tottenham,0,0,0,0
+21,1/13/24,Newcastle United,Manchester City,0,0,0,0
+21,1/13/24,Brighton,Wolverhampton,0,0,0,0
+21,1/13/24,Everton,Aston Villa,0,0,0,0
+21,1/13/24,Arsenal,Crystal Palace,0,0,0,0
+22,1/30/24,Aston Villa,Newcastle United,0,0,0,0
+22,1/30/24,Crystal Palace,Sheffield United,0,0,0,0
+22,1/30/24,Tottenham,Brentford,0,0,0,0
+22,1/30/24,Wolverhampton,Manchester United,0,0,0,0
+22,1/30/24,Luton Town,Brighton,0,0,0,0
+22,1/30/24,Nottingham Forest,Arsenal,0,0,0,0
+22,1/30/24,Fulham,Everton,0,0,0,0
+22,1/30/24,West Ham,Bournemouth,0,0,0,0
+22,1/31/24,Manchester City,Burnley,0,0,0,0
+22,1/31/24,Liverpool,Chelsea,0,0,0,0
+23,2/3/24,Everton,Tottenham,0,0,0,0
+23,2/3/24,Chelsea,Wolverhampton,0,0,0,0
+23,2/3/24,Manchester United,West Ham,0,0,0,0
+23,2/3/24,Sheffield United,Aston Villa,0,0,0,0
+23,2/3/24,Burnley,Fulham,0,0,0,0
+23,2/3/24,Arsenal,Liverpool,0,0,0,0
+23,2/3/24,Brighton,Crystal Palace,0,0,0,0
+23,2/3/24,Newcastle United,Luton Town,0,0,0,0
+23,2/3/24,Brentford,Manchester City,0,0,0,0
+23,2/3/24,Bournemouth,Nottingham Forest,0,0,0,0
+24,2/10/24,Aston Villa,Manchester United,0,0,0,0
+24,2/10/24,Tottenham,Brighton,0,0,0,0
+24,2/10/24,Fulham,Bournemouth,0,0,0,0
+24,2/10/24,West Ham,Arsenal,0,0,0,0
+24,2/10/24,Wolverhampton,Brentford,0,0,0,0
+24,2/10/24,Liverpool,Burnley,0,0,0,0
+24,2/10/24,Nottingham Forest,Newcastle United,0,0,0,0
+24,2/10/24,Luton Town,Sheffield United,0,0,0,0
+24,2/10/24,Crystal Palace,Chelsea,0,0,0,0
+24,2/10/24,Manchester City,Everton,0,0,0,0
+25,2/17/24,Nottingham Forest,West Ham,0,0,0,0
+25,2/17/24,Brentford,Liverpool,0,0,0,0
+25,2/17/24,Sheffield United,Brighton,0,0,0,0
+25,2/17/24,Fulham,Aston Villa,0,0,0,0
+25,2/17/24,Manchester City,Chelsea,0,0,0,0
+25,2/17/24,Burnley,Arsenal,0,0,0,0
+25,2/17/24,Everton,Crystal Palace,0,0,0,0
+25,2/17/24,Luton Town,Manchester United,0,0,0,0
+25,2/17/24,Tottenham,Wolverhampton,0,0,0,0
+25,2/17/24,Newcastle United,Bournemouth,0,0,0,0
+26,2/24/24,Bournemouth,Manchester City,0,0,0,0
+26,2/24/24,Aston Villa,Nottingham Forest,0,0,0,0
+26,2/24/24,Brighton,Everton,0,0,0,0
+26,2/24/24,Wolverhampton,Sheffield United,0,0,0,0
+26,2/24/24,Arsenal,Newcastle United,0,0,0,0
+26,2/24/24,Crystal Palace,Burnley,0,0,0,0
+26,2/24/24,Chelsea,Tottenham,0,0,0,0
+26,2/24/24,Liverpool,Luton Town,0,0,0,0
+26,2/24/24,Manchester United,Fulham,0,0,0,0
+26,2/24/24,West Ham,Brentford,0,0,0,0
+27,3/2/24,Burnley,Bournemouth,0,0,0,0
+27,3/2/24,Everton,West Ham,0,0,0,0
+27,3/2/24,Nottingham Forest,Liverpool,0,0,0,0
+27,3/2/24,Newcastle United,Wolverhampton,0,0,0,0
+27,3/2/24,Brentford,Chelsea,0,0,0,0
+27,3/2/24,Tottenham,Crystal Palace,0,0,0,0
+27,3/2/24,Manchester City,Manchester United,0,0,0,0
+27,3/2/24,Luton Town,Aston Villa,0,0,0,0
+27,3/2/24,Sheffield United,Arsenal,0,0,0,0
+27,3/2/24,Fulham,Brighton,0,0,0,0
+28,3/9/24,Manchester United,Everton,0,0,0,0
+28,3/9/24,Crystal Palace,Luton Town,0,0,0,0
+28,3/9/24,Brighton,Nottingham Forest,0,0,0,0
+28,3/9/24,Chelsea,Newcastle United,0,0,0,0
+28,3/9/24,Wolverhampton,Fulham,0,0,0,0
+28,3/9/24,Aston Villa,Tottenham,0,0,0,0
+28,3/9/24,West Ham,Burnley,0,0,0,0
+28,3/9/24,Liverpool,Manchester City,0,0,0,0
+28,3/9/24,Bournemouth,Sheffield United,0,0,0,0
+28,3/9/24,Arsenal,Brentford,0,0,0,0
+29,3/16/24,West Ham,Aston Villa,0,0,0,0
+29,3/16/24,Crystal Palace,Newcastle United,0,0,0,0
+29,3/16/24,Burnley,Brentford,0,0,0,0
+29,3/16/24,Everton,Liverpool,0,0,0,0
+29,3/16/24,Fulham,Tottenham,0,0,0,0
+29,3/16/24,Luton Town,Nottingham Forest,0,0,0,0
+29,3/16/24,Manchester United,Sheffield United,0,0,0,0
+29,3/16/24,Brighton,Manchester City,0,0,0,0
+29,3/16/24,Arsenal,Chelsea,0,0,0,0
+29,3/16/24,Wolverhampton,Bournemouth,0,0,0,0
+30,3/30/24,Chelsea,Burnley,0,0,0,0
+30,3/30/24,Liverpool,Brighton,0,0,0,0
+30,3/30/24,Sheffield United,Fulham,0,0,0,0
+30,3/30/24,Nottingham Forest,Crystal Palace,0,0,0,0
+30,3/30/24,Manchester City,Arsenal,0,0,0,0
+30,3/30/24,Tottenham,Luton Town,0,0,0,0
+30,3/30/24,Aston Villa,Wolverhampton,0,0,0,0
+30,3/30/24,Brentford,Manchester United,0,0,0,0
+30,3/30/24,Newcastle United,West Ham,0,0,0,0
+30,3/30/24,Bournemouth,Everton,0,0,0,0
+31,4/2/24,Burnley,Wolverhampton,0,0,0,0
+31,4/2/24,Brentford,Brighton,0,0,0,0
+31,4/2/24,Arsenal,Luton Town,0,0,0,0
+31,4/2/24,Nottingham Forest,Fulham,0,0,0,0
+31,4/2/24,West Ham,Tottenham,0,0,0,0
+31,4/2/24,Bournemouth,Crystal Palace,0,0,0,0
+31,4/3/24,Chelsea,Manchester United,0,0,0,0
+31,4/3/24,Manchester City,Aston Villa,0,0,0,0
+31,4/3/24,Newcastle United,Everton,0,0,0,0
+31,4/3/24,Liverpool,Sheffield United,0,0,0,0
+32,4/6/24,Crystal Palace,Manchester City,0,0,0,0
+32,4/6/24,Aston Villa,Brentford,0,0,0,0
+32,4/6/24,Manchester United,Liverpool,0,0,0,0
+32,4/6/24,Sheffield United,Chelsea,0,0,0,0
+32,4/6/24,Everton,Burnley,0,0,0,0
+32,4/6/24,Fulham,Newcastle United,0,0,0,0
+32,4/6/24,Tottenham,Nottingham Forest,0,0,0,0
+32,4/6/24,Wolverhampton,West Ham,0,0,0,0
+32,4/6/24,Brighton,Arsenal,0,0,0,0
+32,4/6/24,Luton Town,Bournemouth,0,0,0,0
+33,4/13/24,Burnley,Brighton,0,0,0,0
+33,4/13/24,Arsenal,Aston Villa,0,0,0,0
+33,4/13/24,West Ham,Fulham,0,0,0,0
+33,4/13/24,Liverpool,Crystal Palace,0,0,0,0
+33,4/13/24,Newcastle United,Tottenham,0,0,0,0
+33,4/13/24,Brentford,Sheffield United,0,0,0,0
+33,4/13/24,Nottingham Forest,Wolverhampton,0,0,0,0
+33,4/13/24,Manchester City,Luton Town,0,0,0,0
+33,4/13/24,Bournemouth,Manchester United,0,0,0,0
+33,4/13/24,Chelsea,Everton,0,0,0,0
+34,4/20/24,Sheffield United,Burnley,0,0,0,0
+34,4/20/24,Manchester United,Newcastle United,0,0,0,0
+34,4/20/24,Luton Town,Brentford,0,0,0,0
+34,4/20/24,Brighton,Chelsea,0,0,0,0
+34,4/20/24,Fulham,Liverpool,0,0,0,0
+34,4/20/24,Crystal Palace,West Ham,0,0,0,0
+34,4/20/24,Aston Villa,Bournemouth,0,0,0,0
+34,4/20/24,Everton,Nottingham Forest,0,0,0,0
+34,4/20/24,Tottenham,Manchester City,0,0,0,0
+34,4/20/24,Wolverhampton,Arsenal,0,0,0,0
+35,4/27/24,Bournemouth,Brighton,0,0,0,0
+35,4/27/24,Newcastle United,Sheffield United,0,0,0,0
+35,4/27/24,Manchester United,Burnley,0,0,0,0
+35,4/27/24,Tottenham,Arsenal,0,0,0,0
+35,4/27/24,Everton,Brentford,0,0,0,0
+35,4/27/24,West Ham,Liverpool,0,0,0,0
+35,4/27/24,Aston Villa,Chelsea,0,0,0,0
+35,4/27/24,Fulham,Crystal Palace,0,0,0,0
+35,4/27/24,Nottingham Forest,Manchester City,0,0,0,0
+35,4/27/24,Wolverhampton,Luton Town,0,0,0,0
+36,5/4/24,Chelsea,West Ham,0,0,0,0
+36,5/4/24,Brentford,Fulham,0,0,0,0
+36,5/4/24,Sheffield United,Nottingham Forest,0,0,0,0
+36,5/4/24,Crystal Palace,Manchester United,0,0,0,0
+36,5/4/24,Luton Town,Everton,0,0,0,0
+36,5/4/24,Brighton,Aston Villa,0,0,0,0
+36,5/4/24,Manchester City,Wolverhampton,0,0,0,0
+36,5/4/24,Liverpool,Tottenham,0,0,0,0
+36,5/4/24,Burnley,Newcastle United,0,0,0,0
+36,5/4/24,Arsenal,Bournemouth,0,0,0,0
+37,5/11/24,Bournemouth,Brentford,0,0,0,0
+37,5/11/24,Manchester United,Arsenal,0,0,0,0
+37,5/11/24,Aston Villa,Liverpool,0,0,0,0
+37,5/11/24,Newcastle United,Brighton,0,0,0,0
+37,5/11/24,Fulham,Manchester City,0,0,0,0
+37,5/11/24,Everton,Sheffield United,0,0,0,0
+37,5/11/24,Tottenham,Burnley,0,0,0,0
+37,5/11/24,Nottingham Forest,Chelsea,0,0,0,0
+37,5/11/24,West Ham,Luton Town,0,0,0,0
+37,5/11/24,Wolverhampton,Crystal Palace,0,0,0,0
+38,5/19/24,Burnley,Nottingham Forest,0,0,0,0
+38,5/19/24,Liverpool,Wolverhampton,0,0,0,0
+38,5/19/24,Crystal Palace,Aston Villa,0,0,0,0
+38,5/19/24,Chelsea,Bournemouth,0,0,0,0
+38,5/19/24,Brentford,Newcastle United,0,0,0,0
+38,5/19/24,Brighton,Manchester United,0,0,0,0
+38,5/19/24,Arsenal,Everton,0,0,0,0
+38,5/19/24,Manchester City,West Ham,0,0,0,0
+38,5/19/24,Sheffield United,Tottenham,0,0,0,0
+38,5/19/24,Luton Town,Fulham,0,0,0,0
