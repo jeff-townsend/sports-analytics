@@ -1,24 +1,24 @@
-id,sport_id,tournament,Start Date,End Date,Host
-1,2,2022 European Championship,11/4/22,11/20/22,"Slovenia, Macedonia, Montenegro"
-2,1,2023 World Championship,1/11/23,1/29/23,"Poland, Sweden"
-3,3,2023 USA Sevens,2/25/23,2/26/23,United States
-4,2,2023 Asian Qualification,8/17/23,8/23/23,Japan
-5,4,2023 Olympic Qualification,9/30/23,10/8/23,"Brazil, Japan, China"
-6,1,2023 Asian Qualification,10/18/23,10/28/23,Qatar
-7,2,2023 African Qualification,10/24/23,10/29/23,Angola
-8,2,2023 Pan American Games,10/24/23,10/29/23,Chile
-9,1,2023 Pan American Games,10/30/23,11/4/23,Chile
-10,2,2023 World Championship,11/29/23,12/17/23,"Denmark, Norway, Sweden"
-11,3,2023 Dubai Sevens,12/2/23,12/3/23,UAE
-12,3,2023 South Africa Sevens,12/9/23,12/10/23,South Africa
-13,1,2024 European Championship,1/10/24,1/28/24,Germany
-14,1,2024 African Championship,1/17/24,1/27/24,Egypt
-15,3,2024 Australia Sevens,1/26/24,1/28/24,Australia
-16,3,2024 Canada Sevens,2/23/24,2/25/24,Canada
-17,3,2024 USA Sevens,3/1/24,3/3/24,United States
-18,1,2024 Olympic Qualification,3/14/24,3/17/24,"Spain, Germany, Hungary"
-19,3,2024 Hong Kong Sevens,4/5/24,4/7/24,Hong Kong
-20,2,2024 Olympic Qualification,4/11/24,4/14/24,"Hungary, Spain, Germany"
-21,3,2024 Singapore Sevens,5/3/24,5/5/24,Singapore
-22,3,2024 Spain Sevens,5/31/24,6/2/24,Spain
-23,2,2024 Paris Olympics,7/25/24,8/10/24,France
+id,sport_id,tournament,start_date,end_date,tournament_hosts
+1,2,2022 European Championship,11/4/2022,11/20/2022,"Slovenia, Macedonia, Montenegro"
+2,1,2023 World Championship,1/11/2023,1/29/2023,"Poland, Sweden"
+3,3,2023 USA Sevens,2/25/2023,2/26/2023,United States
+4,2,2023 Asian Qualification,8/17/2023,8/23/2023,Japan
+5,4,2023 Olympic Qualification,9/30/2023,10/8/2023,"Brazil, Japan, China"
+6,1,2023 Asian Qualification,10/18/2023,10/28/2023,Qatar
+7,2,2023 African Qualification,10/24/2023,10/29/2023,Angola
+8,2,2023 Pan American Games,10/24/2023,10/29/2023,Chile
+9,1,2023 Pan American Games,10/30/2023,11/4/2023,Chile
+10,2,2023 World Championship,11/29/2023,12/17/2023,"Denmark, Norway, Sweden"
+11,3,2023 Dubai Sevens,12/2/2023,12/3/2023,UAE
+12,3,2023 South Africa Sevens,12/9/2023,12/10/2023,South Africa
+13,1,2024 European Championship,1/10/2024,1/28/2024,Germany
+14,1,2024 African Championship,1/17/2024,1/27/2024,Egypt
+15,3,2024 Australia Sevens,1/26/2024,1/28/2024,Australia
+16,3,2024 Canada Sevens,2/23/2024,2/25/2024,Canada
+17,3,2024 USA Sevens,3/1/2024,3/3/2024,United States
+18,1,2024 Olympic Qualification,3/14/2024,3/17/2024,"Spain, Germany, Hungary"
+19,3,2024 Hong Kong Sevens,4/5/2024,4/7/2024,Hong Kong
+20,2,2024 Olympic Qualification,4/11/2024,4/14/2024,"Hungary, Spain, Germany"
+21,3,2024 Singapore Sevens,5/3/2024,5/5/2024,Singapore
+22,3,2024 Spain Sevens,5/31/2024,6/2/2024,Spain
+23,2,2024 Paris Olympics,7/25/2024,8/10/2024,France
