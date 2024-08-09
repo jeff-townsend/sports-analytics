@@ -2,40 +2,86 @@ library(tidyverse)
 library(nflreadr)
 
 # fantasy-relevant plays
-nfl.pbp <-
-  load_pbp(2023) %>%
+start.season <- 2014
+
+pbp <-
+  load_pbp(start.season:2023) %>%
   filter(season_type == "REG",
-         play_type %in% c("run", "pass", "qb_kneel"))
+         play_type %in% c("run", "pass", "qb_kneel")) %>%
+  mutate(off_touchdown = ifelse(touchdown == 1, ifelse(posteam == td_team, 1, 0), 0))
 # fantasy-relevant players
-nfl.roster <-
-  load_rosters(2023) %>%
+rosters <-
+  load_rosters(start.season:2023) %>%
   filter(position %in% c("QB", "RB", "WR", "TE"),
-         !is.na(gsis_id))
+         !is.na(gsis_id)) %>%
+  rename(player = full_name)
 
 # passing scoring
-nfl.pbp.pass <-
-  nfl.pbp %>%
+pbp.pass <-
+  pbp %>%
   filter(play_type == "pass",
          two_point_attempt == 0) %>%
   mutate(fumble = ifelse(fumble == 0, 0, ifelse(passer_id == fumbled_1_player_id, 1, 0))) %>%
-  select(season, play_id, game_id, week, posteam, defteam, yards_gained, touchdown, interception, fumble, sack, passer_id) %>%
-  inner_join(nfl.roster %>% select(season, full_name, position, gsis_id), by = c("passer_id" = "gsis_id", "season"))
+  select(season, play_id, game_id, week, posteam, defteam, yards_gained, off_touchdown, interception, fumble, sack, passer_id) %>%
+  rename(touchdown = off_touchdown) %>%
+  inner_join(rosters %>% select(season, player, position, gsis_id), by = c("passer_id" = "gsis_id", "season"))
+
+pass.points <-
+  pbp.pass %>%
+  group_by(season, passer_id, player) %>%
+  rename(player_id = passer_id) %>%
+  summarize(pass_yards = sum(yards_gained * (1 - sack)),
+            pass_tds = sum(touchdown),
+            int = sum(interception),
+            pass_fum = sum(fumble)) %>%
+  ungroup() %>%
+  mutate(pass_points = 0.04*pass_yards + 4*pass_tds - 2*int - pass_fum)
 
 # rushing scoring
-nfl.pbp.rush <-
-  nfl.pbp %>%
+pbp.rush <-
+  pbp %>%
   filter(play_type %in% c("run", "qb_kneel"),
          two_point_attempt == 0) %>%
   mutate(rusher_id = ifelse(qb_scramble == 1, passer_id, rusher_id),
          fumble = ifelse(fumble == 0, 0, ifelse(rusher_id == fumbled_1_player_id, 1, 0))) %>%
-  select(season, play_id, game_id, week, posteam, defteam, yards_gained, touchdown, fumble, rusher_id) %>%
-  inner_join(nfl.roster %>% select(season, full_name, position, gsis_id), by = c("rusher_id" = "gsis_id", "season"))
+  select(season, play_id, game_id, week, posteam, defteam, yards_gained, off_touchdown, fumble, rusher_id) %>%
+  rename(touchdown = off_touchdown) %>%
+  inner_join(rosters %>% select(season, player, position, gsis_id), by = c("rusher_id" = "gsis_id", "season"))
+
+rush.points <-
+  pbp.rush %>%
+  group_by(season, rusher_id, player) %>%
+  rename(player_id = rusher_id) %>%
+  summarize(rush_yards = sum(yards_gained),
+            rush_tds = sum(touchdown),
+            rush_fum = sum(fumble)) %>%
+  ungroup() %>%
+  mutate(rush_points = 0.1*rush_yards + 6*rush_tds - rush_fum)
 
 # receiving scoring
-nfl.pbp.rec <-
-  nfl.pbp %>%
+pbp.rec <-
+  pbp %>%
   filter(play_type == "pass",
          two_point_attempt == 0) %>%
   mutate(fumble = ifelse(fumble == 0, 0, ifelse(receiver_id == fumbled_1_player_id, 1, 0))) %>%
-  select(season, play_id, game_id, week, posteam, defteam, complete_pass, yards_gained, touchdown, fumble, receiver_id) %>%
-  inner_join(nfl.roster %>% select(season, full_name, position, gsis_id), by = c("receiver_id" = "gsis_id", "season"))
+  select(season, play_id, game_id, week, posteam, defteam, complete_pass, yards_gained, off_touchdown, fumble, receiver_id) %>%
+  rename(touchdown = off_touchdown) %>%
+  inner_join(rosters %>% select(season, player, position, gsis_id), by = c("receiver_id" = "gsis_id", "season"))
+
+rec.points <-
+  pbp.rec %>%
+  group_by(season, receiver_id, player) %>%
+  rename(player_id = receiver_id) %>%
+  summarize(rec = sum(complete_pass),
+            rec_yards = sum(yards_gained * complete_pass), ## has a few small discrepancies
+            rec_tds = sum(touchdown),
+            rec_fum = sum(fumble)) %>%
+  ungroup() %>%
+  mutate(rec_points = 0.5*rec + 0.1*rec_yards + 6*rec_tds - rec_fum)
+
+total.points <-
+  pass.points %>%
+  full_join(rush.points, by = c("season", "player_id", "player")) %>%
+  full_join(rec.points, by = c("season", "player_id", "player"))
+total.points[is.na(total.points)] <- 0
+total.points$fantasy_points <- with(total.points, pass_points + rush_points + rec_points)
