@@ -2,7 +2,7 @@ library(tidyverse)
 library(nflreadr)
 
 # fantasy-relevant plays
-start.season <- 2014
+start.season <- 2016
 
 pbp <-
   load_pbp(start.season:2023) %>%
@@ -15,6 +15,16 @@ rosters <-
   filter(position %in% c("QB", "RB", "WR", "TE"),
          !is.na(gsis_id)) %>%
   rename(player = full_name)
+# game participation data
+participation <- load_participation(2016:2023)
+
+off.usage <-
+  participation %>%
+  separate_rows(offense_players, sep = ";") %>%
+  distinct(nflverse_game_id, offense_players) %>%
+  rename(game_id = nflverse_game_id,
+         player_id = offense_players) %>%
+  inner_join(rosters %>% select(player, position, gsis_id), by = c("player_id" = "gsis_id"))
 
 # passing scoring
 pbp.pass <-
