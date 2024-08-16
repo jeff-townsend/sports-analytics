@@ -3,26 +3,38 @@ library(nflreadr)
 library(ggthemes)
 
 # set up the data
-starting.season <- 2022
+starting.season <- 2023
 ending.season <- 2023
-nfl.pbp <-
+pbp.load <-
   load_pbp(seasons = c(starting.season:ending.season)) %>%
   filter(season_type == "REG",
          play_type %in% c("run", "pass"))
 
+pbp <-
+  pbp.load %>%
+  filter(two_point_attempt == 0) %>%
+  select(season, game_id, play_id, posteam, defteam, down, ydstogo, play_type, qb_dropback, yards_gained, epa, success) %>%
+  rename(epa_success = success) %>%
+  mutate(required_yards = ceiling(ifelse(down == 1, 0.4*ydstogo, ifelse(down == 2, 0.6*ydstogo, ydstogo))),
+         success = ifelse(yards_gained >= required_yards, 1, 0),
+         relative_yards = yards_gained - required_yards)
+
 team.offense <-
-  nfl.pbp %>%
+  pbp %>%
   filter(season == 2023) %>%
   group_by(posteam) %>%
   summarize(plays = n(),
             successes = sum(success),
             success_rate = mean(success),
-            successful_epa = mean(ifelse(success == 1, epa, NA), na.rm = TRUE),
-            failed_epa = mean(ifelse(success == 0, epa, NA), na.rm = TRUE),
-            epa_per_play = mean(epa),
-            epa_volatility = sd(epa)) %>%
+            ypp = mean(yards_gained),
+            required_ypp = mean(required_yards),
+            surplus_ypp = mean(ifelse(success == 1, relative_yards, NA), na.rm = TRUE),
+            deficit_ypp = mean(ifelse(success == 0, relative_yards, NA), na.rm = TRUE),
+            volatility = sd(relative_yards)) %>%
   ungroup() %>%
   rename(team = posteam)
+
+ggplot
 
 team.defense <-
   nfl.pbp %>%
