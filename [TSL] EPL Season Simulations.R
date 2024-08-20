@@ -2,6 +2,9 @@ library(tidyverse)
 library(ggthemes)
 library(readr)
 
+tsl.scoring <- data.frame(placement = c(1:20),
+                          tsl_points = c(80, 60, 40, 40, 25, 20, 16, 14, 12, 10, 8, 7, 6, 5, 4, 3, 2, 0, 0, 0))
+
 games.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/EPL/epl_schedule_2425.csv",
                          col_types = cols(date = col_date(format = "%m/%d/%y")))
 
@@ -18,6 +21,7 @@ teams$rgf <- teams.import$gd / 2
 teams$rga <- teams.import$gd / 2
 teams$rating <- teams.import$gd
 
+hfa <- 0.3
 games <-
   games.import %>%
   inner_join(teams %>%
@@ -32,8 +36,8 @@ games <-
              by = c("away" = "team")) %>%
   rename(away_rgf = rgf,
          away_rga = rga) %>%
-  mutate(home_lambda = home_rgf - away_rga + 1.5,
-         away_lambda = away_rgf - home_rga + 1.5)
+  mutate(home_lambda = home_rgf - away_rga + 1.5 + hfa/2,
+         away_lambda = away_rgf - home_rga + 1.5 - hfa/2)
 
 set.seed(816)
 simulations <- 10000
@@ -105,8 +109,10 @@ tables <-
 
 summary <-
   tables %>%
+  inner_join(tsl.scoring, by = "placement") %>%
   group_by(team) %>%
-  summarize(points = mean(points),
+  summarize(tsl_points = mean(tsl_points),
+            points = mean(points),
             wins = mean(wins),
             draws = mean(draws),
             losses = mean(losses),
@@ -116,3 +122,24 @@ summary <-
             top4 = mean(top4),
             top6 = mean(top6),
             top10 = mean(top10))
+
+# win.probs <-
+#   game.simulations %>%
+#   group_by(game_id) %>%
+#   summarize(home_lambda = mean(home_lambda),
+#             away_lambda = mean(away_lambda),
+#             lambda_diff = mean(home_lambda - away_lambda),
+#             win_prob = mean(home_win),
+#             draw_prob = mean(draw),
+#             loss_prob = mean(away_win)) %>%
+#   ungroup() %>%
+#   group_by(lambda_diff) %>%
+#   summarize(win_prob = mean(win_prob),
+#             draw_prob = mean(draw_prob),
+#             loss_prob = mean(loss_prob)) %>%
+#   ungroup() %>%
+#   mutate(exp_score = win_prob + 0.5*draw_prob)
+# 
+# ggplot(win.probs, aes(x = lambda_diff, y = exp_score)) +
+#   geom_line()
+# summary(lm(lambda_diff ~ exp_score, data = win.probs))
