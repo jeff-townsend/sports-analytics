@@ -1,13 +1,11 @@
 library(tidyverse)
 library(ggthemes)
+library(readr)
 
-library(readxl)
-nfl.schedule.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL Schedule.xlsx")
-nfl.teams <-
-  read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx") %>%
-  filter(league == "NFL")
-nfl.team.strength.import <- read_excel("Data Analysis/Team Super League/2023-24 NFL Team Strength.xlsx", sheet = "Team Strengths")
-tsl.teams <- read_excel("Data Analysis/Team Super League/2023-24 Teams.xlsx")
+games.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NFL/nfl_schedule_2425.csv")
+
+teams.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NFL/nfl_teams_2425.csv")
+
 tsl.scoring <- data.frame(placement = c(1:16),
                           tsl_points = c(32, 28, 25, 22, 19, 17, 15,
                                          8, 7, 6, 5, 4, 3, 2, 1, 0))
