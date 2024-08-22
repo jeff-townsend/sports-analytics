@@ -9,12 +9,14 @@ pbp <-
   filter(season_type == "REG",
          play_type %in% c("run", "pass", "qb_kneel")) %>%
   mutate(off_touchdown = ifelse(touchdown == 1, ifelse(posteam == td_team, 1, 0), 0))
+
 # fantasy-relevant players
 rosters <-
   load_rosters(start.season:2023) %>%
   filter(position %in% c("QB", "RB", "WR", "TE"),
          !is.na(gsis_id)) %>%
   rename(player = full_name)
+
 # game participation data
 participation <- load_participation(2016:2023)
 
@@ -25,6 +27,11 @@ off.usage <-
   rename(game_id = nflverse_game_id,
          player_id = offense_players) %>%
   inner_join(rosters %>% select(player, position, gsis_id), by = c("player_id" = "gsis_id"))
+
+# define replacement level
+
+replacement.ranks <- data.frame(position = c("QB", "RB", "WR", "TE"),
+                                prk = c(13, 31, 31, 13))
 
 # passing scoring
 pbp.pass <-
@@ -38,7 +45,7 @@ pbp.pass <-
 
 pass.points <-
   pbp.pass %>%
-  group_by(season, passer_id, player) %>%
+  group_by(season, passer_id, player, position) %>%
   rename(player_id = passer_id) %>%
   summarize(pass_yards = sum(yards_gained * (1 - sack)),
             pass_tds = sum(touchdown),
@@ -60,7 +67,7 @@ pbp.rush <-
 
 rush.points <-
   pbp.rush %>%
-  group_by(season, rusher_id, player) %>%
+  group_by(season, rusher_id, player, position) %>%
   rename(player_id = rusher_id) %>%
   summarize(rush_yards = sum(yards_gained),
             rush_tds = sum(touchdown),
@@ -80,7 +87,7 @@ pbp.rec <-
 
 rec.points <-
   pbp.rec %>%
-  group_by(season, receiver_id, player) %>%
+  group_by(season, receiver_id, player, position) %>%
   rename(player_id = receiver_id) %>%
   summarize(rec = sum(complete_pass),
             rec_yards = sum(yards_gained * complete_pass), ## has a few small discrepancies
@@ -91,7 +98,29 @@ rec.points <-
 
 total.points <-
   pass.points %>%
-  full_join(rush.points, by = c("season", "player_id", "player")) %>%
-  full_join(rec.points, by = c("season", "player_id", "player"))
+  full_join(rush.points, by = c("season", "player_id", "player", "position")) %>%
+  full_join(rec.points, by = c("season", "player_id", "player", "position"))
 total.points[is.na(total.points)] <- 0
 total.points$fantasy_points <- with(total.points, pass_points + rush_points + rec_points)
+
+position.ranks <-
+  total.points %>%
+  select(season, player_id, player, position, fantasy_points) %>%
+  group_by(season, position) %>%
+  mutate(prk = rank(desc(fantasy_points), ties.method = "first"))
+
+replacement.points <-
+  position.ranks %>%
+  inner_join(replacement.ranks, by = c("position", "prk")) %>%
+  select(season, position, fantasy_points) %>%
+  rename(replacement_points = fantasy_points)
+
+player.value <-
+  position.ranks %>%
+  inner_join(replacement.points, by = c("season", "position")) %>%
+  mutate(fpar = fantasy_points - replacement_points) %>%
+  select(-replacement_points) %>%
+  group_by(season) %>%
+  mutate(ork = rank(desc(fpar), ties.method = "first"))
+
+View(player.value %>% filter(player == "Ja'Marr Chase") %>% arrange(desc(season)))
