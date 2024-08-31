@@ -34,11 +34,38 @@ elo.results <- data.frame(fixture_id = integer(),
 fixtures <-
   fixtures.import %>%
   mutate(fixture_id = c(1:(nrow(fixtures.import)))) %>%
-  select(fixture_id, season, week, home, away, home_goals, away_goals) %>%
+  select(fixture_id, season, week, home, away, home_goals, away_goals, home_xg, away_xg) %>%
   rename(home_team = home,
          away_team = away) %>%
   mutate(home_result = ifelse(home_goals > away_goals, 1, ifelse(home_goals == away_goals, 0.5, 0)),
          away_result = 1 - home_result)
+
+fixtures.long <-
+  rbind(
+    fixtures %>%
+      mutate(is_home = 1) %>%
+      select(fixture_id, season, week, home_team, away_team, is_home, home_goals, away_goals, home_xg, away_xg) %>%
+      rename(team = home_team,
+             opponent = away_team,
+             gf = home_goals,
+             ga = away_goals,
+             xgf = home_xg,
+             xga = away_xg),
+    fixtures %>%
+      mutate(is_home = 0) %>%
+      select(fixture_id, season, week, away_team, home_team, is_home, away_goals, home_goals, away_xg, home_xg) %>%
+      rename(team = away_team,
+             opponent = home_team,
+             gf = away_goals,
+             ga = home_goals,
+             xgf = away_xg,
+             xga = home_xg)
+  ) %>%
+  arrange(fixture_id) %>%
+  mutate(win = ifelse(gf > ga, 1, 0),
+         draw = ifelse(gf == ga, 1, 0),
+         loss = 1 - win - draw,
+         points = 3 * win + draw)
 
 # initiate variables for loop
 k <- 70
@@ -47,7 +74,7 @@ yoy.reg <- .35
 s <- 2019
 for(s in 2019:2023){
   
-  relegtion.elo <-
+  relegation.elo <-
     teams %>%
     filter(season == s) %>%
     right_join(team.elo %>%
@@ -59,7 +86,7 @@ for(s in 2019:2023){
     filter(is.na(season)) %>%
     select(team, final_elo)
   
-  promotion.elo <- ifelse(is.nan(mean(relegtion.elo$final_elo)), 1500, mean(relegtion.elo$final_elo))
+  promotion.elo <- ifelse(is.nan(mean(relegation.elo$final_elo)), 1500, mean(relegation.elo$final_elo))
   
   starting.elo <-
     teams %>%
@@ -82,6 +109,7 @@ for(s in 2019:2023){
     
     week.fixtures <-
       fixtures %>%
+      select(-home_xg, -away_xg) %>%
       inner_join(team.elo %>%
                    filter(season == s,
                           week == w) %>%
@@ -154,8 +182,16 @@ for(s in 2019:2023){
 final.elo <-
   team.elo %>%
   filter(week == 39) %>%
-  select(team, season, pre_elo, post_elo) %>%
+  select(team, season, post_elo) %>%
   rename(final_elo = post_elo)
+
+final.stats <-
+  fixtures.long %>%
+  group_by(team, season) %>%
+  summarize(gd = mean(gf - ga),
+            xgd = mean(xgf - xga)) %>%
+  ungroup() %>%
+  inner_join(final.elo, by = c("team", "season"))
 
 # calculte home-field advantage
 hfa.delta <- with(elo.results, mean(home_result - home_expectation))
@@ -163,7 +199,7 @@ hfa.elo <- -400*log10(1 / (hfa.delta + 0.5) - 1)
 
 elo.rmse <-
   elo.results %>%
-  group_by(week) %>%
+  group_by(season) %>%
   summarize(rmse = mean(rmse))
 mean(elo.rmse$rmse)
 
@@ -173,10 +209,24 @@ yoy.elo <-
   inner_join(final.elo, by = c("team", "prior_season" = "season"), suffix = c("", "_prior")) %>%
   select(-prior_season)
 
+yoy.stats <-
+  final.stats %>%
+  mutate(prior_season = season - 1) %>%
+  inner_join(final.stats, by = c("team", "prior_season" = "season"), suffix = c("", "_prior")) %>%
+  select(-prior_season)
+
 ggplot(yoy.elo, aes(x = final_elo_prior, y = final_elo)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_fivethirtyeight()
 
-elo.pred <- lm(final_elo ~ final_elo_prior, data = yoy.elo)
+elo.pred <- lm(final_elo ~ final_elo_prior + gd_prior, data = yoy.stats)
 summary(elo.pred)
+
+elo.predictions <-
+  final.stats %>%
+  filter(season == 2023) %>%
+  select(team, final_elo, gd) %>%
+  rename(final_elo_prior = final_elo,
+         gd_prior = gd)
+elo.predictions$starting_elo = predict(elo.pred, newdata = elo.predictions)
