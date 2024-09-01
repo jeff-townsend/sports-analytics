@@ -68,8 +68,8 @@ elo.results <- data.frame(fixture_id = integer(),
 
 # initiate variables for loop
 
-k <- 65
-hfa <- 46
+k <- 50
+hfa <- 48
 s <- 2019
 for(s in 2019:2023){
   
@@ -101,7 +101,7 @@ for(s in 2019:2023){
     mutate(final_elo_prior = ifelse(!is.na(post_elo), post_elo, promotion.elo),
            season_gd_prior = ifelse(!is.na(season_gd), season_gd, promotion.gd)) %>%
     select(team, season, week, final_elo_prior, season_gd_prior)
-  starting.elo$pre_elo <- with(starting.elo, 1077.5087 + 0.2844*final_elo_prior + 2.0224*season_gd_prior)
+  starting.elo$pre_elo <- with(starting.elo, 915.599 + 0.391*final_elo_prior + 1.8891*season_gd_prior)
   #starting.elo$pre_elo <- 1500
   starting.elo$post_elo <- starting.elo$pre_elo
   starting.elo$elo_delta <- 0
@@ -129,7 +129,9 @@ for(s in 2019:2023){
                    rename(opp_pre_elo = pre_elo),
                  by = c("opponent" = "team", "season", "week")) %>%
       mutate(expectation = 1 / (1 + 10 ^ (((opp_pre_elo + hfa*(1-is_home)) - (pre_elo + hfa*is_home)) / 400)),
-             elo_delta = k * (result - expectation),
+             margin = abs(gd),
+             adj_k = ifelse(margin <= 1, k, (1 + (2 ^ (margin - 1) - 1) / (2 ^ (margin - 1))) * k),
+             elo_delta = adj_k * (result - expectation),
              post_elo = pre_elo + elo_delta,
              season_gd = season_gd + gd)
     
@@ -196,10 +198,10 @@ yoy.elo <-
   inner_join(final.elo, by = c("team", "prior_season" = "season"), suffix = c("", "_prior")) %>%
   select(-prior_season)
 
-ggplot(yoy.elo, aes(x = final_elo_prior, y = final_elo)) +
-  geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
-  theme_fivethirtyeight()
+# ggplot(yoy.elo, aes(x = final_elo_prior, y = final_elo)) +
+#   geom_point() +
+#   geom_smooth(method = "lm", se = FALSE) +
+#   theme_fivethirtyeight()
 
 #elo.pred <- lm(final_elo ~ final_elo_prior + season_gd_prior, data = yoy.elo)
 summary(elo.pred)
