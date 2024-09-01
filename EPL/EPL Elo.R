@@ -11,26 +11,6 @@ teams <-
   distinct(home, season) %>%
   rename(team = home)
 
-# initiate tables for loop
-team.elo <- data.frame(team = character(),
-                       season = integer(),
-                       week = integer(),
-                       pre_elo = double(),
-                       post_elo = double(),
-                       elo_delta = double())
-elo.results <- data.frame(fixture_id = integer(),
-                          season = integer(),
-                          week = integer(),
-                          home_team = character(),
-                          home_result = double(),
-                          home_pre_elo = double(),
-                          away_team = character(),
-                          away_pre_elo = double(),
-                          home_expectation = double(),
-                          home_elo_delta = double(),
-                          away_elo_delta = double(),
-                          rmse = double())
-
 fixtures <-
   fixtures.import %>%
   mutate(fixture_id = c(1:(nrow(fixtures.import)))) %>%
@@ -59,18 +39,37 @@ fixtures.long <-
              gf = away_goals,
              ga = home_goals,
              xgf = away_xg,
-             xga = home_xg)
-  ) %>%
+             xga = home_xg)) %>%
   arrange(fixture_id) %>%
-  mutate(win = ifelse(gf > ga, 1, 0),
-         draw = ifelse(gf == ga, 1, 0),
-         loss = 1 - win - draw,
-         points = 3 * win + draw)
+  mutate(result = ifelse(gf > ga, 1, ifelse(gf == ga, 0.5, 0)),
+         gd = gf - ga)
+
+# initiate tables for loop
+
+team.elo <- data.frame(team = character(),
+                       season = integer(),
+                       week = integer(),
+                       pre_elo = double(),
+                       post_elo = double(),
+                       elo_delta = double(),
+                       season_gd = double())
+elo.results <- data.frame(fixture_id = integer(),
+                          season = integer(),
+                          week = integer(),
+                          team = character(),
+                          pre_elo = double(),
+                          opponent = character(),
+                          opp_pre_elo = double(),
+                          is_home = integer(),
+                          expectation = double(),
+                          result = double(),
+                          elo_delta = double(),
+                          rmse = double())
 
 # initiate variables for loop
-k <- 70
-hfa <- 47
-yoy.reg <- .35
+
+k <- 65
+hfa <- 46
 s <- 2019
 for(s in 2019:2023){
   
@@ -80,13 +79,15 @@ for(s in 2019:2023){
     right_join(team.elo %>%
                  filter(season == s - 1,
                         week == 39) %>%
-                 select(team, post_elo),
+                 select(team, post_elo, season_gd),
                by = "team") %>%
     rename(final_elo = post_elo) %>%
     filter(is.na(season)) %>%
-    select(team, final_elo)
+    summarize(final_elo = mean(final_elo),
+              season_gd = mean(season_gd))
   
-  promotion.elo <- ifelse(is.nan(mean(relegation.elo$final_elo)), 1500, mean(relegation.elo$final_elo))
+  promotion.elo <- with(relegation.elo, ifelse(is.nan(final_elo), 1500, final_elo))
+  promotion.gd <- with(relegation.elo, ifelse(is.nan(season_gd), 0, season_gd))
   
   starting.elo <-
     teams %>%
@@ -95,39 +96,42 @@ for(s in 2019:2023){
            prior_season = season - 1) %>%
     left_join(team.elo %>%
                 filter(week == 39) %>%
-                select(team, season, post_elo),
+                select(team, season, post_elo, season_gd),
               by = c("team", "prior_season" = "season")) %>%
-    mutate(pre_elo = ifelse(is.na(post_elo), promotion.elo, post_elo),
-           pre_elo = pre_elo - yoy.reg * (pre_elo - 1500),
-           post_elo = pre_elo,
-           elo_delta = 0) %>%
-    select(team, season, week, pre_elo, post_elo, elo_delta)
-  team.elo <- rbind(team.elo, starting.elo)
+    mutate(final_elo_prior = ifelse(!is.na(post_elo), post_elo, promotion.elo),
+           season_gd_prior = ifelse(!is.na(season_gd), season_gd, promotion.gd)) %>%
+    select(team, season, week, final_elo_prior, season_gd_prior)
+  starting.elo$pre_elo <- with(starting.elo, 1077.5087 + 0.2844*final_elo_prior + 2.0224*season_gd_prior)
+  #starting.elo$pre_elo <- 1500
+  starting.elo$post_elo <- starting.elo$pre_elo
+  starting.elo$elo_delta <- 0
+  starting.elo$season_gd <- 0
+  
+  team.elo <- rbind(team.elo,
+                    starting.elo %>%
+                      select(team, season, week, pre_elo, post_elo, elo_delta, season_gd))
   
   w <- 1
   for(w in 1:38){
     
     week.fixtures <-
-      fixtures %>%
-      select(-home_xg, -away_xg) %>%
+      fixtures.long %>%
+      select(-xgf, -xga) %>%
       inner_join(team.elo %>%
                    filter(season == s,
                           week == w) %>%
-                   select(team, season, week, pre_elo),
-                 by = c("home_team" = "team", "season", "week")) %>%
-      rename(home_pre_elo = pre_elo) %>%
+                   select(team, season, week, pre_elo, season_gd),
+                 by = c("team", "season", "week")) %>%
       inner_join(team.elo %>%
                    filter(season == s,
                           week == w) %>%
-                   select(team, season, week, pre_elo),
-                 by = c("away_team" = "team", "season", "week")) %>%
-      rename(away_pre_elo = pre_elo) %>%
-      mutate(home_expectation = 1 / (1 + 10 ^ ((away_pre_elo - (home_pre_elo + hfa)) / 400)),
-             away_expectation = 1 / (1 + 10 ^ (((home_pre_elo + hfa) - away_pre_elo) / 400)),
-             home_elo_delta = k * (home_result - home_expectation),
-             away_elo_delta = k * (away_result - away_expectation),
-             home_post_elo = home_pre_elo + home_elo_delta,
-             away_post_elo = away_pre_elo + away_elo_delta)
+                   select(team, season, week, pre_elo) %>%
+                   rename(opp_pre_elo = pre_elo),
+                 by = c("opponent" = "team", "season", "week")) %>%
+      mutate(expectation = 1 / (1 + 10 ^ (((opp_pre_elo + hfa*(1-is_home)) - (pre_elo + hfa*is_home)) / 400)),
+             elo_delta = k * (result - expectation),
+             post_elo = pre_elo + elo_delta,
+             season_gd = season_gd + gd)
     
     # update post_elo and elo_delta from current week
     team.elo <-
@@ -140,17 +144,8 @@ for(s in 2019:2023){
         team.elo %>%
           select(team, season, week, pre_elo) %>%
           inner_join(week.fixtures %>%
-                       select(home_team, season, week, home_post_elo, home_elo_delta),
-                     by = c("team" = "home_team", "season", "week")) %>%
-          rename(post_elo = home_post_elo,
-                 elo_delta = home_elo_delta),
-        team.elo %>%
-          select(team, season, week, pre_elo) %>%
-          inner_join(week.fixtures %>%
-                       select(away_team, season, week, away_post_elo, away_elo_delta),
-                     by = c("team" = "away_team", "season", "week")) %>%
-          rename(post_elo = away_post_elo,
-                 elo_delta = away_elo_delta))
+                       select(team, season, week, post_elo, elo_delta, season_gd),
+                     by = c("team", "season", "week")))
     
     # insert pre_elo for the following week
     team.elo <-
@@ -167,9 +162,9 @@ for(s in 2019:2023){
       rbind(
         elo.results,
         week.fixtures %>%
-          select(fixture_id, season, week, home_team, home_result, home_pre_elo,
-                 away_team, away_pre_elo, home_expectation, home_elo_delta, away_elo_delta) %>%
-          mutate(rmse = sqrt((home_result - home_expectation)^2)))
+          select(fixture_id, season, week, team, pre_elo, opponent, opp_pre_elo,
+                 is_home, expectation, result, elo_delta) %>%
+          mutate(rmse = sqrt((result - expectation)^2)))
     
     w <- w + 1
     #gc()
@@ -182,19 +177,11 @@ for(s in 2019:2023){
 final.elo <-
   team.elo %>%
   filter(week == 39) %>%
-  select(team, season, post_elo) %>%
+  select(team, season, post_elo, season_gd) %>%
   rename(final_elo = post_elo)
 
-final.stats <-
-  fixtures.long %>%
-  group_by(team, season) %>%
-  summarize(gd = mean(gf - ga),
-            xgd = mean(xgf - xga)) %>%
-  ungroup() %>%
-  inner_join(final.elo, by = c("team", "season"))
-
 # calculte home-field advantage
-hfa.delta <- with(elo.results, mean(home_result - home_expectation))
+hfa.delta <- with(elo.results %>% filter(is_home == 1), mean(result - expectation))
 hfa.elo <- -400*log10(1 / (hfa.delta + 0.5) - 1)
 
 elo.rmse <-
@@ -209,24 +196,18 @@ yoy.elo <-
   inner_join(final.elo, by = c("team", "prior_season" = "season"), suffix = c("", "_prior")) %>%
   select(-prior_season)
 
-yoy.stats <-
-  final.stats %>%
-  mutate(prior_season = season - 1) %>%
-  inner_join(final.stats, by = c("team", "prior_season" = "season"), suffix = c("", "_prior")) %>%
-  select(-prior_season)
-
 ggplot(yoy.elo, aes(x = final_elo_prior, y = final_elo)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_fivethirtyeight()
 
-elo.pred <- lm(final_elo ~ final_elo_prior + gd_prior, data = yoy.stats)
+#elo.pred <- lm(final_elo ~ final_elo_prior + season_gd_prior, data = yoy.elo)
 summary(elo.pred)
 
 elo.predictions <-
-  final.stats %>%
+  final.elo %>%
   filter(season == 2023) %>%
-  select(team, final_elo, gd) %>%
+  select(team, final_elo, season_gd) %>%
   rename(final_elo_prior = final_elo,
-         gd_prior = gd)
+         season_gd_prior = season_gd)
 elo.predictions$starting_elo = predict(elo.pred, newdata = elo.predictions)
