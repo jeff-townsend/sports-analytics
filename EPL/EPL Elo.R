@@ -41,8 +41,8 @@ fixtures.long <-
              xgf = away_xg,
              xga = home_xg)) %>%
   arrange(fixture_id) %>%
-  mutate(result = ifelse(gf > ga, 1, ifelse(gf == ga, 0.5, 0)),
-         gd = gf - ga)
+  mutate(gd = gf - ga,
+         result = ifelse(gf > ga, 1, ifelse(gf == ga, 0.5, 0)))
 
 # initiate tables for loop
 
@@ -53,6 +53,7 @@ team.elo <- data.frame(team = character(),
                        post_elo = double(),
                        elo_delta = double(),
                        season_gd = double())
+
 elo.results <- data.frame(fixture_id = integer(),
                           season = integer(),
                           week = integer(),
@@ -69,9 +70,10 @@ elo.results <- data.frame(fixture_id = integer(),
 # initiate variables for loop
 
 k <- 50
-hfa <- 48
-s <- 2019
-for(s in 2019:2023){
+s <- 2014
+for(s in 2014:2023){
+  
+  hfa <- ifelse(s == 2020, 0, 66)
   
   relegation.elo <-
     teams %>%
@@ -101,7 +103,7 @@ for(s in 2019:2023){
     mutate(final_elo_prior = ifelse(!is.na(post_elo), post_elo, promotion.elo),
            season_gd_prior = ifelse(!is.na(season_gd), season_gd, promotion.gd)) %>%
     select(team, season, week, final_elo_prior, season_gd_prior)
-  starting.elo$pre_elo <- with(starting.elo, 915.599 + 0.391*final_elo_prior + 1.8891*season_gd_prior)
+  starting.elo$pre_elo <- with(starting.elo, 1284.3928 + 0.1446*final_elo_prior + 2.9888*season_gd_prior)
   #starting.elo$pre_elo <- 1500
   starting.elo$post_elo <- starting.elo$pre_elo
   starting.elo$elo_delta <- 0
@@ -183,14 +185,23 @@ final.elo <-
   rename(final_elo = post_elo)
 
 # calculte home-field advantage
-hfa.delta <- with(elo.results %>% filter(is_home == 1), mean(result - expectation))
-hfa.elo <- -400*log10(1 / (hfa.delta + 0.5) - 1)
+hfa.elo <-
+  elo.results %>%
+  filter(is_home == 1) %>%
+  group_by(season) %>%
+  summarize(hfa_delta = mean(result - expectation),
+            hfa_elo = -400*log10(1 / (hfa_delta + 0.5) - 1))
+hfa.elo %>%
+  filter(season != 2020) %>%
+  summarize(hfa_elo = mean(hfa_elo))
 
 elo.rmse <-
   elo.results %>%
   group_by(season) %>%
   summarize(rmse = mean(rmse))
-mean(elo.rmse$rmse)
+elo.rmse %>%
+  #filter(season >= 2019) %>%
+  summarize(rmse = mean(rmse))
 
 yoy.elo <-
   final.elo %>%
