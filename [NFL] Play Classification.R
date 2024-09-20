@@ -13,9 +13,9 @@ pbp <-
 
 plays <-
   pbp %>%
-  select(play_id, game_id, posteam, desc, yards_gained, play_type_pbp, play_type_nfl,
+  select(play_id, game_id, posteam, defteam, desc, yards_gained, play_type_pbp, play_type_nfl,
          qb_dropback, pass_attempt, sack, qb_scramble, rush_attempt, qb_spike, qb_kneel,
-         penalty, penalty_team, penalty_yards) %>%
+         penalty, penalty_team, penalty_yards, epa, success) %>%
   ## overwrite NA values
   mutate(yards_gained = ifelse(!is.na(yards_gained), yards_gained, 0),
          pass_attempt = ifelse(!is.na(pass_attempt), pass_attempt, 0),
@@ -60,8 +60,8 @@ plays <-
          sack = ifelse(qb_dropback == 1 & sack == 1, 1, 0),
          scramble = ifelse(qb_dropback == 1 & qb_scramble == 1, 1, 0),
          designed_run = ifelse(qb_dropback == 0 & rush_attempt == 1 & qb_kneel == 0, 1, 0),
-         spike = ifelse(qb_spike == 1, 1, 0),
-         kneel = ifelse(qb_kneel == 1, 1, 0),
+         spike = ifelse(qb_spike == 1 & play == 1, 1, 0),
+         kneel = ifelse(qb_kneel == 1 & play == 1, 1, 0),
          penalty_play = ifelse(penalty == 1 & play == 0, 1, 0),
          kickoff = ifelse(play_type_nfl == "KICK_OFF" & play == 1, 1, 0),
          punt = ifelse(play_type_nfl == "PUNT" & play == 1, 1, 0),
@@ -70,8 +70,38 @@ plays <-
          timeout = ifelse(play_type_nfl == "TIMEOUT", 1, 0)) %>%
   mutate(play_types = pass_attempt + sack + scramble + designed_run + spike + kneel + penalty_play +
            kickoff + punt + field_goal + extra_point + timeout) %>%
-  select(play_id, game_id, posteam, desc, yards_gained, play_type, unit, sub_unit, penalty_type, offensive_play,
+  select(play_id, game_id, posteam, defteam, desc, yards_gained, epa, success,
+         play_type, unit, sub_unit, penalty_type, offensive_play,
          pass_attempt, sack, scramble, designed_run, spike, kneel, penalty_play,
          kickoff, punt, field_goal, extra_point, timeout, play_types)
 
-View(plays %>% filter(play_types != 1))
+offense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  group_by(posteam) %>%
+  summarize(off_plays = n(),
+            off_epa = sum(epa),
+            off_successes = sum(success)) %>%
+  ungroup() %>%
+  mutate(off_epa_per_play = off_epa / off_plays,
+         off_success_rate = off_successes / off_plays) %>%
+  rename(team = posteam)
+
+defense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  group_by(defteam) %>%
+  summarize(def_plays = n(),
+            def_epa = sum(epa),
+            def_successes = sum(success)) %>%
+  ungroup() %>%
+  mutate(def_epa_per_play = def_epa / def_plays,
+         def_success_rate = def_successes / def_plays) %>%
+  rename(team = defteam)
+
+metrics <-
+  offense %>%
+  inner_join(defense, by = "team") %>%
+  select(team, off_epa_per_play, def_epa_per_play, off_success_rate, def_success_rate) %>%
+  mutate(epa_per_play_delta = off_epa_per_play - def_epa_per_play,
+         success_rate_delta = off_success_rate - def_success_rate)
