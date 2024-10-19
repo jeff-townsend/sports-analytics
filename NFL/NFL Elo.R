@@ -1,3 +1,46 @@
+library(tidyverse)
+library(ggthemes)
+library(nflreadr)
+
+# set up the data
+start <- 2014
+end <- 2024
+pbp <- load_pbp(seasons = c(start:end))
+
+scores <-
+  pbp %>%
+  distinct(game_id, season, week, start_time, home_team, away_team, home_score, away_score) %>%
+  mutate(start_time = gsub(",", "", start_time)) %>%
+  mutate(start_time = as.POSIXct(start_time,
+                                 format = "%m/%d/%y %H:%M:%S")) %>%
+  group_by(season) %>%
+  arrange(week, start_time) %>%
+  mutate(game_rank = 1:n()) %>%
+  ungroup()
+
+scores.long <-
+  rbind(
+    scores %>%
+      mutate(is_home = 1) %>%
+      rename(team = home_team,
+             opponent = away_team,
+             pf = home_score,
+             pa = away_score),
+    scores %>%
+      mutate(is_home = 0) %>%
+      rename(team = away_team,
+             opponent = home_team,
+             pf = away_score,
+             pa = home_score)) %>%
+  arrange(season, game_rank) %>%
+  mutate(pd = pf - pa,
+         result = ifelse(pf > pa, 1, ifelse(pf < pa, 0, 0.5)))
+
+teams <-
+  scores.long %>%
+  distinct(team, season)
+
+# initiate tables for loop
 
 team.elo <- data.frame(team = character(),
                        elo = double())
