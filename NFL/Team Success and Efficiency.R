@@ -2,96 +2,251 @@ library(tidyverse)
 library(nflreadr)
 library(ggthemes)
 
-# set up the data
-starting.season <- 2023
-ending.season <- 2023
-pbp.load <-
-  load_pbp(seasons = c(starting.season:ending.season)) %>%
-  filter(season_type == "REG",
-         play_type %in% c("run", "pass"))
+#### PBP Import Code #####
+
+pbp.import <-
+  load_pbp() %>%
+  filter(!is.na(play_type))
 
 pbp <-
-  pbp.load %>%
-  filter(two_point_attempt == 0) %>%
-  select(season, game_id, play_id, posteam, defteam, down, ydstogo, play_type, qb_dropback, yards_gained, epa, success) %>%
-  rename(epa_success = success) %>%
-  mutate(required_yards = ceiling(ifelse(down == 1, 0.4*ydstogo, ifelse(down == 2, 0.6*ydstogo, ydstogo))),
-         success = ifelse(yards_gained >= required_yards, 1, 0),
-         relative_yards = yards_gained - required_yards)
+  pbp.import %>%
+  rename(play_type_pbp = play_type) %>%
+  arrange(start_time, game_id, play_id) %>%
+  mutate(play_id = c(1:(nrow(pbp.import))))
 
-team.offense <-
+##### Play Classification Code #####
+
+plays <-
   pbp %>%
-  filter(season == 2023) %>%
-  group_by(posteam) %>%
-  summarize(plays = n(),
-            successes = sum(success),
-            success_rate = mean(success),
-            ypp = mean(yards_gained),
-            required_ypp = mean(required_yards),
-            surplus_ypp = mean(ifelse(success == 1, relative_yards, NA), na.rm = TRUE),
-            deficit_ypp = mean(ifelse(success == 0, relative_yards, NA), na.rm = TRUE),
-            volatility = sd(relative_yards)) %>%
+  select(play_id, game_id, week, posteam, defteam, down, ydstogo, yards_gained, play_type_pbp, play_type_nfl,
+         qb_dropback, pass_attempt, sack, qb_scramble, rush_attempt, qb_spike, qb_kneel,
+         penalty, penalty_team, penalty_yards, epa, success) %>%
+  ## overwrite NA values
+  mutate(yards_gained = ifelse(!is.na(yards_gained), yards_gained, 0),
+         pass_attempt = ifelse(!is.na(pass_attempt), pass_attempt, 0),
+         sack = ifelse(!is.na(sack), sack, 0),
+         rush_attempt = ifelse(!is.na(rush_attempt), rush_attempt, 0),
+         penalty = ifelse(!is.na(penalty), penalty, 1), # offsetting penalties
+         penalty_yards = ifelse(!is.na(penalty_yards), penalty_yards, 0)) %>%
+  mutate(play = ifelse(play_type_pbp == "no_play", 0, 1),
+         unit = ifelse(play_type_nfl %in% c("KICK_OFF", "PUNT", "FIELD_GOAL", "XP_KICK"), "Special Teams", "Offense"),
+         sub_unit = ifelse(unit == "Special Teams",
+                           ifelse(play_type_nfl == "KICK_OFF",
+                                  "Kickoff",
+                                  ifelse(play_type_nfl == "PUNT",
+                                         "Punt",
+                                         ifelse(play_type_nfl == "FIELD_GOAL",
+                                                "Field Goal",
+                                                "Extra Point"))),
+                           ifelse(play_type_nfl == "PAT2",
+                                  "Conversion",
+                                  "Offense")),
+         penalty_type = ifelse(penalty == 1,
+                               ifelse(is.na(penalty_team),
+                                      "Offsetting Penalties",
+                                      ifelse(penalty_team == posteam,
+                                             "Offensive Penalty",
+                                             "Defensive Penalty")),
+                               "No Penalty")) %>%
+  mutate(play_type = ifelse(qb_dropback == 1 & pass_attempt == 1 & sack == 0, "Pass Attempt", "Other"),
+         play_type = ifelse(qb_dropback == 1 & sack == 1, "Sack", play_type),
+         play_type = ifelse(qb_dropback == 1 & qb_scramble == 1, "Scramble", play_type),
+         play_type = ifelse(qb_dropback == 0 & rush_attempt == 1 & qb_kneel == 0, "Designed Run", play_type),
+         play_type = ifelse(qb_spike == 1, "Spike", play_type),
+         play_type = ifelse(qb_kneel == 1, "Kneel", play_type),
+         play_type = ifelse(penalty == 1 & play == 0, "Penalty Play", play_type),
+         play_type = ifelse(play_type_nfl == "KICK_OFF" & play == 1, "Kickoff", play_type),
+         play_type = ifelse(play_type_nfl == "PUNT" & play == 1, "Punt", play_type),
+         play_type = ifelse(play_type_nfl == "FIELD_GOAL" & play == 1, "Field Goal", play_type),
+         play_type = ifelse(play_type_nfl == "XP_KICK" & play == 1, "Extra Point", play_type),
+         play_type = ifelse(play_type_nfl == "TIMEOUT", "Timeout", play_type)) %>%
+  mutate(offensive_play = ifelse(play_type %in% c("Pass Attempt", "Designed Run", "Scramble", "Sack") & sub_unit == "Offense", 1, 0)) %>%
+  mutate(pass_attempt = ifelse(qb_dropback == 1 & pass_attempt == 1 & sack == 0, 1, 0),
+         sack = ifelse(qb_dropback == 1 & sack == 1, 1, 0),
+         scramble = ifelse(qb_dropback == 1 & qb_scramble == 1, 1, 0),
+         dropback = ifelse(pass_attempt + sack + scramble >= 1, 1, 0),
+         designed_run = ifelse(qb_dropback == 0 & rush_attempt == 1 & qb_kneel == 0, 1, 0),
+         spike = ifelse(qb_spike == 1 & play == 1, 1, 0),
+         kneel = ifelse(qb_kneel == 1 & play == 1, 1, 0),
+         penalty_play = ifelse(penalty == 1 & play == 0, 1, 0),
+         kickoff = ifelse(play_type_nfl == "KICK_OFF" & play == 1, 1, 0),
+         punt = ifelse(play_type_nfl == "PUNT" & play == 1, 1, 0),
+         field_goal = ifelse(play_type_nfl == "FIELD_GOAL" & play == 1, 1, 0),
+         extra_point = ifelse(play_type_nfl == "XP_KICK" & play == 1, 1, 0),
+         timeout = ifelse(play_type_nfl == "TIMEOUT", 1, 0)) %>%
+  mutate(play_types = pass_attempt + sack + scramble + designed_run + spike + kneel + penalty_play +
+           kickoff + punt + field_goal + extra_point + timeout) %>%
+  select(play_id, game_id, week, posteam, defteam, down, ydstogo, yards_gained, epa, success,
+         play_type, unit, sub_unit, penalty_type, offensive_play,
+         pass_attempt, sack, scramble, dropback, designed_run, spike, kneel, penalty_play,
+         kickoff, punt, field_goal, extra_point, timeout, play_types)
+
+##### Summarize Performance Data #####
+
+### Weekly Performance
+offense.games <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  mutate(play_call = ifelse(dropback == 1, "Dropback",
+                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
+  group_by(posteam, week, play_call) %>%
+  summarize(off_plays = n(),
+            off_epa = sum(epa),
+            off_successes = sum(success)) %>%
   ungroup() %>%
   rename(team = posteam)
 
-ggplot
-
-team.defense <-
-  nfl.pbp %>%
-  filter(season == 2023) %>%
-  group_by(defteam) %>%
-  summarize(plays = n(),
-            successes = sum(success),
-            success_rate = mean(success),
-            successful_epa = mean(ifelse(success == 1, epa, NA), na.rm = TRUE),
-            failed_epa = mean(ifelse(success == 0, epa, NA), na.rm = TRUE),
-            epa_per_play = mean(epa),
-            epa_volatility = sd(epa)) %>%
+defense.games <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  mutate(play_call = ifelse(dropback == 1, "Dropback",
+                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
+  group_by(defteam, week, play_call) %>%
+  summarize(def_plays = n(),
+            def_epa = sum(epa),
+            def_successes = sum(success)) %>%
   ungroup() %>%
   rename(team = defteam)
 
-team.margins <-
-  team.offense %>%
-  inner_join(team.defense, by = "team") %>%
-  select(team, success_rate.x, success_rate.y, epa_per_play.x, epa_per_play.y) %>%
-  rename(off_success_rate = success_rate.x,
-         def_success_rate = success_rate.y,
-         off_epa_per_play = epa_per_play.x,
-         def_epa_per_play = epa_per_play.y) %>%
-  mutate(success_rate_diff = off_success_rate - def_success_rate,
-         epa_per_play_diff = off_epa_per_play - def_epa_per_play)
+### Overall Performance
+offense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  mutate(play_call = ifelse(dropback == 1, "Dropback",
+                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
+  group_by(posteam, play_call) %>%
+  summarize(off_plays = n(),
+            off_epa = sum(epa),
+            off_successes = sum(success)) %>%
+  ungroup() %>%
+  rename(team = posteam)
 
-avg.offense <- mean(team.margins$off_success_rate)
-avg.defense <- mean(team.margins$def_success_rate)
-ggplot(team.margins, aes(x = def_success_rate, y = off_success_rate, label = team)) +
+defense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  mutate(play_call = ifelse(dropback == 1, "Dropback",
+                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
+  group_by(defteam, play_call) %>%
+  summarize(def_plays = n(),
+            def_epa = sum(epa),
+            def_successes = sum(success)) %>%
+  ungroup() %>%
+  rename(team = defteam)
+
+### Aggregate All Plays
+
+offense.all <-
+  offense %>%
+  group_by(team) %>%
+  summarize()
+
+### Combine Offensive and Defensive Performance
+weekly.metrics <-
+  offense.games %>%
+  inner_join(defense.games, by = c("team", "week")) %>%
+  mutate(week = paste("Week", week, sep = " ")) %>%
+  select(team, week, off_epa_per_play, def_epa_per_play, off_success_rate, def_success_rate) %>%
+  mutate(epa_per_play_delta = off_epa_per_play - def_epa_per_play,
+         success_rate_delta = off_success_rate - def_success_rate)
+
+season.metrics <-
+  offense %>%
+  inner_join(defense, by = "team") %>%
+  select(team, off_epa_per_play, def_epa_per_play, off_success_rate, def_success_rate) %>%
+  mutate(epa_per_play_delta = off_epa_per_play - def_epa_per_play,
+         success_rate_delta = off_success_rate - def_success_rate)
+
+### Visualize Overall Performance
+
+success.rate <- with(plays %>% filter(offensive_play == 1), mean(success))
+season.low.sr <- min(c(with(season.metrics, min(off_success_rate)), with(season.metrics, min(def_success_rate))))
+season.high.sr <- max(c(with(season.metrics, max(off_success_rate)), with(season.metrics, max(def_success_rate))))
+
+epa.per.play <- with(plays %>% filter(offensive_play == 1), mean(epa))
+season.low.epa <- min(c(with(season.metrics, min(off_epa_per_play)), with(season.metrics, min(def_epa_per_play))))
+season.high.epa <- max(c(with(season.metrics, max(off_epa_per_play)), with(season.metrics, max(def_epa_per_play))))
+
+# success rate chart
+ggplot(season.metrics, aes(x = off_success_rate, y = def_success_rate, label = team)) +
   geom_text() +
-  scale_x_reverse() +
-  geom_hline(yintercept = avg.defense, linetype = "dotted") +
-  geom_vline(xintercept = avg.offense, linetype = "dotted") +
+  scale_x_continuous(limits = c(0.3, 0.55)) +
+  scale_y_continuous(limits = c(0.3, 0.55)) +
+  geom_hline(yintercept = success.rate, linetype = "dotted") +
+  geom_vline(xintercept = success.rate, linetype = "dotted") +
+  geom_abline(linetype = "dotted") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text()) +
-  ggtitle("Team Success Rates") +
-  xlab("Defensive Success Rate") +
-  ylab("Offensive Success Rate")
-
-avg.offense.epa <- mean(team.margins$off_epa_per_play)
-avg.defense.epa <- mean(team.margins$def_epa_per_play)
-ggplot(team.margins, aes(x = def_epa_per_play, y = off_epa_per_play, label = team)) +
-  geom_text() +
-  scale_x_reverse() +
-  geom_hline(yintercept = avg.defense.epa, linetype = "dotted") +
-  geom_vline(xintercept = avg.offense.epa, linetype = "dotted") +
-  theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
-  ggtitle("Team EPA per Play") +
-  xlab("Defensive EPA per Play") +
-  ylab("Offensive EPA per Play")
-
-ggplot(team.margins, aes(x = off_success_rate, y = off_epa_per_play, label = team)) +
-  geom_text() +
-  geom_smooth(method = "lm", se = FALSE) +
-  theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
-  ggtitle("Team Offensive Stats (2022)") +
+  ggtitle("NFL Team Success Rate") +
   xlab("Offensive Success Rate") +
-  ylab("Offensive EPA per Play")
+  ylab("Defensive Success Rate") +
+  annotate("polygon", x = c(-Inf, Inf, Inf), y = c(-Inf, Inf, -Inf),
+           fill = "green",
+           alpha = 0.05) +
+  annotate("polygon", x = c(Inf, -Inf, -Inf), y = c(Inf, -Inf, Inf),
+           fill = "red",
+           alpha = 0.05) +
+  annotate("rect", xmin = -Inf, xmax = success.rate, ymin = success.rate, ymax = Inf,
+           fill = "red",
+           alpha = 0.25) +
+  annotate("rect", xmin = success.rate, xmax = Inf, ymin = -Inf, ymax = success.rate,
+           fill = "green",
+           alpha = 0.25) +
+  annotate("text", x = .305, y = .36, label = "Good Defense", hjust = 0, fontface = "bold.italic") +
+  annotate("text", x = .305, y = .49, label = "Bad Both Sides", hjust = 0, fontface = "bold.italic") +
+  annotate("text", x = .505, y = .36, label = "Good Both Sides", hjust = 0, fontface = "bold.italic") +
+  annotate("text", x = .505, y = .49, label = "Good Offense", hjust = 0, fontface = "bold.italic")
+
+# epa per play chart
+ggplot(season.metrics, aes(x = off_epa_per_play, y = def_epa_per_play, label = team)) +
+  geom_text() +
+  scale_x_continuous(limits = c(-0.25, 0.25)) +
+  scale_y_continuous(limits = c(-0.25, 0.25)) +
+  geom_hline(yintercept = epa.per.play, linetype = "dotted") +
+  geom_vline(xintercept = epa.per.play, linetype = "dotted") +
+  geom_abline(linetype = "dotted") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text()) +
+  ggtitle("NFL Team EPA per Play") +
+  xlab("Offensive EPA per Play") +
+  ylab("Defensive EPA per Play") +
+  annotate("polygon", x = c(-Inf, Inf, Inf), y = c(-Inf, Inf, -Inf),
+           fill = "green",
+           alpha = 0.05) +
+  annotate("polygon", x = c(Inf, -Inf, -Inf), y = c(Inf, -Inf, Inf),
+           fill = "red",
+           alpha = 0.05) +
+  annotate("rect", xmin = -Inf, xmax = epa.per.play, ymin = epa.per.play, ymax = Inf,
+           fill = "red",
+           alpha = 0.25) +
+  annotate("rect", xmin = epa.per.play, xmax = Inf, ymin = -Inf, ymax = epa.per.play,
+           fill = "green",
+           alpha = 0.25)
+  # annotate("text", x = -.295, y = .36, label = "Good Defense", hjust = 0, fontface = "bold.italic") +
+  # annotate("text", x = .305, y = .49, label = "Bad Both Sides", hjust = 0, fontface = "bold.italic") +
+  # annotate("text", x = .505, y = .36, label = "Good Both Sides", hjust = 0, fontface = "bold.italic") +
+  # annotate("text", x = .505, y = .49, label = "Good Offense", hjust = 0, fontface = "bold.italic")
+
+### Passing Performance
+pass.offense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  group_by(posteam) %>%
+  summarize(off_plays = n(),
+            off_epa = sum(epa),
+            off_successes = sum(success)) %>%
+  ungroup() %>%
+  mutate(off_epa_per_play = off_epa / off_plays,
+         off_success_rate = off_successes / off_plays) %>%
+  rename(team = posteam)
+
+pass.defense <-
+  plays %>%
+  filter(offensive_play == 1) %>%
+  group_by(defteam) %>%
+  summarize(def_plays = n(),
+            def_epa = sum(epa),
+            def_successes = sum(success)) %>%
+  ungroup() %>%
+  mutate(def_epa_per_play = def_epa / def_plays,
+         def_success_rate = def_successes / def_plays) %>%
+  rename(team = defteam)
