@@ -1,11 +1,13 @@
 library(tidyverse)
 library(ggthemes)
+#devtools::install_github("danmorse314/hockeyR")
 library(hockeyR)
 
-pbp <- load_pbp(2024)
+pbp <- hockeyR::load_pbp(2024)
 games <-
-  get_game_ids(season = 2024) %>%
-  filter(game_type == "REG")
+  pbp %>%
+  filter(season_type != "POST") %>%
+  distinct(game_id)
 
 rosters <- data.frame(game_id = integer(),
                       team_id = integer(),
@@ -16,7 +18,7 @@ rosters <- data.frame(game_id = integer(),
 
 g <- 1
 for(g in 1:(nrow(games))){
-
+  
   game.id <- as.numeric(games$game_id[g])
   game.roster <-
     cbind(game.id, get_game_rosters(game.id)) %>%
@@ -164,3 +166,5 @@ ggplot(shot.metrics %>% filter(gp >= 41), aes(x = sog_rate, y = sh_pct, colour =
         legend.title = element_blank()) +
   xlab("Shot Through Percentage") +
   ylab("Shooting Percentage")
+
+shifts <- hockeyR::load_pbp(2024, shift_events = TRUE)
