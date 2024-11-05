@@ -1,6 +1,7 @@
 library(tidyverse)
 library(nflreadr)
 library(ggthemes)
+library(googlesheets4)
 
 #### PBP Import Code #####
 
@@ -83,91 +84,61 @@ plays <-
 
 ##### Summarize Performance Data #####
 
-### Weekly Performance
-offense.games <-
-  plays %>%
-  filter(offensive_play == 1) %>%
-  mutate(play_call = ifelse(dropback == 1, "Dropback",
-                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
-  group_by(posteam, week, play_call) %>%
-  summarize(off_plays = n(),
-            off_epa = sum(epa),
-            off_successes = sum(success)) %>%
-  ungroup() %>%
-  rename(team = posteam)
-
-defense.games <-
-  plays %>%
-  filter(offensive_play == 1) %>%
-  mutate(play_call = ifelse(dropback == 1, "Dropback",
-                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
-  group_by(defteam, week, play_call) %>%
-  summarize(def_plays = n(),
-            def_epa = sum(epa),
-            def_successes = sum(success)) %>%
-  ungroup() %>%
-  rename(team = defteam)
-
-### Overall Performance
+### Offensive Performance
 offense <-
   plays %>%
+  mutate(required_yards = ifelse(down < 3, 0.5*ydstogo, ydstogo)) %>%
   filter(offensive_play == 1) %>%
-  mutate(play_call = ifelse(dropback == 1, "Dropback",
-                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
-  group_by(posteam, play_call) %>%
+  group_by(posteam) %>%
   summarize(off_plays = n(),
             off_epa = sum(epa),
-            off_successes = sum(success)) %>%
+            off_successes = sum(ifelse(yards_gained >= required_yards, 1, 0)),
+            off_yards = sum(yards_gained),
+            off_failed_yards = sum(ifelse(yards_gained < required_yards, yards_gained, 0)),
+            off_success_yards = sum(ifelse(yards_gained >= required_yards, required_yards, 0)),
+            off_explosive_yards = sum(ifelse(yards_gained >= required_yards, yards_gained - required_yards, 0))) %>%
   ungroup() %>%
   rename(team = posteam)
 
+### Defensive Performance
 defense <-
   plays %>%
+  mutate(required_yards = ifelse(down < 3, 0.5*ydstogo, ydstogo)) %>%
   filter(offensive_play == 1) %>%
-  mutate(play_call = ifelse(dropback == 1, "Dropback",
-                            ifelse(designed_run == 1, "Designed Run", "Other"))) %>%
-  group_by(defteam, play_call) %>%
+  group_by(defteam) %>%
   summarize(def_plays = n(),
             def_epa = sum(epa),
-            def_successes = sum(success)) %>%
+            def_successes = sum(ifelse(yards_gained >= required_yards, 1, 0)),
+            def_yards = sum(yards_gained),
+            def_failed_yards = sum(ifelse(yards_gained < required_yards, yards_gained, 0)),
+            def_success_yards = sum(ifelse(yards_gained >= required_yards, required_yards, 0)),
+            def_explosive_yards = sum(ifelse(yards_gained >= required_yards, yards_gained - required_yards, 0))) %>%
   ungroup() %>%
   rename(team = defteam)
 
-### Aggregate All Plays
-
-offense.all <-
-  offense %>%
-  group_by(team) %>%
-  summarize()
-
 ### Combine Offensive and Defensive Performance
-weekly.metrics <-
-  offense.games %>%
-  inner_join(defense.games, by = c("team", "week")) %>%
-  mutate(week = paste("Week", week, sep = " ")) %>%
-  select(team, week, off_epa_per_play, def_epa_per_play, off_success_rate, def_success_rate) %>%
-  mutate(epa_per_play_delta = off_epa_per_play - def_epa_per_play,
-         success_rate_delta = off_success_rate - def_success_rate)
 
-season.metrics <-
+combined <-
   offense %>%
   inner_join(defense, by = "team") %>%
-  select(team, off_epa_per_play, def_epa_per_play, off_success_rate, def_success_rate) %>%
-  mutate(epa_per_play_delta = off_epa_per_play - def_epa_per_play,
-         success_rate_delta = off_success_rate - def_success_rate)
+  mutate(off_success_rate = off_successes / off_plays,
+         def_success_rate = def_successes / def_plays,
+         off_epa_per_play = off_epa / off_plays,
+         def_epa_per_play = def_epa / def_plays)
 
-### Visualize Overall Performance
+##### Visualize Season Performance #####
 
+### Store Chart Variables
 success.rate <- with(plays %>% filter(offensive_play == 1), mean(success))
-season.low.sr <- min(c(with(season.metrics, min(off_success_rate)), with(season.metrics, min(def_success_rate))))
-season.high.sr <- max(c(with(season.metrics, max(off_success_rate)), with(season.metrics, max(def_success_rate))))
+season.low.sr <- min(c(with(combined, min(off_success_rate)), with(combined, min(def_success_rate))))
+season.high.sr <- max(c(with(combined, max(off_success_rate)), with(combined, max(def_success_rate))))
 
 epa.per.play <- with(plays %>% filter(offensive_play == 1), mean(epa))
-season.low.epa <- min(c(with(season.metrics, min(off_epa_per_play)), with(season.metrics, min(def_epa_per_play))))
-season.high.epa <- max(c(with(season.metrics, max(off_epa_per_play)), with(season.metrics, max(def_epa_per_play))))
+season.low.epa <- min(c(with(combined, min(off_epa_per_play)), with(combined, min(def_epa_per_play))))
+season.high.epa <- max(c(with(combined, max(off_epa_per_play)), with(combined, max(def_epa_per_play))))
 
-# success rate chart
-ggplot(season.metrics, aes(x = off_success_rate, y = def_success_rate, label = team)) +
+### Success Rate Chart
+ggplot(combined, aes(x = off_success_rate, y = def_success_rate, label = team)) +
   geom_text() +
   scale_x_continuous(limits = c(0.3, 0.55)) +
   scale_y_continuous(limits = c(0.3, 0.55)) +
@@ -196,8 +167,8 @@ ggplot(season.metrics, aes(x = off_success_rate, y = def_success_rate, label = t
   annotate("text", x = .505, y = .36, label = "Good Both Sides", hjust = 0, fontface = "bold.italic") +
   annotate("text", x = .505, y = .49, label = "Good Offense", hjust = 0, fontface = "bold.italic")
 
-# epa per play chart
-ggplot(season.metrics, aes(x = off_epa_per_play, y = def_epa_per_play, label = team)) +
+### EPA per Play Chart
+ggplot(combined, aes(x = off_epa_per_play, y = def_epa_per_play, label = team)) +
   geom_text() +
   scale_x_continuous(limits = c(-0.25, 0.25)) +
   scale_y_continuous(limits = c(-0.25, 0.25)) +
@@ -221,32 +192,22 @@ ggplot(season.metrics, aes(x = off_epa_per_play, y = def_epa_per_play, label = t
   annotate("rect", xmin = epa.per.play, xmax = Inf, ymin = -Inf, ymax = epa.per.play,
            fill = "green",
            alpha = 0.25)
-  # annotate("text", x = -.295, y = .36, label = "Good Defense", hjust = 0, fontface = "bold.italic") +
-  # annotate("text", x = .305, y = .49, label = "Bad Both Sides", hjust = 0, fontface = "bold.italic") +
-  # annotate("text", x = .505, y = .36, label = "Good Both Sides", hjust = 0, fontface = "bold.italic") +
-  # annotate("text", x = .505, y = .49, label = "Good Offense", hjust = 0, fontface = "bold.italic")
+# annotate("text", x = -.295, y = .36, label = "Good Defense", hjust = 0, fontface = "bold.italic") +
+# annotate("text", x = .305, y = .49, label = "Bad Both Sides", hjust = 0, fontface = "bold.italic") +
+# annotate("text", x = .505, y = .36, label = "Good Both Sides", hjust = 0, fontface = "bold.italic") +
+# annotate("text", x = .505, y = .49, label = "Good Offense", hjust = 0, fontface = "bold.italic")
 
-### Passing Performance
-pass.offense <-
-  plays %>%
-  filter(offensive_play == 1) %>%
-  group_by(posteam) %>%
-  summarize(off_plays = n(),
-            off_epa = sum(epa),
-            off_successes = sum(success)) %>%
-  ungroup() %>%
-  mutate(off_epa_per_play = off_epa / off_plays,
-         off_success_rate = off_successes / off_plays) %>%
-  rename(team = posteam)
+##### Export Performance Data #####
 
-pass.defense <-
-  plays %>%
+### Create and Export Dataset
+combined %>%
+  select(team, off_plays, off_successes, off_epa, def_plays, def_successes, def_epa) %>%
+  write_sheet(
+    ss = gs4_get("https://docs.google.com/spreadsheets/d/1eZazsYDxAZa8blTRhNgUqg2pTLjWh-PdpAdalKMQja0/edit?usp=sharing"),
+    sheet = "Summary Data")
+
+### Success Rate PD Translation
+plays %>%
   filter(offensive_play == 1) %>%
-  group_by(defteam) %>%
-  summarize(def_plays = n(),
-            def_epa = sum(epa),
-            def_successes = sum(success)) %>%
-  ungroup() %>%
-  mutate(def_epa_per_play = def_epa / def_plays,
-         def_success_rate = def_successes / def_plays) %>%
-  rename(team = defteam)
+  group_by(success) %>%
+  summarize(epa = mean(epa))
