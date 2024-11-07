@@ -87,32 +87,29 @@ plays <-
 ### Offensive Performance
 offense <-
   plays %>%
-  mutate(required_yards = ifelse(down < 3, 0.5*ydstogo, ydstogo)) %>%
   filter(offensive_play == 1) %>%
   group_by(posteam) %>%
   summarize(off_plays = n(),
             off_epa = sum(epa),
-            off_successes = sum(ifelse(yards_gained >= required_yards, 1, 0)),
-            off_yards = sum(yards_gained),
-            off_failed_yards = sum(ifelse(yards_gained < required_yards, yards_gained, 0)),
-            off_success_yards = sum(ifelse(yards_gained >= required_yards, required_yards, 0)),
-            off_explosive_yards = sum(ifelse(yards_gained >= required_yards, yards_gained - required_yards, 0))) %>%
+            off_successes = sum(success),
+            off_neg_epa = sum(ifelse(success == 0, -epa, 0)),
+            off_pos_epa = sum(ifelse(success == 1, epa, 0)),
+            off_epa_sd = sd(epa)) %>%
   ungroup() %>%
   rename(team = posteam)
 
 ### Defensive Performance
 defense <-
   plays %>%
-  mutate(required_yards = ifelse(down < 3, 0.5*ydstogo, ydstogo)) %>%
   filter(offensive_play == 1) %>%
   group_by(defteam) %>%
   summarize(def_plays = n(),
             def_epa = sum(epa),
-            def_successes = sum(ifelse(yards_gained >= required_yards, 1, 0)),
+            def_successes = sum(success),
             def_yards = sum(yards_gained),
-            def_failed_yards = sum(ifelse(yards_gained < required_yards, yards_gained, 0)),
-            def_success_yards = sum(ifelse(yards_gained >= required_yards, required_yards, 0)),
-            def_explosive_yards = sum(ifelse(yards_gained >= required_yards, yards_gained - required_yards, 0))) %>%
+            def_neg_epa = sum(ifelse(success == 0, -epa, 0)),
+            def_pos_epa = sum(ifelse(success == 1, epa, 0)),
+            def_epa_sd = sd(epa)) %>%
   ungroup() %>%
   rename(team = defteam)
 
@@ -199,9 +196,11 @@ ggplot(combined, aes(x = off_epa_per_play, y = def_epa_per_play, label = team)) 
 
 ##### Export Performance Data #####
 
-### Create and Export Dataset
+### Export Summary Data
 combined %>%
-  select(team, off_plays, off_successes, off_epa, def_plays, def_successes, def_epa) %>%
+  select(team,
+         off_plays, off_successes, off_epa, off_pos_epa, off_neg_epa, off_epa_sd,
+         def_plays, def_successes, def_epa, def_pos_epa, def_neg_epa, def_epa_sd) %>%
   write_sheet(
     ss = gs4_get("https://docs.google.com/spreadsheets/d/1eZazsYDxAZa8blTRhNgUqg2pTLjWh-PdpAdalKMQja0/edit?usp=sharing"),
     sheet = "Summary Data")
