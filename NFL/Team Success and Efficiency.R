@@ -7,7 +7,8 @@ library(googlesheets4)
 
 pbp.import <-
   load_pbp() %>%
-  filter(!is.na(play_type))
+  filter(!is.na(play_type),
+         season_type == "REG")
 
 pbp <-
   pbp.import %>%
