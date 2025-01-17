@@ -232,3 +232,25 @@ combined %>%
   write_sheet(
     ss = gs4_get("https://docs.google.com/spreadsheets/d/1eZazsYDxAZa8blTRhNgUqg2pTLjWh-PdpAdalKMQja0/edit?gid=0#gid=0"),
     sheet = "Pass and Run Data")
+
+### Special Teams EPA ###
+
+kicking <-
+  plays %>%
+  filter(play_type %in% c("Field Goal", "Extra Point")) %>%
+  group_by(posteam) %>%
+  summarize(plays = n(),
+            epa = sum(epa),
+            success = sum(ifelse(epa >= 0, 1, 0))) %>%
+  rename(team = posteam) %>%
+  ungroup() %>%
+  inner_join(plays %>%
+               filter(play_type %in% c("Field Goal", "Extra Point")) %>%
+               group_by(defteam) %>%
+               summarize(opp_plays = n(),
+                         opp_epa = sum(epa),
+                         opp_success = sum(ifelse(epa >= 0, 1, 0))) %>%
+               rename(team = defteam) %>%
+               ungroup(),
+             by = "team") %>%
+  mutate(net_epa = epa - opp_epa)
