@@ -3,37 +3,35 @@ library(tidyverse)
 library(ggthemes)
 
 ## pre-tourney data
-# wd <- "Data Analysis/NCB/Data/"
-wd <- "Downloads/"
 
-# kenpom.r64.d1.import <- read_csv("Data Analysis/NCB/Data/2024 R64 D1 KenPom Summary.csv")
+r64.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r64_d1_kenpom_summary.csv")
 # kenpom.r64.d2.import <- read_csv("Data Analysis/NCB/Data/2024 R64 D2 KenPom Summary.csv")
 # kenpom.r32.d1.import <- read_csv("Data Analysis/NCB/Data/2024 R32 D1 KenPom Summary.csv")
 # kenpom.r32.d2.import <- read_csv(paste0(wd, "2024 R32 D2 KenPom Summary.csv"))
-kenpom.s16.d1.import <- read_csv(paste0(wd, "2024 S16 D1 KenPom Summary.csv"))
+# kenpom.s16.d1.import <- read_csv(paste0(wd, "2024 S16 D1 KenPom Summary.csv"))
 # kenpom.s16.d2.import <- read_csv("Data Analysis/NCB/Data/2022 S16 D2 KenPom Summary.csv")
 # kenpom.e8.d1.import <- read_csv("Data Analysis/NCB/Data/2022 E8 D1 KenPom Summary.csv")
 
 # add pyth
-kenpom <-
-  kenpom.s16.d1.import %>%
+ratings <-
+  r64.d1 %>%
   mutate(raw.pyth = OE^11 / (OE^11 + DE^11), # using 11 because it seems to match what KP does
          adj.pyth = AdjOE^11 / (AdjOE^11 + AdjDE^11))
 
 ## load s-curve
-scurve.import <- read_csv(paste0(wd, "2024 Bracket.csv"))
+scurve.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_bracket.csv")
 
 # add kp rating to bracket
 scurve <-
   scurve.import %>%
-  inner_join(kenpom, by = c("team" = "TeamName")) %>%
-  select(s.curve, team, region, seed, adj.pyth) %>%
+  inner_join(ratings, by = c("team" = "TeamName")) %>%
+  select(s_curve, team, region, seed, adj.pyth) %>%
   rename(rating = adj.pyth)
 
 ## load matchup data
-rounds.import <- read_csv(paste0(wd, "Tourney Rounds.csv"))
-games.import <- read_csv(paste0(wd, "Tourney Games.csv"))
-matchups.import <- read_csv(paste0(wd, "Tourney Matchups.csv"))
+rounds.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/tourney_rounds.csv")
+games.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/tourney_games.csv")
+matchups.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/tourney_matchups.csv")
 
 ## who picked whom
 #pickrates.import <- read_csv("Data Analysis/NCB/Data/2022 Who Picked Whom.csv")
@@ -45,123 +43,28 @@ entry.import <- read_csv(paste0(wd, "2024 Entries.csv"))
 # add team info into matchups
 matchups.tmp <-
   matchups.import %>%
-  inner_join(rounds.import, by = c("round.id" = "id")) %>%
-  inner_join(scurve, by = c("s.curve.a" = "s.curve")) %>%
-  select(id, game.id, round.id, round.name, s.curve.a, team, rating, s.curve.b) %>%
-  rename(team.a = team,
-         rating.a = rating) %>%
-  inner_join(scurve, by = c("s.curve.b" = "s.curve")) %>%
-  select(id, game.id, round.id, round.name, s.curve.a, team.a, rating.a, s.curve.b, team, rating) %>%
-  rename(team.b = team,
-         rating.b = rating) %>%
-  mutate(win.prob.a = (rating.a - rating.a*rating.b)/(rating.a + rating.b - 2*rating.a*rating.b),
-         win.prob.b = 1 - win.prob.a)
+  inner_join(rounds.import, by = c("round_id" = "id")) %>%
+  inner_join(scurve, by = c("s_curve_a" = "s_curve")) %>%
+  select(id, game_id, round_id, round_name, s_curve_a, team, rating, s_curve_b) %>%
+  rename(team_a = team,
+         rating_a = rating) %>%
+  inner_join(scurve, by = c("s_curve_b" = "s_curve")) %>%
+  select(id, game_id, round_id, round_name, s_curve_a, team_a, rating_a, s_curve_b, team, rating) %>%
+  rename(team_b = team,
+         rating_b = rating) %>%
+  mutate(win_prob_a = (rating_a - rating_a*rating_b)/(rating_a + rating_b - 2*rating_a*rating_b),
+         win_prob_b = 1 - win_prob_a)
 
 ## check game.id
-matchups.tmp %>%
-  filter(team.a == "Yale",
-         team.b == "San Diego St.") %>%
-  select(id, game.id)
+# matchups.tmp %>%
+#   filter(team.a == "Yale",
+#          team.b == "San Diego St.") %>%
+#   select(id, game.id)
 
 matchups <-
   matchups.tmp %>%
-  mutate(win.prob.a = ifelse(id == 29, 0, win.prob.a), # michigan st. over mississippi st.
-         win.prob.b = ifelse(id == 29, 1, win.prob.b),
-         win.prob.a = ifelse(id == 24, 0, win.prob.a), # duquesne over byu
-         win.prob.b = ifelse(id == 24, 1, win.prob.b),
-         win.prob.a = ifelse(id == 11, 1, win.prob.a), # creighton over akron
-         win.prob.b = ifelse(id == 11, 0, win.prob.b),
-         win.prob.a = ifelse(id == 5, 1, win.prob.a), # arizona over long beach st.
-         win.prob.b = ifelse(id == 5, 0, win.prob.b),
-         win.prob.a = ifelse(id == 4, 1, win.prob.a), # north carolina over wagner
-         win.prob.b = ifelse(id == 4, 0, win.prob.b),
-         win.prob.a = ifelse(id == 9, 1, win.prob.a), # illinois over morehead st.
-         win.prob.b = ifelse(id == 9, 0, win.prob.b),
-         win.prob.a = ifelse(id == 22, 0, win.prob.a), # oregon over south carolina
-         win.prob.b = ifelse(id == 22, 1, win.prob.b),
-         win.prob.a = ifelse(id == 28, 1, win.prob.a), # dayton over nevada
-         win.prob.b = ifelse(id == 28, 0, win.prob.b),
-         win.prob.a = ifelse(id == 27, 1, win.prob.a), # texas over colorado st.
-         win.prob.b = ifelse(id == 27, 0, win.prob.b),
-         win.prob.a = ifelse(id == 10, 0, win.prob.a), # oakland over kentucky
-         win.prob.b = ifelse(id == 10, 1, win.prob.b),
-         win.prob.a = ifelse(id == 19, 1, win.prob.a), # gonzaga over mcneese st.
-         win.prob.b = ifelse(id == 19, 0, win.prob.b),
-         win.prob.a = ifelse(id == 8, 1, win.prob.a), # iowa st. over south dakota st.
-         win.prob.b = ifelse(id == 8, 0, win.prob.b),
-         win.prob.a = ifelse(id == 6, 1, win.prob.a), # tennessee over saint peter's
-         win.prob.b = ifelse(id == 6, 0, win.prob.b),
-         win.prob.a = ifelse(id == 23, 0, win.prob.a), # n.c. state over texas tech
-         win.prob.b = ifelse(id == 23, 1, win.prob.b),
-         win.prob.a = ifelse(id == 25, 1, win.prob.a), # washington st. over drake
-         win.prob.b = ifelse(id == 25, 0, win.prob.b),
-         win.prob.a = ifelse(id == 14, 1, win.prob.a), # kansas over samford
-         win.prob.b = ifelse(id == 14, 0, win.prob.b),
-         win.prob.a = ifelse(id == 32, 0, win.prob.a), # northwestern over florida atlantic
-         win.prob.b = ifelse(id == 32, 1, win.prob.b),
-         win.prob.a = ifelse(id == 12, 1, win.prob.a), # baylor over colgate
-         win.prob.b = ifelse(id == 12, 0, win.prob.b),
-         win.prob.a = ifelse(id == 17, 1, win.prob.a), # san diego st. over uab
-         win.prob.b = ifelse(id == 17, 0, win.prob.b),
-         win.prob.a = ifelse(id == 7, 1, win.prob.a), # marquette over western kentucky
-         win.prob.b = ifelse(id == 7, 0, win.prob.b),
-         win.prob.a = ifelse(id == 21, 1, win.prob.a), # clemson over new mexico
-         win.prob.b = ifelse(id == 21, 0, win.prob.b),
-         win.prob.a = ifelse(id == 1, 1, win.prob.a), # connecticut over stetson
-         win.prob.b = ifelse(id == 1, 0, win.prob.b),
-         win.prob.a = ifelse(id == 16, 0, win.prob.a), # yale over auburn
-         win.prob.b = ifelse(id == 16, 1, win.prob.b),
-         win.prob.a = ifelse(id == 26, 0, win.prob.a), # colorado over florida
-         win.prob.b = ifelse(id == 26, 1, win.prob.b),
-         win.prob.a = ifelse(id == 31, 0, win.prob.a), # texas a&m over nebraska
-         win.prob.b = ifelse(id == 31, 1, win.prob.b),
-         win.prob.a = ifelse(id == 15, 1, win.prob.a), # duke over vermont
-         win.prob.b = ifelse(id == 15, 0, win.prob.b),
-         win.prob.a = ifelse(id == 3, 1, win.prob.a), # purdue over grambling st.
-         win.prob.b = ifelse(id == 3, 0, win.prob.b),
-         win.prob.a = ifelse(id == 13, 1, win.prob.a), # alabama over charleston
-         win.prob.b = ifelse(id == 13, 0, win.prob.b),
-         win.prob.a = ifelse(id == 18, 0, win.prob.a), # james madison over wisconsin
-         win.prob.b = ifelse(id == 18, 1, win.prob.b),
-         win.prob.a = ifelse(id == 2, 1, win.prob.a), # houston over longwood
-         win.prob.b = ifelse(id == 2, 0, win.prob.b),
-         win.prob.a = ifelse(id == 30, 1, win.prob.a), # utah st. over tcu
-         win.prob.b = ifelse(id == 30, 0, win.prob.b),
-         win.prob.a = ifelse(id == 20, 0, win.prob.a), # grand canyon over saint mary's
-         win.prob.b = ifelse(id == 20, 1, win.prob.b),
-         ## round of 32
-         win.prob.a = ifelse(id == 37, 1, win.prob.a), # arizona over dayton
-         win.prob.b = ifelse(id == 37, 0, win.prob.b),
-         win.prob.a = ifelse(id == 46, 0, win.prob.a), # gonzaga over kansas
-         win.prob.b = ifelse(id == 46, 1, win.prob.b),
-         win.prob.a = ifelse(id == 52, 1, win.prob.a), # north carolina over michigan st.
-         win.prob.b = ifelse(id == 52, 0, win.prob.b),
-         win.prob.a = ifelse(id == 40, 1, win.prob.a), # iowa st. over washington st.
-         win.prob.b = ifelse(id == 40, 0, win.prob.b),
-         win.prob.a = ifelse(id == 90, 0, win.prob.a), # n.c. state over oakland
-         win.prob.b = ifelse(id == 90, 1, win.prob.b),
-         win.prob.a = ifelse(id == 38, 1, win.prob.a), # tennessee over texas
-         win.prob.b = ifelse(id == 38, 0, win.prob.b),
-         win.prob.a = ifelse(id == 57, 1, win.prob.a), # illinois over duquesne
-         win.prob.b = ifelse(id == 57, 0, win.prob.b),
-         win.prob.a = ifelse(id == 59, 1, win.prob.a), # creighton over oregon
-         win.prob.b = ifelse(id == 59, 0, win.prob.b),
-         win.prob.a = ifelse(id == 55, 1, win.prob.a), # marquette over colorado
-         win.prob.b = ifelse(id == 55, 0, win.prob.b),
-         win.prob.a = ifelse(id == 35, 1, win.prob.a), # purdue over utah st.
-         win.prob.b = ifelse(id == 35, 0, win.prob.b),
-         win.prob.a = ifelse(id == 63, 1, win.prob.a), # duke over james madison
-         win.prob.b = ifelse(id == 63, 0, win.prob.b),
-         win.prob.a = ifelse(id == 44, 0, win.prob.a), # clemson over baylor
-         win.prob.b = ifelse(id == 44, 1, win.prob.b),
-         win.prob.a = ifelse(id == 61, 1, win.prob.a), # alabama over grand canyon
-         win.prob.b = ifelse(id == 61, 0, win.prob.b),
-         win.prob.a = ifelse(id == 49, 1, win.prob.a), # connecticut over northwestern
-         win.prob.b = ifelse(id == 49, 0, win.prob.b),
-         win.prob.a = ifelse(id == 50, 1, win.prob.a), # houston over texas a&m
-         win.prob.b = ifelse(id == 50, 0, win.prob.b),
-         win.prob.a = ifelse(id == 80, 0, win.prob.a), # san diego st. over yale
-         win.prob.b = ifelse(id == 80, 1, win.prob.b))
+  # mutate(win.prob.a = ifelse(id == 29, 0, win.prob.a), # input game results
+  #        win.prob.b = ifelse(id == 29, 1, win.prob.b))
 
 
 set.seed(316)
