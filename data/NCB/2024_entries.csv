@@ -1,4 +1,4 @@
-id,game.id,round.id,entrant.id,entrant.name,selection
+id,game_id,round_id,entrant_id,entrant_name,selection
 1,1,1,1,Jeff Townsend,Connecticut
 2,2,1,1,Jeff Townsend,Houston
 3,3,1,1,Jeff Townsend,Purdue
