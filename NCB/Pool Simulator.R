@@ -317,27 +317,40 @@ colnames(bracket.probs) <- c("team", "R32", "S16", "E8", "F4", "NC", "Champ")
 
 ## bracket pool simulations
 
-# best.brackets <- data.frame(pool_id = integer(),
-#                             bracket_id = integer(),
-#                             win_rate = double(),
-#                             champion = character(),
-#                             finalist1 = character(),
-#                             finalist2 = character(),
-#                             south = character(),
-#                             east = character(),
-#                             midwest = character(),
-#                             west = character())
-pool.size <- 27
+# best.brackets16 <- data.frame(pool_id = integer(),
+#                               bracket_id = integer(),
+#                               win_rate = double(),
+#                               champion = character(),
+#                               finalist1 = character(),
+#                               finalist2 = character(),
+#                               south = character(),
+#                               east = character(),
+#                               midwest = character(),
+#                               west = character())
 
+
+## add a Houston bracket to represent Emma
+houston.brackets <-
+  final.brackets %>%
+  filter(game_id == 63,
+         winner == "Houston") %>%
+  select(bracket_id)
+
+#p <- 1
+pool.size <- 16 # adding Emma's bracket separately
 entrant.ids <- sample(c(1:simulations), pool.size)
 
-bracket.simulation <-
-  merge(games.import, bracket.ids) %>%
-  rename(game_id = id)
+# emma.bracket.id <- as.numeric(sample(houston.brackets$bracket_id, 1))
+# emma.bracket <-
+#   final.brackets %>%
+#   filter(bracket_id == emma.bracket.id) %>%
+#   mutate(is_emma = 1)
 
 entrants <-
-  final.brackets %>%
-  filter(bracket_id %in% entrant.ids)
+  rbind(final.brackets %>%
+          filter(bracket_id %in% entrant.ids) %>%
+          mutate(is_emma = 0))#,
+        #emma.bracket)
 
 standings <-
   games.simulation %>%
@@ -370,7 +383,14 @@ standings <-
 
 summary <-
   standings %>%
+  inner_join(entrants %>%
+               filter(game_id == 1) %>%
+               select(bracket_id, is_emma),
+             by = "bracket_id") %>%
   mutate(placement = rank(desc(wins), ties.method = "min")) %>%
+  group_by(is_emma) %>%
+  mutate(placement_other = rank(desc(wins), ties.method = "min")) %>%
+  ungroup() %>%
   inner_join(entrants %>%
                filter(game_id == 63) %>%
                select(bracket_id, winner) %>%
@@ -407,63 +427,63 @@ summary <-
                rename(west = winner),
              by = "bracket_id")
 
-best.bracket <-
+winning.bracket <-
   summary %>%
-  filter(placement == 1) %>%
+  filter(is_emma == 0,
+         placement_other == 1) %>%
   mutate(pool_id = p) %>%
   select(pool_id, bracket_id, win_rate, champion, finalist1, finalist2, south, east, midwest, west)
 
-best.brackets <- rbind(best.brackets, best.bracket)
+best.brackets16 <- rbind(best.brackets16, winning.bracket)
 p <- p + 1
 gc()
 
-best.brackets.expanded <-
-  best.brackets %>%
-  filter(champion == "Houston") %>%
-         #finalist1 == "Florida") %>%
+best.brackets16.expanded <-
+  best.brackets16 %>%
+  #filter(champion == "Duke") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 49) %>%
-              select(bracket_id, winner) %>%
-              rename(south_finalist1 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 49) %>%
+               select(bracket_id, winner) %>%
+               rename(south_finalist1 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 50) %>%
-              select(bracket_id, winner) %>%
-              rename(east_finalist1 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 50) %>%
+               select(bracket_id, winner) %>%
+               rename(east_finalist1 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 51) %>%
-              select(bracket_id, winner) %>%
-              rename(midwest_finalist1 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 51) %>%
+               select(bracket_id, winner) %>%
+               rename(midwest_finalist1 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 52) %>%
-              select(bracket_id, winner) %>%
-              rename(west_finalist1 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 52) %>%
+               select(bracket_id, winner) %>%
+               rename(west_finalist1 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 53) %>%
-              select(bracket_id, winner) %>%
-              rename(west_finalist2 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 53) %>%
+               select(bracket_id, winner) %>%
+               rename(west_finalist2 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 54) %>%
-              select(bracket_id, winner) %>%
-              rename(midwest_finalist2 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 54) %>%
+               select(bracket_id, winner) %>%
+               rename(midwest_finalist2 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 55) %>%
-              select(bracket_id, winner) %>%
-              rename(east_finalist2 = winner),
-            by = "bracket_id") %>%
+               filter(game_id == 55) %>%
+               select(bracket_id, winner) %>%
+               rename(east_finalist2 = winner),
+             by = "bracket_id") %>%
   inner_join(final.brackets %>%
-              filter(game_id == 56) %>%
-              select(bracket_id, winner) %>%
-              rename(south_finalist2 = winner),
-            by = "bracket_id")
+               filter(game_id == 56) %>%
+               select(bracket_id, winner) %>%
+               rename(south_finalist2 = winner),
+             by = "bracket_id")
 
-best.brackets.expanded %>%
-  group_by(champion, finalist1, finalist2, south, east, midwest, west) %>%
+best.brackets16.expanded %>%
+  group_by(champion, finalist1, finalist2) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
   arrange(desc(freq)) %>%
@@ -471,8 +491,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(champion) %>%
   summarize(freq = n(),
             win_rate = mean(win_rate)) %>%
@@ -482,7 +501,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(finalist1) %>%
   summarize(freq = n(),
             win_rate = mean(win_rate)) %>%
@@ -492,7 +511,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(finalist2) %>%
   summarize(freq = n(),
             win_rate = mean(win_rate)) %>%
@@ -502,7 +521,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(south) %>%
   summarize(freq = n(),
             win_rate = mean(win_rate)) %>%
@@ -512,7 +531,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(east) %>%
   summarize(freq = n(),
             win_rate = mean(win_rate)) %>%
@@ -522,7 +541,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(-freq_rank)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(midwest) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -531,7 +550,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(midwest, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(west) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -540,7 +559,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(west, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(south_finalist1) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -549,7 +568,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(south_finalist1, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(south_finalist2) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -558,7 +577,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(south_finalist2, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(east_finalist1) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -567,7 +586,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(east_finalist1, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(east_finalist2) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -576,7 +595,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(east_finalist2, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(midwest_finalist1) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -585,7 +604,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(midwest_finalist1, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(midwest_finalist2) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -594,7 +613,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(midwest_finalist2, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(west_finalist1) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -603,7 +622,7 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(west_finalist1, freq)
 
-best.brackets.expanded %>%
+best.brackets16.expanded %>%
   group_by(west_finalist2) %>%
   summarize(freq = n()) %>%
   ungroup() %>%
@@ -612,3 +631,18 @@ best.brackets.expanded %>%
   filter(freq_rank <= 2) %>%
   select(west_finalist2, freq)
 
+best.bracket <-
+  best.brackets %>%
+  filter(champion == "Duke") %>%
+  select(pool_id, bracket_id, win_rate) %>%
+  inner_join(final.brackets %>%
+               select(bracket_id, game_id, winner),
+             by = c("bracket_id")) %>%
+  group_by(game_id, winner) %>%
+  summarize(freq = n()) %>%
+  ungroup() %>%
+  group_by(game_id) %>%
+  mutate(freq_rank = rank(desc(freq), ties.method = "min")) %>%
+  ungroup() %>%
+  arrange(game_id, desc(freq)) %>%
+  filter(freq_rank <= 2)
