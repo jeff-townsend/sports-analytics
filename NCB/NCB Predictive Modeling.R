@@ -1,4 +1,5 @@
 library(tidyverse)
+library(ggthemes)
 #devtools::install_github("jflancer/bigballR")
 library(bigballR)
 
@@ -152,3 +153,31 @@ team.ratings <-
          rank = rank(desc(rating))) %>%
   select(rank, team, rating, pf, pa, pd, sos) %>%
   arrange(rank)
+
+## use team ratings to retrodict point differentials and game results
+
+retro.games <-
+  team.games %>%
+  mutate(is_win = ifelse(pd > 0, 1, 0)) %>%
+  inner_join(team.ratings %>% select(team, rating), by = "team") %>%
+  rename(team_rating = rating) %>%
+  inner_join(team.ratings %>% select(team, rating) %>% rename(opp = team), by = "opp") %>%
+  rename(opp_rating = rating) %>%
+  mutate(rating_diff = team_rating - opp_rating)
+
+ggplot(retro.games, aes(x = rating_diff, y = pd)) +
+  geom_point() +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text()) +
+  xlab("Rating Differential") +
+  ylab("Margin of Victory")
+
+pd.mod <- glm(pd ~ rating_diff + is_home + is_neutral, data = retro.games)
+summary(pd.mod)
+
+win.mod <- glm(is_win ~ rating_diff + is_home + is_neutral, data = retro.games, family = "binomial")
+summary(win.mod)
+
+retrodictions <-
+  retro.games %>%
+  mutate(win_prob = predict(win.mod, newdata = retro.games, type = "response"))
