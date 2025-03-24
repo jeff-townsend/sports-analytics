@@ -1,451 +1,1276 @@
-entrant,wins,win_rate,exp_points,stage_id,stage
-Emma Nimps,4394,0.17576,756,18,R64 D2 Update
-Gary Nimps,2406,0.09624,890,18,R64 D2 Update
-Erin Franks,1927,0.07708,904,18,R64 D2 Update
-Michael Trevarrow,1880,0.0752,838,18,R64 D2 Update
-Ashlee Crain,1758,0.07032,947,18,R64 D2 Update
-Bradley Trevarrow,1660,0.0664,844,18,R64 D2 Update
-Roger Nimps,1355,0.0542,836,18,R64 D2 Update
-Robert Tisdel,1272,0.05088,889,18,R64 D2 Update
-Norma Sanchez,1231,0.04924,609,18,R64 D2 Update
-Kathy Hubbard,1069,0.04276,932,18,R64 D2 Update
-Steve Hemmer,1023,0.04092,692,18,R64 D2 Update
-Jared Nimps,938,0.03752,771,18,R64 D2 Update
-Kassie Trevarrow,914,0.03656,800,18,R64 D2 Update
-Sean Fester,907,0.03628,891,18,R64 D2 Update
-Brian Trevarrow,772,0.03088,750,18,R64 D2 Update
-Jeff Townsend,736,0.02944,910,18,R64 D2 Update
-Katie Fester,674,0.02696,679,18,R64 D2 Update
-Jeff Hemmer,456,0.01824,626,18,R64 D2 Update
-Ronni Nimps,301,0.01204,564,18,R64 D2 Update
-Julie Trevarrow,268,0.01072,815,18,R64 D2 Update
-Allison Gilmore,220,0.0088,846,18,R64 D2 Update
-Chad Anderson,173,0.00692,510,18,R64 D2 Update
-Tom Nimps,130,0.0052,617,18,R64 D2 Update
-Martez Crain,127,0.00508,668,18,R64 D2 Update
-Julia Hemmer,119,0.00476,501,18,R64 D2 Update
-Emma Nimps,4216,0.16864,760,17,G16-Texas Tech
-Gary Nimps,2580,0.1032,906,17,G16-Texas Tech
-Michael Trevarrow,2080,0.0832,858,17,G16-Texas Tech
-Erin Franks,1998,0.07992,919,17,G16-Texas Tech
-Ashlee Crain,1755,0.0702,961,17,G16-Texas Tech
-Bradley Trevarrow,1664,0.06656,855,17,G16-Texas Tech
-Roger Nimps,1248,0.04992,840,17,G16-Texas Tech
-Robert Tisdel,1157,0.04628,899,17,G16-Texas Tech
-Kathy Hubbard,1067,0.04268,944,17,G16-Texas Tech
-Jared Nimps,1030,0.0412,789,17,G16-Texas Tech
-Kassie Trevarrow,1016,0.04064,818,17,G16-Texas Tech
-Norma Sanchez,997,0.03988,600,17,G16-Texas Tech
-Steve Hemmer,984,0.03936,701,17,G16-Texas Tech
-Sean Fester,937,0.03748,905,17,G16-Texas Tech
-Brian Trevarrow,865,0.0346,770,17,G16-Texas Tech
-Jeff Townsend,787,0.03148,925,17,G16-Texas Tech
-Katie Fester,622,0.02488,686,17,G16-Texas Tech
-Jeff Hemmer,443,0.01772,629,17,G16-Texas Tech
-Julie Trevarrow,267,0.01068,828,17,G16-Texas Tech
-Ronni Nimps,267,0.01068,559,17,G16-Texas Tech
-Allison Gilmore,221,0.00884,861,17,G16-Texas Tech
-Chad Anderson,163,0.00652,519,17,G16-Texas Tech
-Tom Nimps,139,0.00556,632,17,G16-Texas Tech
-Martez Crain,116,0.00464,678,17,G16-Texas Tech
-Julia Hemmer,101,0.00404,502,17,G16-Texas Tech
-Emma Nimps,4167,0.16668,753,16,G15-Michigan
-Gary Nimps,2557,0.10228,905,16,G15-Michigan
-Michael Trevarrow,2053,0.08212,854,16,G15-Michigan
-Erin Franks,1859,0.07436,914,16,G15-Michigan
-Ashlee Crain,1820,0.0728,960,16,G15-Michigan
-Bradley Trevarrow,1722,0.06888,856,16,G15-Michigan
-Roger Nimps,1252,0.05008,839,16,G15-Michigan
-Robert Tisdel,1201,0.04804,898,16,G15-Michigan
-Kathy Hubbard,1091,0.04364,942,16,G15-Michigan
-Jared Nimps,1055,0.0422,788,16,G15-Michigan
-Norma Sanchez,1032,0.04128,600,16,G15-Michigan
-Steve Hemmer,1027,0.04108,702,16,G15-Michigan
-Kassie Trevarrow,1006,0.04024,814,16,G15-Michigan
-Sean Fester,955,0.0382,904,16,G15-Michigan
-Brian Trevarrow,811,0.03244,765,16,G15-Michigan
-Jeff Townsend,743,0.02972,921,16,G15-Michigan
-Katie Fester,626,0.02504,686,16,G15-Michigan
-Jeff Hemmer,441,0.01764,622,16,G15-Michigan
-Ronni Nimps,275,0.011,559,16,G15-Michigan
-Julie Trevarrow,273,0.01092,826,16,G15-Michigan
-Allison Gilmore,210,0.0084,858,16,G15-Michigan
-Chad Anderson,169,0.00676,517,16,G15-Michigan
-Tom Nimps,149,0.00596,631,16,G15-Michigan
-Martez Crain,116,0.00464,678,16,G15-Michigan
-Julia Hemmer,96,0.00384,498,16,G15-Michigan
-Emma Nimps,4303,0.17212,759,15,G14-St. John's
-Gary Nimps,2570,0.1028,898,15,G14-St. John's
-Michael Trevarrow,2000,0.08,849,15,G14-St. John's
-Ashlee Crain,1787,0.07148,958,15,G14-St. John's
-Erin Franks,1741,0.06964,907,15,G14-St. John's
-Bradley Trevarrow,1564,0.06256,846,15,G14-St. John's
-Roger Nimps,1227,0.04908,831,15,G14-St. John's
-Sean Fester,1154,0.04616,909,15,G14-St. John's
-Robert Tisdel,1121,0.04484,891,15,G14-St. John's
-Steve Hemmer,1120,0.0448,709,15,G14-St. John's
-Norma Sanchez,1051,0.04204,606,15,G14-St. John's
-Jared Nimps,1016,0.04064,782,15,G14-St. John's
-Kassie Trevarrow,1002,0.04008,808,15,G14-St. John's
-Jeff Townsend,916,0.03664,926,15,G14-St. John's
-Kathy Hubbard,864,0.03456,935,15,G14-St. John's
-Brian Trevarrow,831,0.03324,763,15,G14-St. John's
-Katie Fester,618,0.02472,679,15,G14-St. John's
-Jeff Hemmer,376,0.01504,620,15,G14-St. John's
-Ronni Nimps,282,0.01128,564,15,G14-St. John's
-Julie Trevarrow,253,0.01012,820,15,G14-St. John's
-Allison Gilmore,205,0.0082,856,15,G14-St. John's
-Tom Nimps,183,0.00732,639,15,G14-St. John's
-Chad Anderson,160,0.0064,509,15,G14-St. John's
-Martez Crain,159,0.00636,685,15,G14-St. John's
-Julia Hemmer,105,0.0042,505,15,G14-St. John's
-Emma Nimps,4285,0.1714,758,14,G13-UCLA
-Gary Nimps,2569,0.10276,896,14,G13-UCLA
-Michael Trevarrow,2014,0.08056,848,14,G13-UCLA
-Ashlee Crain,1798,0.07192,956,14,G13-UCLA
-Erin Franks,1784,0.07136,907,14,G13-UCLA
-Bradley Trevarrow,1566,0.06264,845,14,G13-UCLA
-Roger Nimps,1225,0.049,829,14,G13-UCLA
-Sean Fester,1146,0.04584,908,14,G13-UCLA
-Steve Hemmer,1094,0.04376,706,14,G13-UCLA
-Robert Tisdel,1049,0.04196,888,14,G13-UCLA
-Jared Nimps,1022,0.04088,782,14,G13-UCLA
-Kassie Trevarrow,1007,0.04028,807,14,G13-UCLA
-Norma Sanchez,997,0.03988,602,14,G13-UCLA
-Jeff Townsend,942,0.03768,926,14,G13-UCLA
-Kathy Hubbard,853,0.03412,933,14,G13-UCLA
-Brian Trevarrow,846,0.03384,764,14,G13-UCLA
-Katie Fester,630,0.0252,679,14,G13-UCLA
-Jeff Hemmer,426,0.01704,622,14,G13-UCLA
-Ronni Nimps,276,0.01104,560,14,G13-UCLA
-Julie Trevarrow,263,0.01052,819,14,G13-UCLA
-Allison Gilmore,207,0.00828,855,14,G13-UCLA
-Tom Nimps,180,0.0072,639,14,G13-UCLA
-Martez Crain,170,0.0068,686,14,G13-UCLA
-Chad Anderson,165,0.0066,510,14,G13-UCLA
-Julia Hemmer,109,0.00436,506,14,G13-UCLA
-Emma Nimps,4304,0.17216,763,13,G12-Drake
-Gary Nimps,2572,0.10288,896,13,G12-Drake
-Michael Trevarrow,1977,0.07908,849,13,G12-Drake
-Erin Franks,1730,0.0692,905,13,G12-Drake
-Ashlee Crain,1667,0.06668,954,13,G12-Drake
-Bradley Trevarrow,1562,0.06248,844,13,G12-Drake
-Sean Fester,1277,0.05108,913,13,G12-Drake
-Roger Nimps,1207,0.04828,828,13,G12-Drake
-Robert Tisdel,1104,0.04416,893,13,G12-Drake
-Steve Hemmer,1099,0.04396,710,13,G12-Drake
-Kassie Trevarrow,1057,0.04228,811,13,G12-Drake
-Jared Nimps,1055,0.0422,785,13,G12-Drake
-Norma Sanchez,979,0.03916,597,13,G12-Drake
-Jeff Townsend,877,0.03508,924,13,G12-Drake
-Brian Trevarrow,871,0.03484,766,13,G12-Drake
-Kathy Hubbard,808,0.03232,932,13,G12-Drake
-Katie Fester,583,0.02332,673,13,G12-Drake
-Jeff Hemmer,430,0.0172,626,13,G12-Drake
-Ronni Nimps,269,0.01076,558,13,G12-Drake
-Allison Gilmore,257,0.01028,859,13,G12-Drake
-Julie Trevarrow,247,0.00988,817,13,G12-Drake
-Tom Nimps,212,0.00848,647,13,G12-Drake
-Chad Anderson,185,0.0074,518,13,G12-Drake
-Martez Crain,180,0.0072,689,13,G12-Drake
-Julia Hemmer,105,0.0042,502,13,G12-Drake
-Emma Nimps,4260,0.1704,761,12,G11-Texas A&M
-Gary Nimps,2416,0.09664,886,12,G11-Texas A&M
-Michael Trevarrow,2117,0.08468,851,12,G11-Texas A&M
-Ashlee Crain,2054,0.08216,958,12,G11-Texas A&M
-Erin Franks,1628,0.06512,905,12,G11-Texas A&M
-Bradley Trevarrow,1449,0.05796,833,12,G11-Texas A&M
-Sean Fester,1386,0.05544,918,12,G11-Texas A&M
-Roger Nimps,1173,0.04692,818,12,G11-Texas A&M
-Jared Nimps,1167,0.04668,798,12,G11-Texas A&M
-Steve Hemmer,1002,0.04008,697,12,G11-Texas A&M
-Kassie Trevarrow,925,0.037,799,12,G11-Texas A&M
-Norma Sanchez,907,0.03628,584,12,G11-Texas A&M
-Kathy Hubbard,896,0.03584,936,12,G11-Texas A&M
-Robert Tisdel,875,0.035,882,12,G11-Texas A&M
-Jeff Townsend,838,0.03352,926,12,G11-Texas A&M
-Brian Trevarrow,754,0.03016,767,12,G11-Texas A&M
-Katie Fester,717,0.02868,686,12,G11-Texas A&M
-Jeff Hemmer,423,0.01692,625,12,G11-Texas A&M
-Martez Crain,341,0.01364,709,12,G11-Texas A&M
-Ronni Nimps,290,0.0116,560,12,G11-Texas A&M
-Julie Trevarrow,281,0.01124,822,12,G11-Texas A&M
-Tom Nimps,260,0.0104,661,12,G11-Texas A&M
-Chad Anderson,189,0.00756,523,12,G11-Texas A&M
-Allison Gilmore,147,0.00588,848,12,G11-Texas A&M
-Julia Hemmer,115,0.0046,504,12,G11-Texas A&M
-Emma Nimps,4204,0.16816,754,11,G10-Arkansas
-Gary Nimps,2398,0.09592,886,11,G10-Arkansas
-Michael Trevarrow,2169,0.08676,853,11,G10-Arkansas
-Ashlee Crain,1964,0.07856,956,11,G10-Arkansas
-Erin Franks,1669,0.06676,906,11,G10-Arkansas
-Bradley Trevarrow,1446,0.05784,832,11,G10-Arkansas
-Sean Fester,1338,0.05352,914,11,G10-Arkansas
-Roger Nimps,1189,0.04756,817,11,G10-Arkansas
-Jared Nimps,1178,0.04712,799,11,G10-Arkansas
-Steve Hemmer,1006,0.04024,696,11,G10-Arkansas
-Robert Tisdel,972,0.03888,886,11,G10-Arkansas
-Kassie Trevarrow,947,0.03788,801,11,G10-Arkansas
-Kathy Hubbard,943,0.03772,935,11,G10-Arkansas
-Norma Sanchez,883,0.03532,577,11,G10-Arkansas
-Jeff Townsend,795,0.0318,923,11,G10-Arkansas
-Brian Trevarrow,719,0.02876,764,11,G10-Arkansas
-Katie Fester,715,0.0286,686,11,G10-Arkansas
-Jeff Hemmer,416,0.01664,617,11,G10-Arkansas
-Martez Crain,357,0.01428,712,11,G10-Arkansas
-Julie Trevarrow,292,0.01168,822,11,G10-Arkansas
-Ronni Nimps,280,0.0112,555,11,G10-Arkansas
-Tom Nimps,261,0.01044,661,11,G10-Arkansas
-Chad Anderson,199,0.00796,526,11,G10-Arkansas
-Allison Gilmore,142,0.00568,845,11,G10-Arkansas
-Julia Hemmer,121,0.00484,507,11,G10-Arkansas
-Emma Nimps,4353,0.17412,757,10,G9-Tennessee
-Gary Nimps,2538,0.10152,889,10,G9-Tennessee
-Michael Trevarrow,2200,0.088,858,10,G9-Tennessee
-Ashlee Crain,2051,0.08204,959,10,G9-Tennessee
-Erin Franks,1420,0.0568,897,10,G9-Tennessee
-Sean Fester,1368,0.05472,917,10,G9-Tennessee
-Jared Nimps,1269,0.05076,816,10,G9-Tennessee
-Bradley Trevarrow,1202,0.04808,822,10,G9-Tennessee
-Roger Nimps,1163,0.04652,807,10,G9-Tennessee
-Kassie Trevarrow,955,0.0382,805,10,G9-Tennessee
-Kathy Hubbard,939,0.03756,938,10,G9-Tennessee
-Robert Tisdel,903,0.03612,888,10,G9-Tennessee
-Katie Fester,884,0.03536,703,10,G9-Tennessee
-Steve Hemmer,867,0.03468,685,10,G9-Tennessee
-Jeff Townsend,846,0.03384,928,10,G9-Tennessee
-Norma Sanchez,799,0.03196,577,10,G9-Tennessee
-Brian Trevarrow,705,0.0282,776,10,G9-Tennessee
-Julie Trevarrow,492,0.01968,839,10,G9-Tennessee
-Tom Nimps,372,0.01488,682,10,G9-Tennessee
-Martez Crain,281,0.01124,701,10,G9-Tennessee
-Jeff Hemmer,281,0.01124,606,10,G9-Tennessee
-Ronni Nimps,278,0.01112,555,10,G9-Tennessee
-Chad Anderson,224,0.00896,543,10,G9-Tennessee
-Allison Gilmore,154,0.00616,850,10,G9-Tennessee
-Julia Hemmer,119,0.00476,513,10,G9-Tennessee
-Emma Nimps,4386,0.17544,756,9,G8-Gonzaga
-Gary Nimps,2517,0.10068,885,9,G8-Gonzaga
-Michael Trevarrow,2168,0.08672,853,9,G8-Gonzaga
-Ashlee Crain,2067,0.08268,957,9,G8-Gonzaga
-Erin Franks,1427,0.05708,895,9,G8-Gonzaga
-Sean Fester,1336,0.05344,914,9,G8-Gonzaga
-Jared Nimps,1203,0.04812,810,9,G8-Gonzaga
-Bradley Trevarrow,1186,0.04744,818,9,G8-Gonzaga
-Roger Nimps,1174,0.04696,805,9,G8-Gonzaga
-Kassie Trevarrow,974,0.03896,805,9,G8-Gonzaga
-Kathy Hubbard,959,0.03836,937,9,G8-Gonzaga
-Katie Fester,913,0.03652,703,9,G8-Gonzaga
-Robert Tisdel,911,0.03644,886,9,G8-Gonzaga
-Steve Hemmer,890,0.0356,684,9,G8-Gonzaga
-Jeff Townsend,860,0.0344,926,9,G8-Gonzaga
-Norma Sanchez,809,0.03236,577,9,G8-Gonzaga
-Brian Trevarrow,666,0.02664,769,9,G8-Gonzaga
-Julie Trevarrow,509,0.02036,839,9,G8-Gonzaga
-Tom Nimps,367,0.01468,676,9,G8-Gonzaga
-Martez Crain,295,0.0118,701,9,G8-Gonzaga
-Jeff Hemmer,282,0.01128,604,9,G8-Gonzaga
-Ronni Nimps,282,0.01128,554,9,G8-Gonzaga
-Chad Anderson,219,0.00876,537,9,G8-Gonzaga
-Allison Gilmore,152,0.00608,848,9,G8-Gonzaga
-Julia Hemmer,124,0.00496,513,9,G8-Gonzaga
-Emma Nimps,4583,0.18332,761,8,G7-BYU
-Gary Nimps,2514,0.10056,883,8,G7-BYU
-Michael Trevarrow,2204,0.08816,857,8,G7-BYU
-Ashlee Crain,2075,0.083,957,8,G7-BYU
-Erin Franks,1413,0.05652,896,8,G7-BYU
-Sean Fester,1303,0.05212,912,8,G7-BYU
-Jared Nimps,1186,0.04744,808,8,G7-BYU
-Bradley Trevarrow,1182,0.04728,816,8,G7-BYU
-Roger Nimps,1161,0.04644,805,8,G7-BYU
-Kassie Trevarrow,983,0.03932,810,8,G7-BYU
-Katie Fester,983,0.03932,710,8,G7-BYU
-Kathy Hubbard,968,0.03872,937,8,G7-BYU
-Robert Tisdel,908,0.03632,886,8,G7-BYU
-Jeff Townsend,861,0.03444,926,8,G7-BYU
-Steve Hemmer,856,0.03424,683,8,G7-BYU
-Norma Sanchez,761,0.03044,567,8,G7-BYU
-Brian Trevarrow,662,0.02648,767,8,G7-BYU
-Julie Trevarrow,498,0.01992,837,8,G7-BYU
-Tom Nimps,361,0.01444,674,8,G7-BYU
-Jeff Hemmer,292,0.01168,610,8,G7-BYU
-Ronni Nimps,278,0.01112,552,8,G7-BYU
-Martez Crain,200,0.008,691,8,G7-BYU
-Chad Anderson,184,0.00736,529,8,G7-BYU
-Allison Gilmore,146,0.00584,845,8,G7-BYU
-Julia Hemmer,110,0.0044,506,8,G7-BYU
-Emma Nimps,4453,0.17812,757,7,G6-McNeese
-Gary Nimps,2196,0.08784,875,7,G6-McNeese
-Michael Trevarrow,2071,0.08284,853,7,G6-McNeese
-Ashlee Crain,2000,0.08,953,7,G6-McNeese
-Sean Fester,1462,0.05848,917,7,G6-McNeese
-Bradley Trevarrow,1409,0.05636,822,7,G6-McNeese
-Erin Franks,1284,0.05136,887,7,G6-McNeese
-Jared Nimps,1262,0.05048,813,7,G6-McNeese
-Roger Nimps,1135,0.0454,797,7,G6-McNeese
-Kassie Trevarrow,1095,0.0438,815,7,G6-McNeese
-Katie Fester,1081,0.04324,716,7,G6-McNeese
-Jeff Townsend,1073,0.04292,931,7,G6-McNeese
-Steve Hemmer,926,0.03704,688,7,G6-McNeese
-Kathy Hubbard,863,0.03452,932,7,G6-McNeese
-Robert Tisdel,825,0.033,878,7,G6-McNeese
-Norma Sanchez,741,0.02964,559,7,G6-McNeese
-Brian Trevarrow,702,0.02808,772,7,G6-McNeese
-Julie Trevarrow,477,0.01908,833,7,G6-McNeese
-Jeff Hemmer,413,0.01652,618,7,G6-McNeese
-Ronni Nimps,301,0.01204,557,7,G6-McNeese
-Tom Nimps,298,0.01192,665,7,G6-McNeese
-Allison Gilmore,220,0.0088,850,7,G6-McNeese
-Martez Crain,191,0.00764,687,7,G6-McNeese
-Chad Anderson,160,0.0064,521,7,G6-McNeese
-Julia Hemmer,103,0.00412,502,7,G6-McNeese
-Emma Nimps,4116,0.16464,754,6,G5-Auburn
-Gary Nimps,2221,0.08884,890,6,G5-Auburn
-Michael Trevarrow,1995,0.0798,856,6,G5-Auburn
-Ashlee Crain,1552,0.06208,955,6,G5-Auburn
-Sean Fester,1481,0.05924,932,6,G5-Auburn
-Bradley Trevarrow,1437,0.05748,836,6,G5-Auburn
-Erin Franks,1279,0.05116,901,6,G5-Auburn
-Kassie Trevarrow,1276,0.05104,829,6,G5-Auburn
-Jared Nimps,1241,0.04964,816,6,G5-Auburn
-Roger Nimps,1155,0.0462,810,6,G5-Auburn
-Jeff Townsend,1100,0.044,945,6,G5-Auburn
-Katie Fester,1098,0.04392,729,6,G5-Auburn
-Kathy Hubbard,913,0.03652,946,6,G5-Auburn
-Robert Tisdel,896,0.03584,892,6,G5-Auburn
-Steve Hemmer,777,0.03108,676,6,G5-Auburn
-Norma Sanchez,760,0.0304,574,6,G5-Auburn
-Brian Trevarrow,688,0.02752,775,6,G5-Auburn
-Allison Gilmore,686,0.02744,874,6,G5-Auburn
-Jeff Hemmer,520,0.0208,627,6,G5-Auburn
-Julie Trevarrow,493,0.01972,848,6,G5-Auburn
-Tom Nimps,356,0.01424,680,6,G5-Auburn
-Ronni Nimps,266,0.01064,557,6,G5-Auburn
-Martez Crain,182,0.00728,702,6,G5-Auburn
-Chad Anderson,125,0.005,509,6,G5-Auburn
-Julia Hemmer,108,0.00432,508,6,G5-Auburn
-Emma Nimps,4125,0.165,754,5,G4-Houston
-Gary Nimps,2209,0.08836,889,5,G4-Houston
-Michael Trevarrow,1976,0.07904,854,5,G4-Houston
-Ashlee Crain,1547,0.06188,954,5,G4-Houston
-Sean Fester,1486,0.05944,931,5,G4-Houston
-Bradley Trevarrow,1453,0.05812,836,5,G4-Houston
-Erin Franks,1278,0.05112,900,5,G4-Houston
-Kassie Trevarrow,1270,0.0508,828,5,G4-Houston
-Jared Nimps,1241,0.04964,815,5,G4-Houston
-Roger Nimps,1161,0.04644,810,5,G4-Houston
-Jeff Townsend,1101,0.04404,944,5,G4-Houston
-Katie Fester,1098,0.04392,728,5,G4-Houston
-Kathy Hubbard,913,0.03652,945,5,G4-Houston
-Robert Tisdel,894,0.03576,890,5,G4-Houston
-Steve Hemmer,774,0.03096,674,5,G4-Houston
-Norma Sanchez,764,0.03056,574,5,G4-Houston
-Brian Trevarrow,688,0.02752,774,5,G4-Houston
-Allison Gilmore,685,0.0274,873,5,G4-Houston
-Jeff Hemmer,523,0.02092,627,5,G4-Houston
-Julie Trevarrow,491,0.01964,847,5,G4-Houston
-Tom Nimps,356,0.01424,679,5,G4-Houston
-Ronni Nimps,267,0.01068,557,5,G4-Houston
-Martez Crain,181,0.00724,701,5,G4-Houston
-Chad Anderson,126,0.00504,509,5,G4-Houston
-Julia Hemmer,111,0.00444,509,5,G4-Houston
-Emma Nimps,4079,0.16316,751,4,G3-Wisconsin
-Gary Nimps,2212,0.08848,889,4,G3-Wisconsin
-Michael Trevarrow,1977,0.07908,854,4,G3-Wisconsin
-Ashlee Crain,1540,0.0616,953,4,G3-Wisconsin
-Sean Fester,1497,0.05988,931,4,G3-Wisconsin
-Bradley Trevarrow,1454,0.05816,836,4,G3-Wisconsin
-Erin Franks,1282,0.05128,899,4,G3-Wisconsin
-Kassie Trevarrow,1272,0.05088,827,4,G3-Wisconsin
-Jared Nimps,1251,0.05004,814,4,G3-Wisconsin
-Roger Nimps,1160,0.0464,809,4,G3-Wisconsin
-Jeff Townsend,1099,0.04396,943,4,G3-Wisconsin
-Katie Fester,1095,0.0438,727,4,G3-Wisconsin
-Kathy Hubbard,911,0.03644,944,4,G3-Wisconsin
-Robert Tisdel,896,0.03584,889,4,G3-Wisconsin
-Steve Hemmer,778,0.03112,674,4,G3-Wisconsin
-Norma Sanchez,771,0.03084,574,4,G3-Wisconsin
-Allison Gilmore,698,0.02792,873,4,G3-Wisconsin
-Brian Trevarrow,689,0.02756,774,4,G3-Wisconsin
-Jeff Hemmer,512,0.02048,624,4,G3-Wisconsin
-Julie Trevarrow,494,0.01976,846,4,G3-Wisconsin
-Tom Nimps,358,0.01432,678,4,G3-Wisconsin
-Ronni Nimps,270,0.0108,557,4,G3-Wisconsin
-Martez Crain,189,0.00756,702,4,G3-Wisconsin
-Chad Anderson,129,0.00516,509,4,G3-Wisconsin
-Julia Hemmer,113,0.00452,509,4,G3-Wisconsin
-Emma Nimps,4058,0.16232,750,3,G2-Purdue
-Gary Nimps,2250,0.09,889,3,G2-Purdue
-Michael Trevarrow,1974,0.07896,851,3,G2-Purdue
-Ashlee Crain,1525,0.061,952,3,G2-Purdue
-Sean Fester,1492,0.05968,930,3,G2-Purdue
-Bradley Trevarrow,1454,0.05816,835,3,G2-Purdue
-Erin Franks,1307,0.05228,899,3,G2-Purdue
-Kassie Trevarrow,1268,0.05072,825,3,G2-Purdue
-Jared Nimps,1256,0.05024,813,3,G2-Purdue
-Roger Nimps,1162,0.04648,809,3,G2-Purdue
-Jeff Townsend,1098,0.04392,942,3,G2-Purdue
-Katie Fester,1043,0.04172,723,3,G2-Purdue
-Robert Tisdel,923,0.03692,889,3,G2-Purdue
-Kathy Hubbard,913,0.03652,943,3,G2-Purdue
-Steve Hemmer,781,0.03124,671,3,G2-Purdue
-Norma Sanchez,774,0.03096,574,3,G2-Purdue
-Allison Gilmore,696,0.02784,872,3,G2-Purdue
-Brian Trevarrow,677,0.02708,771,3,G2-Purdue
-Jeff Hemmer,529,0.02116,624,3,G2-Purdue
-Julie Trevarrow,483,0.01932,844,3,G2-Purdue
-Tom Nimps,365,0.0146,678,3,G2-Purdue
-Ronni Nimps,269,0.01076,554,3,G2-Purdue
-Martez Crain,187,0.00748,699,3,G2-Purdue
-Chad Anderson,133,0.00532,509,3,G2-Purdue
-Julia Hemmer,113,0.00452,506,3,G2-Purdue
-Emma Nimps,4050,0.162,747,2,G1-Creighton
-Gary Nimps,2221,0.08884,888,2,G1-Creighton
-Michael Trevarrow,1933,0.07732,847,2,G1-Creighton
-Sean Fester,1484,0.05936,929,2,G1-Creighton
-Bradley Trevarrow,1447,0.05788,834,2,G1-Creighton
-Ashlee Crain,1414,0.05656,948,2,G1-Creighton
-Erin Franks,1326,0.05304,898,2,G1-Creighton
-Kassie Trevarrow,1303,0.05212,824,2,G1-Creighton
-Jared Nimps,1232,0.04928,809,2,G1-Creighton
-Roger Nimps,1159,0.04636,808,2,G1-Creighton
-Jeff Townsend,1110,0.0444,941,2,G1-Creighton
-Katie Fester,1080,0.0432,726,2,G1-Creighton
-Robert Tisdel,936,0.03744,889,2,G1-Creighton
-Kathy Hubbard,934,0.03736,942,2,G1-Creighton
-Norma Sanchez,794,0.03176,577,2,G1-Creighton
-Steve Hemmer,770,0.0308,667,2,G1-Creighton
-Allison Gilmore,745,0.0298,871,2,G1-Creighton
-Brian Trevarrow,670,0.0268,767,2,G1-Creighton
-Jeff Hemmer,559,0.02236,624,2,G1-Creighton
-Julie Trevarrow,482,0.01928,843,2,G1-Creighton
-Tom Nimps,380,0.0152,677,2,G1-Creighton
-Ronni Nimps,253,0.01012,549,2,G1-Creighton
-Martez Crain,201,0.00804,702,2,G1-Creighton
-Chad Anderson,133,0.00532,505,2,G1-Creighton
-Julia Hemmer,121,0.00484,509,2,G1-Creighton
-Emma Nimps,4040,0.1616,741,1,Pre-Tourney
-Gary Nimps,2232,0.08928,890,1,Pre-Tourney
-Michael Trevarrow,1849,0.07396,833,1,Pre-Tourney
-Bradley Trevarrow,1529,0.06116,840,1,Pre-Tourney
-Jeff Townsend,1342,0.05368,944,1,Pre-Tourney
-Sean Fester,1341,0.05364,919,1,Pre-Tourney
-Jared Nimps,1235,0.0494,797,1,Pre-Tourney
-Kassie Trevarrow,1231,0.04924,810,1,Pre-Tourney
-Erin Franks,1230,0.0492,886,1,Pre-Tourney
-Ashlee Crain,1203,0.04812,936,1,Pre-Tourney
-Kathy Hubbard,1168,0.04672,945,1,Pre-Tourney
-Roger Nimps,1153,0.04612,800,1,Pre-Tourney
-Katie Fester,1118,0.04472,729,1,Pre-Tourney
-Robert Tisdel,1072,0.04288,889,1,Pre-Tourney
-Allison Gilmore,855,0.0342,872,1,Pre-Tourney
-Norma Sanchez,779,0.03116,569,1,Pre-Tourney
-Steve Hemmer,744,0.02976,654,1,Pre-Tourney
-Brian Trevarrow,677,0.02708,756,1,Pre-Tourney
-Jeff Hemmer,565,0.0226,618,1,Pre-Tourney
-Julie Trevarrow,436,0.01744,831,1,Pre-Tourney
-Tom Nimps,384,0.01536,665,1,Pre-Tourney
-Ronni Nimps,255,0.0102,542,1,Pre-Tourney
-Martez Crain,211,0.00844,705,1,Pre-Tourney
-Chad Anderson,141,0.00564,497,1,Pre-Tourney
-Julia Hemmer,81,0.00324,497,1,Pre-Tourney
+"","entrant","wins","win_rate","exp_points","stage_id","stage"
+"1","Emma Nimps",5217,0.20868,814,52,"G48-Arizona"
+"2","Kathy Hubbard",3414,0.13656,1061,52,"G48-Arizona"
+"3","Erin Franks",3348,0.13392,1039,52,"G48-Arizona"
+"4","Ashlee Crain",2793,0.11172,1057,52,"G48-Arizona"
+"5","Michael Trevarrow",2786,0.111439999999999,988,52,"G48-Arizona"
+"6","Bradley Trevarrow",2185,0.0873999999999999,945,52,"G48-Arizona"
+"7","Jeff Townsend",1861,0.0744400000000005,1049,52,"G48-Arizona"
+"8","Roger Nimps",1836,0.0734399999999997,934,52,"G48-Arizona"
+"9","Gary Nimps",1813,0.0725199999999998,997,52,"G48-Arizona"
+"10","Jared Nimps",1552,0.0620799999999992,936,52,"G48-Arizona"
+"11","Kassie Trevarrow",908,0.0363200000000001,925,52,"G48-Arizona"
+"12","Steve Hemmer",594,0.0237600000000002,736,52,"G48-Arizona"
+"13","Brian Trevarrow",455,0.0181999999999998,853,52,"G48-Arizona"
+"14","Katie Fester",420,0.0168000000000001,737,52,"G48-Arizona"
+"15","Sean Fester",291,0.0116400000000001,968,52,"G48-Arizona"
+"16","Julie Trevarrow",167,0.00667999999999999,893,52,"G48-Arizona"
+"17","Ronni Nimps",77,0.00307999999999997,579,52,"G48-Arizona"
+"18","Tom Nimps",59,0.00235999999999989,718,52,"G48-Arizona"
+"19","Julia Hemmer",14,0.000560000000000001,550,52,"G48-Arizona"
+"20","Allison Gilmore",0,0,951,52,"G48-Arizona"
+"21","Chad Anderson",0,0,568,52,"G48-Arizona"
+"22","Jeff Hemmer",0,0,666,52,"G48-Arizona"
+"23","Martez Crain",0,0,710,52,"G48-Arizona"
+"24","Norma Sanchez",0,0,529,52,"G48-Arizona"
+"25","Robert Tisdel",0,0,988,52,"G48-Arizona"
+"26","Emma Nimps",5254,0.21016,823,51,"G47-Michigan St."
+"27","Erin Franks",3274,0.13096,1039,51,"G47-Michigan St."
+"28","Kathy Hubbard",3250,0.13,1061,51,"G47-Michigan St."
+"29","Michael Trevarrow",2955,0.118199999999999,998,51,"G47-Michigan St."
+"30","Ashlee Crain",2546,0.10184,1056,51,"G47-Michigan St."
+"31","Bradley Trevarrow",2098,0.0839200000000004,941,51,"G47-Michigan St."
+"32","Roger Nimps",1919,0.0767599999999999,946,51,"G47-Michigan St."
+"33","Gary Nimps",1791,0.0716400000000001,993,51,"G47-Michigan St."
+"34","Jeff Townsend",1776,0.07104,1048,51,"G47-Michigan St."
+"35","Jared Nimps",1515,0.0605999999999994,930,51,"G47-Michigan St."
+"36","Kassie Trevarrow",984,0.0393599999999998,938,51,"G47-Michigan St."
+"37","Steve Hemmer",425,0.0170000000000001,721,51,"G47-Michigan St."
+"38","Brian Trevarrow",407,0.0162800000000008,848,51,"G47-Michigan St."
+"39","Katie Fester",401,0.0160399999999999,730,51,"G47-Michigan St."
+"40","Sean Fester",306,0.01224,967,51,"G47-Michigan St."
+"41","Julie Trevarrow",245,0.00979999999999999,908,51,"G47-Michigan St."
+"42","Ronni Nimps",154,0.00615999999999985,593,51,"G47-Michigan St."
+"43","Allison Gilmore",135,0.00540000000000009,966,51,"G47-Michigan St."
+"44","Tom Nimps",33,0.00131999999999991,703,51,"G47-Michigan St."
+"45","Julia Hemmer",18,0.000719999999999978,551,51,"G47-Michigan St."
+"46","Chad Anderson",2,8.00000000000029e-05,576,51,"G47-Michigan St."
+"47","Jeff Hemmer",0,0,658,51,"G47-Michigan St."
+"48","Martez Crain",0,0,715,51,"G47-Michigan St."
+"49","Norma Sanchez",0,0,542,51,"G47-Michigan St."
+"50","Robert Tisdel",0,0,987,51,"G47-Michigan St."
+"51","Emma Nimps",5351,0.21404,824,50,"G46-Mississippi"
+"52","Erin Franks",3519,0.14076,1038,50,"G46-Mississippi"
+"53","Michael Trevarrow",3047,0.12188,992,50,"G46-Mississippi"
+"54","Kathy Hubbard",2968,0.11872,1052,50,"G46-Mississippi"
+"55","Ashlee Crain",2355,0.0941999999999996,1049,50,"G46-Mississippi"
+"56","Gary Nimps",1940,0.0776000000000002,985,50,"G46-Mississippi"
+"57","Bradley Trevarrow",1914,0.0765599999999998,925,50,"G46-Mississippi"
+"58","Jeff Townsend",1608,0.0643199999999999,1039,50,"G46-Mississippi"
+"59","Jared Nimps",1482,0.0592799999999995,923,50,"G46-Mississippi"
+"60","Roger Nimps",1459,0.0583599999999997,919,50,"G46-Mississippi"
+"61","Kassie Trevarrow",1011,0.0404399999999999,932,50,"G46-Mississippi"
+"62","Brian Trevarrow",489,0.0195600000000008,847,50,"G46-Mississippi"
+"63","Katie Fester",478,0.0191200000000002,733,50,"G46-Mississippi"
+"64","Steve Hemmer",463,0.0185200000000001,722,50,"G46-Mississippi"
+"65","Sean Fester",444,0.0177599999999998,964,50,"G46-Mississippi"
+"66","Julie Trevarrow",266,0.0106399999999999,912,50,"G46-Mississippi"
+"67","Ronni Nimps",143,0.0057199999999999,576,50,"G46-Mississippi"
+"68","Allison Gilmore",117,0.00467999999999999,959,50,"G46-Mississippi"
+"69","Tom Nimps",36,0.00143999999999997,702,50,"G46-Mississippi"
+"70","Julia Hemmer",18,0.000719999999999978,540,50,"G46-Mississippi"
+"71","Chad Anderson",5,0.000200000000000018,576,50,"G46-Mississippi"
+"72","Jeff Hemmer",0,0,658,50,"G46-Mississippi"
+"73","Martez Crain",0,0,713,50,"G46-Mississippi"
+"74","Norma Sanchez",0,0,539,50,"G46-Mississippi"
+"75","Robert Tisdel",0,0,980,50,"G46-Mississippi"
+"76","Emma Nimps",5363,0.21452,836,49,"G45-Maryland"
+"77","Erin Franks",4026,0.16104,1060,49,"G45-Maryland"
+"78","Michael Trevarrow",2865,0.1146,996,49,"G45-Maryland"
+"79","Kathy Hubbard",2714,0.10856,1059,49,"G45-Maryland"
+"80","Ashlee Crain",2010,0.0804000000000001,1055,49,"G45-Maryland"
+"81","Gary Nimps",1951,0.0780399999999996,992,49,"G45-Maryland"
+"82","Bradley Trevarrow",1801,0.0720399999999998,932,49,"G45-Maryland"
+"83","Jeff Townsend",1543,0.0617200000000001,1047,49,"G45-Maryland"
+"84","Jared Nimps",1402,0.0560799999999994,929,49,"G45-Maryland"
+"85","Roger Nimps",1290,0.0515999999999997,923,49,"G45-Maryland"
+"86","Kassie Trevarrow",912,0.0364800000000002,935,49,"G45-Maryland"
+"87","Brian Trevarrow",633,0.0253199999999994,869,49,"G45-Maryland"
+"88","Sean Fester",584,0.0233599999999999,989,49,"G45-Maryland"
+"89","Katie Fester",546,0.0218400000000001,756,49,"G45-Maryland"
+"90","Steve Hemmer",535,0.0214000000000001,742,49,"G45-Maryland"
+"91","Julie Trevarrow",357,0.01428,934,49,"G45-Maryland"
+"92","Ronni Nimps",134,0.00536000000000013,583,49,"G45-Maryland"
+"93","Allison Gilmore",106,0.00424000000000012,965,49,"G45-Maryland"
+"94","Tom Nimps",55,0.00219999999999989,724,49,"G45-Maryland"
+"95","Julia Hemmer",16,0.000640000000000012,550,49,"G45-Maryland"
+"96","Chad Anderson",3,0.000119999999999995,576,49,"G45-Maryland"
+"97","Jeff Hemmer",0,0,684,49,"G45-Maryland"
+"98","Martez Crain",0,0,710,49,"G45-Maryland"
+"99","Norma Sanchez",0,0,516,49,"G45-Maryland"
+"100","Robert Tisdel",0,0,986,49,"G45-Maryland"
+"101","Emma Nimps",5319,0.21276,838,48,"G44-Alabama"
+"102","Erin Franks",3795,0.1518,1057,48,"G44-Alabama"
+"103","Michael Trevarrow",2828,0.11312,995,48,"G44-Alabama"
+"104","Kathy Hubbard",2728,0.10912,1062,48,"G44-Alabama"
+"105","Gary Nimps",2068,0.08272,999,48,"G44-Alabama"
+"106","Ashlee Crain",1955,0.0781999999999999,1054,48,"G44-Alabama"
+"107","Bradley Trevarrow",1936,0.0774400000000002,948,48,"G44-Alabama"
+"108","Jeff Townsend",1560,0.0623999999999999,1050,48,"G44-Alabama"
+"109","Jared Nimps",1405,0.0561999999999997,929,48,"G44-Alabama"
+"110","Roger Nimps",1259,0.0503600000000001,923,48,"G44-Alabama"
+"111","Kassie Trevarrow",1108,0.0443199999999997,940,48,"G44-Alabama"
+"112","Brian Trevarrow",692,0.0276800000000007,871,48,"G44-Alabama"
+"113","Sean Fester",605,0.0241999999999998,992,48,"G44-Alabama"
+"114","Katie Fester",554,0.02216,763,48,"G44-Alabama"
+"115","Steve Hemmer",465,0.0186000000000001,733,48,"G44-Alabama"
+"116","Julie Trevarrow",370,0.0148,939,48,"G44-Alabama"
+"117","Ronni Nimps",122,0.00488,575,48,"G44-Alabama"
+"118","Allison Gilmore",102,0.00407999999999993,965,48,"G44-Alabama"
+"119","Tom Nimps",49,0.00196,721,48,"G44-Alabama"
+"120","Julia Hemmer",16,0.000640000000000012,550,48,"G44-Alabama"
+"121","Chad Anderson",2,7.99999999999949e-05,571,48,"G44-Alabama"
+"122","Jeff Hemmer",0,0,686,48,"G44-Alabama"
+"123","Martez Crain",0,0,721,48,"G44-Alabama"
+"124","Norma Sanchez",0,0,512,48,"G44-Alabama"
+"125","Robert Tisdel",0,0,983,48,"G44-Alabama"
+"126","Emma Nimps",5484,0.219359999999999,833,46,"G42-Duke"
+"127","Erin Franks",3732,0.14928,1034,46,"G42-Duke"
+"128","Michael Trevarrow",2957,0.11828,979,46,"G42-Duke"
+"129","Kathy Hubbard",2673,0.10692,1039,46,"G42-Duke"
+"130","Gary Nimps",1999,0.0799600000000002,974,46,"G42-Duke"
+"131","Bradley Trevarrow",1890,0.0755999999999998,923,46,"G42-Duke"
+"132","Ashlee Crain",1817,0.07268,1031,46,"G42-Duke"
+"133","Jeff Townsend",1503,0.06012,1027,46,"G42-Duke"
+"134","Jared Nimps",1319,0.0527600000000005,902,46,"G42-Duke"
+"135","Roger Nimps",1202,0.04808,898,46,"G42-Duke"
+"136","Kassie Trevarrow",951,0.0380399999999998,916,46,"G42-Duke"
+"137","Brian Trevarrow",743,0.0297199999999998,855,46,"G42-Duke"
+"138","Katie Fester",659,0.0263599999999999,756,46,"G42-Duke"
+"139","Sean Fester",600,0.0240000000000001,968,46,"G42-Duke"
+"140","Allison Gilmore",341,0.0136399999999999,962,46,"G42-Duke"
+"141","Steve Hemmer",327,0.0130799999999998,706,46,"G42-Duke"
+"142","Julie Trevarrow",244,0.00976000000000001,917,46,"G42-Duke"
+"143","Ronni Nimps",128,0.00512000000000016,553,46,"G42-Duke"
+"144","Tom Nimps",83,0.00331999999999976,711,46,"G42-Duke"
+"145","Julia Hemmer",8,0.000319999999999983,523,46,"G42-Duke"
+"146","Chad Anderson",1,3.999999999999e-05,538,46,"G42-Duke"
+"147","Jeff Hemmer",0,0,670,46,"G42-Duke"
+"148","Martez Crain",0,0,718,46,"G42-Duke"
+"149","Norma Sanchez",0,0,513,46,"G42-Duke"
+"150","Robert Tisdel",0,0,959,46,"G42-Duke"
+"151","Emma Nimps",5433,0.21732,823,45,"G41-Florida"
+"152","Erin Franks",3344,0.13376,998,45,"G41-Florida"
+"153","Michael Trevarrow",3159,0.126360000000001,967,45,"G41-Florida"
+"154","Kathy Hubbard",2363,0.0945200000000002,1004,45,"G41-Florida"
+"155","Gary Nimps",1981,0.0792400000000004,951,45,"G41-Florida"
+"156","Bradley Trevarrow",1920,0.0768000000000001,900,45,"G41-Florida"
+"157","Ashlee Crain",1586,0.06344,996,45,"G41-Florida"
+"158","Jared Nimps",1392,0.0556799999999994,891,45,"G41-Florida"
+"159","Jeff Townsend",1312,0.0524800000000002,992,45,"G41-Florida"
+"160","Roger Nimps",1248,0.0499199999999998,874,45,"G41-Florida"
+"161","Kassie Trevarrow",855,0.0342000000000002,893,45,"G41-Florida"
+"162","Brian Trevarrow",784,0.0313600000000005,844,45,"G41-Florida"
+"163","Katie Fester",781,0.0312399999999998,752,45,"G41-Florida"
+"164","Sean Fester",522,0.02088,933,45,"G41-Florida"
+"165","Steve Hemmer",406,0.0162400000000002,707,45,"G41-Florida"
+"166","Jeff Hemmer",372,0.0148800000000002,682,45,"G41-Florida"
+"167","Allison Gilmore",295,0.0118000000000002,927,45,"G41-Florida"
+"168","Julie Trevarrow",218,0.00871999999999996,882,45,"G41-Florida"
+"169","Ronni Nimps",165,0.00660000000000001,552,45,"G41-Florida"
+"170","Tom Nimps",114,0.00456000000000015,714,45,"G41-Florida"
+"171","Chad Anderson",18,0.000719999999999985,548,45,"G41-Florida"
+"172","Julia Hemmer",9,0.000360000000000019,517,45,"G41-Florida"
+"173","Martez Crain",0,0,695,45,"G41-Florida"
+"174","Norma Sanchez",0,0,489,45,"G41-Florida"
+"175","Robert Tisdel",0,0,924,45,"G41-Florida"
+"176","Emma Nimps",5552,0.222080000000001,820,44,"R32 D2 Update"
+"177","Erin Franks",3777,0.15108,995,44,"R32 D2 Update"
+"178","Michael Trevarrow",3225,0.129,955,44,"R32 D2 Update"
+"179","Kathy Hubbard",2189,0.0875600000000001,982,44,"R32 D2 Update"
+"180","Gary Nimps",1717,0.0686799999999997,921,44,"R32 D2 Update"
+"181","Bradley Trevarrow",1690,0.0676000000000003,870,44,"R32 D2 Update"
+"182","Ashlee Crain",1629,0.06516,984,44,"R32 D2 Update"
+"183","Jared Nimps",1325,0.0529999999999999,878,44,"R32 D2 Update"
+"184","Roger Nimps",1302,0.0520799999999999,861,44,"R32 D2 Update"
+"185","Jeff Townsend",1175,0.047,970,44,"R32 D2 Update"
+"186","Kassie Trevarrow",874,0.0349599999999998,882,44,"R32 D2 Update"
+"187","Brian Trevarrow",873,0.0349200000000004,840,44,"R32 D2 Update"
+"188","Katie Fester",697,0.0278800000000001,722,44,"R32 D2 Update"
+"189","Steve Hemmer",493,0.0197200000000001,708,44,"R32 D2 Update"
+"190","Sean Fester",485,0.0194,912,44,"R32 D2 Update"
+"191","Jeff Hemmer",386,0.0154400000000001,679,44,"R32 D2 Update"
+"192","Allison Gilmore",289,0.0115600000000002,915,44,"R32 D2 Update"
+"193","Julie Trevarrow",224,0.00895999999999993,870,44,"R32 D2 Update"
+"194","Ronni Nimps",182,0.00728000000000003,551,44,"R32 D2 Update"
+"195","Tom Nimps",119,0.0047600000000002,708,44,"R32 D2 Update"
+"196","Chad Anderson",98,0.00391999999999995,556,44,"R32 D2 Update"
+"197","Julia Hemmer",10,0.000400000000000025,503,44,"R32 D2 Update"
+"198","Martez Crain",0,0,665,44,"R32 D2 Update"
+"199","Norma Sanchez",0,0,494,44,"R32 D2 Update"
+"200","Robert Tisdel",0,0,919,44,"R32 D2 Update"
+"201","Emma Nimps",5702,0.228080000000001,825,43,"G40-Tennessee"
+"202","Erin Franks",3824,0.15296,998,43,"G40-Tennessee"
+"203","Michael Trevarrow",3204,0.12816,955,43,"G40-Tennessee"
+"204","Kathy Hubbard",2165,0.0865999999999996,984,43,"G40-Tennessee"
+"205","Gary Nimps",1711,0.0684399999999998,921,43,"G40-Tennessee"
+"206","Bradley Trevarrow",1633,0.0653200000000001,869,43,"G40-Tennessee"
+"207","Ashlee Crain",1618,0.06472,986,43,"G40-Tennessee"
+"208","Roger Nimps",1303,0.0521200000000001,862,43,"G40-Tennessee"
+"209","Jared Nimps",1242,0.0496800000000001,875,43,"G40-Tennessee"
+"210","Jeff Townsend",1198,0.04792,972,43,"G40-Tennessee"
+"211","Kassie Trevarrow",877,0.0350799999999997,884,43,"G40-Tennessee"
+"212","Brian Trevarrow",840,0.0336000000000001,838,43,"G40-Tennessee"
+"213","Katie Fester",750,0.03,725,43,"G40-Tennessee"
+"214","Steve Hemmer",486,0.0194400000000002,709,43,"G40-Tennessee"
+"215","Sean Fester",466,0.0186399999999999,911,43,"G40-Tennessee"
+"216","Jeff Hemmer",393,0.01572,683,43,"G40-Tennessee"
+"217","Allison Gilmore",289,0.0115600000000001,916,43,"G40-Tennessee"
+"218","Julie Trevarrow",227,0.00908000000000002,872,43,"G40-Tennessee"
+"219","Ronni Nimps",178,0.00712000000000013,550,43,"G40-Tennessee"
+"220","Tom Nimps",103,0.00411999999999979,705,43,"G40-Tennessee"
+"221","Chad Anderson",98,0.00392000000000004,552,43,"G40-Tennessee"
+"222","Julia Hemmer",9,0.000360000000000001,504,43,"G40-Tennessee"
+"223","Martez Crain",0,0,666,43,"G40-Tennessee"
+"224","Norma Sanchez",0,0,494,43,"G40-Tennessee"
+"225","Robert Tisdel",0,0,921,43,"G40-Tennessee"
+"226","Emma Nimps",5992,0.23968,819,42,"G39-Houston"
+"227","Erin Franks",3991,0.15964,986,42,"G39-Houston"
+"228","Michael Trevarrow",2901,0.11604,925,42,"G39-Houston"
+"229","Kathy Hubbard",2329,0.0931599999999999,973,42,"G39-Houston"
+"230","Ashlee Crain",1660,0.0664000000000001,974,42,"G39-Houston"
+"231","Bradley Trevarrow",1589,0.06356,847,42,"G39-Houston"
+"232","Gary Nimps",1567,0.0626799999999997,899,42,"G39-Houston"
+"233","Roger Nimps",1332,0.0532799999999995,850,42,"G39-Houston"
+"234","Jeff Townsend",1286,0.05144,961,42,"G39-Houston"
+"235","Katie Fester",1107,0.0442799999999998,740,42,"G39-Houston"
+"236","Kassie Trevarrow",986,0.03944,880,42,"G39-Houston"
+"237","Jared Nimps",857,0.0342800000000003,838,42,"G39-Houston"
+"238","Steve Hemmer",603,0.0241200000000001,705,42,"G39-Houston"
+"239","Brian Trevarrow",573,0.0229200000000005,801,42,"G39-Houston"
+"240","Jeff Hemmer",418,0.01672,677,42,"G39-Houston"
+"241","Sean Fester",328,0.0131200000000001,890,42,"G39-Houston"
+"242","Allison Gilmore",309,0.0123600000000001,902,42,"G39-Houston"
+"243","Julie Trevarrow",269,0.01076,868,42,"G39-Houston"
+"244","Ronni Nimps",199,0.00796000000000003,546,42,"G39-Houston"
+"245","Chad Anderson",75,0.00299999999999995,515,42,"G39-Houston"
+"246","Tom Nimps",73,0.00292000000000023,668,42,"G39-Houston"
+"247","Julia Hemmer",17,0.000679999999999988,512,42,"G39-Houston"
+"248","Norma Sanchez",1,3.99999999999887e-05,502,42,"G39-Houston"
+"249","Martez Crain",0,0,666,42,"G39-Houston"
+"250","Robert Tisdel",0,0,909,42,"G39-Houston"
+"251","Emma Nimps",4486,0.17944,757,41,"G38-BYU"
+"252","Erin Franks",4151,0.16604,966,41,"G38-BYU"
+"253","Michael Trevarrow",3181,0.12724,917,41,"G38-BYU"
+"254","Kathy Hubbard",2330,0.0931999999999999,952,41,"G38-BYU"
+"255","Bradley Trevarrow",1719,0.0687599999999999,839,41,"G38-BYU"
+"256","Gary Nimps",1598,0.0639199999999998,891,41,"G38-BYU"
+"257","Ashlee Crain",1509,0.0603600000000003,954,41,"G38-BYU"
+"258","Roger Nimps",1413,0.05652,826,41,"G38-BYU"
+"259","Jeff Townsend",1291,0.0516399999999999,940,41,"G38-BYU"
+"260","Katie Fester",1103,0.04412,716,41,"G38-BYU"
+"261","Kassie Trevarrow",1037,0.04148,871,41,"G38-BYU"
+"262","Jared Nimps",934,0.0373600000000003,830,41,"G38-BYU"
+"263","Steve Hemmer",702,0.0280800000000002,694,41,"G38-BYU"
+"264","Brian Trevarrow",638,0.0255199999999998,793,41,"G38-BYU"
+"265","Allison Gilmore",523,0.0209199999999999,903,41,"G38-BYU"
+"266","Julie Trevarrow",363,0.01452,861,41,"G38-BYU"
+"267","Sean Fester",361,0.01444,885,41,"G38-BYU"
+"268","Jeff Hemmer",329,0.0131600000000001,615,41,"G38-BYU"
+"269","Ronni Nimps",265,0.0105999999999999,544,41,"G38-BYU"
+"270","Chad Anderson",173,0.00692000000000016,534,41,"G38-BYU"
+"271","Tom Nimps",91,0.00363999999999992,660,41,"G38-BYU"
+"272","Martez Crain",90,0.00359999999999994,690,41,"G38-BYU"
+"273","Julia Hemmer",68,0.00271999999999996,526,41,"G38-BYU"
+"274","Norma Sanchez",45,0.00180000000000004,524,41,"G38-BYU"
+"275","Robert Tisdel",0,0,889,41,"G38-BYU"
+"276","Erin Franks",4685,0.1874,977,40,"G37-Auburn"
+"277","Emma Nimps",4370,0.1748,750,40,"G37-Auburn"
+"278","Michael Trevarrow",3025,0.121,902,40,"G37-Auburn"
+"279","Gary Nimps",2311,0.0924399999999996,901,40,"G37-Auburn"
+"280","Kathy Hubbard",2011,0.0804400000000003,947,40,"G37-Auburn"
+"281","Roger Nimps",1497,0.0598800000000002,836,40,"G37-Auburn"
+"282","Bradley Trevarrow",1374,0.0549600000000001,833,40,"G37-Auburn"
+"283","Ashlee Crain",1154,0.0461599999999997,949,40,"G37-Auburn"
+"284","Jeff Townsend",1150,0.0460000000000002,935,40,"G37-Auburn"
+"285","Kassie Trevarrow",1012,0.0404800000000001,857,40,"G37-Auburn"
+"286","Jared Nimps",932,0.0372800000000002,824,40,"G37-Auburn"
+"287","Katie Fester",673,0.0269199999999996,691,40,"G37-Auburn"
+"288","Steve Hemmer",672,0.0268800000000001,678,40,"G37-Auburn"
+"289","Brian Trevarrow",562,0.0224799999999997,778,40,"G37-Auburn"
+"290","Allison Gilmore",449,0.0179599999999999,898,40,"G37-Auburn"
+"291","Jeff Hemmer",385,0.0154000000000001,616,40,"G37-Auburn"
+"292","Sean Fester",313,0.0125199999999998,880,40,"G37-Auburn"
+"293","Julie Trevarrow",289,0.01156,848,40,"G37-Auburn"
+"294","Ronni Nimps",233,0.00931999999999997,529,40,"G37-Auburn"
+"295","Chad Anderson",220,0.00879999999999989,543,40,"G37-Auburn"
+"296","Tom Nimps",155,0.00620000000000016,668,40,"G37-Auburn"
+"297","Robert Tisdel",148,0.00592,900,40,"G37-Auburn"
+"298","Norma Sanchez",58,0.00231999999999995,534,40,"G37-Auburn"
+"299","Martez Crain",52,0.00207999999999991,675,40,"G37-Auburn"
+"300","Julia Hemmer",46,0.00183999999999997,505,40,"G37-Auburn"
+"301","Erin Franks",4692,0.18768,953,39,"G36-Texas Tech"
+"302","Emma Nimps",4538,0.18152,748,39,"G36-Texas Tech"
+"303","Michael Trevarrow",2586,0.10344,869,39,"G36-Texas Tech"
+"304","Gary Nimps",2166,0.0866399999999998,887,39,"G36-Texas Tech"
+"305","Kathy Hubbard",2108,0.0843199999999995,933,39,"G36-Texas Tech"
+"306","Bradley Trevarrow",1695,0.0678000000000002,836,39,"G36-Texas Tech"
+"307","Roger Nimps",1634,0.0653600000000003,831,39,"G36-Texas Tech"
+"308","Jeff Townsend",1192,0.0476800000000002,921,39,"G36-Texas Tech"
+"309","Ashlee Crain",1123,0.0449200000000002,925,39,"G36-Texas Tech"
+"310","Jared Nimps",936,0.0374399999999999,799,39,"G36-Texas Tech"
+"311","Kassie Trevarrow",818,0.03272,823,39,"G36-Texas Tech"
+"312","Katie Fester",670,0.0267999999999995,678,39,"G36-Texas Tech"
+"313","Steve Hemmer",593,0.0237199999999996,645,39,"G36-Texas Tech"
+"314","Brian Trevarrow",578,0.0231200000000001,753,39,"G36-Texas Tech"
+"315","Allison Gilmore",439,0.0175600000000003,874,39,"G36-Texas Tech"
+"316","Jeff Hemmer",404,0.01616,614,39,"G36-Texas Tech"
+"317","Sean Fester",327,0.0130799999999997,866,39,"G36-Texas Tech"
+"318","Julie Trevarrow",290,0.0116,824,39,"G36-Texas Tech"
+"319","Ronni Nimps",257,0.0102800000000001,527,39,"G36-Texas Tech"
+"320","Chad Anderson",236,0.00944000000000015,534,39,"G36-Texas Tech"
+"321","Julia Hemmer",159,0.00636000000000004,515,39,"G36-Texas Tech"
+"322","Tom Nimps",157,0.00627999999999981,643,39,"G36-Texas Tech"
+"323","Robert Tisdel",148,0.00592,876,39,"G36-Texas Tech"
+"324","Norma Sanchez",95,0.00379999999999998,538,39,"G36-Texas Tech"
+"325","Martez Crain",51,0.00204000000000006,662,39,"G36-Texas Tech"
+"326","Emma Nimps",4369,0.174760000000001,727,38,"G35-Michigan"
+"327","Erin Franks",4130,0.1652,936,38,"G35-Michigan"
+"328","Michael Trevarrow",2482,0.0992799999999998,859,38,"G35-Michigan"
+"329","Kathy Hubbard",2306,0.0922400000000002,931,38,"G35-Michigan"
+"330","Gary Nimps",2070,0.0828000000000004,888,38,"G35-Michigan"
+"331","Bradley Trevarrow",2035,0.0814000000000002,846,38,"G35-Michigan"
+"332","Roger Nimps",1670,0.0667999999999997,828,38,"G35-Michigan"
+"333","Ashlee Crain",1341,0.0536399999999999,922,38,"G35-Michigan"
+"334","Jared Nimps",1074,0.0429599999999995,801,38,"G35-Michigan"
+"335","Jeff Townsend",918,0.0367199999999998,913,38,"G35-Michigan"
+"336","Kassie Trevarrow",812,0.0324800000000003,813,38,"G35-Michigan"
+"337","Steve Hemmer",726,0.0290399999999999,650,38,"G35-Michigan"
+"338","Katie Fester",708,0.0283199999999994,683,38,"G35-Michigan"
+"339","Brian Trevarrow",464,0.0185599999999995,737,38,"G35-Michigan"
+"340","Allison Gilmore",405,0.0162,864,38,"G35-Michigan"
+"341","Jeff Hemmer",382,0.01528,593,38,"G35-Michigan"
+"342","Sean Fester",369,0.0147599999999998,864,38,"G35-Michigan"
+"343","Julie Trevarrow",342,0.01368,821,38,"G35-Michigan"
+"344","Ronni Nimps",267,0.0106800000000001,522,38,"G35-Michigan"
+"345","Chad Anderson",258,0.0103199999999999,530,38,"G35-Michigan"
+"346","Robert Tisdel",244,0.00976000000000001,871,38,"G35-Michigan"
+"347","Tom Nimps",182,0.00728000000000009,644,38,"G35-Michigan"
+"348","Julia Hemmer",150,0.006,505,38,"G35-Michigan"
+"349","Norma Sanchez",108,0.00432000000000003,533,38,"G35-Michigan"
+"350","Martez Crain",58,0.00232000000000006,666,38,"G35-Michigan"
+"351","Emma Nimps",4647,0.18588,752,37,"G34-Arkansas"
+"352","Erin Franks",3555,0.1422,924,37,"G34-Arkansas"
+"353","Michael Trevarrow",2280,0.0911999999999997,846,37,"G34-Arkansas"
+"354","Gary Nimps",2187,0.0874800000000004,876,37,"G34-Arkansas"
+"355","Ashlee Crain",1898,0.07592,930,37,"G34-Arkansas"
+"356","Bradley Trevarrow",1635,0.0654000000000002,828,37,"G34-Arkansas"
+"357","Roger Nimps",1578,0.0631199999999998,817,37,"G34-Arkansas"
+"358","Kathy Hubbard",1368,0.0547200000000002,920,37,"G34-Arkansas"
+"359","Jeff Townsend",1335,0.0534000000000001,923,37,"G34-Arkansas"
+"360","Jared Nimps",968,0.0387200000000003,788,37,"G34-Arkansas"
+"361","Steve Hemmer",840,0.0336000000000001,658,37,"G34-Arkansas"
+"362","Kassie Trevarrow",763,0.0305200000000002,800,37,"G34-Arkansas"
+"363","Katie Fester",714,0.0285600000000004,671,37,"G34-Arkansas"
+"364","Sean Fester",609,0.0243600000000001,873,37,"G34-Arkansas"
+"365","Brian Trevarrow",608,0.0243200000000002,746,37,"G34-Arkansas"
+"366","Allison Gilmore",540,0.0216000000000001,873,37,"G34-Arkansas"
+"367","Jeff Hemmer",402,0.01608,617,37,"G34-Arkansas"
+"368","Ronni Nimps",326,0.0130399999999999,540,37,"G34-Arkansas"
+"369","Julie Trevarrow",272,0.0108799999999999,808,37,"G34-Arkansas"
+"370","Chad Anderson",232,0.00927999999999982,519,37,"G34-Arkansas"
+"371","Norma Sanchez",206,0.00823999999999958,558,37,"G34-Arkansas"
+"372","Tom Nimps",191,0.00764000000000001,642,37,"G34-Arkansas"
+"373","Julia Hemmer",139,0.00556000000000009,505,37,"G34-Arkansas"
+"374","Robert Tisdel",101,0.00404000000000003,859,37,"G34-Arkansas"
+"375","Martez Crain",87,0.00348000000000006,665,37,"G34-Arkansas"
+"376","Emma Nimps",4445,0.1778,753,36,"G33-Purdue"
+"377","Erin Franks",2413,0.0965199999999998,928,36,"G33-Purdue"
+"378","Gary Nimps",2120,0.0847999999999994,897,36,"G33-Purdue"
+"379","Michael Trevarrow",1975,0.0789999999999997,851,36,"G33-Purdue"
+"380","Ashlee Crain",1771,0.0708399999999998,959,36,"G33-Purdue"
+"381","Roger Nimps",1570,0.0628000000000003,845,36,"G33-Purdue"
+"382","Bradley Trevarrow",1535,0.0614000000000004,850,36,"G33-Purdue"
+"383","Robert Tisdel",1480,0.0591999999999998,906,36,"G33-Purdue"
+"384","Kathy Hubbard",1372,0.0548799999999996,946,36,"G33-Purdue"
+"385","Norma Sanchez",1202,0.0480800000000001,633,36,"G33-Purdue"
+"386","Steve Hemmer",1125,0.045,704,36,"G33-Purdue"
+"387","Jared Nimps",1012,0.0404799999999998,784,36,"G33-Purdue"
+"388","Jeff Townsend",893,0.0357199999999999,925,36,"G33-Purdue"
+"389","Kassie Trevarrow",712,0.02848,805,36,"G33-Purdue"
+"390","Sean Fester",648,0.0259200000000002,899,36,"G33-Purdue"
+"391","Katie Fester",500,0.0200000000000003,660,36,"G33-Purdue"
+"392","Ronni Nimps",467,0.0186800000000001,603,36,"G33-Purdue"
+"393","Brian Trevarrow",464,0.0185599999999997,735,36,"G33-Purdue"
+"394","Allison Gilmore",344,0.0137599999999998,878,36,"G33-Purdue"
+"395","Jeff Hemmer",216,0.00864000000000005,589,36,"G33-Purdue"
+"396","Chad Anderson",175,0.00700000000000009,518,36,"G33-Purdue"
+"397","Tom Nimps",169,0.00676000000000009,641,36,"G33-Purdue"
+"398","Julie Trevarrow",149,0.00596000000000003,804,36,"G33-Purdue"
+"399","Julia Hemmer",103,0.00411999999999994,496,36,"G33-Purdue"
+"400","Martez Crain",34,0.00135999999999998,639,36,"G33-Purdue"
+"401","Emma Nimps",4538,0.18152,753,35,"R32 D1 Update"
+"402","Erin Franks",2410,0.0964000000000003,929,35,"R32 D1 Update"
+"403","Gary Nimps",2111,0.0844399999999995,898,35,"R32 D1 Update"
+"404","Michael Trevarrow",1921,0.0768399999999996,846,35,"R32 D1 Update"
+"405","Roger Nimps",1570,0.0628000000000003,847,35,"R32 D1 Update"
+"406","Bradley Trevarrow",1523,0.0609199999999998,850,35,"R32 D1 Update"
+"407","Ashlee Crain",1515,0.0605999999999996,955,35,"R32 D1 Update"
+"408","Robert Tisdel",1483,0.0593200000000002,907,35,"R32 D1 Update"
+"409","Kathy Hubbard",1386,0.0554399999999995,947,35,"R32 D1 Update"
+"410","Norma Sanchez",1225,0.0490000000000003,633,35,"R32 D1 Update"
+"411","Steve Hemmer",1093,0.0437199999999997,699,35,"R32 D1 Update"
+"412","Jared Nimps",990,0.0395999999999999,779,35,"R32 D1 Update"
+"413","Jeff Townsend",898,0.0359199999999995,926,35,"R32 D1 Update"
+"414","Kassie Trevarrow",778,0.0311200000000001,805,35,"R32 D1 Update"
+"415","Sean Fester",680,0.0271999999999998,899,35,"R32 D1 Update"
+"416","Katie Fester",503,0.0201200000000005,662,35,"R32 D1 Update"
+"417","Brian Trevarrow",449,0.0179599999999997,730,35,"R32 D1 Update"
+"418","Ronni Nimps",395,0.0158000000000001,592,35,"R32 D1 Update"
+"419","Allison Gilmore",365,0.0146000000000002,877,35,"R32 D1 Update"
+"420","Jeff Hemmer",247,0.00988000000000005,595,35,"R32 D1 Update"
+"421","Tom Nimps",184,0.00736000000000008,641,35,"R32 D1 Update"
+"422","Chad Anderson",172,0.00687999999999999,513,35,"R32 D1 Update"
+"423","Julie Trevarrow",153,0.00612000000000015,804,35,"R32 D1 Update"
+"424","Julia Hemmer",107,0.00428000000000005,497,35,"R32 D1 Update"
+"425","Martez Crain",41,0.00163999999999996,640,35,"R32 D1 Update"
+"426","Emma Nimps",4459,0.17836,754,34,"G32-Oregon"
+"427","Gary Nimps",2277,0.0910799999999996,910,34,"G32-Oregon"
+"428","Erin Franks",2236,0.0894400000000001,931,34,"G32-Oregon"
+"429","Michael Trevarrow",1951,0.0780399999999995,852,34,"G32-Oregon"
+"430","Bradley Trevarrow",1599,0.0639599999999993,861,34,"G32-Oregon"
+"431","Robert Tisdel",1505,0.0602000000000002,912,34,"G32-Oregon"
+"432","Ashlee Crain",1495,0.0598000000000004,961,34,"G32-Oregon"
+"433","Roger Nimps",1485,0.0593999999999999,850,34,"G32-Oregon"
+"434","Kathy Hubbard",1396,0.0558400000000001,954,34,"G32-Oregon"
+"435","Norma Sanchez",1295,0.0517999999999999,637,34,"G32-Oregon"
+"436","Jared Nimps",1052,0.0420800000000005,788,34,"G32-Oregon"
+"437","Steve Hemmer",1029,0.0411600000000002,702,34,"G32-Oregon"
+"438","Jeff Townsend",915,0.0366,933,34,"G32-Oregon"
+"439","Kassie Trevarrow",812,0.0324800000000002,810,34,"G32-Oregon"
+"440","Sean Fester",686,0.02744,907,34,"G32-Oregon"
+"441","Katie Fester",473,0.0189199999999997,669,34,"G32-Oregon"
+"442","Brian Trevarrow",448,0.0179199999999999,735,34,"G32-Oregon"
+"443","Allison Gilmore",344,0.0137599999999999,882,34,"G32-Oregon"
+"444","Ronni Nimps",330,0.0132,591,34,"G32-Oregon"
+"445","Jeff Hemmer",250,0.0100000000000001,597,34,"G32-Oregon"
+"446","Tom Nimps",179,0.00715999999999994,647,34,"G32-Oregon"
+"447","Chad Anderson",171,0.00683999999999989,517,34,"G32-Oregon"
+"448","Julie Trevarrow",139,0.00556000000000001,806,34,"G32-Oregon"
+"449","Julia Hemmer",109,0.00435999999999995,499,34,"G32-Oregon"
+"450","Martez Crain",42,0.00168000000000004,649,34,"G32-Oregon"
+"451","Emma Nimps",4351,0.17404,748,33,"G31-Michigan St."
+"452","Gary Nimps",2274,0.09096,907,33,"G31-Michigan St."
+"453","Erin Franks",2273,0.0909199999999998,929,33,"G31-Michigan St."
+"454","Michael Trevarrow",1916,0.0766399999999997,846,33,"G31-Michigan St."
+"455","Bradley Trevarrow",1610,0.0644000000000006,859,33,"G31-Michigan St."
+"456","Ashlee Crain",1561,0.0624400000000002,958,33,"G31-Michigan St."
+"457","Robert Tisdel",1514,0.06056,909,33,"G31-Michigan St."
+"458","Roger Nimps",1463,0.0585200000000001,844,33,"G31-Michigan St."
+"459","Kathy Hubbard",1419,0.0567599999999997,951,33,"G31-Michigan St."
+"460","Norma Sanchez",1291,0.05164,631,33,"G31-Michigan St."
+"461","Steve Hemmer",1064,0.04256,700,33,"G31-Michigan St."
+"462","Jared Nimps",1046,0.0418399999999997,785,33,"G31-Michigan St."
+"463","Jeff Townsend",932,0.0372800000000003,930,33,"G31-Michigan St."
+"464","Kassie Trevarrow",805,0.0322000000000003,804,33,"G31-Michigan St."
+"465","Sean Fester",690,0.0276000000000003,904,33,"G31-Michigan St."
+"466","Katie Fester",481,0.0192400000000001,667,33,"G31-Michigan St."
+"467","Brian Trevarrow",457,0.0182799999999997,732,33,"G31-Michigan St."
+"468","Jeff Hemmer",332,0.01328,601,33,"G31-Michigan St."
+"469","Allison Gilmore",318,0.0127200000000001,875,33,"G31-Michigan St."
+"470","Ronni Nimps",282,0.0112799999999999,582,33,"G31-Michigan St."
+"471","Tom Nimps",197,0.00787999999999991,645,33,"G31-Michigan St."
+"472","Chad Anderson",164,0.00655999999999995,511,33,"G31-Michigan St."
+"473","Julie Trevarrow",125,0.00500000000000005,800,33,"G31-Michigan St."
+"474","Julia Hemmer",110,0.0043999999999999,496,33,"G31-Michigan St."
+"475","Martez Crain",52,0.00207999999999999,654,33,"G31-Michigan St."
+"476","Emma Nimps",4367,0.17468,748,32,"G30-Illinois"
+"477","Erin Franks",2307,0.09228,928,32,"G30-Illinois"
+"478","Gary Nimps",2302,0.0920800000000001,905,32,"G30-Illinois"
+"479","Michael Trevarrow",1923,0.0769199999999998,844,32,"G30-Illinois"
+"480","Bradley Trevarrow",1577,0.0630800000000005,856,32,"G30-Illinois"
+"481","Ashlee Crain",1544,0.0617600000000003,956,32,"G30-Illinois"
+"482","Robert Tisdel",1506,0.0602399999999998,907,32,"G30-Illinois"
+"483","Kathy Hubbard",1413,0.0565200000000001,949,32,"G30-Illinois"
+"484","Roger Nimps",1372,0.0548799999999997,839,32,"G30-Illinois"
+"485","Norma Sanchez",1304,0.0521599999999997,630,32,"G30-Illinois"
+"486","Steve Hemmer",1080,0.0431999999999999,700,32,"G30-Illinois"
+"487","Jared Nimps",1037,0.04148,783,32,"G30-Illinois"
+"488","Jeff Townsend",926,0.0370399999999996,928,32,"G30-Illinois"
+"489","Kassie Trevarrow",807,0.0322799999999999,802,32,"G30-Illinois"
+"490","Sean Fester",706,0.0282399999999998,903,32,"G30-Illinois"
+"491","Katie Fester",494,0.0197599999999997,667,32,"G30-Illinois"
+"492","Brian Trevarrow",462,0.0184799999999998,732,32,"G30-Illinois"
+"493","Jeff Hemmer",334,0.0133600000000001,601,32,"G30-Illinois"
+"494","Allison Gilmore",310,0.0124,873,32,"G30-Illinois"
+"495","Ronni Nimps",284,0.0113600000000001,579,32,"G30-Illinois"
+"496","Tom Nimps",202,0.00808000000000013,645,32,"G30-Illinois"
+"497","Chad Anderson",166,0.00664,511,32,"G30-Illinois"
+"498","Julie Trevarrow",131,0.00524,800,32,"G30-Illinois"
+"499","Julia Hemmer",111,0.00443999999999987,494,32,"G30-Illinois"
+"500","Martez Crain",53,0.00212000000000004,653,32,"G30-Illinois"
+"501","Emma Nimps",4145,0.1658,741,31,"G29-Connecticut"
+"502","Erin Franks",2415,0.0966000000000001,933,31,"G29-Connecticut"
+"503","Gary Nimps",2279,0.0911600000000003,904,31,"G29-Connecticut"
+"504","Michael Trevarrow",1907,0.0762799999999998,843,31,"G29-Connecticut"
+"505","Bradley Trevarrow",1815,0.0725999999999992,861,31,"G29-Connecticut"
+"506","Robert Tisdel",1461,0.05844,905,31,"G29-Connecticut"
+"507","Ashlee Crain",1453,0.05812,954,31,"G29-Connecticut"
+"508","Roger Nimps",1409,0.0563599999999998,844,31,"G29-Connecticut"
+"509","Kathy Hubbard",1354,0.0541600000000001,947,31,"G29-Connecticut"
+"510","Norma Sanchez",1315,0.0525999999999997,635,31,"G29-Connecticut"
+"511","Steve Hemmer",1112,0.0444799999999999,706,31,"G29-Connecticut"
+"512","Jared Nimps",1040,0.0416000000000001,782,31,"G29-Connecticut"
+"513","Jeff Townsend",892,0.0356800000000004,926,31,"G29-Connecticut"
+"514","Kassie Trevarrow",811,0.03244,801,31,"G29-Connecticut"
+"515","Sean Fester",715,0.0285999999999995,902,31,"G29-Connecticut"
+"516","Brian Trevarrow",550,0.0219999999999999,738,31,"G29-Connecticut"
+"517","Katie Fester",481,0.0192400000000001,664,31,"G29-Connecticut"
+"518","Jeff Hemmer",465,0.0186,608,31,"G29-Connecticut"
+"519","Ronni Nimps",277,0.01108,577,31,"G29-Connecticut"
+"520","Allison Gilmore",253,0.01012,866,31,"G29-Connecticut"
+"521","Tom Nimps",199,0.00795999999999993,643,31,"G29-Connecticut"
+"522","Chad Anderson",161,0.00644000000000015,510,31,"G29-Connecticut"
+"523","Julie Trevarrow",156,0.00623999999999998,806,31,"G29-Connecticut"
+"524","Julia Hemmer",114,0.00456000000000009,500,31,"G29-Connecticut"
+"525","Martez Crain",81,0.00324000000000006,661,31,"G29-Connecticut"
+"526","Emma Nimps",4046,0.16184,736,30,"G28-Arizona"
+"527","Erin Franks",2366,0.0946400000000001,929,30,"G28-Arizona"
+"528","Gary Nimps",2269,0.0907599999999998,900,30,"G28-Arizona"
+"529","Michael Trevarrow",1951,0.0780399999999998,848,30,"G28-Arizona"
+"530","Bradley Trevarrow",1813,0.0725200000000003,858,30,"G28-Arizona"
+"531","Robert Tisdel",1441,0.0576400000000004,901,30,"G28-Arizona"
+"532","Ashlee Crain",1417,0.05668,950,30,"G28-Arizona"
+"533","Roger Nimps",1400,0.0559999999999999,840,30,"G28-Arizona"
+"534","Kathy Hubbard",1354,0.0541600000000001,944,30,"G28-Arizona"
+"535","Norma Sanchez",1286,0.0514400000000002,628,30,"G28-Arizona"
+"536","Steve Hemmer",1155,0.0462000000000001,710,30,"G28-Arizona"
+"537","Jared Nimps",1015,0.0405999999999999,778,30,"G28-Arizona"
+"538","Jeff Townsend",890,0.0356000000000002,922,30,"G28-Arizona"
+"539","Kassie Trevarrow",817,0.0326800000000004,806,30,"G28-Arizona"
+"540","Sean Fester",718,0.0287200000000001,898,30,"G28-Arizona"
+"541","Brian Trevarrow",608,0.0243200000000002,743,30,"G28-Arizona"
+"542","Jeff Hemmer",566,0.0226399999999998,613,30,"G28-Arizona"
+"543","Katie Fester",524,0.02096,671,30,"G28-Arizona"
+"544","Ronni Nimps",272,0.0108799999999999,572,30,"G28-Arizona"
+"545","Allison Gilmore",249,0.00996000000000002,862,30,"G28-Arizona"
+"546","Julie Trevarrow",193,0.00771999999999982,812,30,"G28-Arizona"
+"547","Tom Nimps",189,0.00756000000000014,639,30,"G28-Arizona"
+"548","Chad Anderson",118,0.00472000000000007,501,30,"G28-Arizona"
+"549","Julia Hemmer",110,0.00439999999999992,496,30,"G28-Arizona"
+"550","Martez Crain",79,0.00315999999999998,658,30,"G28-Arizona"
+"551","Emma Nimps",4063,0.16252,736,29,"G27-New Mexico"
+"552","Erin Franks",2358,0.0943200000000002,929,29,"G27-New Mexico"
+"553","Gary Nimps",2259,0.0903600000000004,899,29,"G27-New Mexico"
+"554","Michael Trevarrow",1977,0.0790799999999999,848,29,"G27-New Mexico"
+"555","Bradley Trevarrow",1804,0.0721600000000007,857,29,"G27-New Mexico"
+"556","Robert Tisdel",1451,0.0580400000000005,900,29,"G27-New Mexico"
+"557","Ashlee Crain",1412,0.0564799999999998,950,29,"G27-New Mexico"
+"558","Roger Nimps",1400,0.0559999999999999,841,29,"G27-New Mexico"
+"559","Kathy Hubbard",1361,0.0544400000000003,943,29,"G27-New Mexico"
+"560","Norma Sanchez",1287,0.0514799999999999,629,29,"G27-New Mexico"
+"561","Steve Hemmer",1079,0.0431599999999998,705,29,"G27-New Mexico"
+"562","Jared Nimps",1023,0.0409200000000001,776,29,"G27-New Mexico"
+"563","Jeff Townsend",893,0.0357199999999998,922,29,"G27-New Mexico"
+"564","Kassie Trevarrow",830,0.0331999999999997,807,29,"G27-New Mexico"
+"565","Sean Fester",723,0.0289200000000004,898,29,"G27-New Mexico"
+"566","Brian Trevarrow",611,0.0244400000000001,741,29,"G27-New Mexico"
+"567","Jeff Hemmer",556,0.02224,609,29,"G27-New Mexico"
+"568","Katie Fester",518,0.0207199999999996,668,29,"G27-New Mexico"
+"569","Ronni Nimps",291,0.0116400000000001,574,29,"G27-New Mexico"
+"570","Allison Gilmore",275,0.0110000000000001,865,29,"G27-New Mexico"
+"571","Julie Trevarrow",203,0.00812000000000009,814,29,"G27-New Mexico"
+"572","Tom Nimps",168,0.00672000000000021,634,29,"G27-New Mexico"
+"573","Chad Anderson",118,0.00472000000000007,500,29,"G27-New Mexico"
+"574","Julia Hemmer",116,0.00463999999999989,498,29,"G27-New Mexico"
+"575","Martez Crain",82,0.00327999999999994,658,29,"G27-New Mexico"
+"576","Emma Nimps",4192,0.16768,751,28,"G26-Kentucky"
+"577","Erin Franks",2112,0.0844800000000004,922,28,"G26-Kentucky"
+"578","Gary Nimps",2088,0.08352,891,28,"G26-Kentucky"
+"579","Michael Trevarrow",2062,0.0824799999999997,853,28,"G26-Kentucky"
+"580","Bradley Trevarrow",1982,0.0792800000000003,859,28,"G26-Kentucky"
+"581","Robert Tisdel",1469,0.0587600000000003,905,28,"G26-Kentucky"
+"582","Ashlee Crain",1449,0.0579600000000001,954,28,"G26-Kentucky"
+"583","Kathy Hubbard",1388,0.0555199999999996,947,28,"G26-Kentucky"
+"584","Roger Nimps",1315,0.0525999999999995,842,28,"G26-Kentucky"
+"585","Norma Sanchez",1290,0.0515999999999998,634,28,"G26-Kentucky"
+"586","Jared Nimps",1010,0.0403999999999998,780,28,"G26-Kentucky"
+"587","Steve Hemmer",979,0.03916,698,28,"G26-Kentucky"
+"588","Jeff Townsend",915,0.0366,926,28,"G26-Kentucky"
+"589","Sean Fester",766,0.0306400000000005,903,28,"G26-Kentucky"
+"590","Kassie Trevarrow",745,0.0298,799,28,"G26-Kentucky"
+"591","Brian Trevarrow",628,0.0251200000000003,746,28,"G26-Kentucky"
+"592","Katie Fester",587,0.0234800000000003,678,28,"G26-Kentucky"
+"593","Jeff Hemmer",541,0.0216399999999997,620,28,"G26-Kentucky"
+"594","Allison Gilmore",315,0.0125999999999998,869,28,"G26-Kentucky"
+"595","Ronni Nimps",297,0.0118800000000001,576,28,"G26-Kentucky"
+"596","Julie Trevarrow",279,0.0111599999999999,825,28,"G26-Kentucky"
+"597","Chad Anderson",178,0.00712000000000001,517,28,"G26-Kentucky"
+"598","Tom Nimps",133,0.00532000000000026,627,28,"G26-Kentucky"
+"599","Julia Hemmer",120,0.00480000000000003,502,28,"G26-Kentucky"
+"600","Martez Crain",103,0.00412,664,28,"G26-Kentucky"
+"601","Emma Nimps",4177,0.167080000000001,750,27,"G25-Florida"
+"602","Erin Franks",2118,0.0847199999999995,918,27,"G25-Florida"
+"603","Michael Trevarrow",2095,0.0837999999999999,850,27,"G25-Florida"
+"604","Gary Nimps",2087,0.0834799999999991,888,27,"G25-Florida"
+"605","Bradley Trevarrow",1978,0.0791199999999997,856,27,"G25-Florida"
+"606","Robert Tisdel",1468,0.05872,901,27,"G25-Florida"
+"607","Ashlee Crain",1446,0.05784,950,27,"G25-Florida"
+"608","Kathy Hubbard",1383,0.0553200000000006,944,27,"G25-Florida"
+"609","Roger Nimps",1312,0.0524800000000004,838,27,"G25-Florida"
+"610","Norma Sanchez",1284,0.0513599999999999,629,27,"G25-Florida"
+"611","Jared Nimps",1016,0.0406399999999995,777,27,"G25-Florida"
+"612","Steve Hemmer",935,0.0373999999999999,692,27,"G25-Florida"
+"613","Jeff Townsend",910,0.0363999999999997,923,27,"G25-Florida"
+"614","Sean Fester",773,0.0309200000000006,900,27,"G25-Florida"
+"615","Kassie Trevarrow",720,0.0287999999999997,793,27,"G25-Florida"
+"616","Brian Trevarrow",637,0.0254799999999999,743,27,"G25-Florida"
+"617","Katie Fester",594,0.0237600000000004,675,27,"G25-Florida"
+"618","Jeff Hemmer",587,0.0234800000000003,622,27,"G25-Florida"
+"619","Allison Gilmore",346,0.0138399999999999,868,27,"G25-Florida"
+"620","Ronni Nimps",294,0.01176,572,27,"G25-Florida"
+"621","Julie Trevarrow",239,0.00956000000000005,819,27,"G25-Florida"
+"622","Chad Anderson",179,0.0071599999999999,515,27,"G25-Florida"
+"623","Tom Nimps",136,0.0054399999999999,624,27,"G25-Florida"
+"624","Julia Hemmer",111,0.00443999999999989,495,27,"G25-Florida"
+"625","Martez Crain",108,0.00432000000000003,663,27,"G25-Florida"
+"626","Emma Nimps",4195,0.1678,749,26,"G24-Maryland"
+"627","Erin Franks",2160,0.0863999999999998,918,26,"G24-Maryland"
+"628","Michael Trevarrow",2097,0.0838799999999996,848,26,"G24-Maryland"
+"629","Gary Nimps",2049,0.0819600000000002,884,26,"G24-Maryland"
+"630","Bradley Trevarrow",1940,0.0776000000000003,852,26,"G24-Maryland"
+"631","Robert Tisdel",1482,0.0592799999999999,900,26,"G24-Maryland"
+"632","Ashlee Crain",1438,0.0575199999999999,949,26,"G24-Maryland"
+"633","Kathy Hubbard",1359,0.0543600000000001,941,26,"G24-Maryland"
+"634","Roger Nimps",1315,0.0525999999999995,836,26,"G24-Maryland"
+"635","Norma Sanchez",1302,0.0520799999999999,629,26,"G24-Maryland"
+"636","Jared Nimps",1007,0.0402799999999999,776,26,"G24-Maryland"
+"637","Steve Hemmer",949,0.0379599999999998,692,26,"G24-Maryland"
+"638","Jeff Townsend",891,0.0356399999999996,920,26,"G24-Maryland"
+"639","Sean Fester",768,0.0307200000000004,897,26,"G24-Maryland"
+"640","Kassie Trevarrow",720,0.0287999999999998,792,26,"G24-Maryland"
+"641","Brian Trevarrow",651,0.0260400000000003,742,26,"G24-Maryland"
+"642","Jeff Hemmer",589,0.0235600000000002,621,26,"G24-Maryland"
+"643","Katie Fester",587,0.0234800000000004,671,26,"G24-Maryland"
+"644","Allison Gilmore",345,0.0138000000000001,866,26,"G24-Maryland"
+"645","Ronni Nimps",295,0.0118,571,26,"G24-Maryland"
+"646","Julie Trevarrow",242,0.00967999999999999,817,26,"G24-Maryland"
+"647","Chad Anderson",183,0.00732000000000001,515,26,"G24-Maryland"
+"648","Tom Nimps",134,0.00536000000000027,623,26,"G24-Maryland"
+"649","Julia Hemmer",112,0.00448000000000006,494,26,"G24-Maryland"
+"650","Martez Crain",105,0.00419999999999998,659,26,"G24-Maryland"
+"651","Emma Nimps",4165,0.1666,748,25,"G23-Mississippi"
+"652","Erin Franks",2111,0.0844399999999997,915,25,"G23-Mississippi"
+"653","Michael Trevarrow",2086,0.0834400000000003,846,25,"G23-Mississippi"
+"654","Gary Nimps",2041,0.0816399999999999,884,25,"G23-Mississippi"
+"655","Bradley Trevarrow",2040,0.0815999999999996,856,25,"G23-Mississippi"
+"656","Robert Tisdel",1487,0.0594799999999997,898,25,"G23-Mississippi"
+"657","Ashlee Crain",1410,0.0564,947,25,"G23-Mississippi"
+"658","Kathy Hubbard",1372,0.0548799999999996,941,25,"G23-Mississippi"
+"659","Norma Sanchez",1305,0.0522000000000004,627,25,"G23-Mississippi"
+"660","Roger Nimps",1300,0.0520000000000003,835,25,"G23-Mississippi"
+"661","Jared Nimps",978,0.0391200000000003,774,25,"G23-Mississippi"
+"662","Steve Hemmer",917,0.0366799999999999,688,25,"G23-Mississippi"
+"663","Jeff Townsend",898,0.0359199999999995,920,25,"G23-Mississippi"
+"664","Sean Fester",768,0.0307200000000004,896,25,"G23-Mississippi"
+"665","Kassie Trevarrow",731,0.0292399999999999,792,25,"G23-Mississippi"
+"666","Brian Trevarrow",691,0.0276399999999998,744,25,"G23-Mississippi"
+"667","Jeff Hemmer",616,0.0246399999999997,623,25,"G23-Mississippi"
+"668","Katie Fester",589,0.0235600000000002,672,25,"G23-Mississippi"
+"669","Allison Gilmore",338,0.0135200000000001,865,25,"G23-Mississippi"
+"670","Ronni Nimps",286,0.0114399999999999,567,25,"G23-Mississippi"
+"671","Julie Trevarrow",247,0.0098799999999999,817,25,"G23-Mississippi"
+"672","Chad Anderson",180,0.00720000000000014,512,25,"G23-Mississippi"
+"673","Tom Nimps",132,0.0052799999999996,621,25,"G23-Mississippi"
+"674","Julia Hemmer",111,0.00443999999999991,492,25,"G23-Mississippi"
+"675","Martez Crain",103,0.00412,661,25,"G23-Mississippi"
+"676","Emma Nimps",4202,0.16808,753,24,"G22-Saint Mary's"
+"677","Gary Nimps",2081,0.0832399999999998,889,24,"G22-Saint Mary's"
+"678","Bradley Trevarrow",2068,0.0827200000000001,861,24,"G22-Saint Mary's"
+"679","Erin Franks",2035,0.0814000000000004,912,24,"G22-Saint Mary's"
+"680","Michael Trevarrow",1986,0.0794399999999998,843,24,"G22-Saint Mary's"
+"681","Robert Tisdel",1456,0.05824,894,24,"G22-Saint Mary's"
+"682","Roger Nimps",1338,0.0535200000000002,840,24,"G22-Saint Mary's"
+"683","Norma Sanchez",1249,0.0499600000000002,617,24,"G22-Saint Mary's"
+"684","Ashlee Crain",1237,0.0494799999999998,943,24,"G22-Saint Mary's"
+"685","Kathy Hubbard",1060,0.0423999999999997,937,24,"G22-Saint Mary's"
+"686","Steve Hemmer",986,0.0394399999999999,693,24,"G22-Saint Mary's"
+"687","Jeff Townsend",985,0.0393999999999997,925,24,"G22-Saint Mary's"
+"688","Sean Fester",984,0.0393600000000005,902,24,"G22-Saint Mary's"
+"689","Jared Nimps",908,0.0363199999999997,770,24,"G22-Saint Mary's"
+"690","Kassie Trevarrow",816,0.0326399999999998,797,24,"G22-Saint Mary's"
+"691","Brian Trevarrow",754,0.0301600000000005,749,24,"G22-Saint Mary's"
+"692","Jeff Hemmer",633,0.0253199999999997,628,24,"G22-Saint Mary's"
+"693","Katie Fester",554,0.0221600000000003,668,24,"G22-Saint Mary's"
+"694","Allison Gilmore",319,0.0127599999999999,861,24,"G22-Saint Mary's"
+"695","Ronni Nimps",302,0.0120800000000001,573,24,"G22-Saint Mary's"
+"696","Julie Trevarrow",238,0.00951999999999988,814,24,"G22-Saint Mary's"
+"697","Chad Anderson",208,0.00832000000000004,520,24,"G22-Saint Mary's"
+"698","Tom Nimps",144,0.00575999999999976,626,24,"G22-Saint Mary's"
+"699","Julia Hemmer",114,0.00456000000000013,497,24,"G22-Saint Mary's"
+"700","Martez Crain",103,0.00412,666,24,"G22-Saint Mary's"
+"701","Emma Nimps",4242,0.16968,759,23,"G21-Duke"
+"702","Gary Nimps",2207,0.0882799999999999,895,23,"G21-Duke"
+"703","Erin Franks",1985,0.0794000000000002,911,23,"G21-Duke"
+"704","Bradley Trevarrow",1956,0.0782399999999999,860,23,"G21-Duke"
+"705","Michael Trevarrow",1902,0.07608,841,23,"G21-Duke"
+"706","Robert Tisdel",1406,0.0562399999999999,893,23,"G21-Duke"
+"707","Roger Nimps",1326,0.0530400000000004,839,23,"G21-Duke"
+"708","Norma Sanchez",1215,0.0485999999999997,609,23,"G21-Duke"
+"709","Ashlee Crain",1196,0.0478399999999997,942,23,"G21-Duke"
+"710","Sean Fester",1136,0.0454400000000005,907,23,"G21-Duke"
+"711","Steve Hemmer",1023,0.0409200000000001,697,23,"G21-Duke"
+"712","Kathy Hubbard",1004,0.0401599999999998,936,23,"G21-Duke"
+"713","Jared Nimps",921,0.0368399999999995,775,23,"G21-Duke"
+"714","Jeff Townsend",906,0.0362400000000003,924,23,"G21-Duke"
+"715","Kassie Trevarrow",875,0.0349999999999999,801,23,"G21-Duke"
+"716","Brian Trevarrow",740,0.0296000000000003,753,23,"G21-Duke"
+"717","Jeff Hemmer",639,0.0255600000000004,634,23,"G21-Duke"
+"718","Katie Fester",579,0.0231599999999996,673,23,"G21-Duke"
+"719","Ronni Nimps",319,0.0127599999999999,577,23,"G21-Duke"
+"720","Allison Gilmore",310,0.0123999999999999,860,23,"G21-Duke"
+"721","Julie Trevarrow",263,0.0105200000000002,818,23,"G21-Duke"
+"722","Chad Anderson",222,0.00887999999999996,526,23,"G21-Duke"
+"723","Tom Nimps",154,0.00616000000000001,631,23,"G21-Duke"
+"724","Julia Hemmer",109,0.00435999999999991,495,23,"G21-Duke"
+"725","Martez Crain",95,0.00379999999999998,664,23,"G21-Duke"
+"726","Emma Nimps",4222,0.168879999999999,758,22,"G20-Colorado St."
+"727","Gary Nimps",2210,0.0884,893,22,"G20-Colorado St."
+"728","Erin Franks",1971,0.0788400000000003,908,22,"G20-Colorado St."
+"729","Bradley Trevarrow",1959,0.0783599999999997,859,22,"G20-Colorado St."
+"730","Michael Trevarrow",1904,0.0761599999999998,840,22,"G20-Colorado St."
+"731","Robert Tisdel",1391,0.0556399999999998,891,22,"G20-Colorado St."
+"732","Roger Nimps",1326,0.0530400000000004,838,22,"G20-Colorado St."
+"733","Norma Sanchez",1218,0.0487200000000001,607,22,"G20-Colorado St."
+"734","Ashlee Crain",1190,0.0476000000000003,940,22,"G20-Colorado St."
+"735","Sean Fester",1129,0.0451600000000001,904,22,"G20-Colorado St."
+"736","Steve Hemmer",1038,0.0415200000000001,697,22,"G20-Colorado St."
+"737","Kathy Hubbard",998,0.0399199999999998,934,22,"G20-Colorado St."
+"738","Jared Nimps",922,0.0368800000000002,774,22,"G20-Colorado St."
+"739","Jeff Townsend",901,0.0360400000000001,921,22,"G20-Colorado St."
+"740","Kassie Trevarrow",868,0.0347199999999999,799,22,"G20-Colorado St."
+"741","Brian Trevarrow",742,0.0296800000000001,752,22,"G20-Colorado St."
+"742","Jeff Hemmer",677,0.0270799999999997,634,22,"G20-Colorado St."
+"743","Katie Fester",583,0.0233200000000007,672,22,"G20-Colorado St."
+"744","Ronni Nimps",324,0.0129600000000002,577,22,"G20-Colorado St."
+"745","Allison Gilmore",310,0.0123999999999999,857,22,"G20-Colorado St."
+"746","Julie Trevarrow",263,0.0105200000000002,815,22,"G20-Colorado St."
+"747","Chad Anderson",224,0.00895999999999993,526,22,"G20-Colorado St."
+"748","Tom Nimps",154,0.00616000000000001,631,22,"G20-Colorado St."
+"749","Julia Hemmer",110,0.00439999999999983,495,22,"G20-Colorado St."
+"750","Martez Crain",95,0.00379999999999998,662,22,"G20-Colorado St."
+"751","Emma Nimps",4248,0.16992,765,21,"G19-Iowa St."
+"752","Gary Nimps",2472,0.0988799999999996,898,21,"G19-Iowa St."
+"753","Erin Franks",2010,0.0804000000000001,913,21,"G19-Iowa St."
+"754","Michael Trevarrow",1882,0.0752800000000003,845,21,"G19-Iowa St."
+"755","Bradley Trevarrow",1673,0.06692,851,21,"G19-Iowa St."
+"756","Robert Tisdel",1409,0.0563599999999998,896,21,"G19-Iowa St."
+"757","Roger Nimps",1335,0.0534000000000001,843,21,"G19-Iowa St."
+"758","Ashlee Crain",1290,0.0515999999999999,945,21,"G19-Iowa St."
+"759","Norma Sanchez",1224,0.0489600000000001,612,21,"G19-Iowa St."
+"760","Kathy Hubbard",1144,0.0457600000000001,938,21,"G19-Iowa St."
+"761","Steve Hemmer",1045,0.0418000000000002,702,21,"G19-Iowa St."
+"762","Sean Fester",993,0.0397199999999997,900,21,"G19-Iowa St."
+"763","Jared Nimps",929,0.0371599999999999,779,21,"G19-Iowa St."
+"764","Kassie Trevarrow",899,0.0359600000000002,806,21,"G19-Iowa St."
+"765","Brian Trevarrow",787,0.0314799999999999,760,21,"G19-Iowa St."
+"766","Jeff Townsend",754,0.0301600000000002,917,21,"G19-Iowa St."
+"767","Jeff Hemmer",677,0.0270799999999997,642,21,"G19-Iowa St."
+"768","Katie Fester",602,0.02408,677,21,"G19-Iowa St."
+"769","Ronni Nimps",301,0.0120400000000001,572,21,"G19-Iowa St."
+"770","Julie Trevarrow",285,0.0113999999999999,823,21,"G19-Iowa St."
+"771","Allison Gilmore",251,0.01004,853,21,"G19-Iowa St."
+"772","Chad Anderson",207,0.00828000000000001,522,21,"G19-Iowa St."
+"773","Tom Nimps",128,0.00512000000000014,626,21,"G19-Iowa St."
+"774","Martez Crain",112,0.00448,670,21,"G19-Iowa St."
+"775","Julia Hemmer",111,0.00443999999999987,500,21,"G19-Iowa St."
+"776","Emma Nimps",4263,0.17052,763,20,"G18-Alabama"
+"777","Gary Nimps",2460,0.0983999999999994,896,20,"G18-Alabama"
+"778","Erin Franks",1959,0.07836,909,20,"G18-Alabama"
+"779","Michael Trevarrow",1898,0.07592,843,20,"G18-Alabama"
+"780","Bradley Trevarrow",1688,0.0675200000000001,849,20,"G18-Alabama"
+"781","Robert Tisdel",1416,0.0566399999999996,894,20,"G18-Alabama"
+"782","Roger Nimps",1375,0.0550000000000002,842,20,"G18-Alabama"
+"783","Ashlee Crain",1314,0.0525600000000002,942,20,"G18-Alabama"
+"784","Norma Sanchez",1228,0.04912,612,20,"G18-Alabama"
+"785","Kathy Hubbard",1165,0.0465999999999999,936,20,"G18-Alabama"
+"786","Steve Hemmer",1029,0.0411599999999999,698,20,"G18-Alabama"
+"787","Sean Fester",945,0.0378000000000004,895,20,"G18-Alabama"
+"788","Jared Nimps",942,0.0376799999999993,777,20,"G18-Alabama"
+"789","Kassie Trevarrow",907,0.03628,805,20,"G18-Alabama"
+"790","Jeff Townsend",767,0.0306799999999999,915,20,"G18-Alabama"
+"791","Brian Trevarrow",763,0.0305200000000004,755,20,"G18-Alabama"
+"792","Jeff Hemmer",648,0.0259200000000004,637,20,"G18-Alabama"
+"793","Katie Fester",589,0.0235600000000002,673,20,"G18-Alabama"
+"794","Ronni Nimps",305,0.0122,570,20,"G18-Alabama"
+"795","Julie Trevarrow",275,0.0110000000000001,818,20,"G18-Alabama"
+"796","Allison Gilmore",255,0.0101999999999999,851,20,"G18-Alabama"
+"797","Chad Anderson",210,0.00840000000000003,521,20,"G18-Alabama"
+"798","Martez Crain",128,0.00512000000000011,672,20,"G18-Alabama"
+"799","Tom Nimps",126,0.00504000000000008,622,20,"G18-Alabama"
+"800","Julia Hemmer",112,0.00448000000000013,497,20,"G18-Alabama"
+"801","Emma Nimps",4256,0.17024,760,19,"G17-Baylor"
+"802","Gary Nimps",2435,0.0973999999999997,894,19,"G17-Baylor"
+"803","Erin Franks",1961,0.07844,907,19,"G17-Baylor"
+"804","Michael Trevarrow",1901,0.07604,842,19,"G17-Baylor"
+"805","Bradley Trevarrow",1674,0.0669599999999997,847,19,"G17-Baylor"
+"806","Robert Tisdel",1414,0.0565599999999998,892,19,"G17-Baylor"
+"807","Roger Nimps",1369,0.0547599999999994,840,19,"G17-Baylor"
+"808","Ashlee Crain",1312,0.0524800000000004,941,19,"G17-Baylor"
+"809","Norma Sanchez",1236,0.0494399999999998,613,19,"G17-Baylor"
+"810","Kathy Hubbard",1165,0.0466,935,19,"G17-Baylor"
+"811","Steve Hemmer",1035,0.0414000000000002,697,19,"G17-Baylor"
+"812","Sean Fester",947,0.0378799999999995,894,19,"G17-Baylor"
+"813","Jared Nimps",936,0.0374399999999999,775,19,"G17-Baylor"
+"814","Kassie Trevarrow",909,0.0363600000000001,804,19,"G17-Baylor"
+"815","Brian Trevarrow",773,0.0309200000000001,754,19,"G17-Baylor"
+"816","Jeff Townsend",767,0.0306799999999998,913,19,"G17-Baylor"
+"817","Jeff Hemmer",647,0.0258799999999996,635,19,"G17-Baylor"
+"818","Katie Fester",620,0.0247999999999996,674,19,"G17-Baylor"
+"819","Ronni Nimps",307,0.0122800000000001,569,19,"G17-Baylor"
+"820","Julie Trevarrow",282,0.01128,818,19,"G17-Baylor"
+"821","Allison Gilmore",249,0.00995999999999997,849,19,"G17-Baylor"
+"822","Chad Anderson",196,0.00784000000000011,518,19,"G17-Baylor"
+"823","Martez Crain",131,0.00524000000000005,672,19,"G17-Baylor"
+"824","Tom Nimps",129,0.00515999999999995,621,19,"G17-Baylor"
+"825","Julia Hemmer",113,0.00452000000000004,496,19,"G17-Baylor"
+"826","Emma Nimps",4394,0.17576,756,18,"R64 D2 Update"
+"827","Gary Nimps",2406,0.09624,890,18,"R64 D2 Update"
+"828","Erin Franks",1927,0.07708,904,18,"R64 D2 Update"
+"829","Michael Trevarrow",1880,0.0752,838,18,"R64 D2 Update"
+"830","Ashlee Crain",1758,0.07032,947,18,"R64 D2 Update"
+"831","Bradley Trevarrow",1660,0.0664,844,18,"R64 D2 Update"
+"832","Roger Nimps",1355,0.0542,836,18,"R64 D2 Update"
+"833","Robert Tisdel",1272,0.05088,889,18,"R64 D2 Update"
+"834","Norma Sanchez",1231,0.04924,609,18,"R64 D2 Update"
+"835","Kathy Hubbard",1069,0.04276,932,18,"R64 D2 Update"
+"836","Steve Hemmer",1023,0.04092,692,18,"R64 D2 Update"
+"837","Jared Nimps",938,0.03752,771,18,"R64 D2 Update"
+"838","Kassie Trevarrow",914,0.03656,800,18,"R64 D2 Update"
+"839","Sean Fester",907,0.03628,891,18,"R64 D2 Update"
+"840","Brian Trevarrow",772,0.03088,750,18,"R64 D2 Update"
+"841","Jeff Townsend",736,0.02944,910,18,"R64 D2 Update"
+"842","Katie Fester",674,0.02696,679,18,"R64 D2 Update"
+"843","Jeff Hemmer",456,0.01824,626,18,"R64 D2 Update"
+"844","Ronni Nimps",301,0.01204,564,18,"R64 D2 Update"
+"845","Julie Trevarrow",268,0.01072,815,18,"R64 D2 Update"
+"846","Allison Gilmore",220,0.0088,846,18,"R64 D2 Update"
+"847","Chad Anderson",173,0.00692,510,18,"R64 D2 Update"
+"848","Tom Nimps",130,0.0052,617,18,"R64 D2 Update"
+"849","Martez Crain",127,0.00508,668,18,"R64 D2 Update"
+"850","Julia Hemmer",119,0.00476,501,18,"R64 D2 Update"
+"851","Emma Nimps",4216,0.16864,760,17,"G16-Texas Tech"
+"852","Gary Nimps",2580,0.1032,906,17,"G16-Texas Tech"
+"853","Michael Trevarrow",2080,0.0832,858,17,"G16-Texas Tech"
+"854","Erin Franks",1998,0.07992,919,17,"G16-Texas Tech"
+"855","Ashlee Crain",1755,0.0702,961,17,"G16-Texas Tech"
+"856","Bradley Trevarrow",1664,0.06656,855,17,"G16-Texas Tech"
+"857","Roger Nimps",1248,0.04992,840,17,"G16-Texas Tech"
+"858","Robert Tisdel",1157,0.04628,899,17,"G16-Texas Tech"
+"859","Kathy Hubbard",1067,0.04268,944,17,"G16-Texas Tech"
+"860","Jared Nimps",1030,0.0412,789,17,"G16-Texas Tech"
+"861","Kassie Trevarrow",1016,0.04064,818,17,"G16-Texas Tech"
+"862","Norma Sanchez",997,0.03988,600,17,"G16-Texas Tech"
+"863","Steve Hemmer",984,0.03936,701,17,"G16-Texas Tech"
+"864","Sean Fester",937,0.03748,905,17,"G16-Texas Tech"
+"865","Brian Trevarrow",865,0.0346,770,17,"G16-Texas Tech"
+"866","Jeff Townsend",787,0.03148,925,17,"G16-Texas Tech"
+"867","Katie Fester",622,0.02488,686,17,"G16-Texas Tech"
+"868","Jeff Hemmer",443,0.01772,629,17,"G16-Texas Tech"
+"869","Julie Trevarrow",267,0.01068,828,17,"G16-Texas Tech"
+"870","Ronni Nimps",267,0.01068,559,17,"G16-Texas Tech"
+"871","Allison Gilmore",221,0.00884,861,17,"G16-Texas Tech"
+"872","Chad Anderson",163,0.00652,519,17,"G16-Texas Tech"
+"873","Tom Nimps",139,0.00556,632,17,"G16-Texas Tech"
+"874","Martez Crain",116,0.00464,678,17,"G16-Texas Tech"
+"875","Julia Hemmer",101,0.00404,502,17,"G16-Texas Tech"
+"876","Emma Nimps",4167,0.16668,753,16,"G15-Michigan"
+"877","Gary Nimps",2557,0.10228,905,16,"G15-Michigan"
+"878","Michael Trevarrow",2053,0.08212,854,16,"G15-Michigan"
+"879","Erin Franks",1859,0.07436,914,16,"G15-Michigan"
+"880","Ashlee Crain",1820,0.0728,960,16,"G15-Michigan"
+"881","Bradley Trevarrow",1722,0.06888,856,16,"G15-Michigan"
+"882","Roger Nimps",1252,0.05008,839,16,"G15-Michigan"
+"883","Robert Tisdel",1201,0.04804,898,16,"G15-Michigan"
+"884","Kathy Hubbard",1091,0.04364,942,16,"G15-Michigan"
+"885","Jared Nimps",1055,0.0422,788,16,"G15-Michigan"
+"886","Norma Sanchez",1032,0.04128,600,16,"G15-Michigan"
+"887","Steve Hemmer",1027,0.04108,702,16,"G15-Michigan"
+"888","Kassie Trevarrow",1006,0.04024,814,16,"G15-Michigan"
+"889","Sean Fester",955,0.0382,904,16,"G15-Michigan"
+"890","Brian Trevarrow",811,0.03244,765,16,"G15-Michigan"
+"891","Jeff Townsend",743,0.02972,921,16,"G15-Michigan"
+"892","Katie Fester",626,0.02504,686,16,"G15-Michigan"
+"893","Jeff Hemmer",441,0.01764,622,16,"G15-Michigan"
+"894","Ronni Nimps",275,0.011,559,16,"G15-Michigan"
+"895","Julie Trevarrow",273,0.01092,826,16,"G15-Michigan"
+"896","Allison Gilmore",210,0.0084,858,16,"G15-Michigan"
+"897","Chad Anderson",169,0.00676,517,16,"G15-Michigan"
+"898","Tom Nimps",149,0.00596,631,16,"G15-Michigan"
+"899","Martez Crain",116,0.00464,678,16,"G15-Michigan"
+"900","Julia Hemmer",96,0.00384,498,16,"G15-Michigan"
+"901","Emma Nimps",4303,0.17212,759,15,"G14-St. John's"
+"902","Gary Nimps",2570,0.1028,898,15,"G14-St. John's"
+"903","Michael Trevarrow",2000,0.08,849,15,"G14-St. John's"
+"904","Ashlee Crain",1787,0.07148,958,15,"G14-St. John's"
+"905","Erin Franks",1741,0.06964,907,15,"G14-St. John's"
+"906","Bradley Trevarrow",1564,0.06256,846,15,"G14-St. John's"
+"907","Roger Nimps",1227,0.04908,831,15,"G14-St. John's"
+"908","Sean Fester",1154,0.04616,909,15,"G14-St. John's"
+"909","Robert Tisdel",1121,0.04484,891,15,"G14-St. John's"
+"910","Steve Hemmer",1120,0.0448,709,15,"G14-St. John's"
+"911","Norma Sanchez",1051,0.04204,606,15,"G14-St. John's"
+"912","Jared Nimps",1016,0.04064,782,15,"G14-St. John's"
+"913","Kassie Trevarrow",1002,0.04008,808,15,"G14-St. John's"
+"914","Jeff Townsend",916,0.03664,926,15,"G14-St. John's"
+"915","Kathy Hubbard",864,0.03456,935,15,"G14-St. John's"
+"916","Brian Trevarrow",831,0.03324,763,15,"G14-St. John's"
+"917","Katie Fester",618,0.02472,679,15,"G14-St. John's"
+"918","Jeff Hemmer",376,0.01504,620,15,"G14-St. John's"
+"919","Ronni Nimps",282,0.01128,564,15,"G14-St. John's"
+"920","Julie Trevarrow",253,0.01012,820,15,"G14-St. John's"
+"921","Allison Gilmore",205,0.0082,856,15,"G14-St. John's"
+"922","Tom Nimps",183,0.00732,639,15,"G14-St. John's"
+"923","Chad Anderson",160,0.0064,509,15,"G14-St. John's"
+"924","Martez Crain",159,0.00636,685,15,"G14-St. John's"
+"925","Julia Hemmer",105,0.0042,505,15,"G14-St. John's"
+"926","Emma Nimps",4285,0.1714,758,14,"G13-UCLA"
+"927","Gary Nimps",2569,0.10276,896,14,"G13-UCLA"
+"928","Michael Trevarrow",2014,0.08056,848,14,"G13-UCLA"
+"929","Ashlee Crain",1798,0.07192,956,14,"G13-UCLA"
+"930","Erin Franks",1784,0.07136,907,14,"G13-UCLA"
+"931","Bradley Trevarrow",1566,0.06264,845,14,"G13-UCLA"
+"932","Roger Nimps",1225,0.049,829,14,"G13-UCLA"
+"933","Sean Fester",1146,0.04584,908,14,"G13-UCLA"
+"934","Steve Hemmer",1094,0.04376,706,14,"G13-UCLA"
+"935","Robert Tisdel",1049,0.04196,888,14,"G13-UCLA"
+"936","Jared Nimps",1022,0.04088,782,14,"G13-UCLA"
+"937","Kassie Trevarrow",1007,0.04028,807,14,"G13-UCLA"
+"938","Norma Sanchez",997,0.03988,602,14,"G13-UCLA"
+"939","Jeff Townsend",942,0.03768,926,14,"G13-UCLA"
+"940","Kathy Hubbard",853,0.03412,933,14,"G13-UCLA"
+"941","Brian Trevarrow",846,0.03384,764,14,"G13-UCLA"
+"942","Katie Fester",630,0.0252,679,14,"G13-UCLA"
+"943","Jeff Hemmer",426,0.01704,622,14,"G13-UCLA"
+"944","Ronni Nimps",276,0.01104,560,14,"G13-UCLA"
+"945","Julie Trevarrow",263,0.01052,819,14,"G13-UCLA"
+"946","Allison Gilmore",207,0.00828,855,14,"G13-UCLA"
+"947","Tom Nimps",180,0.0072,639,14,"G13-UCLA"
+"948","Martez Crain",170,0.0068,686,14,"G13-UCLA"
+"949","Chad Anderson",165,0.0066,510,14,"G13-UCLA"
+"950","Julia Hemmer",109,0.00436,506,14,"G13-UCLA"
+"951","Emma Nimps",4304,0.17216,763,13,"G12-Drake"
+"952","Gary Nimps",2572,0.10288,896,13,"G12-Drake"
+"953","Michael Trevarrow",1977,0.07908,849,13,"G12-Drake"
+"954","Erin Franks",1730,0.0692,905,13,"G12-Drake"
+"955","Ashlee Crain",1667,0.06668,954,13,"G12-Drake"
+"956","Bradley Trevarrow",1562,0.06248,844,13,"G12-Drake"
+"957","Sean Fester",1277,0.05108,913,13,"G12-Drake"
+"958","Roger Nimps",1207,0.04828,828,13,"G12-Drake"
+"959","Robert Tisdel",1104,0.04416,893,13,"G12-Drake"
+"960","Steve Hemmer",1099,0.04396,710,13,"G12-Drake"
+"961","Kassie Trevarrow",1057,0.04228,811,13,"G12-Drake"
+"962","Jared Nimps",1055,0.0422,785,13,"G12-Drake"
+"963","Norma Sanchez",979,0.03916,597,13,"G12-Drake"
+"964","Jeff Townsend",877,0.03508,924,13,"G12-Drake"
+"965","Brian Trevarrow",871,0.03484,766,13,"G12-Drake"
+"966","Kathy Hubbard",808,0.03232,932,13,"G12-Drake"
+"967","Katie Fester",583,0.02332,673,13,"G12-Drake"
+"968","Jeff Hemmer",430,0.0172,626,13,"G12-Drake"
+"969","Ronni Nimps",269,0.01076,558,13,"G12-Drake"
+"970","Allison Gilmore",257,0.01028,859,13,"G12-Drake"
+"971","Julie Trevarrow",247,0.00988,817,13,"G12-Drake"
+"972","Tom Nimps",212,0.00848,647,13,"G12-Drake"
+"973","Chad Anderson",185,0.0074,518,13,"G12-Drake"
+"974","Martez Crain",180,0.0072,689,13,"G12-Drake"
+"975","Julia Hemmer",105,0.0042,502,13,"G12-Drake"
+"976","Emma Nimps",4260,0.1704,761,12,"G11-Texas A&M"
+"977","Gary Nimps",2416,0.09664,886,12,"G11-Texas A&M"
+"978","Michael Trevarrow",2117,0.08468,851,12,"G11-Texas A&M"
+"979","Ashlee Crain",2054,0.08216,958,12,"G11-Texas A&M"
+"980","Erin Franks",1628,0.06512,905,12,"G11-Texas A&M"
+"981","Bradley Trevarrow",1449,0.05796,833,12,"G11-Texas A&M"
+"982","Sean Fester",1386,0.05544,918,12,"G11-Texas A&M"
+"983","Roger Nimps",1173,0.04692,818,12,"G11-Texas A&M"
+"984","Jared Nimps",1167,0.04668,798,12,"G11-Texas A&M"
+"985","Steve Hemmer",1002,0.04008,697,12,"G11-Texas A&M"
+"986","Kassie Trevarrow",925,0.037,799,12,"G11-Texas A&M"
+"987","Norma Sanchez",907,0.03628,584,12,"G11-Texas A&M"
+"988","Kathy Hubbard",896,0.03584,936,12,"G11-Texas A&M"
+"989","Robert Tisdel",875,0.035,882,12,"G11-Texas A&M"
+"990","Jeff Townsend",838,0.03352,926,12,"G11-Texas A&M"
+"991","Brian Trevarrow",754,0.03016,767,12,"G11-Texas A&M"
+"992","Katie Fester",717,0.02868,686,12,"G11-Texas A&M"
+"993","Jeff Hemmer",423,0.01692,625,12,"G11-Texas A&M"
+"994","Martez Crain",341,0.01364,709,12,"G11-Texas A&M"
+"995","Ronni Nimps",290,0.0116,560,12,"G11-Texas A&M"
+"996","Julie Trevarrow",281,0.01124,822,12,"G11-Texas A&M"
+"997","Tom Nimps",260,0.0104,661,12,"G11-Texas A&M"
+"998","Chad Anderson",189,0.00756,523,12,"G11-Texas A&M"
+"999","Allison Gilmore",147,0.00588,848,12,"G11-Texas A&M"
+"1000","Julia Hemmer",115,0.0046,504,12,"G11-Texas A&M"
+"1001","Emma Nimps",4204,0.16816,754,11,"G10-Arkansas"
+"1002","Gary Nimps",2398,0.09592,886,11,"G10-Arkansas"
+"1003","Michael Trevarrow",2169,0.08676,853,11,"G10-Arkansas"
+"1004","Ashlee Crain",1964,0.07856,956,11,"G10-Arkansas"
+"1005","Erin Franks",1669,0.06676,906,11,"G10-Arkansas"
+"1006","Bradley Trevarrow",1446,0.05784,832,11,"G10-Arkansas"
+"1007","Sean Fester",1338,0.05352,914,11,"G10-Arkansas"
+"1008","Roger Nimps",1189,0.04756,817,11,"G10-Arkansas"
+"1009","Jared Nimps",1178,0.04712,799,11,"G10-Arkansas"
+"1010","Steve Hemmer",1006,0.04024,696,11,"G10-Arkansas"
+"1011","Robert Tisdel",972,0.03888,886,11,"G10-Arkansas"
+"1012","Kassie Trevarrow",947,0.03788,801,11,"G10-Arkansas"
+"1013","Kathy Hubbard",943,0.03772,935,11,"G10-Arkansas"
+"1014","Norma Sanchez",883,0.03532,577,11,"G10-Arkansas"
+"1015","Jeff Townsend",795,0.0318,923,11,"G10-Arkansas"
+"1016","Brian Trevarrow",719,0.02876,764,11,"G10-Arkansas"
+"1017","Katie Fester",715,0.0286,686,11,"G10-Arkansas"
+"1018","Jeff Hemmer",416,0.01664,617,11,"G10-Arkansas"
+"1019","Martez Crain",357,0.01428,712,11,"G10-Arkansas"
+"1020","Julie Trevarrow",292,0.01168,822,11,"G10-Arkansas"
+"1021","Ronni Nimps",280,0.0112,555,11,"G10-Arkansas"
+"1022","Tom Nimps",261,0.01044,661,11,"G10-Arkansas"
+"1023","Chad Anderson",199,0.00796,526,11,"G10-Arkansas"
+"1024","Allison Gilmore",142,0.00568,845,11,"G10-Arkansas"
+"1025","Julia Hemmer",121,0.00484,507,11,"G10-Arkansas"
+"1026","Emma Nimps",4353,0.17412,757,10,"G9-Tennessee"
+"1027","Gary Nimps",2538,0.10152,889,10,"G9-Tennessee"
+"1028","Michael Trevarrow",2200,0.088,858,10,"G9-Tennessee"
+"1029","Ashlee Crain",2051,0.08204,959,10,"G9-Tennessee"
+"1030","Erin Franks",1420,0.0568,897,10,"G9-Tennessee"
+"1031","Sean Fester",1368,0.05472,917,10,"G9-Tennessee"
+"1032","Jared Nimps",1269,0.05076,816,10,"G9-Tennessee"
+"1033","Bradley Trevarrow",1202,0.04808,822,10,"G9-Tennessee"
+"1034","Roger Nimps",1163,0.04652,807,10,"G9-Tennessee"
+"1035","Kassie Trevarrow",955,0.0382,805,10,"G9-Tennessee"
+"1036","Kathy Hubbard",939,0.03756,938,10,"G9-Tennessee"
+"1037","Robert Tisdel",903,0.03612,888,10,"G9-Tennessee"
+"1038","Katie Fester",884,0.03536,703,10,"G9-Tennessee"
+"1039","Steve Hemmer",867,0.03468,685,10,"G9-Tennessee"
+"1040","Jeff Townsend",846,0.03384,928,10,"G9-Tennessee"
+"1041","Norma Sanchez",799,0.03196,577,10,"G9-Tennessee"
+"1042","Brian Trevarrow",705,0.0282,776,10,"G9-Tennessee"
+"1043","Julie Trevarrow",492,0.01968,839,10,"G9-Tennessee"
+"1044","Tom Nimps",372,0.01488,682,10,"G9-Tennessee"
+"1045","Martez Crain",281,0.01124,701,10,"G9-Tennessee"
+"1046","Jeff Hemmer",281,0.01124,606,10,"G9-Tennessee"
+"1047","Ronni Nimps",278,0.01112,555,10,"G9-Tennessee"
+"1048","Chad Anderson",224,0.00896,543,10,"G9-Tennessee"
+"1049","Allison Gilmore",154,0.00616,850,10,"G9-Tennessee"
+"1050","Julia Hemmer",119,0.00476,513,10,"G9-Tennessee"
+"1051","Emma Nimps",4386,0.17544,756,9,"G8-Gonzaga"
+"1052","Gary Nimps",2517,0.10068,885,9,"G8-Gonzaga"
+"1053","Michael Trevarrow",2168,0.08672,853,9,"G8-Gonzaga"
+"1054","Ashlee Crain",2067,0.08268,957,9,"G8-Gonzaga"
+"1055","Erin Franks",1427,0.05708,895,9,"G8-Gonzaga"
+"1056","Sean Fester",1336,0.05344,914,9,"G8-Gonzaga"
+"1057","Jared Nimps",1203,0.04812,810,9,"G8-Gonzaga"
+"1058","Bradley Trevarrow",1186,0.04744,818,9,"G8-Gonzaga"
+"1059","Roger Nimps",1174,0.04696,805,9,"G8-Gonzaga"
+"1060","Kassie Trevarrow",974,0.03896,805,9,"G8-Gonzaga"
+"1061","Kathy Hubbard",959,0.03836,937,9,"G8-Gonzaga"
+"1062","Katie Fester",913,0.03652,703,9,"G8-Gonzaga"
+"1063","Robert Tisdel",911,0.03644,886,9,"G8-Gonzaga"
+"1064","Steve Hemmer",890,0.0356,684,9,"G8-Gonzaga"
+"1065","Jeff Townsend",860,0.0344,926,9,"G8-Gonzaga"
+"1066","Norma Sanchez",809,0.03236,577,9,"G8-Gonzaga"
+"1067","Brian Trevarrow",666,0.02664,769,9,"G8-Gonzaga"
+"1068","Julie Trevarrow",509,0.02036,839,9,"G8-Gonzaga"
+"1069","Tom Nimps",367,0.01468,676,9,"G8-Gonzaga"
+"1070","Martez Crain",295,0.0118,701,9,"G8-Gonzaga"
+"1071","Jeff Hemmer",282,0.01128,604,9,"G8-Gonzaga"
+"1072","Ronni Nimps",282,0.01128,554,9,"G8-Gonzaga"
+"1073","Chad Anderson",219,0.00876,537,9,"G8-Gonzaga"
+"1074","Allison Gilmore",152,0.00608,848,9,"G8-Gonzaga"
+"1075","Julia Hemmer",124,0.00496,513,9,"G8-Gonzaga"
+"1076","Emma Nimps",4583,0.18332,761,8,"G7-BYU"
+"1077","Gary Nimps",2514,0.10056,883,8,"G7-BYU"
+"1078","Michael Trevarrow",2204,0.08816,857,8,"G7-BYU"
+"1079","Ashlee Crain",2075,0.083,957,8,"G7-BYU"
+"1080","Erin Franks",1413,0.05652,896,8,"G7-BYU"
+"1081","Sean Fester",1303,0.05212,912,8,"G7-BYU"
+"1082","Jared Nimps",1186,0.04744,808,8,"G7-BYU"
+"1083","Bradley Trevarrow",1182,0.04728,816,8,"G7-BYU"
+"1084","Roger Nimps",1161,0.04644,805,8,"G7-BYU"
+"1085","Kassie Trevarrow",983,0.03932,810,8,"G7-BYU"
+"1086","Katie Fester",983,0.03932,710,8,"G7-BYU"
+"1087","Kathy Hubbard",968,0.03872,937,8,"G7-BYU"
+"1088","Robert Tisdel",908,0.03632,886,8,"G7-BYU"
+"1089","Jeff Townsend",861,0.03444,926,8,"G7-BYU"
+"1090","Steve Hemmer",856,0.03424,683,8,"G7-BYU"
+"1091","Norma Sanchez",761,0.03044,567,8,"G7-BYU"
+"1092","Brian Trevarrow",662,0.02648,767,8,"G7-BYU"
+"1093","Julie Trevarrow",498,0.01992,837,8,"G7-BYU"
+"1094","Tom Nimps",361,0.01444,674,8,"G7-BYU"
+"1095","Jeff Hemmer",292,0.01168,610,8,"G7-BYU"
+"1096","Ronni Nimps",278,0.01112,552,8,"G7-BYU"
+"1097","Martez Crain",200,0.008,691,8,"G7-BYU"
+"1098","Chad Anderson",184,0.00736,529,8,"G7-BYU"
+"1099","Allison Gilmore",146,0.00584,845,8,"G7-BYU"
+"1100","Julia Hemmer",110,0.0044,506,8,"G7-BYU"
+"1101","Emma Nimps",4453,0.17812,757,7,"G6-McNeese"
+"1102","Gary Nimps",2196,0.08784,875,7,"G6-McNeese"
+"1103","Michael Trevarrow",2071,0.08284,853,7,"G6-McNeese"
+"1104","Ashlee Crain",2000,0.08,953,7,"G6-McNeese"
+"1105","Sean Fester",1462,0.05848,917,7,"G6-McNeese"
+"1106","Bradley Trevarrow",1409,0.05636,822,7,"G6-McNeese"
+"1107","Erin Franks",1284,0.05136,887,7,"G6-McNeese"
+"1108","Jared Nimps",1262,0.05048,813,7,"G6-McNeese"
+"1109","Roger Nimps",1135,0.0454,797,7,"G6-McNeese"
+"1110","Kassie Trevarrow",1095,0.0438,815,7,"G6-McNeese"
+"1111","Katie Fester",1081,0.04324,716,7,"G6-McNeese"
+"1112","Jeff Townsend",1073,0.04292,931,7,"G6-McNeese"
+"1113","Steve Hemmer",926,0.03704,688,7,"G6-McNeese"
+"1114","Kathy Hubbard",863,0.03452,932,7,"G6-McNeese"
+"1115","Robert Tisdel",825,0.033,878,7,"G6-McNeese"
+"1116","Norma Sanchez",741,0.02964,559,7,"G6-McNeese"
+"1117","Brian Trevarrow",702,0.02808,772,7,"G6-McNeese"
+"1118","Julie Trevarrow",477,0.01908,833,7,"G6-McNeese"
+"1119","Jeff Hemmer",413,0.01652,618,7,"G6-McNeese"
+"1120","Ronni Nimps",301,0.01204,557,7,"G6-McNeese"
+"1121","Tom Nimps",298,0.01192,665,7,"G6-McNeese"
+"1122","Allison Gilmore",220,0.0088,850,7,"G6-McNeese"
+"1123","Martez Crain",191,0.00764,687,7,"G6-McNeese"
+"1124","Chad Anderson",160,0.0064,521,7,"G6-McNeese"
+"1125","Julia Hemmer",103,0.00412,502,7,"G6-McNeese"
+"1126","Emma Nimps",4116,0.16464,754,6,"G5-Auburn"
+"1127","Gary Nimps",2221,0.08884,890,6,"G5-Auburn"
+"1128","Michael Trevarrow",1995,0.0798,856,6,"G5-Auburn"
+"1129","Ashlee Crain",1552,0.06208,955,6,"G5-Auburn"
+"1130","Sean Fester",1481,0.05924,932,6,"G5-Auburn"
+"1131","Bradley Trevarrow",1437,0.05748,836,6,"G5-Auburn"
+"1132","Erin Franks",1279,0.05116,901,6,"G5-Auburn"
+"1133","Kassie Trevarrow",1276,0.05104,829,6,"G5-Auburn"
+"1134","Jared Nimps",1241,0.04964,816,6,"G5-Auburn"
+"1135","Roger Nimps",1155,0.0462,810,6,"G5-Auburn"
+"1136","Jeff Townsend",1100,0.044,945,6,"G5-Auburn"
+"1137","Katie Fester",1098,0.04392,729,6,"G5-Auburn"
+"1138","Kathy Hubbard",913,0.03652,946,6,"G5-Auburn"
+"1139","Robert Tisdel",896,0.03584,892,6,"G5-Auburn"
+"1140","Steve Hemmer",777,0.03108,676,6,"G5-Auburn"
+"1141","Norma Sanchez",760,0.0304,574,6,"G5-Auburn"
+"1142","Brian Trevarrow",688,0.02752,775,6,"G5-Auburn"
+"1143","Allison Gilmore",686,0.02744,874,6,"G5-Auburn"
+"1144","Jeff Hemmer",520,0.0208,627,6,"G5-Auburn"
+"1145","Julie Trevarrow",493,0.01972,848,6,"G5-Auburn"
+"1146","Tom Nimps",356,0.01424,680,6,"G5-Auburn"
+"1147","Ronni Nimps",266,0.01064,557,6,"G5-Auburn"
+"1148","Martez Crain",182,0.00728,702,6,"G5-Auburn"
+"1149","Chad Anderson",125,0.005,509,6,"G5-Auburn"
+"1150","Julia Hemmer",108,0.00432,508,6,"G5-Auburn"
+"1151","Emma Nimps",4125,0.165,754,5,"G4-Houston"
+"1152","Gary Nimps",2209,0.08836,889,5,"G4-Houston"
+"1153","Michael Trevarrow",1976,0.07904,854,5,"G4-Houston"
+"1154","Ashlee Crain",1547,0.06188,954,5,"G4-Houston"
+"1155","Sean Fester",1486,0.05944,931,5,"G4-Houston"
+"1156","Bradley Trevarrow",1453,0.05812,836,5,"G4-Houston"
+"1157","Erin Franks",1278,0.05112,900,5,"G4-Houston"
+"1158","Kassie Trevarrow",1270,0.0508,828,5,"G4-Houston"
+"1159","Jared Nimps",1241,0.04964,815,5,"G4-Houston"
+"1160","Roger Nimps",1161,0.04644,810,5,"G4-Houston"
+"1161","Jeff Townsend",1101,0.04404,944,5,"G4-Houston"
+"1162","Katie Fester",1098,0.04392,728,5,"G4-Houston"
+"1163","Kathy Hubbard",913,0.03652,945,5,"G4-Houston"
+"1164","Robert Tisdel",894,0.03576,890,5,"G4-Houston"
+"1165","Steve Hemmer",774,0.03096,674,5,"G4-Houston"
+"1166","Norma Sanchez",764,0.03056,574,5,"G4-Houston"
+"1167","Brian Trevarrow",688,0.02752,774,5,"G4-Houston"
+"1168","Allison Gilmore",685,0.0274,873,5,"G4-Houston"
+"1169","Jeff Hemmer",523,0.02092,627,5,"G4-Houston"
+"1170","Julie Trevarrow",491,0.01964,847,5,"G4-Houston"
+"1171","Tom Nimps",356,0.01424,679,5,"G4-Houston"
+"1172","Ronni Nimps",267,0.01068,557,5,"G4-Houston"
+"1173","Martez Crain",181,0.00724,701,5,"G4-Houston"
+"1174","Chad Anderson",126,0.00504,509,5,"G4-Houston"
+"1175","Julia Hemmer",111,0.00444,509,5,"G4-Houston"
+"1176","Emma Nimps",4079,0.16316,751,4,"G3-Wisconsin"
+"1177","Gary Nimps",2212,0.08848,889,4,"G3-Wisconsin"
+"1178","Michael Trevarrow",1977,0.07908,854,4,"G3-Wisconsin"
+"1179","Ashlee Crain",1540,0.0616,953,4,"G3-Wisconsin"
+"1180","Sean Fester",1497,0.05988,931,4,"G3-Wisconsin"
+"1181","Bradley Trevarrow",1454,0.05816,836,4,"G3-Wisconsin"
+"1182","Erin Franks",1282,0.05128,899,4,"G3-Wisconsin"
+"1183","Kassie Trevarrow",1272,0.05088,827,4,"G3-Wisconsin"
+"1184","Jared Nimps",1251,0.05004,814,4,"G3-Wisconsin"
+"1185","Roger Nimps",1160,0.0464,809,4,"G3-Wisconsin"
+"1186","Jeff Townsend",1099,0.04396,943,4,"G3-Wisconsin"
+"1187","Katie Fester",1095,0.0438,727,4,"G3-Wisconsin"
+"1188","Kathy Hubbard",911,0.03644,944,4,"G3-Wisconsin"
+"1189","Robert Tisdel",896,0.03584,889,4,"G3-Wisconsin"
+"1190","Steve Hemmer",778,0.03112,674,4,"G3-Wisconsin"
+"1191","Norma Sanchez",771,0.03084,574,4,"G3-Wisconsin"
+"1192","Allison Gilmore",698,0.02792,873,4,"G3-Wisconsin"
+"1193","Brian Trevarrow",689,0.02756,774,4,"G3-Wisconsin"
+"1194","Jeff Hemmer",512,0.02048,624,4,"G3-Wisconsin"
+"1195","Julie Trevarrow",494,0.01976,846,4,"G3-Wisconsin"
+"1196","Tom Nimps",358,0.01432,678,4,"G3-Wisconsin"
+"1197","Ronni Nimps",270,0.0108,557,4,"G3-Wisconsin"
+"1198","Martez Crain",189,0.00756,702,4,"G3-Wisconsin"
+"1199","Chad Anderson",129,0.00516,509,4,"G3-Wisconsin"
+"1200","Julia Hemmer",113,0.00452,509,4,"G3-Wisconsin"
+"1201","Emma Nimps",4058,0.16232,750,3,"G2-Purdue"
+"1202","Gary Nimps",2250,0.09,889,3,"G2-Purdue"
+"1203","Michael Trevarrow",1974,0.07896,851,3,"G2-Purdue"
+"1204","Ashlee Crain",1525,0.061,952,3,"G2-Purdue"
+"1205","Sean Fester",1492,0.05968,930,3,"G2-Purdue"
+"1206","Bradley Trevarrow",1454,0.05816,835,3,"G2-Purdue"
+"1207","Erin Franks",1307,0.05228,899,3,"G2-Purdue"
+"1208","Kassie Trevarrow",1268,0.05072,825,3,"G2-Purdue"
+"1209","Jared Nimps",1256,0.05024,813,3,"G2-Purdue"
+"1210","Roger Nimps",1162,0.04648,809,3,"G2-Purdue"
+"1211","Jeff Townsend",1098,0.04392,942,3,"G2-Purdue"
+"1212","Katie Fester",1043,0.04172,723,3,"G2-Purdue"
+"1213","Robert Tisdel",923,0.03692,889,3,"G2-Purdue"
+"1214","Kathy Hubbard",913,0.03652,943,3,"G2-Purdue"
+"1215","Steve Hemmer",781,0.03124,671,3,"G2-Purdue"
+"1216","Norma Sanchez",774,0.03096,574,3,"G2-Purdue"
+"1217","Allison Gilmore",696,0.02784,872,3,"G2-Purdue"
+"1218","Brian Trevarrow",677,0.02708,771,3,"G2-Purdue"
+"1219","Jeff Hemmer",529,0.02116,624,3,"G2-Purdue"
+"1220","Julie Trevarrow",483,0.01932,844,3,"G2-Purdue"
+"1221","Tom Nimps",365,0.0146,678,3,"G2-Purdue"
+"1222","Ronni Nimps",269,0.01076,554,3,"G2-Purdue"
+"1223","Martez Crain",187,0.00748,699,3,"G2-Purdue"
+"1224","Chad Anderson",133,0.00532,509,3,"G2-Purdue"
+"1225","Julia Hemmer",113,0.00452,506,3,"G2-Purdue"
+"1226","Emma Nimps",4050,0.162,747,2,"G1-Creighton"
+"1227","Gary Nimps",2221,0.08884,888,2,"G1-Creighton"
+"1228","Michael Trevarrow",1933,0.07732,847,2,"G1-Creighton"
+"1229","Sean Fester",1484,0.05936,929,2,"G1-Creighton"
+"1230","Bradley Trevarrow",1447,0.05788,834,2,"G1-Creighton"
+"1231","Ashlee Crain",1414,0.05656,948,2,"G1-Creighton"
+"1232","Erin Franks",1326,0.05304,898,2,"G1-Creighton"
+"1233","Kassie Trevarrow",1303,0.05212,824,2,"G1-Creighton"
+"1234","Jared Nimps",1232,0.04928,809,2,"G1-Creighton"
+"1235","Roger Nimps",1159,0.04636,808,2,"G1-Creighton"
+"1236","Jeff Townsend",1110,0.0444,941,2,"G1-Creighton"
+"1237","Katie Fester",1080,0.0432,726,2,"G1-Creighton"
+"1238","Robert Tisdel",936,0.03744,889,2,"G1-Creighton"
+"1239","Kathy Hubbard",934,0.03736,942,2,"G1-Creighton"
+"1240","Norma Sanchez",794,0.03176,577,2,"G1-Creighton"
+"1241","Steve Hemmer",770,0.0308,667,2,"G1-Creighton"
+"1242","Allison Gilmore",745,0.0298,871,2,"G1-Creighton"
+"1243","Brian Trevarrow",670,0.0268,767,2,"G1-Creighton"
+"1244","Jeff Hemmer",559,0.02236,624,2,"G1-Creighton"
+"1245","Julie Trevarrow",482,0.01928,843,2,"G1-Creighton"
+"1246","Tom Nimps",380,0.0152,677,2,"G1-Creighton"
+"1247","Ronni Nimps",253,0.01012,549,2,"G1-Creighton"
+"1248","Martez Crain",201,0.00804,702,2,"G1-Creighton"
+"1249","Chad Anderson",133,0.00532,505,2,"G1-Creighton"
+"1250","Julia Hemmer",121,0.00484,509,2,"G1-Creighton"
+"1251","Emma Nimps",4040,0.1616,741,1,"Pre-Tourney"
+"1252","Gary Nimps",2232,0.08928,890,1,"Pre-Tourney"
+"1253","Michael Trevarrow",1849,0.07396,833,1,"Pre-Tourney"
+"1254","Bradley Trevarrow",1529,0.06116,840,1,"Pre-Tourney"
+"1255","Jeff Townsend",1342,0.05368,944,1,"Pre-Tourney"
+"1256","Sean Fester",1341,0.05364,919,1,"Pre-Tourney"
+"1257","Jared Nimps",1235,0.0494,797,1,"Pre-Tourney"
+"1258","Kassie Trevarrow",1231,0.04924,810,1,"Pre-Tourney"
+"1259","Erin Franks",1230,0.0492,886,1,"Pre-Tourney"
+"1260","Ashlee Crain",1203,0.04812,936,1,"Pre-Tourney"
+"1261","Kathy Hubbard",1168,0.04672,945,1,"Pre-Tourney"
+"1262","Roger Nimps",1153,0.04612,800,1,"Pre-Tourney"
+"1263","Katie Fester",1118,0.04472,729,1,"Pre-Tourney"
+"1264","Robert Tisdel",1072,0.04288,889,1,"Pre-Tourney"
+"1265","Allison Gilmore",855,0.0342,872,1,"Pre-Tourney"
+"1266","Norma Sanchez",779,0.03116,569,1,"Pre-Tourney"
+"1267","Steve Hemmer",744,0.02976,654,1,"Pre-Tourney"
+"1268","Brian Trevarrow",677,0.02708,756,1,"Pre-Tourney"
+"1269","Jeff Hemmer",565,0.0226,618,1,"Pre-Tourney"
+"1270","Julie Trevarrow",436,0.01744,831,1,"Pre-Tourney"
+"1271","Tom Nimps",384,0.01536,665,1,"Pre-Tourney"
+"1272","Ronni Nimps",255,0.0102,542,1,"Pre-Tourney"
+"1273","Martez Crain",211,0.00844,705,1,"Pre-Tourney"
+"1274","Chad Anderson",141,0.00564,497,1,"Pre-Tourney"
+"1275","Julia Hemmer",81,0.00324,497,1,"Pre-Tourney"
