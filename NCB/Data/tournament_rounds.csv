@@ -1,4 +1,4 @@
-id,round_name,round_abr,points_per_win
+round_id,round_name,round_abr,points_per_win
 1,Round of 64,R64,10
 2,Round of 32,R32,20
 3,Sweet 16,S16,40
