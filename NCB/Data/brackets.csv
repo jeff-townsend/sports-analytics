@@ -1,65 +1,129 @@
-s_curve,team,region,seed
-1,Auburn,South,1
-2,Duke,East,1
-3,Houston,Midwest,1
-4,Florida,West,1
-5,St. John's,West,2
-6,Tennessee,Midwest,2
-7,Alabama,East,2
-8,Michigan St.,South,2
-9,Iowa St.,South,3
-10,Wisconsin,East,3
-11,Kentucky,Midwest,3
-12,Texas Tech,West,3
-13,Maryland,West,4
-14,Purdue,Midwest,4
-15,Arizona,East,4
-16,Texas A&M,South,4
-17,Michigan,South,5
-18,Oregon,East,5
-19,Clemson,Midwest,5
-20,Memphis,West,5
-21,Missouri,West,6
-22,Illinois,Midwest,6
-23,BYU,East,6
-24,Mississippi,South,6
-25,Marquette,South,7
-26,Saint Mary's,East,7
-27,UCLA,Midwest,7
-28,Kansas,West,7
-29,Connecticut,West,8
-30,Gonzaga,Midwest,8
-31,Mississippi St.,East,8
-32,Louisville,South,8
-33,Creighton,South,9
-34,Baylor,East,9
-35,Georgia,Midwest,9
-36,Oklahoma,West,9
-37,Arkansas,West,10
-38,Utah St.,Midwest,10
-39,Vanderbilt,East,10
-40,New Mexico,South,10
-41,North Carolina,South,11
-42,VCU,East,11
-43,Xavier,Midwest,11
-44,Drake,West,11
-45,Colorado St.,West,12
-46,McNeese,Midwest,12
-47,Liberty,East,12
-48,UC San Diego,South,12
-49,Yale,South,13
-50,Akron,East,13
-51,High Point,Midwest,13
-52,Grand Canyon,West,13
-53,UNC Wilmington,West,14
-54,Troy,Midwest,14
-55,Montana,East,14
-56,Lipscomb,South,14
-57,Bryant,South,15
-58,Robert Morris,East,15
-59,Wofford,Midwest,15
-60,Nebraska Omaha,West,15
-61,Norfolk St.,West,16
-62,SIUE,Midwest,16
-63,Mount St. Mary's,East,16
-64,Alabama St.,South,16
+season,s_curve,team,region,seed
+2025,1,Auburn,South,1
+2025,2,Duke,East,1
+2025,3,Houston,Midwest,1
+2025,4,Florida,West,1
+2025,5,St. John's,West,2
+2025,6,Tennessee,Midwest,2
+2025,7,Alabama,East,2
+2025,8,Michigan St.,South,2
+2025,9,Iowa St.,South,3
+2025,10,Wisconsin,East,3
+2025,11,Kentucky,Midwest,3
+2025,12,Texas Tech,West,3
+2025,13,Maryland,West,4
+2025,14,Purdue,Midwest,4
+2025,15,Arizona,East,4
+2025,16,Texas A&M,South,4
+2025,17,Michigan,South,5
+2025,18,Oregon,East,5
+2025,19,Clemson,Midwest,5
+2025,20,Memphis,West,5
+2025,21,Missouri,West,6
+2025,22,Illinois,Midwest,6
+2025,23,BYU,East,6
+2025,24,Mississippi,South,6
+2025,25,Marquette,South,7
+2025,26,Saint Mary's,East,7
+2025,27,UCLA,Midwest,7
+2025,28,Kansas,West,7
+2025,29,Connecticut,West,8
+2025,30,Gonzaga,Midwest,8
+2025,31,Mississippi St.,East,8
+2025,32,Louisville,South,8
+2025,33,Creighton,South,9
+2025,34,Baylor,East,9
+2025,35,Georgia,Midwest,9
+2025,36,Oklahoma,West,9
+2025,37,Arkansas,West,10
+2025,38,Utah St.,Midwest,10
+2025,39,Vanderbilt,East,10
+2025,40,New Mexico,South,10
+2025,41,North Carolina,South,11
+2025,42,VCU,East,11
+2025,43,Xavier,Midwest,11
+2025,44,Drake,West,11
+2025,45,Colorado St.,West,12
+2025,46,McNeese,Midwest,12
+2025,47,Liberty,East,12
+2025,48,UC San Diego,South,12
+2025,49,Yale,South,13
+2025,50,Akron,East,13
+2025,51,High Point,Midwest,13
+2025,52,Grand Canyon,West,13
+2025,53,UNC Wilmington,West,14
+2025,54,Troy,Midwest,14
+2025,55,Montana,East,14
+2025,56,Lipscomb,South,14
+2025,57,Bryant,South,15
+2025,58,Robert Morris,East,15
+2025,59,Wofford,Midwest,15
+2025,60,Nebraska Omaha,West,15
+2025,61,Norfolk St.,West,16
+2025,62,SIUE,Midwest,16
+2025,63,Mount St. Mary's,East,16
+2025,64,Alabama St.,South,16
+2024,1,Connecticut,East,1
+2024,2,Houston,South,1
+2024,3,Purdue,Midwest,1
+2024,4,North Carolina,West,1
+2024,5,Arizona,West,2
+2024,6,Tennessee,Midwest,2
+2024,7,Marquette,South,2
+2024,8,Iowa St.,East,2
+2024,9,Illinois,East,3
+2024,10,Kentucky,South,3
+2024,11,Creighton,Midwest,3
+2024,12,Baylor,West,3
+2024,13,Alabama,West,4
+2024,14,Kansas,Midwest,4
+2024,15,Duke,South,4
+2024,16,Auburn,East,4
+2024,17,San Diego St.,East,5
+2024,18,Wisconsin,South,5
+2024,19,Gonzaga,Midwest,5
+2024,20,Saint Mary's,West,5
+2024,21,Clemson,West,6
+2024,22,South Carolina,Midwest,6
+2024,23,Texas Tech,South,6
+2024,24,BYU,East,6
+2024,25,Washington St.,East,7
+2024,26,Florida,South,7
+2024,27,Texas,Midwest,7
+2024,28,Dayton,West,7
+2024,29,Mississippi St.,West,8
+2024,30,Utah St.,Midwest,8
+2024,31,Nebraska,South,8
+2024,32,Florida Atlantic,East,8
+2024,33,Northwestern,East,9
+2024,34,Texas A&M,South,9
+2024,35,TCU,Midwest,9
+2024,36,Michigan St.,West,9
+2024,37,Nevada,West,10
+2024,38,Colorado St.,Midwest,10
+2024,39,Colorado,South,10
+2024,40,Drake,East,10
+2024,41,Duquesne,East,11
+2024,42,N.C. State,South,11
+2024,43,Oregon,Midwest,11
+2024,44,New Mexico,West,11
+2024,45,Grand Canyon,West,12
+2024,46,McNeese St.,Midwest,12
+2024,47,James Madison,South,12
+2024,48,UAB,East,12
+2024,49,Yale,East,13
+2024,50,Vermont,South,13
+2024,51,Samford,Midwest,13
+2024,52,Charleston,West,13
+2024,53,Colgate,West,14
+2024,54,Akron,Midwest,14
+2024,55,Oakland,South,14
+2024,56,Morehead St.,East,14
+2024,57,South Dakota St.,East,15
+2024,58,Western Kentucky,South,15
+2024,59,Saint Peter's,Midwest,15
+2024,60,Long Beach St.,West,15
+2024,61,Wagner,West,16
+2024,62,Grambling St.,Midwest,16
+2024,63,Longwood,South,16
+2024,64,Stetson,East,16
