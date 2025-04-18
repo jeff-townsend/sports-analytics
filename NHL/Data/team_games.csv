@@ -7845,3 +7845,29 @@ team_game_id,game_id,game,team,toi,cf,ca,gf,ga,xgf,xga,is_home,season
 7844,3922," 2025-04-15 - Panthers 1, Lightning 5",Florida Panthers,60,44,61,1,5,2.13,3.71,0,2425
 7845,3923," 2025-04-15 - Utah HC 1, Blues 6",St Louis Blues,60,48,53,6,1,3.08,2.58,1,2425
 7846,3923," 2025-04-15 - Utah HC 1, Blues 6",Utah Hockey Club,60,53,48,1,6,2.58,3.08,0,2425
+7847,3924," 2025-04-16 - Ducks 1, Jets 2",Winnipeg Jets,61.18333333,81,62,2,1,3.89,2.78,1,2425
+7848,3924," 2025-04-16 - Ducks 1, Jets 2",Anaheim Ducks,61.18333333,62,81,1,2,2.78,3.89,0,2425
+7849,3925," 2025-04-16 - Golden Knights 4, Canucks 1",Vancouver Canucks,60,52,63,1,4,1.73,3.86,1,2425
+7850,3925," 2025-04-16 - Golden Knights 4, Canucks 1",Vegas Golden Knights,60,63,52,4,1,3.86,1.73,0,2425
+7851,3926," 2025-04-16 - Hurricanes 2, Canadiens 4",Montreal Canadiens,60,47,67,4,2,2.71,3.25,1,2425
+7852,3926," 2025-04-16 - Hurricanes 2, Canadiens 4",Carolina Hurricanes,60,67,47,2,4,3.25,2.71,0,2425
+7853,3927," 2025-04-16 - Oilers 3, Sharks 0",San Jose Sharks,60,59,49,0,3,1.24,2.68,1,2425
+7854,3927," 2025-04-16 - Oilers 3, Sharks 0",Edmonton Oilers,60,49,59,3,0,2.68,1.24,0,2425
+7855,3928," 2025-04-16 - Red Wings 5, Devils 2",New Jersey Devils,60,64,54,2,5,3.21,3.07,1,2425
+7856,3928," 2025-04-16 - Red Wings 5, Devils 2",Detroit Red Wings,60,54,64,5,2,3.07,3.21,0,2425
+7857,3929," 2025-04-16 - Stars 1, Predators 5",Nashville Predators,60,60,59,5,1,3.46,2.51,1,2425
+7858,3929," 2025-04-16 - Stars 1, Predators 5",Dallas Stars,60,59,60,1,5,2.51,3.46,0,2425
+7859,3930," 2025-04-17 - Capitals 2, Penguins 5",Pittsburgh Penguins,60,74,44,5,2,3.06,2.23,1,2425
+7860,3930," 2025-04-17 - Capitals 2, Penguins 5",Washington Capitals,60,44,74,2,5,2.23,3.06,0,2425
+7861,3931," 2025-04-17 - Flames 5, Kings 1",Los Angeles Kings,60,60,47,1,5,2.94,2.46,1,2425
+7862,3931," 2025-04-17 - Flames 5, Kings 1",Calgary Flames,60,47,60,5,1,2.46,2.94,0,2425
+7863,3932," 2025-04-17 - Flyers 4, Sabres 5",Buffalo Sabres,60,65,53,5,4,3.94,2.69,1,2425
+7864,3932," 2025-04-17 - Flyers 4, Sabres 5",Philadelphia Flyers,60,53,65,4,5,2.69,3.94,0,2425
+7865,3933," 2025-04-17 - Hurricanes 5, Senators 7",Ottawa Senators,60,63,57,7,5,3.7,3.39,1,2425
+7866,3933," 2025-04-17 - Hurricanes 5, Senators 7",Carolina Hurricanes,60,57,63,5,7,3.39,3.7,0,2425
+7867,3934," 2025-04-17 - Islanders 1, Blue Jackets 6",Columbus Blue Jackets,60,63,72,6,1,2.9,3.01,1,2425
+7868,3934," 2025-04-17 - Islanders 1, Blue Jackets 6",New York Islanders,60,72,63,1,6,3.01,2.9,0,2425
+7869,3935," 2025-04-17 - Lightning 0, Rangers 4",New York Rangers,60,46,50,4,0,2.22,2.17,1,2425
+7870,3935," 2025-04-17 - Lightning 0, Rangers 4",Tampa Bay Lightning,60,50,46,0,4,2.17,2.22,0,2425
+7871,3936," 2025-04-17 - Red Wings 3, Maple Leafs 4",Toronto Maple Leafs,60.93333333,48,52,4,3,2.42,2.73,1,2425
+7872,3936," 2025-04-17 - Red Wings 3, Maple Leafs 4",Detroit Red Wings,60.93333333,52,48,3,4,2.73,2.42,0,2425
