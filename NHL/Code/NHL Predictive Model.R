@@ -9,14 +9,10 @@ team.games.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/s
 ## Add variable calculations
 team.games <-
   team.games.import %>%
-  mutate(cf60 = cf / toi * 60,
-         ca60 = ca / toi * 60,
-         shpct = gf / cf,
-         opp_shpct = ga / ca,
-         xshpct = xgf / cf,
-         opp_xshpct = xga / ca,
-         spoe = shpct - xshpct,
-         opp_spoe = opp_shpct - opp_xshpct) %>%
+  mutate(gf60 = gf / toi * 60,
+         ga60 = ga / toi * 60,
+         cf60 = cf / toi * 60,
+         ca60 = ca / toi * 60) %>%
   group_by(team, season) %>%
   mutate(team_game_number = rank(team_game_id))
 
@@ -25,15 +21,29 @@ team.seasons <-
   team.games %>%
   group_by(team, season) %>%
   summarize(total_toi = sum(toi),
-            total_cf = sum(cf),
-            total_ca = sum(ca),
             total_gf = sum(gf),
             total_ga = sum(ga),
+            total_cf = sum(cf),
+            total_sf = sum(sf),
+            total_bf = sum(ff) - sum(sf),
+            total_mf = sum(cf) - sum(ff),
+            total_ca = sum(ca),
+            total_sa = sum(sa),
+            total_ba = sum(fa) - sum(sa),
+            total_ma = sum(ca) - sum(fa),
             total_xgf = sum(xgf),
             total_xga = sum(xga)) %>%
   ungroup() %>%
-  mutate(cf60 = total_cf / total_toi * 60,
+  mutate(gf60 = total_gf / total_toi * 60,
+         ga60 = total_ga / total_toi * 60,
+         cf60 = total_cf / total_toi * 60,
+         sf60 = total_sf / total_toi * 60,
+         bf60 = total_bf / total_toi * 60,
+         mf60 = total_mf / total_toi * 60,
          ca60 = total_ca / total_toi * 60,
+         sa60 = total_sa / total_toi * 60,
+         ba60 = total_ba / total_toi * 60,
+         ma60 = total_ma / total_toi * 60,
          shpct = total_gf / total_cf,
          opp_shpct = total_ga / total_ca,
          xshpct = total_xgf / total_cf,
@@ -46,18 +56,29 @@ team.games.oos <-
   team.games %>%
   inner_join(team.seasons %>%
                select(team, season, total_toi, total_gf, total_ga,
-                      total_cf, total_ca, total_xgf, total_xga),
+                      total_cf, total_sf, total_bf, total_mf,
+                      total_ca, total_sa, total_ba, total_ma,
+                      total_xgf, total_xga),
              by = c("team", "season")) %>%
   mutate(oos_toi = total_toi - toi,
          oos_cf60 = (total_cf - cf) / oos_toi * 60,
+         oos_sf60 = (total_sf - sf) / oos_toi * 60,
+         oos_bf60 = (total_bf - (ff - sf)) / oos_toi * 60,
+         oos_mf60 = (total_mf - (cf - ff)) / oos_toi * 60,
          oos_ca60 = (total_ca - ca) / oos_toi * 60,
+         oos_sa60 = (total_sa - sa) / oos_toi * 60,
+         oos_ba60 = (total_ba - (fa - sa)) / oos_toi * 60,
+         oos_ma60 = (total_ma - (ca - fa)) / oos_toi * 60,
          oos_shpct = (total_gf - gf) / (total_cf - cf),
          oos_opp_shpct = (total_ga - ga) / (total_ca - ca),
          oos_xshpct = (total_xgf - xgf) / (total_cf - cf),
          oos_opp_xshpct = (total_xga - xga) / (total_ca - ca),
          oos_spoe = oos_shpct - oos_xshpct,
          oos_opp_spoe = oos_opp_shpct - oos_opp_xshpct) %>%
-  select(-c(total_toi, total_gf, total_ga, total_cf, total_ca, total_xgf, total_xga))
+  select(-c(total_toi, total_gf, total_ga,
+            total_cf, total_sf, total_bf, total_mf,
+            total_ca, total_sa, total_ba, total_ma,
+            total_xgf, total_xga))
 
 ## Filter to the minimum number of games a team has played this season to compile model dataset
 min.gp <- with(team.games.oos %>%
@@ -67,43 +88,65 @@ min.gp <- with(team.games.oos %>%
                  ungroup(),
                min(gp))
 
-team.games.mod <-
+team.games.ec <-
   team.games.oos %>%
   filter(team_game_number <= min.gp)
 
-## Build models for each input variable
-cf60.mod <- lm(cf60 ~ oos_cf60, data = team.games.mod)
-ca60.mod <- lm(ca60 ~ oos_ca60, data = team.games.mod)
-# shpct.mod <- lm(shpct ~ oos_shpct, data = team.games.mod)
-# opp.shpct.mod <- lm(opp_shpct ~ oos_opp_shpct, data = team.games.mod)
-xshpct.mod <- lm(xshpct ~ oos_xshpct, data = team.games.mod)
-opp.xshpct.mod <- lm(opp_xshpct ~ oos_opp_xshpct, data = team.games.mod)
-spoe.mod <- lm(spoe ~ oos_spoe, data = team.games.mod)
-opp.spoe.mod <- lm(opp_spoe ~ oos_opp_spoe, data = team.games.mod)
+## Effective Shot Attempts -- weighing shot attempts by shot outcome value (on goal, blocked, missed)
+gf60.cf.mod <- lm(gf60 ~ oos_cf60, data = team.games.ec)
+gf60.ecf.mod <- lm(gf60 ~ oos_sf60 + oos_bf60 + oos_mf60, data = team.games.ec)
+ga60.ca.mod <- lm(ga60 ~ oos_ca60, data = team.games.ec)
+ga60.eca.mod <- lm(ga60 ~ oos_sa60 + oos_ba60 + oos_ma60, data = team.games.ec)
+
+gf60.cf.int <- as.numeric(gf60.cf.mod$coefficients[1])
+gf60.cf.coef <- as.numeric(gf60.cf.mod$coefficients[2])
+oos.ecf60 <- data.frame(oos_ecf60 = (as.numeric(predict(gf60.ecf.mod, newdata = team.games.ec)) - gf60.cf.int) / gf60.cf.coef)
+ga60.ca.int <- as.numeric(ga60.ca.mod$coefficients[1])
+ga60.ca.coef <- as.numeric(ga60.ca.mod$coefficients[2])
+oos.eca60 <- data.frame(oos_eca60 = (as.numeric(predict(ga60.eca.mod, newdata = team.games.ec)) - ga60.ca.int) / ga60.ca.coef)
+team.games.mod <- cbind(team.games.ec, oos.ecf60, oos.eca60)
+
+## Build models for GF/60 and GA/60
+gf60.mod <- lm(gf60 ~ oos_ecf60 + oos_xshpct + oos_spoe, data = team.games.mod)
+ga60.mod <- lm(ga60 ~ oos_eca60 + oos_opp_xshpct + oos_opp_spoe, data = team.games.mod)
+
+summary(gf60.mod)
+summary(ga60.mod)
+
+# cf60.mod <- lm(cf60 ~ oos_sf60 + oos_bf60 + oos_mf60, data = team.games.mod)
+# ca60.mod <- lm(ca60 ~ oos_sa60 + oos_ba60 + oos_ma60, data = team.games.mod)
+# 
+# summary(cf60.mod)
+# summary(ca60.mod)
 
 ## Apply model to season totals
 
-teams <- team.seasons %>% filter(season == "2425")
+ecf60 <- data.frame(ecf60 = (as.numeric(predict(gf60.ecf.mod, newdata = team.games.ec)) - gf60.cf.int) / gf60.cf.coef)
+eca60 <- data.frame(eca60 = (as.numeric(predict(ga60.eca.mod, newdata = team.games.ec)) - ga60.ca.int) / ga60.ca.coef)
+teams <-
+  team.seasons %>%
+  mutate(ecf60 = (predict(gf60.ecf.mod, newdata = team.seasons %>% rename(oos_sf60 = sf60,
+                                                                          oos_bf60 = bf60,
+                                                                          oos_mf60 = mf60)) - gf60.cf.int) / gf60.cf.coef,
+         eca60 = (predict(ga60.eca.mod, newdata = team.seasons %>% rename(oos_sa60 = sa60,
+                                                                          oos_ba60 = ba60,
+                                                                          oos_ma60 = ma60)) - ga60.ca.int) / ga60.ca.coef) %>%
+  filter(season == "2425")
+
 teams.pred <-
   teams %>%
-  mutate(pred_cf60 = predict(cf60.mod, newdata = teams %>% rename(oos_cf60 = cf60))) %>%
-  mutate(pred_ca60 = predict(ca60.mod, newdata = teams %>% rename(oos_ca60 = ca60))) %>%
-  # mutate(pred_shpct = predict(shpct.mod, newdata = teams %>% rename(oos_shpct = shpct))) %>%
-  # mutate(pred_opp_shpct = predict(opp.shpct.mod, newdata = teams %>% rename(oos_opp_shpct = opp_shpct))) %>%
-  mutate(pred_xshpct = predict(xshpct.mod, newdata = teams %>% rename(oos_xshpct = xshpct))) %>%
-  mutate(pred_opp_xshpct = predict(opp.xshpct.mod, newdata = teams %>% rename(oos_opp_xshpct = opp_xshpct))) %>%
-  mutate(pred_spoe = predict(spoe.mod, newdata = teams %>% rename(oos_spoe = spoe))) %>%
-  mutate(pred_opp_spoe = predict(opp.spoe.mod, newdata = teams %>% rename(oos_opp_spoe = opp_spoe)))
+  mutate(pred_gf60 = predict(gf60.mod,
+                             newdata = teams %>% rename(oos_ecf60 = ecf60,
+                                                        oos_xshpct = xshpct,
+                                                        oos_spoe = spoe)),
+         pred_ga60 = predict(ga60.mod,
+                             newdata = teams %>% rename(oos_eca60 = eca60,
+                                                        oos_opp_xshpct = opp_xshpct,
+                                                        oos_opp_spoe = opp_spoe)))
 
 ## Store value adjustments to correct for bias
-cf60.adj <- with(teams.pred, mean(cf60 - pred_cf60))
-ca60.adj <- with(teams.pred, mean(ca60 - pred_ca60))
-# shpct.adj <- with(teams.pred, mean(shpct - pred_shpct))
-# opp.shpct.adj <- with(teams.pred, mean(opp_shpct - pred_opp_shpct))
-xshpct.adj <- with(teams.pred, mean(xshpct - pred_xshpct))
-opp.xshpct.adj <- with(teams.pred, mean(opp_xshpct - pred_opp_xshpct))
-spoe.adj <- with(teams.pred, mean(spoe - pred_spoe))
-opp.spoe.adj <- with(teams.pred, mean(opp_spoe - pred_opp_spoe))
+gf60.adj <- with(teams.pred, mean(gf60 - pred_gf60))
+ga60.adj <- with(teams.pred, mean(gf60 - pred_ga60))
 
 ## Compile team ratings, using adjusted values
 team.ratings <-
@@ -111,20 +154,22 @@ team.ratings <-
   mutate(gf60 = total_gf / total_toi * 60,
          ga60 = total_ga / total_toi * 60,
          gd60 = gf60 - ga60,
-         pred_cf60 = as.numeric(pred_cf60 + cf60.adj),
-         pred_ca60 = as.numeric(pred_ca60 + ca60.adj),
-         pred_xshpct = as.numeric(pred_xshpct + xshpct.adj),
-         pred_opp_xshpct = as.numeric(pred_opp_xshpct + opp.xshpct.adj),
-         pred_spoe = as.numeric(pred_spoe + spoe.adj),
-         pred_opp_spoe = as.numeric(pred_opp_spoe + opp.spoe.adj),
-         pred_shpct = pred_xshpct + pred_spoe,
-         pred_opp_shpct = pred_opp_xshpct + pred_opp_spoe,
-         pred_gf60 = pred_shpct * pred_cf60,
-         pred_ga60 = pred_opp_shpct * pred_ca60,
-         rating = pred_gf60 - pred_ga60) %>%
-  select(team, rating, gf60, ga60, gd60, cf60, ca60, shpct, opp_shpct, xshpct, opp_xshpct,
-         pred_gf60, pred_ga60, pred_cf60, pred_ca60, pred_shpct, pred_opp_shpct, pred_xshpct, pred_opp_xshpct) %>%
+         pred_gf60 = as.numeric(pred_gf60 + gf60.adj),
+         pred_ga60 = as.numeric(pred_ga60 + ga60.adj),
+         rating = pred_gf60 - pred_ga60,
+         sf.prop = total_sf / total_cf,
+         bf.prop = total_bf / total_cf,
+         mf.prop = total_mf / total_cf,
+         sa.prop = total_sa / total_ca,
+         ba.prop = total_ba / total_ca,
+         ma.prop = total_ma / total_ca) %>%
+  select(team, rating, pred_gf60, pred_ga60, gf60, ga60, gd60,
+         cf60, sf.prop, bf.prop, mf.prop, ca60, sa.prop, ba.prop, ma.prop,
+         shpct, opp_shpct, xshpct, opp_xshpct, spoe, opp_spoe) %>%
   arrange(desc(rating))
+
+View(team.ratings %>%
+       select(team, rating, sf.prop, bf.prop, mf.prop, sa.prop, ba.prop, ma.prop))
 
 ## Export Team Ratings
 
