@@ -1,0 +1,262 @@
+﻿id,bird_name,deck,forest,grasslands,wetlands,food_cost,worm,seed,cherry,fish,rat,wild
+1,Acorn Woodpecker,Base Game,1,0,0,3,0,0,0,0,0,0
+2,American Avocet,Base Game,0,0,1,3,0,0,0,0,0,0
+3,American Bittern,Base Game,0,0,1,3,0,0,0,0,0,0
+4,American Coot,Base Game,0,0,1,2,0,0,0,0,0,0
+5,American Crow,Base Game,1,1,1,1,0,0,0,0,0,0
+6,American Goldfinch,Base Game,0,1,0,2,0,0,0,0,0,0
+7,American Kestrel,Base Game,0,1,0,2,0,0,0,0,0,0
+8,American Oystercatcher,Base Game,0,0,1,2,0,0,0,0,0,0
+9,American Redstart,Base Game,1,0,0,2,0,0,0,0,0,0
+10,American Robin,Base Game,1,1,0,1,0,0,0,0,0,0
+11,American White Pelican,Base Game,0,0,1,2,0,0,0,0,0,0
+12,American Woodcock,Base Game,1,1,0,3,0,0,0,0,0,0
+13,Anhinga,Base Game,0,0,1,2,0,0,0,0,0,0
+14,Anna's Hummingbird,Base Game,1,1,1,1,0,0,0,0,0,0
+15,Ash-Throated Flycatcher,Base Game,0,1,0,3,0,0,0,0,0,0
+16,Atlantic Puffin,Base Game,0,0,1,3,0,0,0,0,0,0
+17,Auduoin's Gull,European Expansion,0,0,1,2,0,0,0,0,0,0
+18,Baird's Sparrow,Base Game,0,1,0,2,0,0,0,0,0,0
+19,Bald Eagle,Base Game,0,0,1,3,0,0,0,0,0,0
+20,Baltimore Oriole,Base Game,1,0,0,3,0,0,0,0,0,0
+21,Barn Owl,Base Game,1,1,1,2,0,0,0,0,0,0
+22,Barn Swallow,Base Game,0,1,1,1,0,0,0,0,0,0
+23,Barred Owl,Base Game,1,0,0,1,0,0,0,0,0,0
+24,Barrow's Goldeneye,Base Game,0,0,1,3,0,0,0,0,0,0
+25,Bell's Vireo,Base Game,1,1,0,2,0,0,0,0,0,0
+26,Belted Kingfisher,Base Game,0,0,1,2,0,0,0,0,0,0
+27,Bewick's Wren,Base Game,1,1,1,3,0,0,0,0,0,0
+28,Black Redstart,European Expansion,0,1,0,3,0,0,0,0,0,0
+29,Black Skimmer,Base Game,0,0,1,2,0,0,0,0,0,0
+30,Black Tern,Base Game,0,0,1,1,0,0,0,0,0,0
+31,Black Vulture,Base Game,1,0,0,0,0,0,0,0,0,0
+32,Black Woodpecker,European Expansion,1,0,0,3,0,0,0,0,0,0
+33,Black-Bellied Whistling-Duck,Base Game,0,0,1,2,0,0,0,0,0,0
+34,Black-Billed Magpie,Base Game,0,1,0,2,0,0,0,0,0,0
+35,Black-Chinned Hummingbird,Base Game,1,1,1,1,0,0,0,0,0,0
+36,Black-Crowned Night-Heron,Base Game,0,0,1,3,0,0,0,0,0,0
+37,Black-Headed Gull,European Expansion,0,0,1,2,0,0,0,0,0,0
+38,Black-Necked Stilt,Base Game,0,0,1,2,0,0,0,0,0,0
+39,Black-Tailed Godwit,European Expansion,0,0,1,3,0,0,0,0,0,0
+40,Black-Throated Diver,European Expansion,0,0,1,2,0,0,0,0,0,0
+41,Blue Grosbeak,Base Game,1,1,1,3,0,0,0,0,0,0
+42,Blue Jay,Base Game,1,0,0,2,0,0,0,0,0,0
+43,Blue-Gray Gnatcatcher,Base Game,1,0,0,1,0,0,0,0,0,0
+44,Blue-Winged Warbler,Base Game,1,1,0,2,0,0,0,0,0,0
+45,Bluethroat,European Expansion,0,1,1,3,0,0,0,0,0,0
+46,Bobolink,Base Game,0,1,0,3,0,0,0,0,0,0
+47,Bonelli's Eagle,European Expansion,1,1,1,3,0,0,0,0,0,0
+48,Brant,Base Game,0,0,1,2,0,0,0,0,0,0
+49,Brewer's Blackbird,Base Game,0,1,0,2,0,0,0,0,0,0
+50,Broad-Winged Hawk,Base Game,1,0,0,1,0,0,0,0,0,0
+51,Bronzed Cowbird,Base Game,0,1,0,2,0,0,0,0,0,0
+52,Brown Pelican,Base Game,0,0,1,2,0,0,0,0,0,0
+53,Brown-Headed Cowbird,Base Game,0,1,0,1,0,0,0,0,0,0
+54,Bullfinch,European Expansion,1,0,0,2,0,0,0,0,0,0
+55,Burrowing Owl,Base Game,0,1,0,2,0,0,0,0,0,0
+56,Bushtit,Base Game,1,1,1,2,0,0,0,0,0,0
+57,California Condor,Base Game,1,1,1,0,0,0,0,0,0,0
+58,California Quail,Base Game,1,1,0,3,0,0,0,0,0,0
+59,Canada Goose,Base Game,0,1,1,2,0,0,0,0,0,0
+60,Canvasback,Base Game,0,0,1,2,0,0,0,0,0,0
+61,Carolina Chickadee,Base Game,1,0,0,1,0,0,0,0,0,0
+62,Carolina Wren,Base Game,1,0,0,1,0,0,0,0,0,0
+63,Carrion Crow,European Expansion,0,1,1,2,0,0,0,0,0,0
+64,Cassin's Finch,Base Game,1,0,0,2,0,0,0,0,0,0
+65,Cassin's Sparrow,Base Game,0,1,0,2,0,0,0,0,0,0
+66,Cedar Waxwing,Base Game,1,1,0,2,0,0,0,0,0,0
+67,Cerulean Warbler,Base Game,1,0,0,2,0,0,0,0,0,0
+68,Cetti's Warbler,European Expansion,0,0,1,2,0,0,0,0,0,0
+69,Chestnut-Collared Longspur,Base Game,0,1,0,3,0,0,0,0,0,0
+70,Chihuahuan Raven,Base Game,0,1,0,3,0,0,0,0,0,0
+71,Chimney Swift,Base Game,1,1,1,2,0,0,0,0,0,0
+72,Chipping Sparrow,Base Game,1,1,0,1,0,0,0,0,0,0
+73,Clark's Grebe,Base Game,0,0,1,1,0,0,0,0,0,0
+74,Clark's Nutcracker,Base Game,1,0,0,3,0,0,0,0,0,0
+75,Coal Tit,European Expansion,1,0,0,2,0,0,0,0,0,0
+76,Common Blackbird,European Expansion,1,0,0,3,0,0,0,0,0,0
+77,Common Buzzard,European Expansion,1,1,1,1,0,0,0,0,0,0
+78,Common Chaffinch,European Expansion,1,1,0,1,0,0,0,0,0,0
+79,Common Chiffchaff,European Expansion,1,0,1,1,0,0,0,0,0,0
+80,Common Cuckoo,European Expansion,1,1,0,2,0,0,0,0,0,0
+81,Common Goldeneye,European Expansion,1,0,1,2,0,0,0,0,0,0
+82,Common Grackle,Base Game,1,1,1,2,0,0,0,0,0,0
+83,Common Kingfisher,European Expansion,0,0,1,3,0,0,0,0,0,0
+84,Common Little Bittern,European Expansion,0,0,1,2,0,0,0,0,0,0
+85,Common Loon,Base Game,0,0,1,2,0,0,0,0,0,0
+86,Common Merganser,Base Game,0,0,1,2,0,0,0,0,0,0
+87,Common Moorhen,European Expansion,0,0,1,3,0,0,0,0,0,0
+88,Common Nighthawk,Base Game,1,1,1,2,0,0,0,0,0,0
+89,Common Nightingale,European Expansion,1,1,1,1,0,0,0,0,0,0
+90,Common Raven,Base Game,1,1,1,3,0,0,0,0,0,0
+91,Common Starling,European Expansion,0,1,1,1,0,0,0,0,0,0
+92,Common Swift,European Expansion,0,1,0,1,0,0,0,0,0,0
+93,Common Yellowthroat,Base Game,0,0,1,1,0,0,0,0,0,0
+94,Cooper's Hawk,Base Game,1,0,0,1,0,0,0,0,0,0
+95,Corsican Nuthatch,European Expansion,1,0,0,2,0,0,0,0,0,0
+96,Dark-Eyed Junco,Base Game,1,1,0,2,0,0,0,0,0,0
+97,Dickcissel,Base Game,0,1,0,3,0,0,0,0,0,0
+98,Double-Crested Cormorant,Base Game,0,0,1,2,0,0,0,0,0,0
+99,Downy Woodpecker,Base Game,1,0,0,1,0,0,0,0,0,0
+100,Dunnock,European Expansion,1,0,0,2,0,0,0,0,0,0
+101,Eastern Bluebird,Base Game,0,1,0,2,0,0,0,0,0,0
+102,Eastern Imperial Eagle,European Expansion,0,1,0,3,0,0,0,0,0,0
+103,Eastern Kingbird,Base Game,1,1,1,1,0,0,0,0,0,0
+104,Eastern Phoebe,Base Game,1,1,1,1,0,0,0,0,0,0
+105,Eastern Screech Owl,Base Game,1,0,0,1,0,0,0,0,0,0
+106,Eleonora's Falcon,European Expansion,0,0,1,2,0,0,0,0,0,0
+107,Eurasian Collared-Dove,European Expansion,0,1,0,2,0,0,0,0,0,0
+108,Eurasian Golden Oriole,European Expansion,1,1,0,3,0,0,0,0,0,0
+109,Eurasian Green Woodpecker,European Expansion,1,1,0,2,0,0,0,0,0,0
+110,Eurasian Hobby,European Expansion,1,1,1,1,0,0,0,0,0,0
+111,Eurasian Jay,European Expansion,1,0,0,3,0,0,0,0,0,0
+112,Eurasian Magpie,European Expansion,0,1,0,2,0,0,0,0,0,0
+113,Eurasian Nutcracker,European Expansion,1,0,0,1,0,0,0,0,0,0
+114,Eurasian Nuthatch,European Expansion,1,0,0,2,0,0,0,0,0,0
+115,Eurasian Sparrowhawk,European Expansion,1,0,0,1,0,0,0,0,0,0
+116,Eurasian Tree Swallow,European Expansion,1,1,0,2,0,0,0,0,0,0
+117,European Bee-Eater,European Expansion,0,1,0,2,0,0,0,0,0,0
+118,European Goldfinch,European Expansion,1,1,0,3,0,0,0,0,0,0
+119,European Honey Buzzard,European Expansion,1,0,0,2,0,0,0,0,0,0
+120,European Robin,European Expansion,1,0,0,3,0,0,0,0,0,0
+121,European Roller,European Expansion,0,1,0,2,0,0,0,0,0,0
+122,European Turtle Dove,European Expansion,1,1,0,2,0,0,0,0,0,0
+123,Ferruginous Hawk,Base Game,0,1,0,2,0,0,0,0,0,0
+124,Fish Crow,Base Game,1,1,1,2,0,0,0,0,0,0
+125,Forster's Tern,Base Game,0,0,1,1,0,0,0,0,0,0
+126,Franklin's Gull,Base Game,0,1,1,2,0,0,0,0,0,0
+127,Goldcrest,European Expansion,1,0,0,1,0,0,0,0,0,0
+128,Golden Eagle,Base Game,0,1,1,3,0,0,0,0,0,0
+129,Grasshopper Sparrow,Base Game,0,1,0,1,0,0,0,0,0,0
+130,Gray Catbird,Base Game,1,1,1,3,0,0,0,0,0,0
+131,Great Blue Heron,Base Game,0,0,1,2,0,0,0,0,0,0
+132,Great Crested Flycatcher,Base Game,1,0,0,2,0,0,0,0,0,0
+133,Great Crested Grebe,European Expansion,0,0,1,2,0,0,0,0,0,0
+134,Great Egret,Base Game,0,0,1,3,0,0,0,0,0,0
+135,Great Horned Owl,Base Game,1,0,0,3,0,0,0,0,0,0
+136,Great Tit,European Expansion,1,0,0,3,0,0,0,0,0,0
+137,Greater Flamingo,European Expansion,0,0,1,3,0,0,0,0,0,0
+138,Greater Prairie-Chicken,Base Game,0,1,0,3,0,0,0,0,0,0
+139,Greater Roadrunner,Base Game,0,1,0,3,0,0,0,0,0,0
+140,Green Heron,Base Game,0,0,1,1,0,0,0,0,0,0
+141,Grey Heron,European Expansion,0,0,1,2,0,0,0,0,0,0
+142,Greylag Goose,European Expansion,0,0,1,3,0,0,0,0,0,0
+143,Griffon Vulture,European Expansion,0,1,0,0,0,0,0,0,0,0
+144,Hawfinch,European Expansion,1,0,0,2,0,0,0,0,0,0
+145,Hermit Thrush,Base Game,1,0,0,3,0,0,0,0,0,0
+146,Hooded Crow,European Expansion,0,1,1,3,0,0,0,0,0,0
+147,Hooded Merganser,Base Game,0,0,1,2,0,0,0,0,0,0
+148,Hooded Warbler,Base Game,1,0,0,2,0,0,0,0,0,0
+149,Horned Leak,Base Game,0,1,0,2,0,0,0,0,0,0
+150,House Finch,Base Game,1,1,1,2,0,0,0,0,0,0
+151,House Sparrow,European Expansion,0,1,0,2,0,0,0,0,0,0
+152,House Wren,Base Game,1,1,0,1,0,0,0,0,0,0
+153,Inca Dove,Base Game,0,1,0,2,0,0,0,0,0,0
+154,Indigo Bunting,Base Game,1,1,0,3,0,0,0,0,0,0
+155,Juniper Titmouse,Base Game,1,0,0,2,0,0,0,0,0,0
+156,Killdeer,Base Game,0,1,1,1,0,0,0,0,0,0
+157,King Rail,Base Game,0,0,1,3,0,0,0,0,0,0
+158,Lazuli Bunting,Base Game,0,1,0,3,0,0,0,0,0,0
+159,Lesser Whitethroat,European Expansion,1,1,0,2,0,0,0,0,0,0
+160,Lincoln's Sparrow,Base Game,1,1,1,2,0,0,0,0,0,0
+161,Little Bustard,European Expansion,0,1,0,2,0,0,0,0,0,0
+162,Little Owl,European Expansion,1,1,0,2,0,0,0,0,0,0
+163,Loggerhead Shrike,Base Game,0,1,1,2,0,0,0,0,0,0
+164,Long-Tailed Tit,European Expansion,1,0,0,2,0,0,0,0,0,0
+165,Mallard,Base Game,0,0,1,1,0,0,0,0,0,0
+166,Mississippi Kite,Base Game,1,1,0,1,0,0,0,0,0,0
+167,Moltoni's Warbler,European Expansion,0,1,0,2,0,0,0,0,0,0
+168,Montagu's Harrier,European Expansion,0,1,0,2,0,0,0,0,0,0
+169,Mountain Bluebird,Base Game,0,1,0,2,0,0,0,0,0,0
+170,Mountain Chickadee,Base Game,1,0,0,1,0,0,0,0,0,0
+171,Mourning Dove,Base Game,1,1,1,1,0,0,0,0,0,0
+172,Mute Swan,European Expansion,0,0,1,3,0,0,0,0,0,0
+173,Northern Bobwhite,Base Game,0,1,0,3,0,0,0,0,0,0
+174,Northern Cardinal,Base Game,1,0,0,2,0,0,0,0,0,0
+175,Northern Flicker,Base Game,1,1,0,1,0,0,0,0,0,0
+176,Northern Gannet,European Expansion,0,0,1,2,0,0,0,0,0,0
+177,Northern Goshawk,European Expansion,1,0,0,2,0,0,0,0,0,0
+178,Northern Harrier,Base Game,0,1,1,1,0,0,0,0,0,0
+179,Northern Mockingbird,Base Game,1,1,1,2,0,0,0,0,0,0
+180,Northern Shoveler,Base Game,0,0,1,3,0,0,0,0,0,0
+181,Osprey,Base Game,0,0,1,1,0,0,0,0,0,0
+182,Painted Bunting,Base Game,0,1,0,3,0,0,0,0,0,0
+183,Painted Whitestart,Base Game,1,0,0,1,0,0,0,0,0,0
+184,Parrot Crossbill,European Expansion,1,0,0,3,0,0,0,0,0,0
+185,Peregrine Falcon,Base Game,0,1,1,2,0,0,0,0,0,0
+186,Pied-Billed Grebe,Base Game,0,0,1,1,0,0,0,0,0,0
+187,Pileated Woodpecker,Base Game,1,0,0,2,0,0,0,0,0,0
+188,Pine Siskin,Base Game,1,0,0,2,0,0,0,0,0,0
+189,Prothonotary Warbler,Base Game,1,0,1,3,0,0,0,0,0,0
+190,Purple Gallinule,Base Game,0,0,1,3,0,0,0,0,0,0
+191,Purple Martin,Base Game,0,1,1,1,0,0,0,0,0,0
+192,Pygmy Nuthatch,Base Game,1,0,0,2,0,0,0,0,0,0
+193,Red Crossbill,Base Game,1,0,0,2,0,0,0,0,0,0
+194,Red Kite,European Expansion,1,1,1,2,0,0,0,0,0,0
+195,Red Knot,European Expansion,0,0,1,3,0,0,0,0,0,0
+196,Red-Backed Shrike,European Expansion,0,1,0,3,0,0,0,0,0,0
+197,Red-Bellied Woodpecker,Base Game,1,0,0,1,0,0,0,0,0,0
+198,Red-Breasted Merganser,Base Game,0,0,1,2,0,0,0,0,0,0
+199,Red-Breasted Nuthatch,Base Game,1,0,0,1,0,0,0,0,0,0
+200,Red-Cockaded Woodpecker,Base Game,1,0,0,2,0,0,0,0,0,0
+201,Red-Eyed Vireo,Base Game,1,0,0,1,0,0,0,0,0,0
+202,Red-Headed Woodpecker,Base Game,1,1,1,3,0,0,0,0,0,0
+203,Red-Legged Partridge,European Expansion,0,1,0,3,0,0,0,0,0,0
+204,Red-Shouldered Hawk,Base Game,1,0,0,1,0,0,0,0,0,0
+205,Red-Tailed Hawk,Base Game,1,1,1,2,0,0,0,0,0,0
+206,Red-Winged Blackbird,Base Game,0,1,1,1,0,0,0,0,0,0
+207,Ring-Billed Gull,Base Game,0,0,1,2,0,0,0,0,0,0
+208,Rose-Breasted Grosbeak,Base Game,1,0,0,3,0,0,0,0,0,0
+209,Roseate Spoonbill,Base Game,0,0,1,3,0,0,0,0,0,0
+210,Ruby-Crowned Kinglet,Base Game,1,0,0,1,0,0,0,0,0,0
+211,Ruby-Throated Hummingbird,Base Game,1,1,1,1,0,0,0,0,0,0
+212,Ruddy Duck,Base Game,0,0,1,1,0,0,0,0,0,0
+213,Ruff,European Expansion,0,1,1,2,0,0,0,0,0,0
+214,Sandhill Crane,Base Game,0,1,1,3,0,0,0,0,0,0
+215,Savannah Sparrow,Base Game,0,1,0,1,0,0,0,0,0,0
+216,Savi's Warbler,European Expansion,0,0,1,1,0,0,0,0,0,0
+217,Say's Phoebe,Base Game,0,1,0,3,0,0,0,0,0,0
+218,Scaled Quail,Base Game,0,1,0,1,0,0,0,0,0,0
+219,Scissor-Tailed Flycatcher,Base Game,0,1,0,3,0,0,0,0,0,0
+220,Short-Toed Treecreeper,European Expansion,1,0,0,2,0,0,0,0,0,0
+221,Snow Bunting,European Expansion,0,1,1,2,0,0,0,0,0,0
+222,Snowy Egret,Base Game,0,0,1,1,0,0,0,0,0,0
+223,Snowy Owl,European Expansion,0,1,1,2,0,0,0,0,0,0
+224,Song Sparrow,Base Game,1,1,1,1,0,0,0,0,0,0
+225,Spotted Owl,Base Game,1,0,0,2,0,0,0,0,0,0
+226,Spotted Sandpiper,Base Game,0,0,1,1,0,0,0,0,0,0
+227,Spotted Towhee,Base Game,1,1,0,1,0,0,0,0,0,0
+228,Sprague's Pipit,Base Game,0,1,0,2,0,0,0,0,0,0
+229,Squacco Heron,European Expansion,0,0,1,2,0,0,0,0,0,0
+230,Steller's Jay,Base Game,1,0,0,3,0,0,0,0,0,0
+231,Swainson's Hawk,Base Game,0,1,0,2,0,0,0,0,0,0
+232,Thekla's Lark,European Expansion,0,1,0,3,0,0,0,0,0,0
+233,Tree Swallow,Base Game,0,0,1,2,0,0,0,0,0,0
+234,Trumpeter Swan,Base Game,0,0,1,3,0,0,0,0,0,0
+235,Tufted Titmouse,Base Game,1,0,0,1,0,0,0,0,0,0
+236,Turkey Vulture,Base Game,1,1,1,0,0,0,0,0,0,0
+237,Vaux's Swift,Base Game,1,0,0,1,0,0,0,0,0,0
+238,Violet-Green Swallow,Base Game,1,1,1,2,0,0,0,0,0,0
+239,Western Meadowlark,Base Game,0,1,0,2,0,0,0,0,0,0
+240,Western Tanager,Base Game,1,0,0,3,0,0,0,0,0,0
+241,White Stork,European Expansion,0,1,1,3,0,0,0,0,0,0
+242,White Wagtail,European Expansion,0,1,1,2,0,0,0,0,0,0
+243,White-Backed Woodpecker,European Expansion,1,0,0,1,0,0,0,0,0,0
+244,White-Breasted Nuthatch,Base Game,1,0,0,1,0,0,0,0,0,0
+245,White-Crowned Sparrow,Base Game,1,1,1,2,0,0,0,0,0,0
+246,White-Faced Ibis,Base Game,0,0,1,3,0,0,0,0,0,0
+247,White-Throated Dipper,European Expansion,0,0,1,2,0,0,0,0,0,0
+248,White-Throated Swift,Base Game,0,1,0,1,0,0,0,0,0,0
+249,Whooping Crane,Base Game,0,0,1,3,0,0,0,0,0,0
+250,Wild Turkey,Base Game,1,1,0,3,0,0,0,0,0,0
+251,Willet,Base Game,0,0,1,1,0,0,0,0,0,0
+252,Wilson's Snipe,Base Game,0,0,1,1,0,0,0,0,0,0
+253,Wilson's Storm Petrel,European Expansion,0,0,1,3,0,0,0,0,0,0
+254,Wood Duck,Base Game,1,0,1,3,0,0,0,0,0,0
+255,Wood Stork,Base Game,0,0,1,3,0,0,0,0,0,0
+256,Yellow-Bellied Sapsucker,Base Game,1,0,0,2,0,0,0,0,0,0
+257,Yellow-Billed Cuckoo,Base Game,1,0,0,3,0,0,0,0,0,0
+258,Yellow-Breasted Chat,Base Game,1,1,1,3,0,0,0,0,0,0
+259,Yellow-Headed Blackbird,Base Game,0,0,1,2,0,0,0,0,0,0
+260,Yellow-Rumped Warbler,Base Game,1,0,0,1,0,0,0,0,0,0
+261,Yellowhammer,European Expansion,1,1,0,2,0,0,0,0,0,0
