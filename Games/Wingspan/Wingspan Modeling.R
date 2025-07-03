@@ -104,6 +104,8 @@ bird.pm <-
   bird.game.pm %>%
   group_by(bird_name) %>%
   summarize(games = n(),
+            bird_average = mean(player_score),
+            bird_baseline = mean(baseline_score),
             total_bird_pm = sum(game_pm),
             bird_pm = mean(game_pm))
 
