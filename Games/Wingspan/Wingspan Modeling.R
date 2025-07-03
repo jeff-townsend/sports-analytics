@@ -23,14 +23,15 @@ bird.games <-
 ##### Add Game Variables
 
 games <-
-  games %>%
+  games.import %>%
   inner_join(player.games %>% select(player_game_id, game_id, player_id, player_score),
              by = "game_id") %>%
   inner_join(players %>% select(player_id, player_archetype),
              by = "player_id") %>%
   mutate(is_bot = ifelse(player_archetype == "Bot", 1, 0)) %>%
   group_by(game_id, date, time, deck, players) %>%
-  summarize(is_bot_game = max(is_bot)) %>%
+  summarize(is_bot_game = max(is_bot),
+            is_solo_game = ifelse(max(player_id) == 1, 1, 0)) %>%
   ungroup()
   
 
@@ -59,22 +60,27 @@ global.average <- with(game.types %>% filter(is_bot_game == 0), mean(gametype_av
 player.ratings <-
   players %>%
   filter(player_archetype %in% c("Andrew", "Brent", "David", "Jeff")) %>%
-  inner_join(player.games %>% select(game_id, player_id, player_score),
+  inner_join(player.games %>% select(game_id, player_id, player_score, forest_birds, grasslands_birds, wetlands_birds),
              by = "player_id") %>%
   inner_join(games %>%
                filter(is_bot_game == 0) %>%
-               select(game_id, players),
+               select(game_id, players, is_solo_game),
              by = "game_id") %>%
   inner_join(game.types %>% filter(is_bot_game == 0),
              by = "players") %>%
   mutate(baseline_score = (players * games * gametype_average - player_score) / (players * games - 1),
          relative_score = player_score - baseline_score) %>%
-  group_by(player_archetype) %>%
+  group_by(player_archetype, is_solo_game) %>%
   summarize(games = n(),
             player_average = mean(player_score),
             baseline_average = mean(baseline_score),
             relative_average = mean(relative_score),
-            player_rating = global.average + relative_average) %>%
+            player_rating = global.average + relative_average,
+            forest = mean(forest_birds),
+            grasslands = mean(grasslands_birds),
+            wetlands = mean(wetlands_birds)) %>%
+  ungroup() %>%
+  mutate(birds = forest + grasslands + wetlands) %>%
   arrange(desc(relative_average))
 
 ##### Bird Plus/Minus
@@ -83,7 +89,7 @@ bird.game.pm <-
   bird.games %>%
   inner_join(player.games %>%
                mutate(birds = forest_birds + grasslands_birds + wetlands_birds) %>%
-               select(player_game_id, player_score, birds),
+               select(player_game_id, game_id, player_score, birds),
              by = "player_game_id") %>%
   inner_join(games %>% select(game_id, players, is_bot_game),
            by = "game_id") %>%
@@ -133,12 +139,23 @@ habitat.pm <-
   ungroup() %>%
   mutate(habitat_apm = total_apm / played)
 
-food.pm <-
+cost.pm <-
   bird.apm %>%
   inner_join(birds %>% select(bird_id, bird_name, food_cost),
              by = "bird_name") %>%
   group_by(food_cost) %>%
   summarize(played = sum(games),
+            total_apm = sum(total_bird_apm)) %>%
+  ungroup() %>%
+  mutate(cost_apm = total_apm / played)
+
+food.pm <-
+  bird.apm %>%
+  inner_join(birds %>% select(bird_id, bird_name, food_cost, worm, seed, cherry, fish, rat, wild),
+             by = "bird_name") %>%
+  group_by(food_cost, worm, seed, cherry, fish, rat, wild) %>%
+  summarize(played = sum(games),
+            birds = n_distinct(bird_name),
             total_apm = sum(total_bird_apm)) %>%
   ungroup() %>%
   mutate(food_apm = total_apm / played)
