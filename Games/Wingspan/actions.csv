@@ -1,0 +1,339 @@
+action_id,turn_id,player_id,action,description
+1,1,9,Draw Card,Black Tern
+2,1,9,Gain Food,Cherry
+3,1,9,Gain Food,Fish
+4,1,9,Gain Food,Worm
+5,1,9,Gain Food,Seed
+6,1,9,Draw Bonus Card,Wildlife Gardener
+7,2,10,Draw Card,Red-Bellied Woodpecker
+8,2,10,Draw Card,Cassin's Sparrow
+9,2,10,Gain Food,Cherry
+10,2,10,Gain Food,Worm
+11,2,10,Gain Food,Seed
+12,2,10,Draw Bonus Card,Forester
+13,3,9,Draw Card,Franklin's Gull
+14,4,10,Play Bird,Red-Bellied Woodpecker
+15,4,10,Add Habitat,Forest
+16,4,10,Discard Food,Worm
+17,5,9,Play Bird,Franklin's Gull
+18,5,9,Add Habitat,Grasslands
+19,5,9,Discard Food,Cherry
+20,5,9,Discard Food,Fish
+21,6,10,Draw Card,House Finch
+22,7,9,Lay Egg,Franklin's Gull
+23,7,9,Lay Egg,Franklin's Gull
+24,7,9,Activate Power,Franklin's Gull
+25,7,9,Discard Egg,Franklin's Gull
+26,7,9,Draw Card,Bushtit
+27,7,9,Draw Card,Carolina Wren
+28,8,10,Gain Food,Worm
+29,8,10,Activate Power,Red-Bellied Woodpecker
+30,8,10,Gain Food,Seed
+31,9,9,Play Bird,Bushtit
+32,9,9,Add Habitat,Grasslands
+33,9,9,Discard Egg,Franklin's Gull
+34,9,9,Discard Food,Worm
+35,9,9,Discard Food,Seed
+36,10,10,Play Bird,Cassin's Sparrow
+37,10,10,Add Habitat,Grasslands
+38,10,10,Discard Food,Worm
+39,10,10,Discard Food,Seed
+40,11,9,Gain Food,Cherry
+41,12,10,Play Bird,House Finch
+42,12,10,Add Habitat,Wetlands
+43,12,10,Discard Food,Cherry
+44,12,10,Discard Food,Seed
+45,13,9,Play Bird,Carolina Wren
+46,13,9,Add Habitat,Forest
+47,13,9,Discard Food,Cherry
+48,13,9,Activate Power,Carolina Wren
+49,13,9,Draw Card,Common Yellowthroat
+50,13,9,Draw Card,Brant
+51,14,10,Lay Egg,Red-Bellied Woodpecker
+52,14,10,Lay Egg,Red-Bellied Woodpecker
+53,14,10,Activate Power,Cassin's Sparrow
+54,14,10,Lay Egg,Red-Bellied Woodpecker
+55,15,9,Lay Egg,Carolina Wren
+56,15,9,Lay Egg,Carolina Wren
+57,15,9,Lay Egg,Carolina Wren
+58,15,9,Activate Power,Bushtit
+59,15,9,Discard Card,Common Yellowthroat
+60,15,9,Tuck Card,Bushtit
+61,15,9,Lay Egg,Bushtit
+62,15,9,Activate Power,Franklin's Gull
+63,15,9,Discard Egg,Bushtit
+64,15,9,Draw Card,Chestnut-Collared Longspur
+65,15,9,Draw Card,Cooper's Hawk
+66,16,10,Draw Card,Common Raven
+67,16,10,Discard Egg,Red-Bellied Woodpecker
+68,16,10,Draw Card,Chipping Sparrow
+69,16,10,Activate Power,House Finch
+70,16,10,Discard Card,Common Raven
+71,16,10,Tuck Card,House Finch
+72,16,10,Draw Card,California Quail
+73,17,9,Lay Egg,Carolina Wren
+74,17,9,Lay Egg,Carolina Wren
+75,17,9,Lay Egg,Franklin's Gull
+76,17,9,Activate Power,Bushtit
+77,17,9,Discard Card,Chestnut-Collared Longspur
+78,17,9,Tuck Card,Bushtit
+79,17,9,Lay Egg,Bushtit
+80,17,9,Activate Power,Franklin's Gull
+81,17,9,Discard Egg,Bushtit
+82,17,9,Draw Card,Ash-Throated Flycatcher
+83,17,9,Draw Card,Trumpeter Swan
+84,18,10,Lay Egg,Cassin's Sparrow
+85,18,10,Lay Egg,House Finch
+86,18,10,Activate Power,Cassin's Sparrow
+87,18,10,Lay Egg,Red-Bellied Woodpecker
+88,19,10,Draw Card,House Wren
+89,19,10,Discard Egg,Red-Bellied Woodpecker
+90,19,10,Draw Card,White-Throated Swift
+91,19,10,Activate Power,House Finch
+92,19,10,Discard Card,House Wren
+93,19,10,Tuck Card,House Finch
+94,19,10,Draw Card,Mountain Chickadee
+95,20,9,Gain Food,Rat
+96,20,9,Discard Card,Ash-Throated Flycatcher
+97,20,9,Gain Food,Seed
+98,21,10,Gain Food,Worm
+99,21,10,Activate Power,Red-Bellied Woodpecker
+100,21,10,Gain Food,Seed
+101,22,9,Play Bird,Cooper's Hawk
+102,22,9,Add Habitat,Forest
+103,22,9,Discard Food,Rat
+104,22,9,Discard Egg,Carolina Wren
+105,23,10,Play Bird,Mountain Chickadee
+106,23,10,Add Habitat,Forest
+107,23,10,Discard Food,Seed
+108,23,10,Discard Egg,Red-Bellied Woodpecker
+109,24,9,Gain Food,Fish
+110,24,9,Gain Food,Seed
+111,24,9,Activate Power,Cooper's Hawk
+112,24,9,Discard Card,American Woodcock
+113,24,9,Tuck Card,Cooper's Hawk
+114,25,10,Gain Food,Worm
+115,25,10,Gain Food,Seed
+116,25,10,Activate Power,Mountain Chickadee
+117,25,10,Cache Food,Mountain Chickadee
+118,25,10,Activate Power,Red-Bellied Woodpecker
+119,25,10,Gain Food,Seed
+120,26,9,Play Bird,Black Tern
+121,26,9,Add Habitat,Wetlands
+122,26,9,Discard Food,Fish
+123,27,10,Play Bird,White-Throated Swift
+124,27,10,Add Habitat,Grasslands
+125,27,10,Discard Food,Worm
+126,27,10,Discard Egg,Cassin's Sparrow
+127,28,9,Lay Egg,Carolina Wren
+128,28,9,Lay Egg,Cooper's Hawk
+129,28,9,Lay Egg,Black Tern
+130,28,9,Activate Power,Bushtit
+131,28,9,Discard Card,Brant
+132,28,9,Tuck Card,Bushtit
+133,28,9,Lay Egg,Bushtit
+134,28,9,Activate Power,Franklin's Gull
+135,28,9,Discard Egg,Cooper's Hawk
+136,28,9,Draw Card,Swainson's Hawk
+137,28,9,Draw Card,Eastern Phoebe
+138,29,10,Play Bird,California Quail
+139,29,10,Add Habitat,Grasslands
+140,29,10,Discard Food,Worm
+141,29,10,Discard Food,Seed
+142,29,10,Discard Food,Seed
+143,29,10,Discard Egg,House Finch
+144,30,9,Gain Food,Cherry
+145,30,9,Gain Food,Worm
+146,30,9,Activate Power,Cooper's Hawk
+147,30,9,Discard Card,Red Crossbill
+148,30,9,Tuck Card,Cooper's Hawk
+149,31,10,Draw Card,Eastern Screech Owl
+150,31,10,Activate Power,House Finch
+151,31,10,Discard Card,House Sparrow
+152,31,10,Tuck Card,House Finch
+153,31,10,Draw Card,Common Loon
+154,32,9,Play Bird,Trumpeter Swan
+155,32,9,Add Habitat,Wetlands
+156,32,9,Discard Food,Cherry
+157,32,9,Discard Food,Seed
+158,32,9,Discard Food,Seed
+159,32,9,Discard Egg,Carolina Wren
+160,33,9,Lay Egg,Carolina Wren
+161,33,9,Lay Egg,Franklin's Gull
+162,33,9,Lay Egg,Trumpeter Swan
+163,33,9,Activate Power,Bushtit
+164,33,9,Discard Card,Swainson's Hawk
+165,33,9,Tuck Card,Bushtit
+166,33,9,Lay Egg,Bushtit
+167,33,9,Activate Power,Franklin's Gull
+168,33,9,Discard Egg,Bushtit
+169,33,9,Draw Bird,Loggerhead Shrike
+170,33,9,Draw Bird,Baltimore Oriole
+171,34,10,Gain Food,Cherry
+172,34,10,Gain Food,Fish
+173,34,10,Activate Power,Mountain Chickadee
+174,34,10,Cache Food,Mountain Chickadee
+175,34,10,Activate Power,Red-Bellied Woodpecker
+176,34,10,Gain Food,Seed
+177,35,9,Gain Food,Cherry
+178,35,9,Gain Food,Worm
+179,35,9,Activate Power,Cooper's Hawk
+180,35,9,Discard Card,Mourning Dove
+181,35,9,Tuck Card,Cooper's Hawk
+182,36,10,Play Bird,Common Loon
+183,36,10,Add Habitat,Wetlands
+184,36,10,Discard Food,Cherry
+185,36,10,Discard Food,Fish
+186,36,10,Discard Egg,Red-Bellied Woodpecker
+187,37,9,Gain Food,Cherry
+188,37,9,Gain Food,Worm
+189,37,9,Activate Power,Cooper's Hawk
+190,37,9,Discard Card,Steller's Jay
+191,37,9,Tuck Card,Cooper's Hawk
+192,38,10,Draw Bird,Spotted Towhee
+193,38,10,Draw Bird,Golden Eagle
+194,38,10,Activate Power,Common Loon
+195,38,10,Draw Card,Burrowing Owl
+196,38,9,Draw Card,Northern Bobwhite
+197,38,10,Activate Power,House Finch
+198,38,10,Discard Card,Spotted Towhee
+199,38,10,Tuck Card,House Finch
+200,38,10,Draw Card,Dickcissel
+201,39,9,Play Bird,Baltimore Oriole
+202,39,9,Add Habitat,Forest
+203,39,9,Discard Food,Cherry
+204,39,9,Discard Food,Cherry
+205,39,9,Discard Food,Worm
+206,39,9,Discard Egg,Carolina Wren
+207,40,10,Gain Food,Worm
+208,40,10,Gain Food,Worm
+209,40,10,Activate Power,Mountain Chickadee
+210,40,10,Cache Food,Mountain Chickadee
+211,40,10,Activate Power,Red-Bellied Woodpecker
+212,40,10,Gain Food,Seed
+213,41,9,Lay Egg,Carolina Wren
+214,41,9,Lay Egg,Cooper's Hawk
+215,41,9,Lay Egg,Baltimore Oriole
+216,41,9,Activate Power,Bushtit
+217,41,9,Discard Card,Northern Bobwhite
+218,41,9,Tuck Card,Bushtit
+219,41,9,Lay Egg,Bushtit
+220,41,9,Activate Power,Franklin's Gull
+221,41,9,Discard Egg,Bushtit
+222,41,9,Draw Bird,Barred Owl
+223,41,9,Draw Bird,Say's Phoebe
+224,42,10,Lay Egg,Cassin's Sparrow
+225,42,10,Lay Egg,House Finch
+226,42,10,Lay Egg,Common Loon
+227,42,10,Activate Power,California Quail
+228,42,10,Lay Egg,California Quail
+229,42,10,Activate Power,White-Throated Swift
+230,42,10,Discard Card,Golden Eagle
+231,42,10,Tuck Card,White-Throated Swift
+232,42,10,Lay Egg,Red-Bellied Woodpecker
+233,42,10,Activate Power,Cassin's Sparrow
+234,42,10,Lay Egg,Red-Bellied Woodpecker
+235,43,9,Discard Card,Barred Owl
+236,43,9,Gain Food,Cherry
+237,43,9,Gain Food,Worm
+238,43,9,Gain Food,Seed
+239,43,9,Activate Power,Cooper's Hawk
+240,43,9,Discard Card,Blue Jay
+241,43,9,Tuck Card,Cooper's Hawk
+242,44,10,Play Bird,Eastern Screech Owl
+243,44,10,Add Habitat,Forest
+244,44,10,Discard Food,Worm
+245,44,10,Discard Egg,Red-Bellied Woodpecker
+246,45,10,Draw Card,Canvasback
+247,45,10,Draw Card,Red-Cockaded Woodpecker
+248,45,10,Activate Power,House Finch
+249,45,10,Discard Card,Canvasback
+250,45,10,Tuck Card,House Finch
+251,45,10,Draw Card,Red-Tailed Hawk
+252,46,9,Play Bird,Eastern Phoebe
+253,46,9,Add Habitat,Wetlands
+254,46,9,Discard Food,Cherry
+255,46,9,Discard Egg,Franklin's Gull
+256,47,10,Play Bird,Red-Cockaded Woodpecker
+257,47,10,Add Habitat,Forest
+258,47,10,Discard Food,Worm
+259,47,10,Discard Food,Seed
+260,47,10,Discard Food,Seed
+261,47,10,Discard Egg,Red-Bellied Woodpecker
+262,47,10,Discard Egg,House Finch
+263,47,10,Activate Power,Red-Cockaded Woodpecker
+264,47,10,Draw Bonus Card,Ecologist
+265,47,10,Draw Bonus Card,Anatomist
+266,47,10,Discard Bonus Card,Anatomist
+267,48,9,Play Bird,Say's Phoebe
+268,48,9,Add Habitat,Grasslands
+269,48,9,Discard Food,Worm
+270,48,9,Discard Food,Worm
+271,48,9,Discard Food,Worm
+272,48,9,Discard Egg,Cooper's Hawk
+273,48,9,Activate Power,Say's Phoebe
+274,48,9,Lay Egg,Baltimore Oriole
+275,48,9,Lay Egg,Franklin's Gull
+276,48,9,Lay Egg,Bushtit
+277,48,9,Lay Egg,Say's Phoebe
+278,48,9,Lay Egg,Black Tern
+279,48,9,Lay Egg,Eastern Phoebe
+280,49,10,Lay Egg,Red-Bellied Woodpecker
+281,49,10,Lay Egg,Red-Bellied Woodpecker
+282,49,10,Lay Egg,Red-Bellied Woodpecker
+283,49,10,Activate Power,California Quail
+284,49,10,Lay Egg,California Quail
+285,49,10,Activate Power,White-Throated Swift
+286,49,10,Discard Card,Red-Tailed Hawk
+287,49,10,Tuck Card,White-Throated Swift
+288,49,10,Lay Egg,Mountain Chickadee
+289,49,10,Activate Power,Cassin's Sparrow
+290,49,10,Lay Egg,Mountain Chickadee
+291,50,9,Discard Food,Seed
+292,50,9,Lay Egg,Cooper's Hawk
+293,50,9,Lay Egg,Cooper's Hawk
+294,50,9,Lay Egg,Say's Phoebe
+295,50,9,Lay Egg,Say's Phoebe
+296,50,9,Activate Power,Bushtit
+297,50,9,Discard Card,Loggerhead Shrike
+298,50,9,Tuck Card,Bushtit
+299,50,9,Lay Egg,Bushtit
+300,50,9,Activate Power,Franklin's Gull
+301,50,9,Discard Egg,Bushtit
+302,50,9,Draw Bird,American Kestrel
+303,50,9,Draw Bird,Painted Bunting
+304,51,10,Lay Egg,Mountain Chickadee
+305,51,10,Lay Egg,Eastern Screech Owl
+306,51,10,Lay Egg,Eastern Screech Owl
+307,51,10,Activate Power,California Quail
+308,51,10,Lay Egg,California Quail
+309,51,10,Activate Power,White-Throated Swift
+310,51,10,Discard Card,Dickcissel
+311,51,10,Tuck Card,White-Throated Swift
+312,51,10,Lay Egg,Red-Cockaded Woodpecker
+313,51,10,Activate Power,Cassin's Sparrow
+314,51,10,Lay Egg,Red-Cockaded Woodpecker
+315,52,9,Lay Egg,Trumpeter Swan
+316,52,9,Lay Egg,Eastern Phoebe
+317,52,9,Lay Egg,Eastern Phoebe
+318,52,9,Activate Power,Bushtit
+319,52,9,Discard Card,Painted Bunting
+320,52,9,Tuck Card,Bushtit
+321,52,9,Lay Egg,Bushtit
+322,53,10,Lay Egg,Cassin's Sparrow
+323,53,10,Lay Egg,White-Throated Swift
+324,53,10,Lay Egg,White-Throated Swift
+325,53,10,Activate Power,California Quail
+326,53,10,Lay Egg,California Quail
+327,53,10,Activate Power,White-Throated Swift
+328,53,10,Discard Card,Burrowing Owl
+329,53,10,Tuck Card,White-Throated Swift
+330,53,10,Lay Egg,California Quail
+331,53,10,Activate Power,Cassin's Sparrow
+332,53,10,Lay Egg,California Quail
+333,54,9,Lay Egg,Bushtit
+334,54,9,Lay Egg,Bushtit
+335,54,9,Lay Egg,Eastern Phoebe
+336,54,9,Activate Power,Bushtit
+337,54,9,Discard Card,American Kestrel
+338,54,9,Tuck Card,Bushtit

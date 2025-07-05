@@ -1,4 +1,4 @@
-﻿id,player_game_id,bird_name,habitat
+﻿bird_game_id,player_game_id,bird_name,habitat
 1,1,Eastern Screech Owl,Forest
 2,1,Carolina Chickadee,Forest
 3,1,Rose-Breasted Grosbeak,Forest
@@ -615,3 +615,47 @@
 614,68,Red Knot,Wetlands
 615,68,Wood Stork,Wetlands
 616,68,Common Nighthawk,Wetlands
+617,69,Eastern Phoebe,Forest
+618,69,Cassin's Finch,Forest
+619,69,Common Raven,Grasslands
+620,69,Northern Mockingbird,Grasslands
+621,69,Burrowing Owl,Grasslands
+622,69,Yellow-Breasted Chat,Grasslands
+623,69,Canada Goose,Grasslands
+624,69,Clark's Grebe,Wetlands
+625,70,Pygmy Nuthatch,Forest
+626,70,Acorn Woodpecker,Forest
+627,70,Black-Chinned Hummingbird,Grasslands
+628,70,Brewer's Blackbird,Grasslands
+629,70,American Coot,Wetlands
+630,70,Sandhill Crane,Wetlands
+631,70,Pied-Billed Grebe,Wetlands
+632,70,Whooping Crane,Wetlands
+633,71,House Wren,Forest
+634,71,Northern Flicker,Forest
+635,71,Barred Owl,Forest
+636,71,Hermit Thrush,Forest
+637,71,American Crow,Grasslands
+638,71,White-Throated Swift,Grasslands
+639,71,Cassin's Sparrow,Grasslands
+640,71,Barn Swallow,Wetlands
+641,71,Common Loon,Wetlands
+642,71,King Rail,Wetlands
+643,72,Red-Bellied Woodpecker,Forest
+644,72,Mountain Chickadee,Forest
+645,72,Eastern Screech Owl,Forest
+646,72,Red-Cockaded Woodpecker,Forest
+647,72,Cassin's Sparrow,Grasslands
+648,72,White-Throated Swift,Grasslands
+649,72,California Quail,Grasslands
+650,72,House Finch,Wetlands
+651,72,Common Loon,Wetlands
+652,73,Carolina Wren,Forest
+653,73,Cooper's Hawk,Forest
+654,73,Baltimore Oriole,Forest
+655,73,Franklin's Gull,Grasslands
+656,73,Bushtit,Grasslands
+657,73,Say's Phoebe,Grasslands
+658,73,Black Tern,Wetlands
+659,73,Trumpeter Swan,Wetlands
+660,73,Eastern Phoebe,Wetlands
