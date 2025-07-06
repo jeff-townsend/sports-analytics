@@ -1,4 +1,4 @@
-﻿bird_id,bird_name,deck,points,forest,grasslands,wetlands,habitats,food_cost,worm,seed,cherry,fish,rat,wild,egg_capacity
+﻿bird_id,bird_name,deck,bird_points,forest,grasslands,wetlands,habitats,food_cost,worm,seed,cherry,fish,rat,wild,egg_capacity
 1,Acorn Woodpecker,Base Game,5,1,0,0,1,3,0,3,0,0,0,0,0
 2,American Avocet,Base Game,6,0,0,1,1,3,2,1,0,0,0,0,0
 3,American Bittern,Base Game,7,0,0,1,1,3,1,0,0,1,1,0,0

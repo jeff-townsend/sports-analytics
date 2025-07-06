@@ -1,4 +1,4 @@
-action_id,turn_id,player_id,action,description
+action_id,turn_id,player_id,action_type,action_subtype
 1,1,9,Draw Card,Black Tern
 2,1,9,Gain Food,Cherry
 3,1,9,Gain Food,Fish

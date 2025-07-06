@@ -1,4 +1,4 @@
-turn_id,game_id,player_id,player_game_id,turn,action
+turn_id,game_id,player_id,player_game_id,turn,turn_type
 1,26,9,73,0,Start
 2,26,10,72,0,Start
 3,26,9,73,1,Wetlands
