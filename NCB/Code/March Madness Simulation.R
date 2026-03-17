@@ -4,16 +4,16 @@ library(ggthemes)
 
 ## pre-tourney data
 
-#r64.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r64_d1_kenpom.csv")
-#r64.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r64_d2_kenpom.csv")
-# r32.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r32_d1_kenpom.csv")
-#r32.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r32_d2_kenpom.csv")
+r1.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r1d1.csv")
+#r1.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r64_d2_kenpom.csv")
+#r2.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r32_d1_kenpom.csv")
+#r2.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NCB/2025/2025_r32_d2_kenpom.csv")
 #r3.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2025_r3d1.csv")
-r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2025_r3d2.csv")
+#r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2025_r3d2.csv")
 
 # add pyth
 ratings <-
-  r3.d2 %>%
+  r1.d1 %>%
   mutate(raw.pyth = OE^11 / (OE^11 + DE^11), # using 11 because it seems to match what KP does
          adj.pyth = AdjOE^11 / (AdjOE^11 + AdjDE^11))
 
@@ -23,7 +23,7 @@ bracket.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/spor
 # add kp rating to bracket
 bracket <-
   bracket.import %>%
-  filter(season == 2025) %>%
+  filter(season == 2026) %>%
   inner_join(ratings, by = c("team" = "TeamName")) %>%
   select(s_curve, team, region, seed, adj.pyth) %>%
   rename(rating = adj.pyth)
@@ -64,119 +64,12 @@ matchups.tmp %>%
 
 matchups <-
   matchups.tmp %>%
-  mutate(win_prob_a = ifelse(matchup_id == 32, 0, win_prob_a), # creighton over louisville
-         win_prob_b = ifelse(matchup_id == 32, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 14, 1, win_prob_a), # purdue over high point
-         win_prob_b = ifelse(matchup_id == 14, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 10, 1, win_prob_a), # wisconsin over montana
-         win_prob_b = ifelse(matchup_id == 10, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 3, 1, win_prob_a), # houston over siue
-         win_prob_b = ifelse(matchup_id == 3, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 1, 1, win_prob_a), # auburn over alabama st.
-         win_prob_b = ifelse(matchup_id == 1, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 19, 0, win_prob_a), # mcneese over clemson
-         win_prob_b = ifelse(matchup_id == 19, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 23, 1, win_prob_a), # byu over vcu
-         win_prob_b = ifelse(matchup_id == 23, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 30, 1, win_prob_a), # gonzaga over georgia
-         win_prob_b = ifelse(matchup_id == 30, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 6, 1, win_prob_a), # tennessee over wofford
-         win_prob_b = ifelse(matchup_id == 6, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 28, 0, win_prob_a), # arkansas over kansas
-         win_prob_b = ifelse(matchup_id == 28, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 16, 1, win_prob_a), # texas a&m over yale
-         win_prob_b = ifelse(matchup_id == 16, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 21, 0, win_prob_a), # drake over missouri
-         win_prob_b = ifelse(matchup_id == 21, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 27, 1, win_prob_a), # ucla over utah st.
-         win_prob_b = ifelse(matchup_id == 27, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 5, 1, win_prob_a), # st. john's over nebraska omaha
-         win_prob_b = ifelse(matchup_id == 5, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 17, 1, win_prob_a), # michigan over uc san diego
-         win_prob_b = ifelse(matchup_id == 17, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 12, 1, win_prob_a), # texas tech over unc wilmington
-         win_prob_b = ifelse(matchup_id == 12, 0, win_prob_b),
-         # R64 Day 2
-         win_prob_a = ifelse(matchup_id == 31, 0, win_prob_a), # baylor over mississippi st.
-         win_prob_b = ifelse(matchup_id == 31, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 7, 1, win_prob_a), # alabama over robert morris
-         win_prob_b = ifelse(matchup_id == 7, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 9, 1, win_prob_a), # iowa st. over lipscomb
-         win_prob_b = ifelse(matchup_id == 9, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 20, 0, win_prob_a), # colorado st. over memphis
-         win_prob_b = ifelse(matchup_id == 20, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 2, 1, win_prob_a), # duke over mount st. mary's
-         win_prob_b = ifelse(matchup_id == 2, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 26, 1, win_prob_a), # saint mary's over vanderbilt
-         win_prob_b = ifelse(matchup_id == 26, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 24, 1, win_prob_a), # mississippi over north carolina
-         win_prob_b = ifelse(matchup_id == 24, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 13, 1, win_prob_a), # maryland over grand canyon
-         win_prob_b = ifelse(matchup_id == 13, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 4, 1, win_prob_a), # florida over norfolk st.
-         win_prob_b = ifelse(matchup_id == 4, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 11, 1, win_prob_a), # kentucky over troy
-         win_prob_b = ifelse(matchup_id == 11, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 25, 0, win_prob_a), # new mexico over marquette
-         win_prob_b = ifelse(matchup_id == 25, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 15, 1, win_prob_a), # arizona over akron
-         win_prob_b = ifelse(matchup_id == 15, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 29, 1, win_prob_a), # connecticut over oklahoma
-         win_prob_b = ifelse(matchup_id == 29, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 22, 1, win_prob_a), # illinois over xavier
-         win_prob_b = ifelse(matchup_id == 22, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 8, 1, win_prob_a), # michigan st. over bryant
-         win_prob_b = ifelse(matchup_id == 8, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 18, 1, win_prob_a), # oregon over liberty
-         win_prob_b = ifelse(matchup_id == 18, 0, win_prob_b),
-         # R32 Day 1
-         win_prob_a = ifelse(matchup_id == 62, 1, win_prob_a), # purdue over mcneese
-         win_prob_b = ifelse(matchup_id == 62, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 53, 0, win_prob_a), # arkansas over st. john's
-         win_prob_b = ifelse(matchup_id == 53, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 48, 0, win_prob_a), # michigan over texas a&m
-         win_prob_b = ifelse(matchup_id == 48, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 60, 1, win_prob_a), # texas tech over drake
-         win_prob_b = ifelse(matchup_id == 60, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 49, 1, win_prob_a), # auburn over creighton
-         win_prob_b = ifelse(matchup_id == 49, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 42, 0, win_prob_a), # byu over wisconsin
-         win_prob_b = ifelse(matchup_id == 42, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 35, 1, win_prob_a), # houston over gonzaga
-         win_prob_b = ifelse(matchup_id == 35, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 38, 1, win_prob_a), # tennessee over ucla
-         win_prob_b = ifelse(matchup_id == 38, 0, win_prob_b),
-         # R32 Day 2
-         win_prob_a = ifelse(matchup_id == 36, 1, win_prob_a), # florida over connecticut
-         win_prob_b = ifelse(matchup_id == 36, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 50, 1, win_prob_a), # duke over baylor
-         win_prob_b = ifelse(matchup_id == 50, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 43, 1, win_prob_a), # kentucky over illinois
-         win_prob_b = ifelse(matchup_id == 43, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 39, 1, win_prob_a), # alabama over saint mary's
-         win_prob_b = ifelse(matchup_id == 39, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 61, 1, win_prob_a), # maryland over colorado st.
-         win_prob_b = ifelse(matchup_id == 61, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 41, 0, win_prob_a), # mississippi over iowa st.
-         win_prob_b = ifelse(matchup_id == 41, 1, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 56, 1, win_prob_a), # michigan st. over new mexico
-         win_prob_b = ifelse(matchup_id == 56, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 47, 1, win_prob_a), # arizona over oregon
-         win_prob_b = ifelse(matchup_id == 47, 0, win_prob_b),
-         # S16 Day 1
-         win_prob_a = ifelse(matchup_id == 111, 1, win_prob_a), # alabama over byu
-         win_prob_b = ifelse(matchup_id == 111, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 100, 1, win_prob_a), # florida over maryland
-         win_prob_b = ifelse(matchup_id == 100, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 98, 1, win_prob_a), # duke over arizona
-         win_prob_b = ifelse(matchup_id == 98, 0, win_prob_b),
-         win_prob_a = ifelse(matchup_id == 165, 0, win_prob_a), # texas tech over arkansas
-         win_prob_b = ifelse(matchup_id == 165, 1, win_prob_b),
-         # S16 Day 2
-         )
+  # mutate(win_prob_a = ifelse(matchup_id == 32, 0, win_prob_a), # creighton over louisville
+  #        win_prob_b = ifelse(matchup_id == 32, 1, win_prob_b),
+  )
 
 ## simulation tournament
-set.seed(320)
+set.seed(316)
 #start.time <- Sys.time()
 simulations <- 25000
 simulation.ids <- data.frame(simulation_id = c(1:simulations))
