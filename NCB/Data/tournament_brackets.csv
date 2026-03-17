@@ -141,34 +141,34 @@ bracket_id,season,s_curve,seed,team,region
 140,2026,12,3,Virginia,South
 141,2026,13,4,Nebraska,South
 142,2026,14,4,Alabama,Midwest
-143,2026,15,4,Kansas ,West
+143,2026,15,4,Kansas,West
 144,2026,16,4,Arkansas,East
 145,2026,17,5,Vanderbilt,East
 146,2026,18,5,St. John's,West
-147,2026,19,5,Texas Tech ,Midwest
-148,2026,20,5,Wisconsin ,South
-149,2026,21,6,Tennessee ,South
+147,2026,19,5,Texas Tech,Midwest
+148,2026,20,5,Wisconsin,South
+149,2026,21,6,Tennessee,South
 150,2026,22,6,North Carolina,Midwest
-151,2026,23,6,Louisville ,West
-152,2026,24,6,BYU ,East
-153,2026,25,7,Kentucky ,East
+151,2026,23,6,Louisville,West
+152,2026,24,6,BYU,East
+153,2026,25,7,Kentucky,East
 154,2026,26,7,Saint Mary's,West
 155,2026,27,7,Miami FL,Midwest
-156,2026,28,7,UCLA ,South
-157,2026,29,8,Clemson ,South
+156,2026,28,7,UCLA,South
+157,2026,29,8,Clemson,South
 158,2026,30,8,Villanova,Midwest
 159,2026,31,8,Ohio St.,West
-160,2026,32,8,Georgia ,East
+160,2026,32,8,Georgia,East
 161,2026,33,9,Utah St.,East
-162,2026,34,9,TCU ,West
+162,2026,34,9,TCU,West
 163,2026,35,9,Saint Louis,Midwest
-164,2026,36,9,Iowa ,South
+164,2026,36,9,Iowa,South
 165,2026,37,10,Santa Clara,South
-166,2026,38,10,UCF ,Midwest
-167,2026,39,10,Missouri ,West
-168,2026,40,10,Texas A&M ,East
+166,2026,38,10,UCF,Midwest
+167,2026,39,10,Missouri,West
+168,2026,40,10,Texas A&M,East
 169,2026,41,11,N.C. State,East
-170,2026,42,11,SMU ,West
+170,2026,42,11,SMU,West
 171,2026,43,11,VCU,Midwest
 172,2026,44,11,South Florida,South
 173,2026,45,12,McNeese,South
@@ -176,16 +176,16 @@ bracket_id,season,s_curve,seed,team,region
 175,2026,47,12,Northern Iowa,West
 176,2026,48,12,High Point,East
 177,2026,49,13,Cal Baptist,East
-178,2026,50,13,Hofstra ,West
-179,2026,51,13,Troy ,Midwest
+178,2026,50,13,Hofstra,West
+179,2026,51,13,Troy,Midwest
 180,2026,52,13,Hawaii,South
 181,2026,53,14,North Dakota St.,South
-182,2026,54,14,Penn ,Midwest
+182,2026,54,14,Penn,Midwest
 183,2026,55,14,Wright St.,West
 184,2026,56,14,Kennesaw St.,East
 185,2026,57,15,Tennessee St.,East
-186,2026,58,15,Idaho ,West
-187,2026,59,15,Furman ,Midwest
+186,2026,58,15,Idaho,West
+187,2026,59,15,Furman,Midwest
 188,2026,60,15,Queens,South
 189,2026,61,16,Siena,South
 190,2026,62,16,LIU,Midwest
