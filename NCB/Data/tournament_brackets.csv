@@ -167,8 +167,8 @@ bracket_id,season,s_curve,seed,team,region
 166,2026,38,10,UCF,Midwest
 167,2026,39,10,Missouri,West
 168,2026,40,10,Texas A&M,East
-169,2026,41,11,N.C. State,East
-170,2026,42,11,SMU,West
+169,2026,41,11,Texas,East
+170,2026,42,11,Miami OH,West
 171,2026,43,11,VCU,Midwest
 172,2026,44,11,South Florida,South
 173,2026,45,12,McNeese,South
@@ -189,5 +189,5 @@ bracket_id,season,s_curve,seed,team,region
 188,2026,60,15,Queens,South
 189,2026,61,16,Siena,South
 190,2026,62,16,LIU,Midwest
-191,2026,63,16,UMBC,West
-192,2026,64,16,Lehigh,East
+191,2026,63,16,Howard,West
+192,2026,64,16,Prairie View A&M,East
