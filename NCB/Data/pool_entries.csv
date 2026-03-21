@@ -3275,3 +3275,1893 @@ entry_id,season,game_id,round_id,entrant_id,entrant_name,selection
 3274,2025,61,5,25,Tom Nimps,Auburn
 3275,2025,62,5,25,Tom Nimps,Tennessee
 3276,2025,63,6,25,Tom Nimps,Tennessee
+3277,2026,1,1,1,Jeff Townsend,Duke
+3278,2026,2,1,1,Jeff Townsend,Arizona
+3279,2026,3,1,1,Jeff Townsend,Michigan
+3280,2026,4,1,1,Jeff Townsend,Florida
+3281,2026,5,1,1,Jeff Townsend,Houston
+3282,2026,6,1,1,Jeff Townsend,Iowa St.
+3283,2026,7,1,1,Jeff Townsend,Purdue
+3284,2026,8,1,1,Jeff Townsend,Connecticut
+3285,2026,9,1,1,Jeff Townsend,Michigan St.
+3286,2026,10,1,1,Jeff Townsend,Gonzaga
+3287,2026,11,1,1,Jeff Townsend,Virginia
+3288,2026,12,1,1,Jeff Townsend,Illinois
+3289,2026,13,1,1,Jeff Townsend,Nebraska
+3290,2026,14,1,1,Jeff Townsend,Alabama
+3291,2026,15,1,1,Jeff Townsend,Arkansas
+3292,2026,16,1,1,Jeff Townsend,Kansas
+3293,2026,17,1,1,Jeff Townsend,St. John's
+3294,2026,18,1,1,Jeff Townsend,Wisconsin
+3295,2026,19,1,1,Jeff Townsend,Akron
+3296,2026,20,1,1,Jeff Townsend,Vanderbilt
+3297,2026,21,1,1,Jeff Townsend,VCU
+3298,2026,22,1,1,Jeff Townsend,Tennessee
+3299,2026,23,1,1,Jeff Townsend,Texas
+3300,2026,24,1,1,Jeff Townsend,Louisville
+3301,2026,25,1,1,Jeff Townsend,UCLA
+3302,2026,26,1,1,Jeff Townsend,Miami FL
+3303,2026,27,1,1,Jeff Townsend,Santa Clara
+3304,2026,28,1,1,Jeff Townsend,Saint Mary's
+3305,2026,29,1,1,Jeff Townsend,Iowa
+3306,2026,30,1,1,Jeff Townsend,Georgia
+3307,2026,31,1,1,Jeff Townsend,Utah St.
+3308,2026,32,1,1,Jeff Townsend,Ohio St.
+3309,2026,33,2,1,Jeff Townsend,Duke
+3310,2026,34,2,1,Jeff Townsend,Arizona
+3311,2026,35,2,1,Jeff Townsend,Michigan
+3312,2026,36,2,1,Jeff Townsend,Florida
+3313,2026,37,2,1,Jeff Townsend,Houston
+3314,2026,38,2,1,Jeff Townsend,Iowa St.
+3315,2026,39,2,1,Jeff Townsend,Purdue
+3316,2026,40,2,1,Jeff Townsend,Connecticut
+3317,2026,41,2,1,Jeff Townsend,Michigan St.
+3318,2026,42,2,1,Jeff Townsend,Gonzaga
+3319,2026,43,2,1,Jeff Townsend,Tennessee
+3320,2026,44,2,1,Jeff Townsend,Illinois
+3321,2026,45,2,1,Jeff Townsend,Vanderbilt
+3322,2026,46,2,1,Jeff Townsend,Alabama
+3323,2026,47,2,1,Jeff Townsend,Arkansas
+3324,2026,48,2,1,Jeff Townsend,St. John's
+3325,2026,49,3,1,Jeff Townsend,Duke
+3326,2026,50,3,1,Jeff Townsend,Arizona
+3327,2026,51,3,1,Jeff Townsend,Michigan
+3328,2026,52,3,1,Jeff Townsend,Florida
+3329,2026,53,3,1,Jeff Townsend,Illinois
+3330,2026,54,3,1,Jeff Townsend,Iowa St.
+3331,2026,55,3,1,Jeff Townsend,Purdue
+3332,2026,56,3,1,Jeff Townsend,Michigan St.
+3333,2026,57,4,1,Jeff Townsend,Duke
+3334,2026,58,4,1,Jeff Townsend,Purdue
+3335,2026,59,4,1,Jeff Townsend,Michigan
+3336,2026,60,4,1,Jeff Townsend,Illinois
+3337,2026,61,5,1,Jeff Townsend,Illinois
+3338,2026,62,5,1,Jeff Townsend,Michigan
+3339,2026,63,6,1,Jeff Townsend,Michigan
+3340,2026,1,1,2,Allison Gilmore,Duke
+3341,2026,2,1,2,Allison Gilmore,Arizona
+3342,2026,3,1,2,Allison Gilmore,Michigan
+3343,2026,4,1,2,Allison Gilmore,Florida
+3344,2026,5,1,2,Allison Gilmore,Houston
+3345,2026,6,1,2,Allison Gilmore,Iowa St.
+3346,2026,7,1,2,Allison Gilmore,Purdue
+3347,2026,8,1,2,Allison Gilmore,Connecticut
+3348,2026,9,1,2,Allison Gilmore,Michigan St.
+3349,2026,10,1,2,Allison Gilmore,Gonzaga
+3350,2026,11,1,2,Allison Gilmore,Virginia
+3351,2026,12,1,2,Allison Gilmore,Illinois
+3352,2026,13,1,2,Allison Gilmore,Nebraska
+3353,2026,14,1,2,Allison Gilmore,Alabama
+3354,2026,15,1,2,Allison Gilmore,Arkansas
+3355,2026,16,1,2,Allison Gilmore,Kansas
+3356,2026,17,1,2,Allison Gilmore,St. John's
+3357,2026,18,1,2,Allison Gilmore,Wisconsin
+3358,2026,19,1,2,Allison Gilmore,Akron
+3359,2026,20,1,2,Allison Gilmore,McNeese
+3360,2026,21,1,2,Allison Gilmore,VCU
+3361,2026,22,1,2,Allison Gilmore,Miami OH
+3362,2026,23,1,2,Allison Gilmore,BYU
+3363,2026,24,1,2,Allison Gilmore,Louisville
+3364,2026,25,1,2,Allison Gilmore,UCLA
+3365,2026,26,1,2,Allison Gilmore,Miami FL
+3366,2026,27,1,2,Allison Gilmore,Kentucky
+3367,2026,28,1,2,Allison Gilmore,Saint Mary's
+3368,2026,29,1,2,Allison Gilmore,Iowa
+3369,2026,30,1,2,Allison Gilmore,Saint Louis
+3370,2026,31,1,2,Allison Gilmore,Utah St.
+3371,2026,32,1,2,Allison Gilmore,Ohio St.
+3372,2026,33,2,2,Allison Gilmore,Duke
+3373,2026,34,2,2,Allison Gilmore,Arizona
+3374,2026,35,2,2,Allison Gilmore,Michigan
+3375,2026,36,2,2,Allison Gilmore,Florida
+3376,2026,37,2,2,Allison Gilmore,Houston
+3377,2026,38,2,2,Allison Gilmore,Iowa St.
+3378,2026,39,2,2,Allison Gilmore,Purdue
+3379,2026,40,2,2,Allison Gilmore,Connecticut
+3380,2026,41,2,2,Allison Gilmore,Michigan St.
+3381,2026,42,2,2,Allison Gilmore,Gonzaga
+3382,2026,43,2,2,Allison Gilmore,Virginia
+3383,2026,44,2,2,Allison Gilmore,Illinois
+3384,2026,45,2,2,Allison Gilmore,Nebraska
+3385,2026,46,2,2,Allison Gilmore,Alabama
+3386,2026,47,2,2,Allison Gilmore,Wisconsin
+3387,2026,48,2,2,Allison Gilmore,Kansas
+3388,2026,49,3,2,Allison Gilmore,Duke
+3389,2026,50,3,2,Allison Gilmore,Arizona
+3390,2026,51,3,2,Allison Gilmore,Michigan
+3391,2026,52,3,2,Allison Gilmore,Florida
+3392,2026,53,3,2,Allison Gilmore,Illinois
+3393,2026,54,3,2,Allison Gilmore,Iowa St.
+3394,2026,55,3,2,Allison Gilmore,Purdue
+3395,2026,56,3,2,Allison Gilmore,Michigan St.
+3396,2026,57,4,2,Allison Gilmore,Michigan St.
+3397,2026,58,4,2,Allison Gilmore,Purdue
+3398,2026,59,4,2,Allison Gilmore,Michigan
+3399,2026,60,4,2,Allison Gilmore,Illinois
+3400,2026,61,5,2,Allison Gilmore,Michigan St.
+3401,2026,62,5,2,Allison Gilmore,Michigan
+3402,2026,63,6,2,Allison Gilmore,Michigan
+3403,2026,1,1,3,Antonio Crain,Siena
+3404,2026,2,1,3,Antonio Crain,LIU
+3405,2026,3,1,3,Antonio Crain,Howard
+3406,2026,4,1,3,Antonio Crain,Florida
+3407,2026,5,1,3,Antonio Crain,Idaho
+3408,2026,6,1,3,Antonio Crain,Tennessee St.
+3409,2026,7,1,3,Antonio Crain,Queens
+3410,2026,8,1,3,Antonio Crain,Connecticut
+3411,2026,9,1,3,Antonio Crain,Michigan St.
+3412,2026,10,1,3,Antonio Crain,Gonzaga
+3413,2026,11,1,3,Antonio Crain,Wright St.
+3414,2026,12,1,3,Antonio Crain,Illinois
+3415,2026,13,1,3,Antonio Crain,Troy
+3416,2026,14,1,3,Antonio Crain,Hofstra
+3417,2026,15,1,3,Antonio Crain,Arkansas
+3418,2026,16,1,3,Antonio Crain,Cal Baptist
+3419,2026,17,1,3,Antonio Crain,St. John's
+3420,2026,18,1,3,Antonio Crain,Wisconsin
+3421,2026,19,1,3,Antonio Crain,Akron
+3422,2026,20,1,3,Antonio Crain,McNeese
+3423,2026,21,1,3,Antonio Crain,North Carolina
+3424,2026,22,1,3,Antonio Crain,Tennessee
+3425,2026,23,1,3,Antonio Crain,Texas
+3426,2026,24,1,3,Antonio Crain,Louisville
+3427,2026,25,1,3,Antonio Crain,UCF
+3428,2026,26,1,3,Antonio Crain,Missouri
+3429,2026,27,1,3,Antonio Crain,Kentucky
+3430,2026,28,1,3,Antonio Crain,Saint Mary's
+3431,2026,29,1,3,Antonio Crain,Clemson
+3432,2026,30,1,3,Antonio Crain,Georgia
+3433,2026,31,1,3,Antonio Crain,Utah St.
+3434,2026,32,1,3,Antonio Crain,TCU
+3435,2026,33,2,3,Antonio Crain,TCU
+3436,2026,34,2,3,Antonio Crain,Utah St.
+3437,2026,35,2,3,Antonio Crain,Georgia
+3438,2026,36,2,3,Antonio Crain,Clemson
+3439,2026,37,2,3,Antonio Crain,Idaho
+3440,2026,38,2,3,Antonio Crain,Tennessee St.
+3441,2026,39,2,3,Antonio Crain,Missouri
+3442,2026,40,2,3,Antonio Crain,UCF
+3443,2026,41,2,3,Antonio Crain,Louisville
+3444,2026,42,2,3,Antonio Crain,Texas
+3445,2026,43,2,3,Antonio Crain,Tennessee
+3446,2026,44,2,3,Antonio Crain,North Carolina
+3447,2026,45,2,3,Antonio Crain,McNeese
+3448,2026,46,2,3,Antonio Crain,Hofstra
+3449,2026,47,2,3,Antonio Crain,Arkansas
+3450,2026,48,2,3,Antonio Crain,Cal Baptist
+3451,2026,49,3,3,Antonio Crain,TCU
+3452,2026,50,3,3,Antonio Crain,Arkansas
+3453,2026,51,3,3,Antonio Crain,Georgia
+3454,2026,52,3,3,Antonio Crain,Clemson
+3455,2026,53,3,3,Antonio Crain,Idaho
+3456,2026,54,3,3,Antonio Crain,Tennessee
+3457,2026,55,3,3,Antonio Crain,Texas
+3458,2026,56,3,3,Antonio Crain,UCF
+3459,2026,57,4,3,Antonio Crain,UCF
+3460,2026,58,4,3,Antonio Crain,Texas
+3461,2026,59,4,3,Antonio Crain,Tennessee
+3462,2026,60,4,3,Antonio Crain,Idaho
+3463,2026,61,5,3,Antonio Crain,Idaho
+3464,2026,62,5,3,Antonio Crain,Texas
+3465,2026,63,6,3,Antonio Crain,Texas
+3466,2026,1,1,4,Ashlee Crain,Duke
+3467,2026,2,1,4,Ashlee Crain,Arizona
+3468,2026,3,1,4,Ashlee Crain,Michigan
+3469,2026,4,1,4,Ashlee Crain,Florida
+3470,2026,5,1,4,Ashlee Crain,Houston
+3471,2026,6,1,4,Ashlee Crain,Iowa St.
+3472,2026,7,1,4,Ashlee Crain,Purdue
+3473,2026,8,1,4,Ashlee Crain,Connecticut
+3474,2026,9,1,4,Ashlee Crain,Michigan St.
+3475,2026,10,1,4,Ashlee Crain,Gonzaga
+3476,2026,11,1,4,Ashlee Crain,Virginia
+3477,2026,12,1,4,Ashlee Crain,Illinois
+3478,2026,13,1,4,Ashlee Crain,Troy
+3479,2026,14,1,4,Ashlee Crain,Alabama
+3480,2026,15,1,4,Ashlee Crain,Arkansas
+3481,2026,16,1,4,Ashlee Crain,Kansas
+3482,2026,17,1,4,Ashlee Crain,St. John's
+3483,2026,18,1,4,Ashlee Crain,Wisconsin
+3484,2026,19,1,4,Ashlee Crain,Texas Tech
+3485,2026,20,1,4,Ashlee Crain,Vanderbilt
+3486,2026,21,1,4,Ashlee Crain,North Carolina
+3487,2026,22,1,4,Ashlee Crain,Tennessee
+3488,2026,23,1,4,Ashlee Crain,BYU
+3489,2026,24,1,4,Ashlee Crain,Louisville
+3490,2026,25,1,4,Ashlee Crain,UCLA
+3491,2026,26,1,4,Ashlee Crain,Miami FL
+3492,2026,27,1,4,Ashlee Crain,Kentucky
+3493,2026,28,1,4,Ashlee Crain,Saint Mary's
+3494,2026,29,1,4,Ashlee Crain,Clemson
+3495,2026,30,1,4,Ashlee Crain,Georgia
+3496,2026,31,1,4,Ashlee Crain,Villanova
+3497,2026,32,1,4,Ashlee Crain,Ohio St.
+3498,2026,33,2,4,Ashlee Crain,Duke
+3499,2026,34,2,4,Ashlee Crain,Arizona
+3500,2026,35,2,4,Ashlee Crain,Michigan
+3501,2026,36,2,4,Ashlee Crain,Florida
+3502,2026,37,2,4,Ashlee Crain,Houston
+3503,2026,38,2,4,Ashlee Crain,Iowa St.
+3504,2026,39,2,4,Ashlee Crain,Purdue
+3505,2026,40,2,4,Ashlee Crain,Connecticut
+3506,2026,41,2,4,Ashlee Crain,Michigan St.
+3507,2026,42,2,4,Ashlee Crain,Gonzaga
+3508,2026,43,2,4,Ashlee Crain,Virginia
+3509,2026,44,2,4,Ashlee Crain,Illinois
+3510,2026,45,2,4,Ashlee Crain,Vanderbilt
+3511,2026,46,2,4,Ashlee Crain,Alabama
+3512,2026,47,2,4,Ashlee Crain,Arkansas
+3513,2026,48,2,4,Ashlee Crain,Kansas
+3514,2026,49,3,4,Ashlee Crain,Duke
+3515,2026,50,3,4,Ashlee Crain,Arizona
+3516,2026,51,3,4,Ashlee Crain,Michigan
+3517,2026,52,3,4,Ashlee Crain,Florida
+3518,2026,53,3,4,Ashlee Crain,Houston
+3519,2026,54,3,4,Ashlee Crain,Iowa St.
+3520,2026,55,3,4,Ashlee Crain,Purdue
+3521,2026,56,3,4,Ashlee Crain,Connecticut
+3522,2026,57,4,4,Ashlee Crain,Duke
+3523,2026,58,4,4,Ashlee Crain,Arizona
+3524,2026,59,4,4,Ashlee Crain,Michigan
+3525,2026,60,4,4,Ashlee Crain,Florida
+3526,2026,61,5,4,Ashlee Crain,Duke
+3527,2026,62,5,4,Ashlee Crain,Arizona
+3528,2026,63,6,4,Ashlee Crain,Duke
+3529,2026,1,1,5,Bradley Trevarrow,Duke
+3530,2026,2,1,5,Bradley Trevarrow,Arizona
+3531,2026,3,1,5,Bradley Trevarrow,Michigan
+3532,2026,4,1,5,Bradley Trevarrow,Florida
+3533,2026,5,1,5,Bradley Trevarrow,Houston
+3534,2026,6,1,5,Bradley Trevarrow,Iowa St.
+3535,2026,7,1,5,Bradley Trevarrow,Purdue
+3536,2026,8,1,5,Bradley Trevarrow,Connecticut
+3537,2026,9,1,5,Bradley Trevarrow,Michigan St.
+3538,2026,10,1,5,Bradley Trevarrow,Gonzaga
+3539,2026,11,1,5,Bradley Trevarrow,Virginia
+3540,2026,12,1,5,Bradley Trevarrow,Illinois
+3541,2026,13,1,5,Bradley Trevarrow,Nebraska
+3542,2026,14,1,5,Bradley Trevarrow,Alabama
+3543,2026,15,1,5,Bradley Trevarrow,Arkansas
+3544,2026,16,1,5,Bradley Trevarrow,Kansas
+3545,2026,17,1,5,Bradley Trevarrow,St. John's
+3546,2026,18,1,5,Bradley Trevarrow,Wisconsin
+3547,2026,19,1,5,Bradley Trevarrow,Akron
+3548,2026,20,1,5,Bradley Trevarrow,Vanderbilt
+3549,2026,21,1,5,Bradley Trevarrow,VCU
+3550,2026,22,1,5,Bradley Trevarrow,Miami OH
+3551,2026,23,1,5,Bradley Trevarrow,BYU
+3552,2026,24,1,5,Bradley Trevarrow,South Florida
+3553,2026,25,1,5,Bradley Trevarrow,UCF
+3554,2026,26,1,5,Bradley Trevarrow,Missouri
+3555,2026,27,1,5,Bradley Trevarrow,Kentucky
+3556,2026,28,1,5,Bradley Trevarrow,Saint Mary's
+3557,2026,29,1,5,Bradley Trevarrow,Iowa
+3558,2026,30,1,5,Bradley Trevarrow,Georgia
+3559,2026,31,1,5,Bradley Trevarrow,Villanova
+3560,2026,32,1,5,Bradley Trevarrow,TCU
+3561,2026,33,2,5,Bradley Trevarrow,Duke
+3562,2026,34,2,5,Bradley Trevarrow,Arizona
+3563,2026,35,2,5,Bradley Trevarrow,Michigan
+3564,2026,36,2,5,Bradley Trevarrow,Florida
+3565,2026,37,2,5,Bradley Trevarrow,Houston
+3566,2026,38,2,5,Bradley Trevarrow,Iowa St.
+3567,2026,39,2,5,Bradley Trevarrow,Purdue
+3568,2026,40,2,5,Bradley Trevarrow,Connecticut
+3569,2026,41,2,5,Bradley Trevarrow,Michigan St.
+3570,2026,42,2,5,Bradley Trevarrow,Gonzaga
+3571,2026,43,2,5,Bradley Trevarrow,Miami OH
+3572,2026,44,2,5,Bradley Trevarrow,Illinois
+3573,2026,45,2,5,Bradley Trevarrow,Vanderbilt
+3574,2026,46,2,5,Bradley Trevarrow,Alabama
+3575,2026,47,2,5,Bradley Trevarrow,Arkansas
+3576,2026,48,2,5,Bradley Trevarrow,St. John's
+3577,2026,49,3,5,Bradley Trevarrow,St. John's
+3578,2026,50,3,5,Bradley Trevarrow,Arizona
+3579,2026,51,3,5,Bradley Trevarrow,Michigan
+3580,2026,52,3,5,Bradley Trevarrow,Florida
+3581,2026,53,3,5,Bradley Trevarrow,Illinois
+3582,2026,54,3,5,Bradley Trevarrow,Iowa St.
+3583,2026,55,3,5,Bradley Trevarrow,Purdue
+3584,2026,56,3,5,Bradley Trevarrow,Michigan St.
+3585,2026,57,4,5,Bradley Trevarrow,Michigan St.
+3586,2026,58,4,5,Bradley Trevarrow,Arizona
+3587,2026,59,4,5,Bradley Trevarrow,Iowa St.
+3588,2026,60,4,5,Bradley Trevarrow,Florida
+3589,2026,61,5,5,Bradley Trevarrow,Florida
+3590,2026,62,5,5,Bradley Trevarrow,Arizona
+3591,2026,63,6,5,Bradley Trevarrow,Arizona
+3592,2026,1,1,6,Brian Trevarrow,Duke
+3593,2026,2,1,6,Brian Trevarrow,Arizona
+3594,2026,3,1,6,Brian Trevarrow,Michigan
+3595,2026,4,1,6,Brian Trevarrow,Florida
+3596,2026,5,1,6,Brian Trevarrow,Houston
+3597,2026,6,1,6,Brian Trevarrow,Iowa St.
+3598,2026,7,1,6,Brian Trevarrow,Purdue
+3599,2026,8,1,6,Brian Trevarrow,Connecticut
+3600,2026,9,1,6,Brian Trevarrow,Michigan St.
+3601,2026,10,1,6,Brian Trevarrow,Gonzaga
+3602,2026,11,1,6,Brian Trevarrow,Virginia
+3603,2026,12,1,6,Brian Trevarrow,Illinois
+3604,2026,13,1,6,Brian Trevarrow,Nebraska
+3605,2026,14,1,6,Brian Trevarrow,Hofstra
+3606,2026,15,1,6,Brian Trevarrow,Arkansas
+3607,2026,16,1,6,Brian Trevarrow,Kansas
+3608,2026,17,1,6,Brian Trevarrow,St. John's
+3609,2026,18,1,6,Brian Trevarrow,High Point
+3610,2026,19,1,6,Brian Trevarrow,Texas Tech
+3611,2026,20,1,6,Brian Trevarrow,Vanderbilt
+3612,2026,21,1,6,Brian Trevarrow,North Carolina
+3613,2026,22,1,6,Brian Trevarrow,Tennessee
+3614,2026,23,1,6,Brian Trevarrow,BYU
+3615,2026,24,1,6,Brian Trevarrow,South Florida
+3616,2026,25,1,6,Brian Trevarrow,UCF
+3617,2026,26,1,6,Brian Trevarrow,Miami FL
+3618,2026,27,1,6,Brian Trevarrow,Kentucky
+3619,2026,28,1,6,Brian Trevarrow,Texas A&M
+3620,2026,29,1,6,Brian Trevarrow,Iowa
+3621,2026,30,1,6,Brian Trevarrow,Georgia
+3622,2026,31,1,6,Brian Trevarrow,Villanova
+3623,2026,32,1,6,Brian Trevarrow,Ohio St.
+3624,2026,33,2,6,Brian Trevarrow,Duke
+3625,2026,34,2,6,Brian Trevarrow,Arizona
+3626,2026,35,2,6,Brian Trevarrow,Michigan
+3627,2026,36,2,6,Brian Trevarrow,Florida
+3628,2026,37,2,6,Brian Trevarrow,Houston
+3629,2026,38,2,6,Brian Trevarrow,Iowa St.
+3630,2026,39,2,6,Brian Trevarrow,Purdue
+3631,2026,40,2,6,Brian Trevarrow,Connecticut
+3632,2026,41,2,6,Brian Trevarrow,Michigan St.
+3633,2026,42,2,6,Brian Trevarrow,Gonzaga
+3634,2026,43,2,6,Brian Trevarrow,Tennessee
+3635,2026,44,2,6,Brian Trevarrow,Illinois
+3636,2026,45,2,6,Brian Trevarrow,Vanderbilt
+3637,2026,46,2,6,Brian Trevarrow,Texas Tech
+3638,2026,47,2,6,Brian Trevarrow,Arkansas
+3639,2026,48,2,6,Brian Trevarrow,Kansas
+3640,2026,49,3,6,Brian Trevarrow,Kansas
+3641,2026,50,3,6,Brian Trevarrow,Arkansas
+3642,2026,51,3,6,Brian Trevarrow,Michigan
+3643,2026,52,3,6,Brian Trevarrow,Florida
+3644,2026,53,3,6,Brian Trevarrow,Houston
+3645,2026,54,3,6,Brian Trevarrow,Iowa St.
+3646,2026,55,3,6,Brian Trevarrow,Purdue
+3647,2026,56,3,6,Brian Trevarrow,Michigan St.
+3648,2026,57,4,6,Brian Trevarrow,Kansas
+3649,2026,58,4,6,Brian Trevarrow,Purdue
+3650,2026,59,4,6,Brian Trevarrow,Michigan
+3651,2026,60,4,6,Brian Trevarrow,Houston
+3652,2026,61,5,6,Brian Trevarrow,Houston
+3653,2026,62,5,6,Brian Trevarrow,Michigan
+3654,2026,63,6,6,Brian Trevarrow,Houston
+3655,2026,1,1,7,Chad Andersen,Duke
+3656,2026,2,1,7,Chad Andersen,Arizona
+3657,2026,3,1,7,Chad Andersen,Michigan
+3658,2026,4,1,7,Chad Andersen,Florida
+3659,2026,5,1,7,Chad Andersen,Houston
+3660,2026,6,1,7,Chad Andersen,Iowa St.
+3661,2026,7,1,7,Chad Andersen,Purdue
+3662,2026,8,1,7,Chad Andersen,Connecticut
+3663,2026,9,1,7,Chad Andersen,Michigan St.
+3664,2026,10,1,7,Chad Andersen,Gonzaga
+3665,2026,11,1,7,Chad Andersen,Virginia
+3666,2026,12,1,7,Chad Andersen,Illinois
+3667,2026,13,1,7,Chad Andersen,Nebraska
+3668,2026,14,1,7,Chad Andersen,Alabama
+3669,2026,15,1,7,Chad Andersen,Arkansas
+3670,2026,16,1,7,Chad Andersen,Kansas
+3671,2026,17,1,7,Chad Andersen,St. John's
+3672,2026,18,1,7,Chad Andersen,High Point
+3673,2026,19,1,7,Chad Andersen,Texas Tech
+3674,2026,20,1,7,Chad Andersen,Vanderbilt
+3675,2026,21,1,7,Chad Andersen,North Carolina
+3676,2026,22,1,7,Chad Andersen,Miami OH
+3677,2026,23,1,7,Chad Andersen,Texas
+3678,2026,24,1,7,Chad Andersen,Louisville
+3679,2026,25,1,7,Chad Andersen,UCF
+3680,2026,26,1,7,Chad Andersen,Missouri
+3681,2026,27,1,7,Chad Andersen,Kentucky
+3682,2026,28,1,7,Chad Andersen,Saint Mary's
+3683,2026,29,1,7,Chad Andersen,Iowa
+3684,2026,30,1,7,Chad Andersen,Saint Louis
+3685,2026,31,1,7,Chad Andersen,Utah St.
+3686,2026,32,1,7,Chad Andersen,TCU
+3687,2026,33,2,7,Chad Andersen,Duke
+3688,2026,34,2,7,Chad Andersen,Arizona
+3689,2026,35,2,7,Chad Andersen,Michigan
+3690,2026,36,2,7,Chad Andersen,Florida
+3691,2026,37,2,7,Chad Andersen,Houston
+3692,2026,38,2,7,Chad Andersen,Kentucky
+3693,2026,39,2,7,Chad Andersen,Purdue
+3694,2026,40,2,7,Chad Andersen,Connecticut
+3695,2026,41,2,7,Chad Andersen,Michigan St.
+3696,2026,42,2,7,Chad Andersen,Gonzaga
+3697,2026,43,2,7,Chad Andersen,Virginia
+3698,2026,44,2,7,Chad Andersen,North Carolina
+3699,2026,45,2,7,Chad Andersen,Vanderbilt
+3700,2026,46,2,7,Chad Andersen,Alabama
+3701,2026,47,2,7,Chad Andersen,Arkansas
+3702,2026,48,2,7,Chad Andersen,St. John's
+3703,2026,49,3,7,Chad Andersen,Duke
+3704,2026,50,3,7,Chad Andersen,Arkansas
+3705,2026,51,3,7,Chad Andersen,Michigan
+3706,2026,52,3,7,Chad Andersen,Vanderbilt
+3707,2026,53,3,7,Chad Andersen,Houston
+3708,2026,54,3,7,Chad Andersen,Virginia
+3709,2026,55,3,7,Chad Andersen,Purdue
+3710,2026,56,3,7,Chad Andersen,Michigan St.
+3711,2026,57,4,7,Chad Andersen,Duke
+3712,2026,58,4,7,Chad Andersen,Purdue
+3713,2026,59,4,7,Chad Andersen,Virginia
+3714,2026,60,4,7,Chad Andersen,Houston
+3715,2026,61,5,7,Chad Andersen,Houston
+3716,2026,62,5,7,Chad Andersen,Virginia
+3717,2026,63,6,7,Chad Andersen,Virginia
+3718,2026,1,1,8,Emma Nimps,Duke
+3719,2026,2,1,8,Emma Nimps,Arizona
+3720,2026,3,1,8,Emma Nimps,Michigan
+3721,2026,4,1,8,Emma Nimps,Florida
+3722,2026,5,1,8,Emma Nimps,Houston
+3723,2026,6,1,8,Emma Nimps,Tennessee St.
+3724,2026,7,1,8,Emma Nimps,Purdue
+3725,2026,8,1,8,Emma Nimps,Connecticut
+3726,2026,9,1,8,Emma Nimps,Michigan St.
+3727,2026,10,1,8,Emma Nimps,Gonzaga
+3728,2026,11,1,8,Emma Nimps,Virginia
+3729,2026,12,1,8,Emma Nimps,Illinois
+3730,2026,13,1,8,Emma Nimps,Nebraska
+3731,2026,14,1,8,Emma Nimps,Alabama
+3732,2026,15,1,8,Emma Nimps,Arkansas
+3733,2026,16,1,8,Emma Nimps,Kansas
+3734,2026,17,1,8,Emma Nimps,St. John's
+3735,2026,18,1,8,Emma Nimps,Wisconsin
+3736,2026,19,1,8,Emma Nimps,Texas Tech
+3737,2026,20,1,8,Emma Nimps,Vanderbilt
+3738,2026,21,1,8,Emma Nimps,North Carolina
+3739,2026,22,1,8,Emma Nimps,Tennessee
+3740,2026,23,1,8,Emma Nimps,Texas
+3741,2026,24,1,8,Emma Nimps,South Florida
+3742,2026,25,1,8,Emma Nimps,UCF
+3743,2026,26,1,8,Emma Nimps,Miami FL
+3744,2026,27,1,8,Emma Nimps,Kentucky
+3745,2026,28,1,8,Emma Nimps,Texas A&M
+3746,2026,29,1,8,Emma Nimps,Iowa
+3747,2026,30,1,8,Emma Nimps,Saint Louis
+3748,2026,31,1,8,Emma Nimps,Villanova
+3749,2026,32,1,8,Emma Nimps,Ohio St.
+3750,2026,33,2,8,Emma Nimps,Duke
+3751,2026,34,2,8,Emma Nimps,Arizona
+3752,2026,35,2,8,Emma Nimps,Michigan
+3753,2026,36,2,8,Emma Nimps,Florida
+3754,2026,37,2,8,Emma Nimps,Houston
+3755,2026,38,2,8,Emma Nimps,Kentucky
+3756,2026,39,2,8,Emma Nimps,Purdue
+3757,2026,40,2,8,Emma Nimps,Connecticut
+3758,2026,41,2,8,Emma Nimps,Michigan St.
+3759,2026,42,2,8,Emma Nimps,Gonzaga
+3760,2026,43,2,8,Emma Nimps,Virginia
+3761,2026,44,2,8,Emma Nimps,Illinois
+3762,2026,45,2,8,Emma Nimps,Nebraska
+3763,2026,46,2,8,Emma Nimps,Texas Tech
+3764,2026,47,2,8,Emma Nimps,Wisconsin
+3765,2026,48,2,8,Emma Nimps,Kansas
+3766,2026,49,3,8,Emma Nimps,Duke
+3767,2026,50,3,8,Emma Nimps,Arizona
+3768,2026,51,3,8,Emma Nimps,Michigan
+3769,2026,52,3,8,Emma Nimps,Nebraska
+3770,2026,53,3,8,Emma Nimps,Houston
+3771,2026,54,3,8,Emma Nimps,Virginia
+3772,2026,55,3,8,Emma Nimps,Gonzaga
+3773,2026,56,3,8,Emma Nimps,Michigan St.
+3774,2026,57,4,8,Emma Nimps,Duke
+3775,2026,58,4,8,Emma Nimps,Gonzaga
+3776,2026,59,4,8,Emma Nimps,Michigan
+3777,2026,60,4,8,Emma Nimps,Houston
+3778,2026,61,5,8,Emma Nimps,Houston
+3779,2026,62,5,8,Emma Nimps,Gonzaga
+3780,2026,63,6,8,Emma Nimps,Gonzaga
+3781,2026,1,1,9,Erin Franks,Duke
+3782,2026,2,1,9,Erin Franks,Arizona
+3783,2026,3,1,9,Erin Franks,Michigan
+3784,2026,4,1,9,Erin Franks,Florida
+3785,2026,5,1,9,Erin Franks,Houston
+3786,2026,6,1,9,Erin Franks,Iowa St.
+3787,2026,7,1,9,Erin Franks,Purdue
+3788,2026,8,1,9,Erin Franks,Connecticut
+3789,2026,9,1,9,Erin Franks,Michigan St.
+3790,2026,10,1,9,Erin Franks,Gonzaga
+3791,2026,11,1,9,Erin Franks,Virginia
+3792,2026,12,1,9,Erin Franks,Illinois
+3793,2026,13,1,9,Erin Franks,Nebraska
+3794,2026,14,1,9,Erin Franks,Alabama
+3795,2026,15,1,9,Erin Franks,Arkansas
+3796,2026,16,1,9,Erin Franks,Kansas
+3797,2026,17,1,9,Erin Franks,St. John's
+3798,2026,18,1,9,Erin Franks,Wisconsin
+3799,2026,19,1,9,Erin Franks,Akron
+3800,2026,20,1,9,Erin Franks,Vanderbilt
+3801,2026,21,1,9,Erin Franks,VCU
+3802,2026,22,1,9,Erin Franks,Tennessee
+3803,2026,23,1,9,Erin Franks,BYU
+3804,2026,24,1,9,Erin Franks,South Florida
+3805,2026,25,1,9,Erin Franks,UCLA
+3806,2026,26,1,9,Erin Franks,Miami FL
+3807,2026,27,1,9,Erin Franks,Santa Clara
+3808,2026,28,1,9,Erin Franks,Texas A&M
+3809,2026,29,1,9,Erin Franks,Iowa
+3810,2026,30,1,9,Erin Franks,Georgia
+3811,2026,31,1,9,Erin Franks,Villanova
+3812,2026,32,1,9,Erin Franks,Ohio St.
+3813,2026,33,2,9,Erin Franks,Duke
+3814,2026,34,2,9,Erin Franks,Arizona
+3815,2026,35,2,9,Erin Franks,Michigan
+3816,2026,36,2,9,Erin Franks,Florida
+3817,2026,37,2,9,Erin Franks,Houston
+3818,2026,38,2,9,Erin Franks,Iowa St.
+3819,2026,39,2,9,Erin Franks,Purdue
+3820,2026,40,2,9,Erin Franks,UCLA
+3821,2026,41,2,9,Erin Franks,Michigan St.
+3822,2026,42,2,9,Erin Franks,BYU
+3823,2026,43,2,9,Erin Franks,Virginia
+3824,2026,44,2,9,Erin Franks,Illinois
+3825,2026,45,2,9,Erin Franks,Vanderbilt
+3826,2026,46,2,9,Erin Franks,Alabama
+3827,2026,47,2,9,Erin Franks,Wisconsin
+3828,2026,48,2,9,Erin Franks,St. John's
+3829,2026,49,3,9,Erin Franks,Duke
+3830,2026,50,3,9,Erin Franks,Arizona
+3831,2026,51,3,9,Erin Franks,Alabama
+3832,2026,52,3,9,Erin Franks,Florida
+3833,2026,53,3,9,Erin Franks,Houston
+3834,2026,54,3,9,Erin Franks,Virginia
+3835,2026,55,3,9,Erin Franks,Purdue
+3836,2026,56,3,9,Erin Franks,Michigan St.
+3837,2026,57,4,9,Erin Franks,Michigan St.
+3838,2026,58,4,9,Erin Franks,Arizona
+3839,2026,59,4,9,Erin Franks,Virginia
+3840,2026,60,4,9,Erin Franks,Florida
+3841,2026,61,5,9,Erin Franks,Michigan St.
+3842,2026,62,5,9,Erin Franks,Arizona
+3843,2026,63,6,9,Erin Franks,Arizona
+3844,2026,1,1,10,Evy Crain,Siena
+3845,2026,2,1,10,Evy Crain,Arizona
+3846,2026,3,1,10,Evy Crain,Michigan
+3847,2026,4,1,10,Evy Crain,Florida
+3848,2026,5,1,10,Evy Crain,Houston
+3849,2026,6,1,10,Evy Crain,Iowa St.
+3850,2026,7,1,10,Evy Crain,Purdue
+3851,2026,8,1,10,Evy Crain,Connecticut
+3852,2026,9,1,10,Evy Crain,Michigan St.
+3853,2026,10,1,10,Evy Crain,Kennesaw St.
+3854,2026,11,1,10,Evy Crain,Virginia
+3855,2026,12,1,10,Evy Crain,Illinois
+3856,2026,13,1,10,Evy Crain,Nebraska
+3857,2026,14,1,10,Evy Crain,Alabama
+3858,2026,15,1,10,Evy Crain,Hawaii
+3859,2026,16,1,10,Evy Crain,Kansas
+3860,2026,17,1,10,Evy Crain,Northern Iowa
+3861,2026,18,1,10,Evy Crain,Wisconsin
+3862,2026,19,1,10,Evy Crain,Akron
+3863,2026,20,1,10,Evy Crain,McNeese
+3864,2026,21,1,10,Evy Crain,North Carolina
+3865,2026,22,1,10,Evy Crain,Tennessee
+3866,2026,23,1,10,Evy Crain,Texas
+3867,2026,24,1,10,Evy Crain,Louisville
+3868,2026,25,1,10,Evy Crain,UCLA
+3869,2026,26,1,10,Evy Crain,Missouri
+3870,2026,27,1,10,Evy Crain,Kentucky
+3871,2026,28,1,10,Evy Crain,Saint Mary's
+3872,2026,29,1,10,Evy Crain,Clemson
+3873,2026,30,1,10,Evy Crain,Saint Louis
+3874,2026,31,1,10,Evy Crain,Villanova
+3875,2026,32,1,10,Evy Crain,TCU
+3876,2026,33,2,10,Evy Crain,TCU
+3877,2026,34,2,10,Evy Crain,Arizona
+3878,2026,35,2,10,Evy Crain,Michigan
+3879,2026,36,2,10,Evy Crain,Florida
+3880,2026,37,2,10,Evy Crain,Houston
+3881,2026,38,2,10,Evy Crain,Iowa St.
+3882,2026,39,2,10,Evy Crain,Purdue
+3883,2026,40,2,10,Evy Crain,Connecticut
+3884,2026,41,2,10,Evy Crain,Michigan St.
+3885,2026,42,2,10,Evy Crain,Texas
+3886,2026,43,2,10,Evy Crain,Tennessee
+3887,2026,44,2,10,Evy Crain,Illinois
+3888,2026,45,2,10,Evy Crain,Nebraska
+3889,2026,46,2,10,Evy Crain,Alabama
+3890,2026,47,2,10,Evy Crain,Wisconsin
+3891,2026,48,2,10,Evy Crain,Kansas
+3892,2026,49,3,10,Evy Crain,Kansas
+3893,2026,50,3,10,Evy Crain,Arizona
+3894,2026,51,3,10,Evy Crain,Michigan
+3895,2026,52,3,10,Evy Crain,Nebraska
+3896,2026,53,3,10,Evy Crain,Houston
+3897,2026,54,3,10,Evy Crain,Tennessee
+3898,2026,55,3,10,Evy Crain,Purdue
+3899,2026,56,3,10,Evy Crain,Michigan St.
+3900,2026,57,4,10,Evy Crain,Kansas
+3901,2026,58,4,10,Evy Crain,Arizona
+3902,2026,59,4,10,Evy Crain,Tennessee
+3903,2026,60,4,10,Evy Crain,Nebraska
+3904,2026,61,5,10,Evy Crain,Nebraska
+3905,2026,62,5,10,Evy Crain,Tennessee
+3906,2026,63,6,10,Evy Crain,Nebraska
+3907,2026,1,1,11,Gary Nimps,Duke
+3908,2026,2,1,11,Gary Nimps,Arizona
+3909,2026,3,1,11,Gary Nimps,Michigan
+3910,2026,4,1,11,Gary Nimps,Florida
+3911,2026,5,1,11,Gary Nimps,Houston
+3912,2026,6,1,11,Gary Nimps,Iowa St.
+3913,2026,7,1,11,Gary Nimps,Purdue
+3914,2026,8,1,11,Gary Nimps,Connecticut
+3915,2026,9,1,11,Gary Nimps,Michigan St.
+3916,2026,10,1,11,Gary Nimps,Gonzaga
+3917,2026,11,1,11,Gary Nimps,Virginia
+3918,2026,12,1,11,Gary Nimps,Illinois
+3919,2026,13,1,11,Gary Nimps,Nebraska
+3920,2026,14,1,11,Gary Nimps,Alabama
+3921,2026,15,1,11,Gary Nimps,Arkansas
+3922,2026,16,1,11,Gary Nimps,Kansas
+3923,2026,17,1,11,Gary Nimps,St. John's
+3924,2026,18,1,11,Gary Nimps,Wisconsin
+3925,2026,19,1,11,Gary Nimps,Akron
+3926,2026,20,1,11,Gary Nimps,Vanderbilt
+3927,2026,21,1,11,Gary Nimps,North Carolina
+3928,2026,22,1,11,Gary Nimps,Tennessee
+3929,2026,23,1,11,Gary Nimps,BYU
+3930,2026,24,1,11,Gary Nimps,Louisville
+3931,2026,25,1,11,Gary Nimps,UCLA
+3932,2026,26,1,11,Gary Nimps,Miami FL
+3933,2026,27,1,11,Gary Nimps,Santa Clara
+3934,2026,28,1,11,Gary Nimps,Saint Mary's
+3935,2026,29,1,11,Gary Nimps,Clemson
+3936,2026,30,1,11,Gary Nimps,Georgia
+3937,2026,31,1,11,Gary Nimps,Utah St.
+3938,2026,32,1,11,Gary Nimps,Ohio St.
+3939,2026,33,2,11,Gary Nimps,Duke
+3940,2026,34,2,11,Gary Nimps,Arizona
+3941,2026,35,2,11,Gary Nimps,Michigan
+3942,2026,36,2,11,Gary Nimps,Florida
+3943,2026,37,2,11,Gary Nimps,Houston
+3944,2026,38,2,11,Gary Nimps,Iowa St.
+3945,2026,39,2,11,Gary Nimps,Purdue
+3946,2026,40,2,11,Gary Nimps,Connecticut
+3947,2026,41,2,11,Gary Nimps,Michigan St.
+3948,2026,42,2,11,Gary Nimps,BYU
+3949,2026,43,2,11,Gary Nimps,Virginia
+3950,2026,44,2,11,Gary Nimps,Illinois
+3951,2026,45,2,11,Gary Nimps,Vanderbilt
+3952,2026,46,2,11,Gary Nimps,Alabama
+3953,2026,47,2,11,Gary Nimps,Arkansas
+3954,2026,48,2,11,Gary Nimps,St. John's
+3955,2026,49,3,11,Gary Nimps,Duke
+3956,2026,50,3,11,Gary Nimps,Arizona
+3957,2026,51,3,11,Gary Nimps,Michigan
+3958,2026,52,3,11,Gary Nimps,Florida
+3959,2026,53,3,11,Gary Nimps,Houston
+3960,2026,54,3,11,Gary Nimps,Virginia
+3961,2026,55,3,11,Gary Nimps,Purdue
+3962,2026,56,3,11,Gary Nimps,Michigan St.
+3963,2026,57,4,11,Gary Nimps,Duke
+3964,2026,58,4,11,Gary Nimps,Arizona
+3965,2026,59,4,11,Gary Nimps,Virginia
+3966,2026,60,4,11,Gary Nimps,Houston
+3967,2026,61,5,11,Gary Nimps,Houston
+3968,2026,62,5,11,Gary Nimps,Arizona
+3969,2026,63,6,11,Gary Nimps,Arizona
+3970,2026,1,1,12,Jaileigh Crain,Siena
+3971,2026,2,1,12,Jaileigh Crain,Arizona
+3972,2026,3,1,12,Jaileigh Crain,Michigan
+3973,2026,4,1,12,Jaileigh Crain,Florida
+3974,2026,5,1,12,Jaileigh Crain,Idaho
+3975,2026,6,1,12,Jaileigh Crain,Iowa St.
+3976,2026,7,1,12,Jaileigh Crain,Queens
+3977,2026,8,1,12,Jaileigh Crain,Connecticut
+3978,2026,9,1,12,Jaileigh Crain,North Dakota St.
+3979,2026,10,1,12,Jaileigh Crain,Kennesaw St.
+3980,2026,11,1,12,Jaileigh Crain,Wright St.
+3981,2026,12,1,12,Jaileigh Crain,Penn
+3982,2026,13,1,12,Jaileigh Crain,Nebraska
+3983,2026,14,1,12,Jaileigh Crain,Alabama
+3984,2026,15,1,12,Jaileigh Crain,Hawaii
+3985,2026,16,1,12,Jaileigh Crain,Kansas
+3986,2026,17,1,12,Jaileigh Crain,Northern Iowa
+3987,2026,18,1,12,Jaileigh Crain,High Point
+3988,2026,19,1,12,Jaileigh Crain,Texas Tech
+3989,2026,20,1,12,Jaileigh Crain,Vanderbilt
+3990,2026,21,1,12,Jaileigh Crain,North Carolina
+3991,2026,22,1,12,Jaileigh Crain,Tennessee
+3992,2026,23,1,12,Jaileigh Crain,Texas
+3993,2026,24,1,12,Jaileigh Crain,Louisville
+3994,2026,25,1,12,Jaileigh Crain,UCF
+3995,2026,26,1,12,Jaileigh Crain,Miami FL
+3996,2026,27,1,12,Jaileigh Crain,Santa Clara
+3997,2026,28,1,12,Jaileigh Crain,Saint Mary's
+3998,2026,29,1,12,Jaileigh Crain,Iowa
+3999,2026,30,1,12,Jaileigh Crain,Georgia
+4000,2026,31,1,12,Jaileigh Crain,Villanova
+4001,2026,32,1,12,Jaileigh Crain,Ohio St.
+4002,2026,33,2,12,Jaileigh Crain,Siena
+4003,2026,34,2,12,Jaileigh Crain,Villanova
+4004,2026,35,2,12,Jaileigh Crain,Georgia
+4005,2026,36,2,12,Jaileigh Crain,Florida
+4006,2026,37,2,12,Jaileigh Crain,Idaho
+4007,2026,38,2,12,Jaileigh Crain,Iowa St.
+4008,2026,39,2,12,Jaileigh Crain,Queens
+4009,2026,40,2,12,Jaileigh Crain,UCF
+4010,2026,41,2,12,Jaileigh Crain,Louisville
+4011,2026,42,2,12,Jaileigh Crain,Kennesaw St.
+4012,2026,43,2,12,Jaileigh Crain,Wright St.
+4013,2026,44,2,12,Jaileigh Crain,Penn
+4014,2026,45,2,12,Jaileigh Crain,Vanderbilt
+4015,2026,46,2,12,Jaileigh Crain,Alabama
+4016,2026,47,2,12,Jaileigh Crain,High Point
+4017,2026,48,2,12,Jaileigh Crain,Kansas
+4018,2026,49,3,12,Jaileigh Crain,Siena
+4019,2026,50,3,12,Jaileigh Crain,Villanova
+4020,2026,51,3,12,Jaileigh Crain,Alabama
+4021,2026,52,3,12,Jaileigh Crain,Florida
+4022,2026,53,3,12,Jaileigh Crain,Penn
+4023,2026,54,3,12,Jaileigh Crain,Wright St.
+4024,2026,55,3,12,Jaileigh Crain,Kennesaw St.
+4025,2026,56,3,12,Jaileigh Crain,UCF
+4026,2026,57,4,12,Jaileigh Crain,UCF
+4027,2026,58,4,12,Jaileigh Crain,Kennesaw St.
+4028,2026,59,4,12,Jaileigh Crain,Alabama
+4029,2026,60,4,12,Jaileigh Crain,Florida
+4030,2026,61,5,12,Jaileigh Crain,Florida
+4031,2026,62,5,12,Jaileigh Crain,Kennesaw St.
+4032,2026,63,6,12,Jaileigh Crain,Florida
+4033,2026,1,1,13,Jared Nimps,Duke
+4034,2026,2,1,13,Jared Nimps,Arizona
+4035,2026,3,1,13,Jared Nimps,Michigan
+4036,2026,4,1,13,Jared Nimps,Florida
+4037,2026,5,1,13,Jared Nimps,Houston
+4038,2026,6,1,13,Jared Nimps,Iowa St.
+4039,2026,7,1,13,Jared Nimps,Purdue
+4040,2026,8,1,13,Jared Nimps,Connecticut
+4041,2026,9,1,13,Jared Nimps,Michigan St.
+4042,2026,10,1,13,Jared Nimps,Gonzaga
+4043,2026,11,1,13,Jared Nimps,Virginia
+4044,2026,12,1,13,Jared Nimps,Illinois
+4045,2026,13,1,13,Jared Nimps,Nebraska
+4046,2026,14,1,13,Jared Nimps,Alabama
+4047,2026,15,1,13,Jared Nimps,Arkansas
+4048,2026,16,1,13,Jared Nimps,Kansas
+4049,2026,17,1,13,Jared Nimps,St. John's
+4050,2026,18,1,13,Jared Nimps,Wisconsin
+4051,2026,19,1,13,Jared Nimps,Texas Tech
+4052,2026,20,1,13,Jared Nimps,Vanderbilt
+4053,2026,21,1,13,Jared Nimps,North Carolina
+4054,2026,22,1,13,Jared Nimps,Tennessee
+4055,2026,23,1,13,Jared Nimps,Texas
+4056,2026,24,1,13,Jared Nimps,Louisville
+4057,2026,25,1,13,Jared Nimps,UCLA
+4058,2026,26,1,13,Jared Nimps,Missouri
+4059,2026,27,1,13,Jared Nimps,Kentucky
+4060,2026,28,1,13,Jared Nimps,Saint Mary's
+4061,2026,29,1,13,Jared Nimps,Iowa
+4062,2026,30,1,13,Jared Nimps,Georgia
+4063,2026,31,1,13,Jared Nimps,Villanova
+4064,2026,32,1,13,Jared Nimps,Ohio St.
+4065,2026,33,2,13,Jared Nimps,Duke
+4066,2026,34,2,13,Jared Nimps,Arizona
+4067,2026,35,2,13,Jared Nimps,Michigan
+4068,2026,36,2,13,Jared Nimps,Florida
+4069,2026,37,2,13,Jared Nimps,Houston
+4070,2026,38,2,13,Jared Nimps,Iowa St.
+4071,2026,39,2,13,Jared Nimps,Purdue
+4072,2026,40,2,13,Jared Nimps,Connecticut
+4073,2026,41,2,13,Jared Nimps,Michigan St.
+4074,2026,42,2,13,Jared Nimps,Gonzaga
+4075,2026,43,2,13,Jared Nimps,Tennessee
+4076,2026,44,2,13,Jared Nimps,Illinois
+4077,2026,45,2,13,Jared Nimps,Nebraska
+4078,2026,46,2,13,Jared Nimps,Alabama
+4079,2026,47,2,13,Jared Nimps,Arkansas
+4080,2026,48,2,13,Jared Nimps,Kansas
+4081,2026,49,3,13,Jared Nimps,Duke
+4082,2026,50,3,13,Jared Nimps,Arizona
+4083,2026,51,3,13,Jared Nimps,Michigan
+4084,2026,52,3,13,Jared Nimps,Florida
+4085,2026,53,3,13,Jared Nimps,Houston
+4086,2026,54,3,13,Jared Nimps,Tennessee
+4087,2026,55,3,13,Jared Nimps,Purdue
+4088,2026,56,3,13,Jared Nimps,Connecticut
+4089,2026,57,4,13,Jared Nimps,Duke
+4090,2026,58,4,13,Jared Nimps,Purdue
+4091,2026,59,4,13,Jared Nimps,Michigan
+4092,2026,60,4,13,Jared Nimps,Florida
+4093,2026,61,5,13,Jared Nimps,Florida
+4094,2026,62,5,13,Jared Nimps,Purdue
+4095,2026,63,6,13,Jared Nimps,Florida
+4096,2026,1,1,14,Jaxson Nimps,Duke
+4097,2026,2,1,14,Jaxson Nimps,Arizona
+4098,2026,3,1,14,Jaxson Nimps,Michigan
+4099,2026,4,1,14,Jaxson Nimps,Florida
+4100,2026,5,1,14,Jaxson Nimps,Houston
+4101,2026,6,1,14,Jaxson Nimps,Iowa St.
+4102,2026,7,1,14,Jaxson Nimps,Purdue
+4103,2026,8,1,14,Jaxson Nimps,Connecticut
+4104,2026,9,1,14,Jaxson Nimps,Michigan St.
+4105,2026,10,1,14,Jaxson Nimps,Gonzaga
+4106,2026,11,1,14,Jaxson Nimps,Virginia
+4107,2026,12,1,14,Jaxson Nimps,Illinois
+4108,2026,13,1,14,Jaxson Nimps,Nebraska
+4109,2026,14,1,14,Jaxson Nimps,Alabama
+4110,2026,15,1,14,Jaxson Nimps,Arkansas
+4111,2026,16,1,14,Jaxson Nimps,Kansas
+4112,2026,17,1,14,Jaxson Nimps,St. John's
+4113,2026,18,1,14,Jaxson Nimps,Wisconsin
+4114,2026,19,1,14,Jaxson Nimps,Texas Tech
+4115,2026,20,1,14,Jaxson Nimps,Vanderbilt
+4116,2026,21,1,14,Jaxson Nimps,North Carolina
+4117,2026,22,1,14,Jaxson Nimps,Tennessee
+4118,2026,23,1,14,Jaxson Nimps,BYU
+4119,2026,24,1,14,Jaxson Nimps,Louisville
+4120,2026,25,1,14,Jaxson Nimps,UCLA
+4121,2026,26,1,14,Jaxson Nimps,Miami FL
+4122,2026,27,1,14,Jaxson Nimps,Kentucky
+4123,2026,28,1,14,Jaxson Nimps,Texas A&M
+4124,2026,29,1,14,Jaxson Nimps,Iowa
+4125,2026,30,1,14,Jaxson Nimps,Georgia
+4126,2026,31,1,14,Jaxson Nimps,Villanova
+4127,2026,32,1,14,Jaxson Nimps,TCU
+4128,2026,33,2,14,Jaxson Nimps,Duke
+4129,2026,34,2,14,Jaxson Nimps,Arizona
+4130,2026,35,2,14,Jaxson Nimps,Michigan
+4131,2026,36,2,14,Jaxson Nimps,Florida
+4132,2026,37,2,14,Jaxson Nimps,Houston
+4133,2026,38,2,14,Jaxson Nimps,Iowa St.
+4134,2026,39,2,14,Jaxson Nimps,Purdue
+4135,2026,40,2,14,Jaxson Nimps,Connecticut
+4136,2026,41,2,14,Jaxson Nimps,Louisville
+4137,2026,42,2,14,Jaxson Nimps,Gonzaga
+4138,2026,43,2,14,Jaxson Nimps,Virginia
+4139,2026,44,2,14,Jaxson Nimps,Illinois
+4140,2026,45,2,14,Jaxson Nimps,Vanderbilt
+4141,2026,46,2,14,Jaxson Nimps,Alabama
+4142,2026,47,2,14,Jaxson Nimps,Wisconsin
+4143,2026,48,2,14,Jaxson Nimps,Kansas
+4144,2026,49,3,14,Jaxson Nimps,Duke
+4145,2026,50,3,14,Jaxson Nimps,Arizona
+4146,2026,51,3,14,Jaxson Nimps,Michigan
+4147,2026,52,3,14,Jaxson Nimps,Florida
+4148,2026,53,3,14,Jaxson Nimps,Illinois
+4149,2026,54,3,14,Jaxson Nimps,Virginia
+4150,2026,55,3,14,Jaxson Nimps,Gonzaga
+4151,2026,56,3,14,Jaxson Nimps,Connecticut
+4152,2026,57,4,14,Jaxson Nimps,Duke
+4153,2026,58,4,14,Jaxson Nimps,Arizona
+4154,2026,59,4,14,Jaxson Nimps,Michigan
+4155,2026,60,4,14,Jaxson Nimps,Florida
+4156,2026,61,5,14,Jaxson Nimps,Duke
+4157,2026,62,5,14,Jaxson Nimps,Arizona
+4158,2026,63,6,14,Jaxson Nimps,Duke
+4159,2026,1,1,15,Jeff Hemmer,Duke
+4160,2026,2,1,15,Jeff Hemmer,Arizona
+4161,2026,3,1,15,Jeff Hemmer,Michigan
+4162,2026,4,1,15,Jeff Hemmer,Florida
+4163,2026,5,1,15,Jeff Hemmer,Houston
+4164,2026,6,1,15,Jeff Hemmer,Iowa St.
+4165,2026,7,1,15,Jeff Hemmer,Purdue
+4166,2026,8,1,15,Jeff Hemmer,Connecticut
+4167,2026,9,1,15,Jeff Hemmer,Michigan St.
+4168,2026,10,1,15,Jeff Hemmer,Gonzaga
+4169,2026,11,1,15,Jeff Hemmer,Wright St.
+4170,2026,12,1,15,Jeff Hemmer,Illinois
+4171,2026,13,1,15,Jeff Hemmer,Nebraska
+4172,2026,14,1,15,Jeff Hemmer,Alabama
+4173,2026,15,1,15,Jeff Hemmer,Arkansas
+4174,2026,16,1,15,Jeff Hemmer,Kansas
+4175,2026,17,1,15,Jeff Hemmer,Northern Iowa
+4176,2026,18,1,15,Jeff Hemmer,Wisconsin
+4177,2026,19,1,15,Jeff Hemmer,Texas Tech
+4178,2026,20,1,15,Jeff Hemmer,Vanderbilt
+4179,2026,21,1,15,Jeff Hemmer,North Carolina
+4180,2026,22,1,15,Jeff Hemmer,Tennessee
+4181,2026,23,1,15,Jeff Hemmer,Texas
+4182,2026,24,1,15,Jeff Hemmer,Louisville
+4183,2026,25,1,15,Jeff Hemmer,UCLA
+4184,2026,26,1,15,Jeff Hemmer,Miami FL
+4185,2026,27,1,15,Jeff Hemmer,Santa Clara
+4186,2026,28,1,15,Jeff Hemmer,Texas A&M
+4187,2026,29,1,15,Jeff Hemmer,Clemson
+4188,2026,30,1,15,Jeff Hemmer,Saint Louis
+4189,2026,31,1,15,Jeff Hemmer,Utah St.
+4190,2026,32,1,15,Jeff Hemmer,TCU
+4191,2026,33,2,15,Jeff Hemmer,Duke
+4192,2026,34,2,15,Jeff Hemmer,Arizona
+4193,2026,35,2,15,Jeff Hemmer,Michigan
+4194,2026,36,2,15,Jeff Hemmer,Florida
+4195,2026,37,2,15,Jeff Hemmer,Houston
+4196,2026,38,2,15,Jeff Hemmer,Iowa St.
+4197,2026,39,2,15,Jeff Hemmer,Purdue
+4198,2026,40,2,15,Jeff Hemmer,Connecticut
+4199,2026,41,2,15,Jeff Hemmer,Michigan St.
+4200,2026,42,2,15,Jeff Hemmer,Gonzaga
+4201,2026,43,2,15,Jeff Hemmer,Tennessee
+4202,2026,44,2,15,Jeff Hemmer,Illinois
+4203,2026,45,2,15,Jeff Hemmer,Nebraska
+4204,2026,46,2,15,Jeff Hemmer,Alabama
+4205,2026,47,2,15,Jeff Hemmer,Arkansas
+4206,2026,48,2,15,Jeff Hemmer,Kansas
+4207,2026,49,3,15,Jeff Hemmer,Duke
+4208,2026,50,3,15,Jeff Hemmer,Arizona
+4209,2026,51,3,15,Jeff Hemmer,Michigan
+4210,2026,52,3,15,Jeff Hemmer,Nebraska
+4211,2026,53,3,15,Jeff Hemmer,Illinois
+4212,2026,54,3,15,Jeff Hemmer,Iowa St.
+4213,2026,55,3,15,Jeff Hemmer,Purdue
+4214,2026,56,3,15,Jeff Hemmer,Michigan St.
+4215,2026,57,4,15,Jeff Hemmer,Michigan St.
+4216,2026,58,4,15,Jeff Hemmer,Purdue
+4217,2026,59,4,15,Jeff Hemmer,Michigan
+4218,2026,60,4,15,Jeff Hemmer,Nebraska
+4219,2026,61,5,15,Jeff Hemmer,Michigan St.
+4220,2026,62,5,15,Jeff Hemmer,Michigan
+4221,2026,63,6,15,Jeff Hemmer,Michigan
+4222,2026,1,1,16,Jensen Hubbard,Duke
+4223,2026,2,1,16,Jensen Hubbard,Arizona
+4224,2026,3,1,16,Jensen Hubbard,Michigan
+4225,2026,4,1,16,Jensen Hubbard,Florida
+4226,2026,5,1,16,Jensen Hubbard,Houston
+4227,2026,6,1,16,Jensen Hubbard,Iowa St.
+4228,2026,7,1,16,Jensen Hubbard,Purdue
+4229,2026,8,1,16,Jensen Hubbard,Connecticut
+4230,2026,9,1,16,Jensen Hubbard,Michigan St.
+4231,2026,10,1,16,Jensen Hubbard,Gonzaga
+4232,2026,11,1,16,Jensen Hubbard,Virginia
+4233,2026,12,1,16,Jensen Hubbard,Illinois
+4234,2026,13,1,16,Jensen Hubbard,Nebraska
+4235,2026,14,1,16,Jensen Hubbard,Alabama
+4236,2026,15,1,16,Jensen Hubbard,Arkansas
+4237,2026,16,1,16,Jensen Hubbard,Kansas
+4238,2026,17,1,16,Jensen Hubbard,St. John's
+4239,2026,18,1,16,Jensen Hubbard,Wisconsin
+4240,2026,19,1,16,Jensen Hubbard,Texas Tech
+4241,2026,20,1,16,Jensen Hubbard,Vanderbilt
+4242,2026,21,1,16,Jensen Hubbard,North Carolina
+4243,2026,22,1,16,Jensen Hubbard,Tennessee
+4244,2026,23,1,16,Jensen Hubbard,BYU
+4245,2026,24,1,16,Jensen Hubbard,Louisville
+4246,2026,25,1,16,Jensen Hubbard,UCLA
+4247,2026,26,1,16,Jensen Hubbard,Miami FL
+4248,2026,27,1,16,Jensen Hubbard,Kentucky
+4249,2026,28,1,16,Jensen Hubbard,Saint Mary's
+4250,2026,29,1,16,Jensen Hubbard,Clemson
+4251,2026,30,1,16,Jensen Hubbard,Georgia
+4252,2026,31,1,16,Jensen Hubbard,Villanova
+4253,2026,32,1,16,Jensen Hubbard,Ohio St.
+4254,2026,33,2,16,Jensen Hubbard,Duke
+4255,2026,34,2,16,Jensen Hubbard,Arizona
+4256,2026,35,2,16,Jensen Hubbard,Michigan
+4257,2026,36,2,16,Jensen Hubbard,Florida
+4258,2026,37,2,16,Jensen Hubbard,Houston
+4259,2026,38,2,16,Jensen Hubbard,Iowa St.
+4260,2026,39,2,16,Jensen Hubbard,Purdue
+4261,2026,40,2,16,Jensen Hubbard,Connecticut
+4262,2026,41,2,16,Jensen Hubbard,Michigan St.
+4263,2026,42,2,16,Jensen Hubbard,Gonzaga
+4264,2026,43,2,16,Jensen Hubbard,Virginia
+4265,2026,44,2,16,Jensen Hubbard,Illinois
+4266,2026,45,2,16,Jensen Hubbard,Nebraska
+4267,2026,46,2,16,Jensen Hubbard,Alabama
+4268,2026,47,2,16,Jensen Hubbard,Arkansas
+4269,2026,48,2,16,Jensen Hubbard,Kansas
+4270,2026,49,3,16,Jensen Hubbard,Duke
+4271,2026,50,3,16,Jensen Hubbard,Arizona
+4272,2026,51,3,16,Jensen Hubbard,Michigan
+4273,2026,52,3,16,Jensen Hubbard,Florida
+4274,2026,53,3,16,Jensen Hubbard,Houston
+4275,2026,54,3,16,Jensen Hubbard,Iowa St.
+4276,2026,55,3,16,Jensen Hubbard,Purdue
+4277,2026,56,3,16,Jensen Hubbard,Connecticut
+4278,2026,57,4,16,Jensen Hubbard,Duke
+4279,2026,58,4,16,Jensen Hubbard,Arizona
+4280,2026,59,4,16,Jensen Hubbard,Michigan
+4281,2026,60,4,16,Jensen Hubbard,Florida
+4282,2026,61,5,16,Jensen Hubbard,Duke
+4283,2026,62,5,16,Jensen Hubbard,Arizona
+4284,2026,63,6,16,Jensen Hubbard,Duke
+4285,2026,1,1,17,Julia Hemmer,Duke
+4286,2026,2,1,17,Julia Hemmer,Arizona
+4287,2026,3,1,17,Julia Hemmer,Michigan
+4288,2026,4,1,17,Julia Hemmer,Florida
+4289,2026,5,1,17,Julia Hemmer,Houston
+4290,2026,6,1,17,Julia Hemmer,Iowa St.
+4291,2026,7,1,17,Julia Hemmer,Purdue
+4292,2026,8,1,17,Julia Hemmer,Connecticut
+4293,2026,9,1,17,Julia Hemmer,Michigan St.
+4294,2026,10,1,17,Julia Hemmer,Gonzaga
+4295,2026,11,1,17,Julia Hemmer,Virginia
+4296,2026,12,1,17,Julia Hemmer,Illinois
+4297,2026,13,1,17,Julia Hemmer,Nebraska
+4298,2026,14,1,17,Julia Hemmer,Alabama
+4299,2026,15,1,17,Julia Hemmer,Arkansas
+4300,2026,16,1,17,Julia Hemmer,Kansas
+4301,2026,17,1,17,Julia Hemmer,St. John's
+4302,2026,18,1,17,Julia Hemmer,Wisconsin
+4303,2026,19,1,17,Julia Hemmer,Texas Tech
+4304,2026,20,1,17,Julia Hemmer,Vanderbilt
+4305,2026,21,1,17,Julia Hemmer,North Carolina
+4306,2026,22,1,17,Julia Hemmer,Tennessee
+4307,2026,23,1,17,Julia Hemmer,BYU
+4308,2026,24,1,17,Julia Hemmer,Louisville
+4309,2026,25,1,17,Julia Hemmer,UCLA
+4310,2026,26,1,17,Julia Hemmer,Miami FL
+4311,2026,27,1,17,Julia Hemmer,Kentucky
+4312,2026,28,1,17,Julia Hemmer,Saint Mary's
+4313,2026,29,1,17,Julia Hemmer,Clemson
+4314,2026,30,1,17,Julia Hemmer,Georgia
+4315,2026,31,1,17,Julia Hemmer,Villanova
+4316,2026,32,1,17,Julia Hemmer,Ohio St.
+4317,2026,33,2,17,Julia Hemmer,Ohio St.
+4318,2026,34,2,17,Julia Hemmer,Villanova
+4319,2026,35,2,17,Julia Hemmer,Georgia
+4320,2026,36,2,17,Julia Hemmer,Clemson
+4321,2026,37,2,17,Julia Hemmer,Houston
+4322,2026,38,2,17,Julia Hemmer,Iowa St.
+4323,2026,39,2,17,Julia Hemmer,Purdue
+4324,2026,40,2,17,Julia Hemmer,Connecticut
+4325,2026,41,2,17,Julia Hemmer,Michigan St.
+4326,2026,42,2,17,Julia Hemmer,Gonzaga
+4327,2026,43,2,17,Julia Hemmer,Virginia
+4328,2026,44,2,17,Julia Hemmer,Illinois
+4329,2026,45,2,17,Julia Hemmer,Nebraska
+4330,2026,46,2,17,Julia Hemmer,Alabama
+4331,2026,47,2,17,Julia Hemmer,Arkansas
+4332,2026,48,2,17,Julia Hemmer,Kansas
+4333,2026,49,3,17,Julia Hemmer,Kansas
+4334,2026,50,3,17,Julia Hemmer,Arkansas
+4335,2026,51,3,17,Julia Hemmer,Alabama
+4336,2026,52,3,17,Julia Hemmer,Nebraska
+4337,2026,53,3,17,Julia Hemmer,Houston
+4338,2026,54,3,17,Julia Hemmer,Iowa St.
+4339,2026,55,3,17,Julia Hemmer,Purdue
+4340,2026,56,3,17,Julia Hemmer,Michigan St.
+4341,2026,57,4,17,Julia Hemmer,Michigan St.
+4342,2026,58,4,17,Julia Hemmer,Purdue
+4343,2026,59,4,17,Julia Hemmer,Iowa St.
+4344,2026,60,4,17,Julia Hemmer,Nebraska
+4345,2026,61,5,17,Julia Hemmer,Nebraska
+4346,2026,62,5,17,Julia Hemmer,Iowa St.
+4347,2026,63,6,17,Julia Hemmer,Nebraska
+4348,2026,1,1,18,Julie Trevarrow,Duke
+4349,2026,2,1,18,Julie Trevarrow,Arizona
+4350,2026,3,1,18,Julie Trevarrow,Michigan
+4351,2026,4,1,18,Julie Trevarrow,Florida
+4352,2026,5,1,18,Julie Trevarrow,Houston
+4353,2026,6,1,18,Julie Trevarrow,Iowa St.
+4354,2026,7,1,18,Julie Trevarrow,Purdue
+4355,2026,8,1,18,Julie Trevarrow,Connecticut
+4356,2026,9,1,18,Julie Trevarrow,Michigan St.
+4357,2026,10,1,18,Julie Trevarrow,Gonzaga
+4358,2026,11,1,18,Julie Trevarrow,Virginia
+4359,2026,12,1,18,Julie Trevarrow,Illinois
+4360,2026,13,1,18,Julie Trevarrow,Nebraska
+4361,2026,14,1,18,Julie Trevarrow,Alabama
+4362,2026,15,1,18,Julie Trevarrow,Arkansas
+4363,2026,16,1,18,Julie Trevarrow,Kansas
+4364,2026,17,1,18,Julie Trevarrow,Northern Iowa
+4365,2026,18,1,18,Julie Trevarrow,Wisconsin
+4366,2026,19,1,18,Julie Trevarrow,Texas Tech
+4367,2026,20,1,18,Julie Trevarrow,Vanderbilt
+4368,2026,21,1,18,Julie Trevarrow,VCU
+4369,2026,22,1,18,Julie Trevarrow,Tennessee
+4370,2026,23,1,18,Julie Trevarrow,Texas
+4371,2026,24,1,18,Julie Trevarrow,Louisville
+4372,2026,25,1,18,Julie Trevarrow,UCLA
+4373,2026,26,1,18,Julie Trevarrow,Missouri
+4374,2026,27,1,18,Julie Trevarrow,Kentucky
+4375,2026,28,1,18,Julie Trevarrow,Texas A&M
+4376,2026,29,1,18,Julie Trevarrow,Iowa
+4377,2026,30,1,18,Julie Trevarrow,Saint Louis
+4378,2026,31,1,18,Julie Trevarrow,Villanova
+4379,2026,32,1,18,Julie Trevarrow,Ohio St.
+4380,2026,33,2,18,Julie Trevarrow,Duke
+4381,2026,34,2,18,Julie Trevarrow,Arizona
+4382,2026,35,2,18,Julie Trevarrow,Michigan
+4383,2026,36,2,18,Julie Trevarrow,Florida
+4384,2026,37,2,18,Julie Trevarrow,Houston
+4385,2026,38,2,18,Julie Trevarrow,Iowa St.
+4386,2026,39,2,18,Julie Trevarrow,Purdue
+4387,2026,40,2,18,Julie Trevarrow,Connecticut
+4388,2026,41,2,18,Julie Trevarrow,Louisville
+4389,2026,42,2,18,Julie Trevarrow,Texas
+4390,2026,43,2,18,Julie Trevarrow,Tennessee
+4391,2026,44,2,18,Julie Trevarrow,Illinois
+4392,2026,45,2,18,Julie Trevarrow,Nebraska
+4393,2026,46,2,18,Julie Trevarrow,Texas Tech
+4394,2026,47,2,18,Julie Trevarrow,Wisconsin
+4395,2026,48,2,18,Julie Trevarrow,Kansas
+4396,2026,49,3,18,Julie Trevarrow,Duke
+4397,2026,50,3,18,Julie Trevarrow,Wisconsin
+4398,2026,51,3,18,Julie Trevarrow,Texas Tech
+4399,2026,52,3,18,Julie Trevarrow,Florida
+4400,2026,53,3,18,Julie Trevarrow,Houston
+4401,2026,54,3,18,Julie Trevarrow,Tennessee
+4402,2026,55,3,18,Julie Trevarrow,Texas
+4403,2026,56,3,18,Julie Trevarrow,Connecticut
+4404,2026,57,4,18,Julie Trevarrow,Duke
+4405,2026,58,4,18,Julie Trevarrow,Wisconsin
+4406,2026,59,4,18,Julie Trevarrow,Tennessee
+4407,2026,60,4,18,Julie Trevarrow,Florida
+4408,2026,61,5,18,Julie Trevarrow,Duke
+4409,2026,62,5,18,Julie Trevarrow,Tennessee
+4410,2026,63,6,18,Julie Trevarrow,Duke
+4411,2026,1,1,19,Kaden Nimps,Duke
+4412,2026,2,1,19,Kaden Nimps,Arizona
+4413,2026,3,1,19,Kaden Nimps,Michigan
+4414,2026,4,1,19,Kaden Nimps,Florida
+4415,2026,5,1,19,Kaden Nimps,Houston
+4416,2026,6,1,19,Kaden Nimps,Iowa St.
+4417,2026,7,1,19,Kaden Nimps,Purdue
+4418,2026,8,1,19,Kaden Nimps,Connecticut
+4419,2026,9,1,19,Kaden Nimps,Michigan St.
+4420,2026,10,1,19,Kaden Nimps,Gonzaga
+4421,2026,11,1,19,Kaden Nimps,Virginia
+4422,2026,12,1,19,Kaden Nimps,Illinois
+4423,2026,13,1,19,Kaden Nimps,Nebraska
+4424,2026,14,1,19,Kaden Nimps,Alabama
+4425,2026,15,1,19,Kaden Nimps,Arkansas
+4426,2026,16,1,19,Kaden Nimps,Kansas
+4427,2026,17,1,19,Kaden Nimps,St. John's
+4428,2026,18,1,19,Kaden Nimps,Wisconsin
+4429,2026,19,1,19,Kaden Nimps,Texas Tech
+4430,2026,20,1,19,Kaden Nimps,Vanderbilt
+4431,2026,21,1,19,Kaden Nimps,North Carolina
+4432,2026,22,1,19,Kaden Nimps,Tennessee
+4433,2026,23,1,19,Kaden Nimps,BYU
+4434,2026,24,1,19,Kaden Nimps,Louisville
+4435,2026,25,1,19,Kaden Nimps,UCLA
+4436,2026,26,1,19,Kaden Nimps,Miami FL
+4437,2026,27,1,19,Kaden Nimps,Kentucky
+4438,2026,28,1,19,Kaden Nimps,Saint Mary's
+4439,2026,29,1,19,Kaden Nimps,Iowa
+4440,2026,30,1,19,Kaden Nimps,Georgia
+4441,2026,31,1,19,Kaden Nimps,Utah St.
+4442,2026,32,1,19,Kaden Nimps,Ohio St.
+4443,2026,33,2,19,Kaden Nimps,Duke
+4444,2026,34,2,19,Kaden Nimps,Arizona
+4445,2026,35,2,19,Kaden Nimps,Michigan
+4446,2026,36,2,19,Kaden Nimps,Florida
+4447,2026,37,2,19,Kaden Nimps,Houston
+4448,2026,38,2,19,Kaden Nimps,Iowa St.
+4449,2026,39,2,19,Kaden Nimps,Purdue
+4450,2026,40,2,19,Kaden Nimps,Connecticut
+4451,2026,41,2,19,Kaden Nimps,Michigan St.
+4452,2026,42,2,19,Kaden Nimps,Gonzaga
+4453,2026,43,2,19,Kaden Nimps,Tennessee
+4454,2026,44,2,19,Kaden Nimps,Illinois
+4455,2026,45,2,19,Kaden Nimps,Nebraska
+4456,2026,46,2,19,Kaden Nimps,Alabama
+4457,2026,47,2,19,Kaden Nimps,Wisconsin
+4458,2026,48,2,19,Kaden Nimps,Kansas
+4459,2026,49,3,19,Kaden Nimps,Duke
+4460,2026,50,3,19,Kaden Nimps,Arizona
+4461,2026,51,3,19,Kaden Nimps,Michigan
+4462,2026,52,3,19,Kaden Nimps,Florida
+4463,2026,53,3,19,Kaden Nimps,Illinois
+4464,2026,54,3,19,Kaden Nimps,Iowa St.
+4465,2026,55,3,19,Kaden Nimps,Purdue
+4466,2026,56,3,19,Kaden Nimps,Michigan St.
+4467,2026,57,4,19,Kaden Nimps,Duke
+4468,2026,58,4,19,Kaden Nimps,Arizona
+4469,2026,59,4,19,Kaden Nimps,Michigan
+4470,2026,60,4,19,Kaden Nimps,Florida
+4471,2026,61,5,19,Kaden Nimps,Florida
+4472,2026,62,5,19,Kaden Nimps,Michigan
+4473,2026,63,6,19,Kaden Nimps,Michigan
+4474,2026,1,1,20,Kassie Trevarrow,Duke
+4475,2026,2,1,20,Kassie Trevarrow,Arizona
+4476,2026,3,1,20,Kassie Trevarrow,Michigan
+4477,2026,4,1,20,Kassie Trevarrow,Florida
+4478,2026,5,1,20,Kassie Trevarrow,Houston
+4479,2026,6,1,20,Kassie Trevarrow,Iowa St.
+4480,2026,7,1,20,Kassie Trevarrow,Purdue
+4481,2026,8,1,20,Kassie Trevarrow,Connecticut
+4482,2026,9,1,20,Kassie Trevarrow,Michigan St.
+4483,2026,10,1,20,Kassie Trevarrow,Gonzaga
+4484,2026,11,1,20,Kassie Trevarrow,Virginia
+4485,2026,12,1,20,Kassie Trevarrow,Illinois
+4486,2026,13,1,20,Kassie Trevarrow,Nebraska
+4487,2026,14,1,20,Kassie Trevarrow,Alabama
+4488,2026,15,1,20,Kassie Trevarrow,Arkansas
+4489,2026,16,1,20,Kassie Trevarrow,Kansas
+4490,2026,17,1,20,Kassie Trevarrow,St. John's
+4491,2026,18,1,20,Kassie Trevarrow,Wisconsin
+4492,2026,19,1,20,Kassie Trevarrow,Texas Tech
+4493,2026,20,1,20,Kassie Trevarrow,Vanderbilt
+4494,2026,21,1,20,Kassie Trevarrow,North Carolina
+4495,2026,22,1,20,Kassie Trevarrow,Tennessee
+4496,2026,23,1,20,Kassie Trevarrow,BYU
+4497,2026,24,1,20,Kassie Trevarrow,Louisville
+4498,2026,25,1,20,Kassie Trevarrow,UCLA
+4499,2026,26,1,20,Kassie Trevarrow,Miami FL
+4500,2026,27,1,20,Kassie Trevarrow,Kentucky
+4501,2026,28,1,20,Kassie Trevarrow,Texas A&M
+4502,2026,29,1,20,Kassie Trevarrow,Iowa
+4503,2026,30,1,20,Kassie Trevarrow,Georgia
+4504,2026,31,1,20,Kassie Trevarrow,Villanova
+4505,2026,32,1,20,Kassie Trevarrow,TCU
+4506,2026,33,2,20,Kassie Trevarrow,Duke
+4507,2026,34,2,20,Kassie Trevarrow,Arizona
+4508,2026,35,2,20,Kassie Trevarrow,Michigan
+4509,2026,36,2,20,Kassie Trevarrow,Florida
+4510,2026,37,2,20,Kassie Trevarrow,Houston
+4511,2026,38,2,20,Kassie Trevarrow,Iowa St.
+4512,2026,39,2,20,Kassie Trevarrow,Purdue
+4513,2026,40,2,20,Kassie Trevarrow,Connecticut
+4514,2026,41,2,20,Kassie Trevarrow,Louisville
+4515,2026,42,2,20,Kassie Trevarrow,Gonzaga
+4516,2026,43,2,20,Kassie Trevarrow,Tennessee
+4517,2026,44,2,20,Kassie Trevarrow,Illinois
+4518,2026,45,2,20,Kassie Trevarrow,Vanderbilt
+4519,2026,46,2,20,Kassie Trevarrow,Alabama
+4520,2026,47,2,20,Kassie Trevarrow,Wisconsin
+4521,2026,48,2,20,Kassie Trevarrow,Kansas
+4522,2026,49,3,20,Kassie Trevarrow,Duke
+4523,2026,50,3,20,Kassie Trevarrow,Arizona
+4524,2026,51,3,20,Kassie Trevarrow,Michigan
+4525,2026,52,3,20,Kassie Trevarrow,Florida
+4526,2026,53,3,20,Kassie Trevarrow,Illinois
+4527,2026,54,3,20,Kassie Trevarrow,Iowa St.
+4528,2026,55,3,20,Kassie Trevarrow,Purdue
+4529,2026,56,3,20,Kassie Trevarrow,Connecticut
+4530,2026,57,4,20,Kassie Trevarrow,Connecticut
+4531,2026,58,4,20,Kassie Trevarrow,Purdue
+4532,2026,59,4,20,Kassie Trevarrow,Michigan
+4533,2026,60,4,20,Kassie Trevarrow,Illinois
+4534,2026,61,5,20,Kassie Trevarrow,Connecticut
+4535,2026,62,5,20,Kassie Trevarrow,Michigan
+4536,2026,63,6,20,Kassie Trevarrow,Connecticut
+4537,2026,1,1,21,Kathy Hubbard,Duke
+4538,2026,2,1,21,Kathy Hubbard,Arizona
+4539,2026,3,1,21,Kathy Hubbard,Michigan
+4540,2026,4,1,21,Kathy Hubbard,Florida
+4541,2026,5,1,21,Kathy Hubbard,Houston
+4542,2026,6,1,21,Kathy Hubbard,Iowa St.
+4543,2026,7,1,21,Kathy Hubbard,Purdue
+4544,2026,8,1,21,Kathy Hubbard,Connecticut
+4545,2026,9,1,21,Kathy Hubbard,Michigan St.
+4546,2026,10,1,21,Kathy Hubbard,Gonzaga
+4547,2026,11,1,21,Kathy Hubbard,Virginia
+4548,2026,12,1,21,Kathy Hubbard,Illinois
+4549,2026,13,1,21,Kathy Hubbard,Nebraska
+4550,2026,14,1,21,Kathy Hubbard,Alabama
+4551,2026,15,1,21,Kathy Hubbard,Arkansas
+4552,2026,16,1,21,Kathy Hubbard,Kansas
+4553,2026,17,1,21,Kathy Hubbard,St. John's
+4554,2026,18,1,21,Kathy Hubbard,Wisconsin
+4555,2026,19,1,21,Kathy Hubbard,Akron
+4556,2026,20,1,21,Kathy Hubbard,McNeese
+4557,2026,21,1,21,Kathy Hubbard,North Carolina
+4558,2026,22,1,21,Kathy Hubbard,Tennessee
+4559,2026,23,1,21,Kathy Hubbard,BYU
+4560,2026,24,1,21,Kathy Hubbard,South Florida
+4561,2026,25,1,21,Kathy Hubbard,UCLA
+4562,2026,26,1,21,Kathy Hubbard,Miami FL
+4563,2026,27,1,21,Kathy Hubbard,Santa Clara
+4564,2026,28,1,21,Kathy Hubbard,Saint Mary's
+4565,2026,29,1,21,Kathy Hubbard,Clemson
+4566,2026,30,1,21,Kathy Hubbard,Saint Louis
+4567,2026,31,1,21,Kathy Hubbard,Utah St.
+4568,2026,32,1,21,Kathy Hubbard,TCU
+4569,2026,33,2,21,Kathy Hubbard,Duke
+4570,2026,34,2,21,Kathy Hubbard,Arizona
+4571,2026,35,2,21,Kathy Hubbard,Michigan
+4572,2026,36,2,21,Kathy Hubbard,Florida
+4573,2026,37,2,21,Kathy Hubbard,Saint Mary's
+4574,2026,38,2,21,Kathy Hubbard,Iowa St.
+4575,2026,39,2,21,Kathy Hubbard,Purdue
+4576,2026,40,2,21,Kathy Hubbard,Connecticut
+4577,2026,41,2,21,Kathy Hubbard,Michigan St.
+4578,2026,42,2,21,Kathy Hubbard,Gonzaga
+4579,2026,43,2,21,Kathy Hubbard,Virginia
+4580,2026,44,2,21,Kathy Hubbard,Illinois
+4581,2026,45,2,21,Kathy Hubbard,McNeese
+4582,2026,46,2,21,Kathy Hubbard,Alabama
+4583,2026,47,2,21,Kathy Hubbard,Arkansas
+4584,2026,48,2,21,Kathy Hubbard,St. John's
+4585,2026,49,3,21,Kathy Hubbard,St. John's
+4586,2026,50,3,21,Kathy Hubbard,Arkansas
+4587,2026,51,3,21,Kathy Hubbard,Michigan
+4588,2026,52,3,21,Kathy Hubbard,Florida
+4589,2026,53,3,21,Kathy Hubbard,Illinois
+4590,2026,54,3,21,Kathy Hubbard,Virginia
+4591,2026,55,3,21,Kathy Hubbard,Gonzaga
+4592,2026,56,3,21,Kathy Hubbard,Connecticut
+4593,2026,57,4,21,Kathy Hubbard,Connecticut
+4594,2026,58,4,21,Kathy Hubbard,Gonzaga
+4595,2026,59,4,21,Kathy Hubbard,Michigan
+4596,2026,60,4,21,Kathy Hubbard,Florida
+4597,2026,61,5,21,Kathy Hubbard,Connecticut
+4598,2026,62,5,21,Kathy Hubbard,Gonzaga
+4599,2026,63,6,21,Kathy Hubbard,Gonzaga
+4600,2026,1,1,22,Martez Crain,Duke
+4601,2026,2,1,22,Martez Crain,Arizona
+4602,2026,3,1,22,Martez Crain,Michigan
+4603,2026,4,1,22,Martez Crain,Florida
+4604,2026,5,1,22,Martez Crain,Houston
+4605,2026,6,1,22,Martez Crain,Iowa St.
+4606,2026,7,1,22,Martez Crain,Purdue
+4607,2026,8,1,22,Martez Crain,Connecticut
+4608,2026,9,1,22,Martez Crain,Michigan St.
+4609,2026,10,1,22,Martez Crain,Gonzaga
+4610,2026,11,1,22,Martez Crain,Virginia
+4611,2026,12,1,22,Martez Crain,Illinois
+4612,2026,13,1,22,Martez Crain,Nebraska
+4613,2026,14,1,22,Martez Crain,Alabama
+4614,2026,15,1,22,Martez Crain,Arkansas
+4615,2026,16,1,22,Martez Crain,Kansas
+4616,2026,17,1,22,Martez Crain,St. John's
+4617,2026,18,1,22,Martez Crain,High Point
+4618,2026,19,1,22,Martez Crain,Akron
+4619,2026,20,1,22,Martez Crain,Vanderbilt
+4620,2026,21,1,22,Martez Crain,VCU
+4621,2026,22,1,22,Martez Crain,Miami OH
+4622,2026,23,1,22,Martez Crain,Texas
+4623,2026,24,1,22,Martez Crain,South Florida
+4624,2026,25,1,22,Martez Crain,UCF
+4625,2026,26,1,22,Martez Crain,Missouri
+4626,2026,27,1,22,Martez Crain,Santa Clara
+4627,2026,28,1,22,Martez Crain,Saint Mary's
+4628,2026,29,1,22,Martez Crain,Clemson
+4629,2026,30,1,22,Martez Crain,Saint Louis
+4630,2026,31,1,22,Martez Crain,Utah St.
+4631,2026,32,1,22,Martez Crain,TCU
+4632,2026,33,2,22,Martez Crain,Duke
+4633,2026,34,2,22,Martez Crain,Arizona
+4634,2026,35,2,22,Martez Crain,Saint Louis
+4635,2026,36,2,22,Martez Crain,Florida
+4636,2026,37,2,22,Martez Crain,Houston
+4637,2026,38,2,22,Martez Crain,Iowa St.
+4638,2026,39,2,22,Martez Crain,Purdue
+4639,2026,40,2,22,Martez Crain,UCF
+4640,2026,41,2,22,Martez Crain,Michigan St.
+4641,2026,42,2,22,Martez Crain,Gonzaga
+4642,2026,43,2,22,Martez Crain,Miami OH
+4643,2026,44,2,22,Martez Crain,Illinois
+4644,2026,45,2,22,Martez Crain,Nebraska
+4645,2026,46,2,22,Martez Crain,Akron
+4646,2026,47,2,22,Martez Crain,High Point
+4647,2026,48,2,22,Martez Crain,St. John's
+4648,2026,49,3,22,Martez Crain,Duke
+4649,2026,50,3,22,Martez Crain,Arizona
+4650,2026,51,3,22,Martez Crain,Saint Louis
+4651,2026,52,3,22,Martez Crain,Florida
+4652,2026,53,3,22,Martez Crain,Houston
+4653,2026,54,3,22,Martez Crain,Miami OH
+4654,2026,55,3,22,Martez Crain,Purdue
+4655,2026,56,3,22,Martez Crain,Michigan St.
+4656,2026,57,4,22,Martez Crain,Duke
+4657,2026,58,4,22,Martez Crain,Arizona
+4658,2026,59,4,22,Martez Crain,Miami OH
+4659,2026,60,4,22,Martez Crain,Houston
+4660,2026,61,5,22,Martez Crain,Duke
+4661,2026,62,5,22,Martez Crain,Arizona
+4662,2026,63,6,22,Martez Crain,Duke
+4663,2026,1,1,23,Michael Trevarrow,Duke
+4664,2026,2,1,23,Michael Trevarrow,Arizona
+4665,2026,3,1,23,Michael Trevarrow,Michigan
+4666,2026,4,1,23,Michael Trevarrow,Florida
+4667,2026,5,1,23,Michael Trevarrow,Houston
+4668,2026,6,1,23,Michael Trevarrow,Iowa St.
+4669,2026,7,1,23,Michael Trevarrow,Purdue
+4670,2026,8,1,23,Michael Trevarrow,Connecticut
+4671,2026,9,1,23,Michael Trevarrow,Michigan St.
+4672,2026,10,1,23,Michael Trevarrow,Gonzaga
+4673,2026,11,1,23,Michael Trevarrow,Virginia
+4674,2026,12,1,23,Michael Trevarrow,Illinois
+4675,2026,13,1,23,Michael Trevarrow,Nebraska
+4676,2026,14,1,23,Michael Trevarrow,Alabama
+4677,2026,15,1,23,Michael Trevarrow,Arkansas
+4678,2026,16,1,23,Michael Trevarrow,Kansas
+4679,2026,17,1,23,Michael Trevarrow,St. John's
+4680,2026,18,1,23,Michael Trevarrow,Wisconsin
+4681,2026,19,1,23,Michael Trevarrow,Texas Tech
+4682,2026,20,1,23,Michael Trevarrow,Vanderbilt
+4683,2026,21,1,23,Michael Trevarrow,North Carolina
+4684,2026,22,1,23,Michael Trevarrow,Tennessee
+4685,2026,23,1,23,Michael Trevarrow,BYU
+4686,2026,24,1,23,Michael Trevarrow,Louisville
+4687,2026,25,1,23,Michael Trevarrow,UCF
+4688,2026,26,1,23,Michael Trevarrow,Missouri
+4689,2026,27,1,23,Michael Trevarrow,Kentucky
+4690,2026,28,1,23,Michael Trevarrow,Saint Mary's
+4691,2026,29,1,23,Michael Trevarrow,Clemson
+4692,2026,30,1,23,Michael Trevarrow,Georgia
+4693,2026,31,1,23,Michael Trevarrow,Villanova
+4694,2026,32,1,23,Michael Trevarrow,Ohio St.
+4695,2026,33,2,23,Michael Trevarrow,Duke
+4696,2026,34,2,23,Michael Trevarrow,Arizona
+4697,2026,35,2,23,Michael Trevarrow,Michigan
+4698,2026,36,2,23,Michael Trevarrow,Florida
+4699,2026,37,2,23,Michael Trevarrow,Houston
+4700,2026,38,2,23,Michael Trevarrow,Iowa St.
+4701,2026,39,2,23,Michael Trevarrow,Purdue
+4702,2026,40,2,23,Michael Trevarrow,Connecticut
+4703,2026,41,2,23,Michael Trevarrow,Michigan St.
+4704,2026,42,2,23,Michael Trevarrow,Gonzaga
+4705,2026,43,2,23,Michael Trevarrow,Virginia
+4706,2026,44,2,23,Michael Trevarrow,Illinois
+4707,2026,45,2,23,Michael Trevarrow,Vanderbilt
+4708,2026,46,2,23,Michael Trevarrow,Texas Tech
+4709,2026,47,2,23,Michael Trevarrow,Arkansas
+4710,2026,48,2,23,Michael Trevarrow,Kansas
+4711,2026,49,3,23,Michael Trevarrow,Duke
+4712,2026,50,3,23,Michael Trevarrow,Arizona
+4713,2026,51,3,23,Michael Trevarrow,Michigan
+4714,2026,52,3,23,Michael Trevarrow,Florida
+4715,2026,53,3,23,Michael Trevarrow,Houston
+4716,2026,54,3,23,Michael Trevarrow,Virginia
+4717,2026,55,3,23,Michael Trevarrow,Gonzaga
+4718,2026,56,3,23,Michael Trevarrow,Connecticut
+4719,2026,57,4,23,Michael Trevarrow,Connecticut
+4720,2026,58,4,23,Michael Trevarrow,Arizona
+4721,2026,59,4,23,Michael Trevarrow,Michigan
+4722,2026,60,4,23,Michael Trevarrow,Florida
+4723,2026,61,5,23,Michael Trevarrow,Florida
+4724,2026,62,5,23,Michael Trevarrow,Arizona
+4725,2026,63,6,23,Michael Trevarrow,Arizona
+4726,2026,1,1,24,Norma Sanchez,Duke
+4727,2026,2,1,24,Norma Sanchez,Arizona
+4728,2026,3,1,24,Norma Sanchez,Michigan
+4729,2026,4,1,24,Norma Sanchez,Florida
+4730,2026,5,1,24,Norma Sanchez,Houston
+4731,2026,6,1,24,Norma Sanchez,Iowa St.
+4732,2026,7,1,24,Norma Sanchez,Purdue
+4733,2026,8,1,24,Norma Sanchez,Connecticut
+4734,2026,9,1,24,Norma Sanchez,Michigan St.
+4735,2026,10,1,24,Norma Sanchez,Gonzaga
+4736,2026,11,1,24,Norma Sanchez,Virginia
+4737,2026,12,1,24,Norma Sanchez,Illinois
+4738,2026,13,1,24,Norma Sanchez,Nebraska
+4739,2026,14,1,24,Norma Sanchez,Alabama
+4740,2026,15,1,24,Norma Sanchez,Arkansas
+4741,2026,16,1,24,Norma Sanchez,Kansas
+4742,2026,17,1,24,Norma Sanchez,Northern Iowa
+4743,2026,18,1,24,Norma Sanchez,Wisconsin
+4744,2026,19,1,24,Norma Sanchez,Texas Tech
+4745,2026,20,1,24,Norma Sanchez,Vanderbilt
+4746,2026,21,1,24,Norma Sanchez,VCU
+4747,2026,22,1,24,Norma Sanchez,Tennessee
+4748,2026,23,1,24,Norma Sanchez,BYU
+4749,2026,24,1,24,Norma Sanchez,South Florida
+4750,2026,25,1,24,Norma Sanchez,UCLA
+4751,2026,26,1,24,Norma Sanchez,Miami FL
+4752,2026,27,1,24,Norma Sanchez,Santa Clara
+4753,2026,28,1,24,Norma Sanchez,Saint Mary's
+4754,2026,29,1,24,Norma Sanchez,Iowa
+4755,2026,30,1,24,Norma Sanchez,Saint Louis
+4756,2026,31,1,24,Norma Sanchez,Utah St.
+4757,2026,32,1,24,Norma Sanchez,Ohio St.
+4758,2026,33,2,24,Norma Sanchez,Duke
+4759,2026,34,2,24,Norma Sanchez,Arizona
+4760,2026,35,2,24,Norma Sanchez,Michigan
+4761,2026,36,2,24,Norma Sanchez,Florida
+4762,2026,37,2,24,Norma Sanchez,Houston
+4763,2026,38,2,24,Norma Sanchez,Iowa St.
+4764,2026,39,2,24,Norma Sanchez,Purdue
+4765,2026,40,2,24,Norma Sanchez,Connecticut
+4766,2026,41,2,24,Norma Sanchez,Michigan St.
+4767,2026,42,2,24,Norma Sanchez,Gonzaga
+4768,2026,43,2,24,Norma Sanchez,Tennessee
+4769,2026,44,2,24,Norma Sanchez,Illinois
+4770,2026,45,2,24,Norma Sanchez,Nebraska
+4771,2026,46,2,24,Norma Sanchez,Alabama
+4772,2026,47,2,24,Norma Sanchez,Wisconsin
+4773,2026,48,2,24,Norma Sanchez,Northern Iowa
+4774,2026,49,3,24,Norma Sanchez,Duke
+4775,2026,50,3,24,Norma Sanchez,Arizona
+4776,2026,51,3,24,Norma Sanchez,Michigan
+4777,2026,52,3,24,Norma Sanchez,Florida
+4778,2026,53,3,24,Norma Sanchez,Houston
+4779,2026,54,3,24,Norma Sanchez,Iowa St.
+4780,2026,55,3,24,Norma Sanchez,Gonzaga
+4781,2026,56,3,24,Norma Sanchez,Connecticut
+4782,2026,57,4,24,Norma Sanchez,Duke
+4783,2026,58,4,24,Norma Sanchez,Arizona
+4784,2026,59,4,24,Norma Sanchez,Iowa St.
+4785,2026,60,4,24,Norma Sanchez,Florida
+4786,2026,61,5,24,Norma Sanchez,Duke
+4787,2026,62,5,24,Norma Sanchez,Arizona
+4788,2026,63,6,24,Norma Sanchez,Duke
+4789,2026,1,1,25,Robert Tisdel,Duke
+4790,2026,2,1,25,Robert Tisdel,Arizona
+4791,2026,3,1,25,Robert Tisdel,Michigan
+4792,2026,4,1,25,Robert Tisdel,Florida
+4793,2026,5,1,25,Robert Tisdel,Houston
+4794,2026,6,1,25,Robert Tisdel,Iowa St.
+4795,2026,7,1,25,Robert Tisdel,Purdue
+4796,2026,8,1,25,Robert Tisdel,Connecticut
+4797,2026,9,1,25,Robert Tisdel,Michigan St.
+4798,2026,10,1,25,Robert Tisdel,Gonzaga
+4799,2026,11,1,25,Robert Tisdel,Virginia
+4800,2026,12,1,25,Robert Tisdel,Illinois
+4801,2026,13,1,25,Robert Tisdel,Troy
+4802,2026,14,1,25,Robert Tisdel,Alabama
+4803,2026,15,1,25,Robert Tisdel,Arkansas
+4804,2026,16,1,25,Robert Tisdel,Cal Baptist
+4805,2026,17,1,25,Robert Tisdel,St. John's
+4806,2026,18,1,25,Robert Tisdel,Wisconsin
+4807,2026,19,1,25,Robert Tisdel,Akron
+4808,2026,20,1,25,Robert Tisdel,Vanderbilt
+4809,2026,21,1,25,Robert Tisdel,VCU
+4810,2026,22,1,25,Robert Tisdel,Tennessee
+4811,2026,23,1,25,Robert Tisdel,BYU
+4812,2026,24,1,25,Robert Tisdel,South Florida
+4813,2026,25,1,25,Robert Tisdel,UCF
+4814,2026,26,1,25,Robert Tisdel,Missouri
+4815,2026,27,1,25,Robert Tisdel,Kentucky
+4816,2026,28,1,25,Robert Tisdel,Texas A&M
+4817,2026,29,1,25,Robert Tisdel,Clemson
+4818,2026,30,1,25,Robert Tisdel,Saint Louis
+4819,2026,31,1,25,Robert Tisdel,Villanova
+4820,2026,32,1,25,Robert Tisdel,TCU
+4821,2026,33,2,25,Robert Tisdel,Duke
+4822,2026,34,2,25,Robert Tisdel,Arizona
+4823,2026,35,2,25,Robert Tisdel,Michigan
+4824,2026,36,2,25,Robert Tisdel,Florida
+4825,2026,37,2,25,Robert Tisdel,Houston
+4826,2026,38,2,25,Robert Tisdel,Kentucky
+4827,2026,39,2,25,Robert Tisdel,Purdue
+4828,2026,40,2,25,Robert Tisdel,Connecticut
+4829,2026,41,2,25,Robert Tisdel,Michigan St.
+4830,2026,42,2,25,Robert Tisdel,Gonzaga
+4831,2026,43,2,25,Robert Tisdel,Virginia
+4832,2026,44,2,25,Robert Tisdel,Illinois
+4833,2026,45,2,25,Robert Tisdel,Vanderbilt
+4834,2026,46,2,25,Robert Tisdel,Alabama
+4835,2026,47,2,25,Robert Tisdel,Arkansas
+4836,2026,48,2,25,Robert Tisdel,St. John's
+4837,2026,49,3,25,Robert Tisdel,Duke
+4838,2026,50,3,25,Robert Tisdel,Arizona
+4839,2026,51,3,25,Robert Tisdel,Michigan
+4840,2026,52,3,25,Robert Tisdel,Florida
+4841,2026,53,3,25,Robert Tisdel,Houston
+4842,2026,54,3,25,Robert Tisdel,Virginia
+4843,2026,55,3,25,Robert Tisdel,Gonzaga
+4844,2026,56,3,25,Robert Tisdel,Michigan St.
+4845,2026,57,4,25,Robert Tisdel,Duke
+4846,2026,58,4,25,Robert Tisdel,Arizona
+4847,2026,59,4,25,Robert Tisdel,Michigan
+4848,2026,60,4,25,Robert Tisdel,Florida
+4849,2026,61,5,25,Robert Tisdel,Duke
+4850,2026,62,5,25,Robert Tisdel,Arizona
+4851,2026,63,6,25,Robert Tisdel,Arizona
+4852,2026,1,1,26,Roger Nimps,Duke
+4853,2026,2,1,26,Roger Nimps,Arizona
+4854,2026,3,1,26,Roger Nimps,Michigan
+4855,2026,4,1,26,Roger Nimps,Florida
+4856,2026,5,1,26,Roger Nimps,Houston
+4857,2026,6,1,26,Roger Nimps,Iowa St.
+4858,2026,7,1,26,Roger Nimps,Purdue
+4859,2026,8,1,26,Roger Nimps,Connecticut
+4860,2026,9,1,26,Roger Nimps,Michigan St.
+4861,2026,10,1,26,Roger Nimps,Gonzaga
+4862,2026,11,1,26,Roger Nimps,Virginia
+4863,2026,12,1,26,Roger Nimps,Illinois
+4864,2026,13,1,26,Roger Nimps,Nebraska
+4865,2026,14,1,26,Roger Nimps,Alabama
+4866,2026,15,1,26,Roger Nimps,Arkansas
+4867,2026,16,1,26,Roger Nimps,Kansas
+4868,2026,17,1,26,Roger Nimps,St. John's
+4869,2026,18,1,26,Roger Nimps,Wisconsin
+4870,2026,19,1,26,Roger Nimps,Texas Tech
+4871,2026,20,1,26,Roger Nimps,Vanderbilt
+4872,2026,21,1,26,Roger Nimps,North Carolina
+4873,2026,22,1,26,Roger Nimps,Tennessee
+4874,2026,23,1,26,Roger Nimps,Texas
+4875,2026,24,1,26,Roger Nimps,South Florida
+4876,2026,25,1,26,Roger Nimps,UCLA
+4877,2026,26,1,26,Roger Nimps,Miami FL
+4878,2026,27,1,26,Roger Nimps,Kentucky
+4879,2026,28,1,26,Roger Nimps,Saint Mary's
+4880,2026,29,1,26,Roger Nimps,Iowa
+4881,2026,30,1,26,Roger Nimps,Saint Louis
+4882,2026,31,1,26,Roger Nimps,Utah St.
+4883,2026,32,1,26,Roger Nimps,Ohio St.
+4884,2026,33,2,26,Roger Nimps,Duke
+4885,2026,34,2,26,Roger Nimps,Arizona
+4886,2026,35,2,26,Roger Nimps,Michigan
+4887,2026,36,2,26,Roger Nimps,Florida
+4888,2026,37,2,26,Roger Nimps,Houston
+4889,2026,38,2,26,Roger Nimps,Iowa St.
+4890,2026,39,2,26,Roger Nimps,Purdue
+4891,2026,40,2,26,Roger Nimps,UCLA
+4892,2026,41,2,26,Roger Nimps,Michigan St.
+4893,2026,42,2,26,Roger Nimps,Gonzaga
+4894,2026,43,2,26,Roger Nimps,Virginia
+4895,2026,44,2,26,Roger Nimps,Illinois
+4896,2026,45,2,26,Roger Nimps,Vanderbilt
+4897,2026,46,2,26,Roger Nimps,Texas Tech
+4898,2026,47,2,26,Roger Nimps,Wisconsin
+4899,2026,48,2,26,Roger Nimps,Kansas
+4900,2026,49,3,26,Roger Nimps,Duke
+4901,2026,50,3,26,Roger Nimps,Arizona
+4902,2026,51,3,26,Roger Nimps,Michigan
+4903,2026,52,3,26,Roger Nimps,Florida
+4904,2026,53,3,26,Roger Nimps,Illinois
+4905,2026,54,3,26,Roger Nimps,Iowa St.
+4906,2026,55,3,26,Roger Nimps,Purdue
+4907,2026,56,3,26,Roger Nimps,Michigan St.
+4908,2026,57,4,26,Roger Nimps,Michigan St.
+4909,2026,58,4,26,Roger Nimps,Purdue
+4910,2026,59,4,26,Roger Nimps,Michigan
+4911,2026,60,4,26,Roger Nimps,Illinois
+4912,2026,61,5,26,Roger Nimps,Illinois
+4913,2026,62,5,26,Roger Nimps,Michigan
+4914,2026,63,6,26,Roger Nimps,Illinois
+4915,2026,1,1,27,Ronni Nimps,Duke
+4916,2026,2,1,27,Ronni Nimps,Arizona
+4917,2026,3,1,27,Ronni Nimps,Michigan
+4918,2026,4,1,27,Ronni Nimps,Florida
+4919,2026,5,1,27,Ronni Nimps,Houston
+4920,2026,6,1,27,Ronni Nimps,Iowa St.
+4921,2026,7,1,27,Ronni Nimps,Purdue
+4922,2026,8,1,27,Ronni Nimps,Connecticut
+4923,2026,9,1,27,Ronni Nimps,Michigan St.
+4924,2026,10,1,27,Ronni Nimps,Gonzaga
+4925,2026,11,1,27,Ronni Nimps,Virginia
+4926,2026,12,1,27,Ronni Nimps,Illinois
+4927,2026,13,1,27,Ronni Nimps,Nebraska
+4928,2026,14,1,27,Ronni Nimps,Hofstra
+4929,2026,15,1,27,Ronni Nimps,Hawaii
+4930,2026,16,1,27,Ronni Nimps,Kansas
+4931,2026,17,1,27,Ronni Nimps,St. John's
+4932,2026,18,1,27,Ronni Nimps,Wisconsin
+4933,2026,19,1,27,Ronni Nimps,Texas Tech
+4934,2026,20,1,27,Ronni Nimps,Vanderbilt
+4935,2026,21,1,27,Ronni Nimps,North Carolina
+4936,2026,22,1,27,Ronni Nimps,Tennessee
+4937,2026,23,1,27,Ronni Nimps,Texas
+4938,2026,24,1,27,Ronni Nimps,Louisville
+4939,2026,25,1,27,Ronni Nimps,UCLA
+4940,2026,26,1,27,Ronni Nimps,Missouri
+4941,2026,27,1,27,Ronni Nimps,Kentucky
+4942,2026,28,1,27,Ronni Nimps,Texas A&M
+4943,2026,29,1,27,Ronni Nimps,Clemson
+4944,2026,30,1,27,Ronni Nimps,Saint Louis
+4945,2026,31,1,27,Ronni Nimps,Villanova
+4946,2026,32,1,27,Ronni Nimps,Ohio St.
+4947,2026,33,2,27,Ronni Nimps,Duke
+4948,2026,34,2,27,Ronni Nimps,Arizona
+4949,2026,35,2,27,Ronni Nimps,Michigan
+4950,2026,36,2,27,Ronni Nimps,Florida
+4951,2026,37,2,27,Ronni Nimps,Houston
+4952,2026,38,2,27,Ronni Nimps,Kentucky
+4953,2026,39,2,27,Ronni Nimps,Purdue
+4954,2026,40,2,27,Ronni Nimps,Connecticut
+4955,2026,41,2,27,Ronni Nimps,Louisville
+4956,2026,42,2,27,Ronni Nimps,Gonzaga
+4957,2026,43,2,27,Ronni Nimps,Virginia
+4958,2026,44,2,27,Ronni Nimps,North Carolina
+4959,2026,45,2,27,Ronni Nimps,Nebraska
+4960,2026,46,2,27,Ronni Nimps,Texas Tech
+4961,2026,47,2,27,Ronni Nimps,Wisconsin
+4962,2026,48,2,27,Ronni Nimps,Kansas
+4963,2026,49,3,27,Ronni Nimps,Kansas
+4964,2026,50,3,27,Ronni Nimps,Arizona
+4965,2026,51,3,27,Ronni Nimps,Texas Tech
+4966,2026,52,3,27,Ronni Nimps,Florida
+4967,2026,53,3,27,Ronni Nimps,North Carolina
+4968,2026,54,3,27,Ronni Nimps,Virginia
+4969,2026,55,3,27,Ronni Nimps,Gonzaga
+4970,2026,56,3,27,Ronni Nimps,Louisville
+4971,2026,57,4,27,Ronni Nimps,Louisville
+4972,2026,58,4,27,Ronni Nimps,Gonzaga
+4973,2026,59,4,27,Ronni Nimps,Virginia
+4974,2026,60,4,27,Ronni Nimps,North Carolina
+4975,2026,61,5,27,Ronni Nimps,Louisville
+4976,2026,62,5,27,Ronni Nimps,Virginia
+4977,2026,63,6,27,Ronni Nimps,Louisville
+4978,2026,1,1,28,Sean Fester,Duke
+4979,2026,2,1,28,Sean Fester,Arizona
+4980,2026,3,1,28,Sean Fester,Michigan
+4981,2026,4,1,28,Sean Fester,Florida
+4982,2026,5,1,28,Sean Fester,Houston
+4983,2026,6,1,28,Sean Fester,Iowa St.
+4984,2026,7,1,28,Sean Fester,Purdue
+4985,2026,8,1,28,Sean Fester,Connecticut
+4986,2026,9,1,28,Sean Fester,Michigan St.
+4987,2026,10,1,28,Sean Fester,Gonzaga
+4988,2026,11,1,28,Sean Fester,Virginia
+4989,2026,12,1,28,Sean Fester,Illinois
+4990,2026,13,1,28,Sean Fester,Nebraska
+4991,2026,14,1,28,Sean Fester,Alabama
+4992,2026,15,1,28,Sean Fester,Arkansas
+4993,2026,16,1,28,Sean Fester,Kansas
+4994,2026,17,1,28,Sean Fester,St. John's
+4995,2026,18,1,28,Sean Fester,Wisconsin
+4996,2026,19,1,28,Sean Fester,Texas Tech
+4997,2026,20,1,28,Sean Fester,Vanderbilt
+4998,2026,21,1,28,Sean Fester,North Carolina
+4999,2026,22,1,28,Sean Fester,Tennessee
+5000,2026,23,1,28,Sean Fester,BYU
+5001,2026,24,1,28,Sean Fester,South Florida
+5002,2026,25,1,28,Sean Fester,UCLA
+5003,2026,26,1,28,Sean Fester,Missouri
+5004,2026,27,1,28,Sean Fester,Kentucky
+5005,2026,28,1,28,Sean Fester,Texas A&M
+5006,2026,29,1,28,Sean Fester,Iowa
+5007,2026,30,1,28,Sean Fester,Georgia
+5008,2026,31,1,28,Sean Fester,Utah St.
+5009,2026,32,1,28,Sean Fester,TCU
+5010,2026,33,2,28,Sean Fester,Duke
+5011,2026,34,2,28,Sean Fester,Arizona
+5012,2026,35,2,28,Sean Fester,Michigan
+5013,2026,36,2,28,Sean Fester,Florida
+5014,2026,37,2,28,Sean Fester,Houston
+5015,2026,38,2,28,Sean Fester,Iowa St.
+5016,2026,39,2,28,Sean Fester,Purdue
+5017,2026,40,2,28,Sean Fester,Connecticut
+5018,2026,41,2,28,Sean Fester,Michigan St.
+5019,2026,42,2,28,Sean Fester,BYU
+5020,2026,43,2,28,Sean Fester,Tennessee
+5021,2026,44,2,28,Sean Fester,Illinois
+5022,2026,45,2,28,Sean Fester,Nebraska
+5023,2026,46,2,28,Sean Fester,Texas Tech
+5024,2026,47,2,28,Sean Fester,Arkansas
+5025,2026,48,2,28,Sean Fester,Kansas
+5026,2026,49,3,28,Sean Fester,Duke
+5027,2026,50,3,28,Sean Fester,Arizona
+5028,2026,51,3,28,Sean Fester,Michigan
+5029,2026,52,3,28,Sean Fester,Florida
+5030,2026,53,3,28,Sean Fester,Illinois
+5031,2026,54,3,28,Sean Fester,Iowa St.
+5032,2026,55,3,28,Sean Fester,Purdue
+5033,2026,56,3,28,Sean Fester,Michigan St.
+5034,2026,57,4,28,Sean Fester,Duke
+5035,2026,58,4,28,Sean Fester,Arizona
+5036,2026,59,4,28,Sean Fester,Michigan
+5037,2026,60,4,28,Sean Fester,Florida
+5038,2026,61,5,28,Sean Fester,Duke
+5039,2026,62,5,28,Sean Fester,Arizona
+5040,2026,63,6,28,Sean Fester,Arizona
+5041,2026,1,1,29,Steve Hemmer,Duke
+5042,2026,2,1,29,Steve Hemmer,Arizona
+5043,2026,3,1,29,Steve Hemmer,Michigan
+5044,2026,4,1,29,Steve Hemmer,Florida
+5045,2026,5,1,29,Steve Hemmer,Houston
+5046,2026,6,1,29,Steve Hemmer,Iowa St.
+5047,2026,7,1,29,Steve Hemmer,Purdue
+5048,2026,8,1,29,Steve Hemmer,Connecticut
+5049,2026,9,1,29,Steve Hemmer,Michigan St.
+5050,2026,10,1,29,Steve Hemmer,Gonzaga
+5051,2026,11,1,29,Steve Hemmer,Virginia
+5052,2026,12,1,29,Steve Hemmer,Illinois
+5053,2026,13,1,29,Steve Hemmer,Nebraska
+5054,2026,14,1,29,Steve Hemmer,Alabama
+5055,2026,15,1,29,Steve Hemmer,Arkansas
+5056,2026,16,1,29,Steve Hemmer,Kansas
+5057,2026,17,1,29,Steve Hemmer,St. John's
+5058,2026,18,1,29,Steve Hemmer,Wisconsin
+5059,2026,19,1,29,Steve Hemmer,Texas Tech
+5060,2026,20,1,29,Steve Hemmer,Vanderbilt
+5061,2026,21,1,29,Steve Hemmer,North Carolina
+5062,2026,22,1,29,Steve Hemmer,Miami OH
+5063,2026,23,1,29,Steve Hemmer,BYU
+5064,2026,24,1,29,Steve Hemmer,Louisville
+5065,2026,25,1,29,Steve Hemmer,UCF
+5066,2026,26,1,29,Steve Hemmer,Miami FL
+5067,2026,27,1,29,Steve Hemmer,Kentucky
+5068,2026,28,1,29,Steve Hemmer,Saint Mary's
+5069,2026,29,1,29,Steve Hemmer,Clemson
+5070,2026,30,1,29,Steve Hemmer,Saint Louis
+5071,2026,31,1,29,Steve Hemmer,Utah St.
+5072,2026,32,1,29,Steve Hemmer,Ohio St.
+5073,2026,33,2,29,Steve Hemmer,Duke
+5074,2026,34,2,29,Steve Hemmer,Arizona
+5075,2026,35,2,29,Steve Hemmer,Michigan
+5076,2026,36,2,29,Steve Hemmer,Florida
+5077,2026,37,2,29,Steve Hemmer,Houston
+5078,2026,38,2,29,Steve Hemmer,Iowa St.
+5079,2026,39,2,29,Steve Hemmer,Purdue
+5080,2026,40,2,29,Steve Hemmer,Connecticut
+5081,2026,41,2,29,Steve Hemmer,Michigan St.
+5082,2026,42,2,29,Steve Hemmer,Gonzaga
+5083,2026,43,2,29,Steve Hemmer,Virginia
+5084,2026,44,2,29,Steve Hemmer,Illinois
+5085,2026,45,2,29,Steve Hemmer,Vanderbilt
+5086,2026,46,2,29,Steve Hemmer,Texas Tech
+5087,2026,47,2,29,Steve Hemmer,Wisconsin
+5088,2026,48,2,29,Steve Hemmer,Kansas
+5089,2026,49,3,29,Steve Hemmer,Duke
+5090,2026,50,3,29,Steve Hemmer,Arizona
+5091,2026,51,3,29,Steve Hemmer,Michigan
+5092,2026,52,3,29,Steve Hemmer,Florida
+5093,2026,53,3,29,Steve Hemmer,Illinois
+5094,2026,54,3,29,Steve Hemmer,Iowa St.
+5095,2026,55,3,29,Steve Hemmer,Gonzaga
+5096,2026,56,3,29,Steve Hemmer,Michigan St.
+5097,2026,57,4,29,Steve Hemmer,Duke
+5098,2026,58,4,29,Steve Hemmer,Gonzaga
+5099,2026,59,4,29,Steve Hemmer,Michigan
+5100,2026,60,4,29,Steve Hemmer,Florida
+5101,2026,61,5,29,Steve Hemmer,Duke
+5102,2026,62,5,29,Steve Hemmer,Michigan
+5103,2026,63,6,29,Steve Hemmer,Michigan
+5104,2026,1,1,30,Tom Nimps,Duke
+5105,2026,2,1,30,Tom Nimps,Arizona
+5106,2026,3,1,30,Tom Nimps,Michigan
+5107,2026,4,1,30,Tom Nimps,Florida
+5108,2026,5,1,30,Tom Nimps,Houston
+5109,2026,6,1,30,Tom Nimps,Iowa St.
+5110,2026,7,1,30,Tom Nimps,Purdue
+5111,2026,8,1,30,Tom Nimps,Connecticut
+5112,2026,9,1,30,Tom Nimps,Michigan St.
+5113,2026,10,1,30,Tom Nimps,Gonzaga
+5114,2026,11,1,30,Tom Nimps,Virginia
+5115,2026,12,1,30,Tom Nimps,Illinois
+5116,2026,13,1,30,Tom Nimps,Troy
+5117,2026,14,1,30,Tom Nimps,Alabama
+5118,2026,15,1,30,Tom Nimps,Arkansas
+5119,2026,16,1,30,Tom Nimps,Kansas
+5120,2026,17,1,30,Tom Nimps,Northern Iowa
+5121,2026,18,1,30,Tom Nimps,Wisconsin
+5122,2026,19,1,30,Tom Nimps,Texas Tech
+5123,2026,20,1,30,Tom Nimps,McNeese
+5124,2026,21,1,30,Tom Nimps,North Carolina
+5125,2026,22,1,30,Tom Nimps,Miami OH
+5126,2026,23,1,30,Tom Nimps,Texas
+5127,2026,24,1,30,Tom Nimps,South Florida
+5128,2026,25,1,30,Tom Nimps,UCF
+5129,2026,26,1,30,Tom Nimps,Missouri
+5130,2026,27,1,30,Tom Nimps,Kentucky
+5131,2026,28,1,30,Tom Nimps,Saint Mary's
+5132,2026,29,1,30,Tom Nimps,Clemson
+5133,2026,30,1,30,Tom Nimps,Saint Louis
+5134,2026,31,1,30,Tom Nimps,Villanova
+5135,2026,32,1,30,Tom Nimps,TCU
+5136,2026,33,2,30,Tom Nimps,Duke
+5137,2026,34,2,30,Tom Nimps,Arizona
+5138,2026,35,2,30,Tom Nimps,Michigan
+5139,2026,36,2,30,Tom Nimps,Florida
+5140,2026,37,2,30,Tom Nimps,Houston
+5141,2026,38,2,30,Tom Nimps,Iowa St.
+5142,2026,39,2,30,Tom Nimps,Purdue
+5143,2026,40,2,30,Tom Nimps,Connecticut
+5144,2026,41,2,30,Tom Nimps,Michigan St.
+5145,2026,42,2,30,Tom Nimps,Texas
+5146,2026,43,2,30,Tom Nimps,Virginia
+5147,2026,44,2,30,Tom Nimps,Illinois
+5148,2026,45,2,30,Tom Nimps,McNeese
+5149,2026,46,2,30,Tom Nimps,Texas Tech
+5150,2026,47,2,30,Tom Nimps,Arkansas
+5151,2026,48,2,30,Tom Nimps,Kansas
+5152,2026,49,3,30,Tom Nimps,Duke
+5153,2026,50,3,30,Tom Nimps,Arkansas
+5154,2026,51,3,30,Tom Nimps,Michigan
+5155,2026,52,3,30,Tom Nimps,Florida
+5156,2026,53,3,30,Tom Nimps,Houston
+5157,2026,54,3,30,Tom Nimps,Virginia
+5158,2026,55,3,30,Tom Nimps,Purdue
+5159,2026,56,3,30,Tom Nimps,Connecticut
+5160,2026,57,4,30,Tom Nimps,Duke
+5161,2026,58,4,30,Tom Nimps,Purdue
+5162,2026,59,4,30,Tom Nimps,Michigan
+5163,2026,60,4,30,Tom Nimps,Florida
+5164,2026,61,5,30,Tom Nimps,Duke
+5165,2026,62,5,30,Tom Nimps,Purdue
+5166,2026,63,6,30,Tom Nimps,Duke
