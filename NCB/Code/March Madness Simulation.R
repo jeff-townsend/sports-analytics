@@ -7,13 +7,13 @@ library(ggthemes)
 #r1.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r1d1.csv")
 #r1.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r1d2.csv")
 #r2.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r2d1.csv")
-r2.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r2d2.csv")
-#r3.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2025_r3d1.csv")
-#r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2025_r3d2.csv")
+#r2.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r2d2.csv")
+#r3.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r3d1.csv")
+r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r3d2.csv")
 
 # add pyth
 ratings <-
-  r2.d2 %>%
+  r3.d2 %>%
   mutate(raw.pyth = OE^11 / (OE^11 + DE^11), # using 11 because it seems to match what KP does
          adj.pyth = AdjOE^11 / (AdjOE^11 + AdjDE^11))
 
@@ -60,8 +60,8 @@ matchups.tmp <-
 
 ## check game.id
 matchups.tmp %>%
-  filter(team_a == "Arizona",
-         team_b == "Utah St.") %>%
+  filter(team_a == "Houston",
+         team_b == "Illinois") %>%
   select(matchup_id)
 
 matchups <-
@@ -160,7 +160,21 @@ matchups <-
          win_prob_a = ifelse(matchup_id == 52, 0, win_prob_a), # Iowa over Florida
          win_prob_b = ifelse(matchup_id == 52, 1, win_prob_b),
          win_prob_a = ifelse(matchup_id == 50, 1, win_prob_a), # Arizona over Utah St.
-         win_prob_b = ifelse(matchup_id == 50, 0, win_prob_b)
+         win_prob_b = ifelse(matchup_id == 50, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 40, 1, win_prob_a), # Connecticut over UCLA
+         win_prob_b = ifelse(matchup_id == 40, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 46, 1, win_prob_a), # Alabama over Texas Tech
+         win_prob_b = ifelse(matchup_id == 46, 0, win_prob_b),
+         ##### S16 Day 1
+         win_prob_a = ifelse(matchup_id == 119, 1, win_prob_a), # Purdue over Texas
+         win_prob_b = ifelse(matchup_id == 119, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 164, 1, win_prob_a), # Iowa over Nebraska
+         win_prob_b = ifelse(matchup_id == 164, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 98, 1, win_prob_a), # Arizona over Arkansas
+         win_prob_b = ifelse(matchup_id == 98, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 101, 0, win_prob_a), # Illinois over Houston
+         win_prob_b = ifelse(matchup_id == 101, 1, win_prob_b),
+         ##### S16 Day 2
   )
 
 ## simulate tournament
@@ -294,8 +308,8 @@ standings <-
             #medal.rate = mean(won.gold + won.silver + won.bronze),
             exp_points = round(mean(total_points),0)) %>%
   ungroup() %>%
-  mutate(stage_id = 50,
-         stage = "G46-Arizona") %>%
+  mutate(stage_id = 58,
+         stage = "S16 Day 2 Update") %>%
   arrange(desc(win_rate))
 
 mean.win.rate <- mean(standings$win_rate)
