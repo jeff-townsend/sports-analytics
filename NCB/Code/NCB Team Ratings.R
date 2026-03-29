@@ -1,10 +1,10 @@
 library(tidyverse)
 library(hoopR)
 
+compute_season_ratings <- function(season) {
 # Load schedules (includes game results — great for modeling)
-schedule <- load_mbb_schedule(most_recent_mbb_season())
-
-d1_teams <- espn_mbb_teams() %>% pull(display_name)
+schedule <- suppressMessages(load_mbb_schedule(season))
+d1_teams <- suppressMessages(espn_mbb_teams(season)) %>% pull(display_name)
 
 regular_season <- schedule %>%
   filter(
@@ -275,3 +275,31 @@ team_ratings_combined <- team_summary_final_non_conf %>%
   ) %>%
   select(team, rating, rating_non_conf, rating_conf = adj_rating_conf, conference, conf_rating) %>%
   arrange(desc(rating))
+
+team_ratings_combined %>%
+  mutate(season = season)
+}
+
+# Run for all seasons
+all_seasons <- 2009:most_recent_mbb_season()
+
+progressr::with_progress({
+  all_ratings <- purrr::map_dfr(all_seasons, compute_season_ratings)
+})
+
+# Assess year-over-year correlation
+yoy_correlation <- all_ratings %>%
+  arrange(team, season) %>%
+  group_by(team) %>%
+  mutate(prior_rating = lag(rating)) %>%
+  ungroup() %>%
+  filter(!is.na(prior_rating)) %>%
+  group_by(season) %>%
+  summarise(
+    cor_with_prior = round(cor(rating, prior_rating, use = "complete.obs"), 3),
+    n_teams        = n()
+  ) %>%
+  arrange(season)
+
+print(yoy_correlation)
+with(yoy_correlation, mean(cor_with_prior))
