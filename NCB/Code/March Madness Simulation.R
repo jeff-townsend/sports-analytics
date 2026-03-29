@@ -9,11 +9,13 @@ library(ggthemes)
 #r2.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r2d1.csv")
 #r2.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r2d2.csv")
 #r3.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r3d1.csv")
-r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r3d2.csv")
+#r3.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r3d2.csv")
+#r4.d1 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r4d1.csv")
+r4.d2 <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NCB/Data/kenpom_2026_r4d2.csv")
 
 # add pyth
 ratings <-
-  r3.d2 %>%
+  r4.d2 %>%
   mutate(raw.pyth = OE^11 / (OE^11 + DE^11), # using 11 because it seems to match what KP does
          adj.pyth = AdjOE^11 / (AdjOE^11 + AdjDE^11))
 
@@ -60,8 +62,8 @@ matchups.tmp <-
 
 ## check game.id
 matchups.tmp %>%
-  filter(team_a == "Houston",
-         team_b == "Illinois") %>%
+  filter(team_a == "Arizona",
+         team_b == "Purdue") %>%
   select(matchup_id)
 
 matchups <-
@@ -175,7 +177,20 @@ matchups <-
          win_prob_a = ifelse(matchup_id == 101, 0, win_prob_a), # Illinois over Houston
          win_prob_b = ifelse(matchup_id == 101, 1, win_prob_b),
          ##### S16 Day 2
-  )
+         win_prob_a = ifelse(matchup_id == 105, 1, win_prob_a), # Duke over St. John's
+         win_prob_b = ifelse(matchup_id == 105, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 99, 1, win_prob_a), # Michigan over Alabama
+         win_prob_b = ifelse(matchup_id == 99, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 104, 1, win_prob_a), # Connecticut over Michigan St.
+         win_prob_b = ifelse(matchup_id == 104, 0, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 110, 0, win_prob_a), # Tennessee over Iowa St.
+         win_prob_b = ifelse(matchup_id == 110, 1, win_prob_b),
+         ##### E8 Day 1
+         win_prob_a = ifelse(matchup_id == 360, 0, win_prob_a), # Illinois over Iowa
+         win_prob_b = ifelse(matchup_id == 360, 1, win_prob_b),
+         win_prob_a = ifelse(matchup_id == 226, 1, win_prob_a), # Arizona over Purdue
+         win_prob_b = ifelse(matchup_id == 226, 0, win_prob_b)
+        )
 
 ## simulate tournament
 set.seed(319)
@@ -281,7 +296,7 @@ final.results <-
   rbind(r64, r32, s16, e8, f4, nc) %>%
   select(simulation_id, round_id, game_id, winner)
 
-standings <-
+bracket.results <-
   games.simulation %>%
   inner_join(rounds.import, by = "round_id") %>%
   select(simulation_id, game_id, round_id, points_per_win) %>%
@@ -292,7 +307,10 @@ standings <-
                select(entrant, game_id, selection),
              by = "game_id") %>%
   select(simulation_id, game_id, round_id, points_per_win, winner, entrant, selection) %>%
-  mutate(points_awarded = ifelse(selection == winner, points_per_win, 0)) %>%
+  mutate(points_awarded = ifelse(selection == winner, points_per_win, 0))
+
+standings <-
+  bracket.results %>%
   group_by(simulation_id, entrant) %>%
   summarize(total_points = sum(points_awarded)) %>%
   mutate(placement = rank(desc(total_points), ties.method = "random")) %>%
@@ -308,8 +326,8 @@ standings <-
             #medal.rate = mean(won.gold + won.silver + won.bronze),
             exp_points = round(mean(total_points),0)) %>%
   ungroup() %>%
-  mutate(stage_id = 58,
-         stage = "S16 Day 2 Update") %>%
+  mutate(stage_id = 66,
+         stage = "E8 Day 2 Update") %>%
   arrange(desc(win_rate))
 
 mean.win.rate <- mean(standings$win_rate)
@@ -335,3 +353,29 @@ standings.history <- rbind(standings, standings.history)
 gc()
 
 View(standings.history %>% filter(entrant == "Jeff Townsend"))
+View(entrants %>%
+       filter(game_id == 63) %>%
+       select(entrant, selection) %>%
+       inner_join(standings %>% select(entrant, win_rate), by = "entrant") %>%
+       filter(win_rate > 0) %>%
+       arrange(desc(win_rate)))
+
+##### Scenarios
+
+scenario.standings <-
+  bracket.results %>%
+  group_by(simulation_id, entrant) %>%
+  summarize(total_points = sum(points_awarded)) %>%
+  mutate(placement = rank(desc(total_points), ties.method = "random")) %>%
+  inner_join(nc, by = "simulation_id") %>%
+  select(simulation_id, placement, entrant, total_points, winner) %>%
+  rename(champion = winner) %>%
+  mutate(won_pool = ifelse(placement == 1, 1, 0)) %>%
+  group_by(champion, entrant) %>%
+  summarize(scenario_wins = sum(won_pool),
+            scenario_win_rate = mean(won_pool),
+            scenario_exp_points = round(mean(total_points),0)) %>%
+  ungroup() %>%
+  inner_join(standings %>% select(entrant, win_rate), by = "entrant") %>%
+  filter(win_rate > 0) %>%
+  arrange(champion, desc(scenario_win_rate))
