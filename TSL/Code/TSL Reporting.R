@@ -1,1 +1,10 @@
+library(readr)
+library(tidyverse)
 
+seasons <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/seasons.csv")
+teams <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/teams.csv")
+draft.costs <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/draft_costs.csv")
+draft.picks <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/draft_picks.csv")
+keepers <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/keepers.csv")
+trades <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/trades.csv")
+team.results <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/TSL/Data/team_results.csv")
