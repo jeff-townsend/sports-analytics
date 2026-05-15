@@ -1,0 +1,457 @@
+result_id,season_id,team,points
+1,1,Colorado Avalanche,82
+2,1,Manchester City,80
+3,1,Golden State Warriors,74
+4,1,Los Angeles Rams,72
+5,1,Liverpool,60
+6,1,Boston Celtics,57
+7,1,Cincinnati Bengals,52
+8,1,Tampa Bay Lightning,49
+9,1,Miami Heat,45
+10,1,Kansas City Chiefs,43
+11,1,Chelsea,40
+12,1,Tottenham,40
+13,1,Edmonton Oilers,38
+14,1,New York Rangers,38
+15,1,Florida Panthers,37
+16,1,Green Bay Packers,37
+17,1,Tennessee Titans,37
+18,1,Dallas Mavericks,37
+19,1,Phoenix Suns,35
+20,1,Tampa Bay Buccaneers,33
+21,1,Calgary Flames,32
+22,1,Carolina Hurricanes,32
+23,1,San Francisco 49ers,32
+24,1,Memphis Grizzlies,32
+25,1,Buffalo Bills,30
+26,1,Milwaukee Bucks,29
+27,1,Philadelphia 76ers,27
+28,1,Dallas Cowboys,25
+29,1,Arsenal,25
+30,1,St. Louis Blues,24
+31,1,Minnesota Wild,23
+32,1,Toronto Maple Leafs,23
+33,1,Toronto Raptors,20
+34,1,Utah Jazz,20
+35,1,Manchester United,20
+36,1,Los Angeles Kings,19
+37,1,Pittsburgh Penguins,19
+38,1,Arizona Cardinals,19
+39,1,Las Vegas Raiders,19
+40,1,Chicago Bulls,18
+41,1,Denver Nuggets,18
+42,1,New England Patriots,17
+43,1,Boston Bruins,16
+44,1,Dallas Stars,16
+45,1,West Ham,16
+46,1,Philadelphia Eagles,15
+47,1,Pittsburgh Steelers,15
+48,1,Brooklyn Nets,15
+49,1,Minnesota Timberwolves,15
+50,1,Nashville Predators,14
+51,1,Washington Capitals,14
+52,1,Leicester City,14
+53,1,Brighton,12
+54,1,Atlanta Hawks,11
+55,1,New Orleans Pelicans,11
+56,1,Cleveland Cavaliers,10
+57,1,Los Angeles Clippers,10
+58,1,Wolves,10
+59,1,Indianapolis Colts,8
+60,1,New Orleans Saints,8
+61,1,Newcastle United,8
+62,1,New York Islanders,7
+63,1,Vegas Golden Knights,7
+64,1,Miami Dolphins,7
+65,1,Minnesota Vikings,7
+66,1,Crystal Palace,7
+67,1,Columbus Blue Jackets,6
+68,1,Vancouver Canucks,6
+69,1,Los Angeles Chargers,6
+70,1,Washington Commanders,6
+71,1,Charlotte Hornets,6
+72,1,San Antonio Spurs,6
+73,1,Brentford,6
+74,1,Buffalo Sabres,5
+75,1,Winnipeg Jets,5
+76,1,Cleveland Browns,5
+77,1,Seattle Seahawks,5
+78,1,Aston Villa,5
+79,1,Detroit Red Wings,4
+80,1,San Jose Sharks,4
+81,1,Atlanta Falcons,4
+82,1,Baltimore Ravens,4
+83,1,Los Angeles Lakers,4
+84,1,New York Knicks,4
+85,1,Southampton,4
+86,1,Anaheim Ducks,3
+87,1,Ottawa Senators,3
+88,1,Chicago Bears,3
+89,1,Denver Broncos,3
+90,1,Sacramento Kings,3
+91,1,Washington Wizards,3
+92,1,Everton,3
+93,1,Chicago Blackhawks,2
+94,1,New Jersey Devils,2
+95,1,Carolina Panthers,2
+96,1,New York Jets,2
+97,1,Indiana Pacers,2
+98,1,Portland Trail Blazers,2
+99,1,Leeds United,2
+100,1,Philadelphia Flyers,1
+101,1,Seattle Kraken,1
+102,1,Houston Texans,1
+103,1,New York Giants,1
+104,1,Detroit Pistons,1
+105,1,Oklahoma City Thunder,1
+106,1,Utah Mammoth,0
+107,1,Montreal Canadiens,0
+108,1,Detroit Lions,0
+109,1,Jacksonville Jaguars,0
+110,1,Houston Rockets,0
+111,1,Orlando Magic,0
+112,1,Burnley,0
+113,1,Norwich City,0
+114,1,Watford,0
+115,2,Vegas Golden Knights,82
+116,2,Kansas City Chiefs,82
+117,2,Denver Nuggets,80
+118,2,Manchester City,80
+119,2,Philadelphia Eagles,62
+120,2,Arsenal,60
+121,2,Miami Heat,45
+122,2,Florida Panthers,44
+123,2,San Francisco 49ers,43
+124,2,Carolina Hurricanes,42
+125,2,Boston Celtics,42
+126,2,Cincinnati Bengals,40
+127,2,Manchester United,40
+128,2,Newcastle United,40
+129,2,Dallas Stars,38
+130,2,Buffalo Bills,33
+131,2,Boston Bruins,32
+132,2,Los Angeles Lakers,30
+133,2,Milwaukee Bucks,30
+134,2,Philadelphia 76ers,29
+135,2,Edmonton Oilers,28
+136,2,New Jersey Devils,28
+137,2,Toronto Maple Leafs,28
+138,2,Colorado Avalanche,27
+139,2,Jacksonville Jaguars,27
+140,2,Memphis Grizzlies,27
+141,2,Phoenix Suns,27
+142,2,Minnesota Vikings,25
+143,2,New York Knicks,25
+144,2,Liverpool,25
+145,2,Dallas Cowboys,24
+146,2,Sacramento Kings,24
+147,2,Golden State Warriors,23
+148,2,New York Giants,22
+149,2,Tampa Bay Buccaneers,22
+150,2,Cleveland Cavaliers,22
+151,2,Seattle Kraken,21
+152,2,Los Angeles Clippers,20
+153,2,Brighton,20
+154,2,Los Angeles Kings,19
+155,2,Minnesota Wild,19
+156,2,New York Rangers,19
+157,2,Tampa Bay Lightning,19
+158,2,Los Angeles Chargers,19
+159,2,Brooklyn Nets,18
+160,2,Baltimore Ravens,17
+161,2,New York Islanders,16
+162,2,Aston Villa,16
+163,2,Miami Dolphins,15
+164,2,Seattle Seahawks,15
+165,2,Winnipeg Jets,14
+166,2,Tottenham,14
+167,2,Atlanta Hawks,13
+168,2,Minnesota Timberwolves,13
+169,2,Brentford,12
+170,2,Fulham,10
+171,2,Detroit Lions,8
+172,2,Pittsburgh Steelers,8
+173,2,New Orleans Pelicans,8
+174,2,Toronto Raptors,8
+175,2,Crystal Palace,8
+176,2,Calgary Flames,7
+177,2,Pittsburgh Penguins,7
+178,2,New England Patriots,7
+179,2,Washington Commanders,7
+180,2,Chelsea,7
+181,2,Buffalo Sabres,6
+182,2,Nashville Predators,6
+183,2,Green Bay Packers,6
+184,2,New York Jets,6
+185,2,Chicago Bulls,6
+186,2,Oklahoma City Thunder,6
+187,2,Wolves,6
+188,2,Ottawa Senators,5
+189,2,Vancouver Canucks,5
+190,2,Carolina Panthers,5
+191,2,Tennessee Titans,5
+192,2,West Ham,5
+193,2,Detroit Red Wings,4
+194,2,St. Louis Blues,4
+195,2,Cleveland Browns,4
+196,2,New Orleans Saints,4
+197,2,Dallas Mavericks,4
+198,2,Indiana Pacers,4
+199,2,Bournemouth,4
+200,2,Utah Mammoth,3
+201,2,Washington Capitals,3
+202,2,Atlanta Falcons,3
+203,2,Las Vegas Raiders,3
+204,2,Utah Jazz,3
+205,2,Washington Wizards,3
+206,2,Nottingham Forest,3
+207,2,Philadelphia Flyers,2
+208,2,San Jose Sharks,2
+209,2,Denver Broncos,2
+210,2,Los Angeles Rams,2
+211,2,Orlando Magic,2
+212,2,Portland Trail Blazers,2
+213,2,Everton,2
+214,2,Chicago Blackhawks,1
+215,2,Montreal Canadiens,1
+216,2,Arizona Cardinals,1
+217,2,Indianapolis Colts,1
+218,2,Charlotte Hornets,1
+219,2,Houston Rockets,1
+220,2,Anaheim Ducks,0
+221,2,Columbus Blue Jackets,0
+222,2,Chicago Bears,0
+223,2,Houston Texans,0
+224,2,Detroit Pistons,0
+225,2,San Antonio Spurs,0
+226,2,Leeds United,0
+227,2,Leicester City,0
+228,2,Southampton,0
+229,3,Manchester City,80
+230,3,Boston Celtics,80
+231,3,Florida Panthers,77
+232,3,Kansas City Chiefs,75
+233,3,San Francisco 49ers,62
+234,3,Arsenal,60
+235,3,Edmonton Oilers,53
+236,3,Dallas Mavericks,50
+237,3,Baltimore Ravens,47
+238,3,New York Rangers,47
+239,3,Dallas Stars,47
+240,3,Liverpool,40
+241,3,Aston Villa,40
+242,3,Detroit Lions,40
+243,3,Minnesota Timberwolves,39
+244,3,Oklahoma City Thunder,35
+245,3,Buffalo Bills,33
+246,3,Indiana Pacers,33
+247,3,New York Knicks,32
+248,3,Denver Nuggets,32
+249,3,Vancouver Canucks,32
+250,3,Dallas Cowboys,28
+251,3,Carolina Hurricanes,28
+252,3,Boston Bruins,28
+253,3,Houston Texans,27
+254,3,Tampa Bay Buccaneers,27
+255,3,Cleveland Cavaliers,27
+256,3,Tottenham,25
+257,3,Milwaukee Bucks,24
+258,3,Colorado Avalanche,24
+259,3,Winnipeg Jets,23
+260,3,Los Angeles Clippers,22
+261,3,Chelsea,20
+262,3,Green Bay Packers,20
+263,3,Orlando Magic,20
+264,3,Cleveland Browns,19
+265,3,Philadelphia Eagles,19
+266,3,New York Islanders,19
+267,3,Toronto Maple Leafs,19
+268,3,Los Angeles Kings,19
+269,3,Phoenix Suns,18
+270,3,Miami Dolphins,17
+271,3,Los Angeles Rams,17
+272,3,Newcastle United,16
+273,3,Tampa Bay Lightning,16
+274,3,Nashville Predators,16
+275,3,Pittsburgh Steelers,15
+276,3,Philadelphia 76ers,15
+277,3,New Orleans Pelicans,15
+278,3,Manchester United,14
+279,3,Washington Capitals,14
+280,3,Vegas Golden Knights,14
+281,3,Miami Heat,13
+282,3,Los Angeles Lakers,13
+283,3,West Ham,12
+284,3,Crystal Palace,10
+285,3,Brighton,8
+286,3,Cincinnati Bengals,8
+287,3,Seattle Seahawks,8
+288,3,Chicago Bulls,8
+289,3,Sacramento Kings,8
+290,3,Bournemouth,7
+291,3,Jacksonville Jaguars,7
+292,3,New Orleans Saints,7
+293,3,Detroit Red Wings,7
+294,3,St. Louis Blues,7
+295,3,Fulham,6
+296,3,Indianapolis Colts,6
+297,3,Minnesota Vikings,6
+298,3,Atlanta Hawks,6
+299,3,Golden State Warriors,6
+300,3,Pittsburgh Penguins,6
+301,3,Minnesota Wild,6
+302,3,Wolves,5
+303,3,Las Vegas Raiders,5
+304,3,Chicago Bears,5
+305,3,Philadelphia Flyers,5
+306,3,Calgary Flames,5
+307,3,Everton,4
+308,3,Denver Broncos,4
+309,3,Atlanta Falcons,4
+310,3,Brooklyn Nets,4
+311,3,Houston Rockets,4
+312,3,Buffalo Sabres,4
+313,3,Seattle Kraken,4
+314,3,Brentford,3
+315,3,New York Jets,3
+316,3,New York Giants,3
+317,3,Toronto Raptors,3
+318,3,Utah Jazz,3
+319,3,New Jersey Devils,3
+320,3,Utah Mammoth,3
+321,3,Nottingham Forest,2
+322,3,Tennessee Titans,2
+323,3,Washington Commanders,2
+324,3,Charlotte Hornets,2
+325,3,Memphis Grizzlies,2
+326,3,Ottawa Senators,2
+327,3,Anaheim Ducks,2
+328,3,Los Angeles Chargers,1
+329,3,Arizona Cardinals,1
+330,3,Washington Wizards,1
+331,3,San Antonio Spurs,1
+332,3,Montreal Canadiens,1
+333,3,Chicago Blackhawks,1
+334,3,Luton Town,0
+335,3,Burnley,0
+336,3,Sheffield United,0
+337,3,New England Patriots,0
+338,3,Carolina Panthers,0
+339,3,Detroit Pistons,0
+340,3,Portland Trail Blazers,0
+341,3,Columbus Blue Jackets,0
+342,3,San Jose Sharks,0
+343,4,Liverpool,80
+344,4,Arsenal,60
+345,4,Manchester City,40
+346,4,Chelsea,40
+347,4,Newcastle United,25
+348,4,Aston Villa,20
+349,4,Nottingham Forest,16
+350,4,Brighton,14
+351,4,Bournemouth,12
+352,4,Brentford,10
+353,4,Fulham,8
+354,4,Crystal Palace,7
+355,4,Everton,6
+356,4,West Ham,5
+357,4,Manchester United,4
+358,4,Wolves,3
+359,4,Tottenham,2
+360,4,Leicester City,0
+361,4,Ipswich Town,0
+362,4,Southampton,0
+363,4,Kansas City Chiefs,62
+364,4,Buffalo Bills,43
+365,4,Baltimore Ravens,30
+366,4,Houston Texans,27
+367,4,Los Angeles Chargers,19
+368,4,Pittsburgh Steelers,17
+369,4,Denver Broncos,15
+370,4,Cincinnati Bengals,8
+371,4,Indianapolis Colts,7
+372,4,Miami Dolphins,6
+373,4,New York Jets,5
+374,4,Jacksonville Jaguars,4
+375,4,New England Patriots,3
+376,4,Las Vegas Raiders,2
+377,4,Cleveland Browns,1
+378,4,Tennessee Titans,0
+379,4,Detroit Lions,37
+380,4,Philadelphia Eagles,78
+381,4,Tampa Bay Buccaneers,25
+382,4,Los Angeles Rams,27
+383,4,Minnesota Vikings,19
+384,4,Washington Commanders,32
+385,4,Green Bay Packers,15
+386,4,Seattle Seahawks,8
+387,4,Atlanta Falcons,7
+388,4,Arizona Cardinals,6
+389,4,Dallas Cowboys,5
+390,4,San Francisco 49ers,4
+391,4,Chicago Bears,3
+392,4,Carolina Panthers,2
+393,4,New Orleans Saints,1
+394,4,New York Giants,0
+395,4,Cleveland Cavaliers,35
+396,4,Boston Celtics,32
+397,4,New York Knicks,39
+398,4,Indiana Pacers,62
+399,4,Milwaukee Bucks,20
+400,4,Detroit Pistons,18
+401,4,Orlando Magic,15
+402,4,Atlanta Hawks,10
+403,4,Chicago Bulls,8
+404,4,Miami Heat,9
+405,4,Toronto Raptors,4
+406,4,Brooklyn Nets,3
+407,4,Philadelphia 76ers,2
+408,4,Charlotte Hornets,1
+409,4,Washington Wizards,0
+410,4,Oklahoma City Thunder,70
+411,4,Houston Rockets,27
+412,4,Los Angeles Lakers,24
+413,4,Denver Nuggets,27
+414,4,Los Angeles Clippers,20
+415,4,Minnesota Timberwolves,33
+416,4,Golden State Warriors,20
+417,4,Memphis Grizzlies,13
+418,4,Sacramento Kings,8
+419,4,Dallas Mavericks,6
+420,4,Phoenix Suns,4
+421,4,Portland Trail Blazers,3
+422,4,San Antonio Spurs,2
+423,4,New Orleans Pelicans,1
+424,4,Utah Jazz,0
+425,4,Washington Capitals,37
+426,4,Carolina Hurricanes,38
+427,4,New Jersey Devils,19
+428,4,Toronto Maple Leafs,32
+429,4,Tampa Bay Lightning,23
+430,4,Florida Panthers,59
+431,4,Ottawa Senators,16
+432,4,Montreal Canadiens,14
+433,4,Columbus Blue Jackets,7
+434,4,Detroit Red Wings,6
+435,4,New York Islanders,5
+436,4,New York Rangers,4
+437,4,Pittsburgh Penguins,3
+438,4,Buffalo Sabres,2
+439,4,Philadelphia Flyers,1
+440,4,Boston Bruins,0
+441,4,Winnipeg Jets,37
+442,4,Dallas Stars,38
+443,4,Colorado Avalanche,19
+444,4,Vegas Golden Knights,32
+445,4,Los Angeles Kings,23
+446,4,Edmonton Oilers,59
+447,4,Minnesota Wild,16
+448,4,St. Louis Blues,14
+449,4,Calgary Flames,7
+450,4,Utah Mammoth,6
+451,4,Vancouver Canucks,5
+452,4,Anaheim Ducks,4
+453,4,Seattle Kraken,3
+454,4,Nashville Predators,2
+455,4,Chicago Blackhawks,1
+456,4,San Jose Sharks,0

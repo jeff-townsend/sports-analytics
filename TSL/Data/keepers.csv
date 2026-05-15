@@ -1,0 +1,240 @@
+keeper_id,season_id,owner,team
+1,2,Andrew,Arsenal
+2,2,Andrew,Carolina Hurricanes
+3,2,Andrew,Dallas Cowboys
+4,2,Andrew,Edmonton Oilers
+5,2,Andrew,Golden State Warriors
+6,2,Andrew,Green Bay Packers
+7,2,Andrew,Kansas City Chiefs
+8,2,Andrew,Manchester City
+9,2,Andrew,Memphis Grizzlies
+10,2,Andrew,Milwaukee Bucks
+11,2,Andrew,Minnesota Timberwolves
+12,2,Andrew,Minnesota Wild
+13,2,Andrew,Philadelphia 76ers
+14,2,Andrew,St. Louis Blues
+15,2,David,Arizona Cardinals
+16,2,David,Boston Celtics
+17,2,David,Brentford
+18,2,David,Buffalo Bills
+19,2,David,Buffalo Sabres
+20,2,David,Calgary Flames
+21,2,David,Cincinnati Bengals
+22,2,David,Crystal Palace
+23,2,David,Denver Nuggets
+24,2,David,Detroit Lions
+25,2,David,Detroit Red Wings
+26,2,David,Florida Panthers
+27,2,David,Las Vegas Raiders
+28,2,David,Los Angeles Rams
+29,2,David,Manchester United
+30,2,David,Miami Heat
+31,2,David,Nashville Predators
+32,2,David,Newcastle United
+33,2,David,Philadelphia Eagles
+34,2,David,Tampa Bay Buccaneers
+35,2,David,Vegas Golden Knights
+36,2,Jeff,Aston Villa
+37,2,Jeff,Brighton
+38,2,Jeff,Chelsea
+39,2,Jeff,Cleveland Cavaliers
+40,2,Jeff,Colorado Avalanche
+41,2,Jeff,Dallas Mavericks
+42,2,Jeff,Denver Broncos
+43,2,Jeff,Detroit Pistons
+44,2,Jeff,Indianapolis Colts
+45,2,Jeff,Liverpool
+46,2,Jeff,Los Angeles Chargers
+47,2,Jeff,Los Angeles Clippers
+48,2,Jeff,Los Angeles Kings
+49,2,Jeff,Ottawa Senators
+50,2,Jeff,Phoenix Suns
+51,2,Jeff,Toronto Maple Leafs
+52,2,Jeff,Toronto Raptors
+53,2,Jeff,Tottenham
+54,3,Andrew,Arsenal
+55,3,Andrew,Baltimore Ravens
+56,3,Andrew,Boston Bruins
+57,3,Andrew,Carolina Hurricanes
+58,3,Andrew,Chicago Bears
+59,3,Andrew,Chicago Blackhawks
+60,3,Andrew,Dallas Cowboys
+61,3,Andrew,Edmonton Oilers
+62,3,Andrew,Everton
+63,3,Andrew,Golden State Warriors
+64,3,Andrew,Kansas City Chiefs
+65,3,Andrew,Manchester City
+66,3,Andrew,Memphis Grizzlies
+67,3,Andrew,Miami Dolphins
+68,3,Andrew,Milwaukee Bucks
+69,3,Andrew,Minnesota Timberwolves
+70,3,Andrew,Minnesota Vikings
+71,3,Andrew,Minnesota Wild
+72,3,Andrew,New Orleans Saints
+73,3,Andrew,New York Rangers
+74,3,Andrew,Nottingham Forest
+75,3,Andrew,Oklahoma City Thunder
+76,3,Andrew,Philadelphia 76ers
+77,3,Andrew,Sacramento Kings
+78,3,Andrew,San Francisco 49ers
+79,3,Andrew,Seattle Seahawks
+80,3,David,Arizona Coyotes
+81,3,David,Atlanta Falcons
+82,3,David,Boston Celtics
+83,3,David,Bournemouth
+84,3,David,Buffalo Bills
+85,3,David,Buffalo Sabres
+86,3,David,Carolina Panthers
+87,3,David,Cincinnati Bengals
+88,3,David,Crystal Palace
+89,3,David,Dallas Stars
+90,3,David,Denver Nuggets
+91,3,David,Detroit Lions
+92,3,David,Manchester United
+93,3,David,Montreal Canadiens
+94,3,David,Newcastle United
+95,3,David,Philadelphia Eagles
+96,3,David,San Antonio Spurs
+97,3,David,Vegas Golden Knights
+98,3,Jeff,Aston Villa
+99,3,Jeff,Brighton
+100,3,Jeff,Cleveland Cavaliers
+101,3,Jeff,Fulham
+102,3,Jeff,Houston Rockets
+103,3,Jeff,Indiana Pacers
+104,3,Jeff,Jacksonville Jaguars
+105,3,Jeff,Liverpool
+106,3,Jeff,Los Angeles Kings
+107,3,Jeff,Los Angeles Lakers
+108,3,Jeff,Miami Heat
+109,3,Jeff,New Jersey Devils
+110,3,Jeff,New York Giants
+111,3,Jeff,New York Jets
+112,3,Jeff,New York Knicks
+113,3,Jeff,Orlando Magic
+114,3,Jeff,Philadelphia Flyers
+115,3,Jeff,Phoenix Suns
+116,3,Jeff,Pittsburgh Steelers
+117,3,Jeff,Seattle Kraken
+118,4,Andrew,Arizona Cardinals
+119,4,Andrew,Arsenal
+120,4,Andrew,Baltimore Ravens
+121,4,Andrew,Boston Bruins
+122,4,Andrew,Colorado Avalanche
+123,4,Andrew,Dallas Cowboys
+124,4,Andrew,Edmonton Oilers
+125,4,Andrew,Kansas City Chiefs
+126,4,Andrew,Las Vegas Raiders
+127,4,Andrew,Manchester City
+128,4,Andrew,Memphis Grizzlies
+129,4,Andrew,Miami Dolphins
+130,4,Andrew,Milwaukee Bucks
+131,4,Andrew,Minnesota Timberwolves
+132,4,Andrew,New York Rangers
+133,4,Andrew,Oklahoma City Thunder
+134,4,Andrew,Philadelphia 76ers
+135,4,Andrew,Sacramento Kings
+136,4,Andrew,San Francisco 49ers
+137,4,Andrew,Seattle Seahawks
+138,4,Andrew,Toronto Maple Leafs
+139,4,Andrew,West Ham
+140,4,Andrew,Wolves
+141,4,David,Atlanta Falcons
+142,4,David,Boston Celtics
+143,4,David,Bournemouth
+144,4,David,Brentford
+145,4,David,Cincinnati Bengals
+146,4,David,Dallas Mavericks
+147,4,David,Dallas Stars
+148,4,David,Detroit Lions
+149,4,David,Los Angeles Chargers
+150,4,David,Nashville Predators
+151,4,David,New Orleans Pelicans
+152,4,David,Newcastle United
+153,4,David,Philadelphia Eagles
+154,4,David,Portland Trail Blazers
+155,4,David,San Antonio Spurs
+156,4,David,San Jose Sharks
+157,4,David,Utah Jazz
+158,4,David,Vancouver Canucks
+159,4,David,Washington Commanders
+160,4,David,Washington Wizards
+161,4,Jeff,Anaheim Ducks
+162,4,Jeff,Charlotte Hornets
+163,4,Jeff,Cleveland Cavaliers
+164,4,Jeff,Detroit Red Wings
+165,4,Jeff,Florida Panthers
+166,4,Jeff,Green Bay Packers
+167,4,Jeff,Houston Rockets
+168,4,Jeff,Houston Texans
+169,4,Jeff,Indiana Pacers
+170,4,Jeff,Indianapolis Colts
+171,4,Jeff,Liverpool
+172,4,Jeff,Los Angeles Rams
+173,4,Jeff,New Jersey Devils
+174,4,Jeff,New York Islanders
+175,4,Jeff,New York Jets
+176,4,Jeff,New York Knicks
+177,4,Jeff,Orlando Magic
+178,4,Jeff,Ottawa Senators
+179,4,Jeff,Philadelphia Flyers
+180,4,Jeff,St. Louis Blues
+181,4,Jeff,Tampa Bay Buccaneers
+182,4,Jeff,Tottenham
+183,4,Jeff,Winnipeg Jets
+184,5,Andrew,Arsenal
+185,5,Andrew,Atlanta Hawks
+186,5,Andrew,Baltimore Ravens
+187,5,Andrew,Brooklyn Nets
+188,5,Andrew,Buffalo Bills
+189,5,Andrew,Chelsea
+190,5,Andrew,Colorado Avalanche
+191,5,Andrew,Edmonton Oilers
+192,5,Andrew,Everton
+193,5,Andrew,Minnesota Timberwolves
+194,5,Andrew,Minnesota Vikings
+195,5,Andrew,Oklahoma City Thunder
+196,5,Andrew,Tampa Bay Lightning
+197,5,Andrew,Washington Capitals
+198,5,David,Calgary Flames
+199,5,David,Carolina Hurricanes
+200,5,David,Chicago Blackhawks
+201,5,David,Columbus Blue Jackets
+202,5,David,Dallas Stars
+203,5,David,Denver Broncos
+204,5,David,Detroit Lions
+205,5,David,Detroit Pistons
+206,5,David,Los Angeles Chargers
+207,5,David,Los Angeles Lakers
+208,5,David,New England Patriots
+209,5,David,Newcastle United
+210,5,David,Nottingham Forest
+211,5,David,Philadelphia Eagles
+212,5,David,San Antonio Spurs
+213,5,David,San Jose Sharks
+214,5,David,Tennessee Titans
+215,5,David,Washington Commanders
+216,5,Jeff,Anaheim Ducks
+217,5,Jeff,Brighton
+218,5,Jeff,Carolina Panthers
+219,5,Jeff,Cleveland Cavaliers
+220,5,Jeff,Denver Nuggets
+221,5,Jeff,Florida Panthers
+222,5,Jeff,Golden State Warriors
+223,5,Jeff,Green Bay Packers
+224,5,Jeff,Houston Rockets
+225,5,Jeff,Houston Texans
+226,5,Jeff,Liverpool
+227,5,Jeff,Los Angeles Clippers
+228,5,Jeff,Los Angeles Kings
+229,5,Jeff,Los Angeles Rams
+230,5,Jeff,Minnesota Wild
+231,5,Jeff,Montreal Canadiens
+232,5,Jeff,New York Knicks
+233,5,Jeff,Orlando Magic
+234,5,Jeff,Ottawa Senators
+235,5,Jeff,St. Louis Blues
+236,5,Jeff,Tampa Bay Buccaneers
+237,5,Jeff,Toronto Raptors
+238,5,Jeff,Vegas Golden Knights
+239,5,Jeff,Winnipeg Jets

@@ -1,0 +1,571 @@
+team_id,season_id,team,franchise,league
+1,1,Anaheim Ducks,Anaheim Ducks,NHL
+2,1,Arizona Cardinals,Arizona Cardinals,NFL
+3,1,Arsenal,Arsenal,EPL
+4,1,Aston Villa,Aston Villa,EPL
+5,1,Atlanta Falcons,Atlanta Falcons,NFL
+6,1,Atlanta Hawks,Atlanta Hawks,NBA
+7,1,Baltimore Ravens,Baltimore Ravens,NFL
+8,1,Boston Bruins,Boston Bruins,NHL
+9,1,Boston Celtics,Boston Celtics,NBA
+10,1,Brentford,Brentford,EPL
+11,1,Brighton,Brighton,EPL
+12,1,Brooklyn Nets,Brooklyn Nets,NBA
+13,1,Buffalo Bills,Buffalo Bills,NFL
+14,1,Buffalo Sabres,Buffalo Sabres,NHL
+15,1,Burnley,Burnley,EPL
+16,1,Calgary Flames,Calgary Flames,NHL
+17,1,Carolina Hurricanes,Carolina Hurricanes,NHL
+18,1,Carolina Panthers,Carolina Panthers,NFL
+19,1,Charlotte Hornets,Charlotte Hornets,NBA
+20,1,Chelsea,Chelsea,EPL
+21,1,Chicago Bears,Chicago Bears,NFL
+22,1,Chicago Blackhawks,Chicago Blackhawks,NHL
+23,1,Chicago Bulls,Chicago Bulls,NBA
+24,1,Cincinnati Bengals,Cincinnati Bengals,NFL
+25,1,Cleveland Browns,Cleveland Browns,NFL
+26,1,Cleveland Cavaliers,Cleveland Cavaliers,NBA
+27,1,Colorado Avalanche,Colorado Avalanche,NHL
+28,1,Columbus Blue Jackets,Columbus Blue Jackets,NHL
+29,1,Crystal Palace,Crystal Palace,EPL
+30,1,Dallas Cowboys,Dallas Cowboys,NFL
+31,1,Dallas Mavericks,Dallas Mavericks,NBA
+32,1,Dallas Stars,Dallas Stars,NHL
+33,1,Denver Broncos,Denver Broncos,NFL
+34,1,Denver Nuggets,Denver Nuggets,NBA
+35,1,Detroit Lions,Detroit Lions,NFL
+36,1,Detroit Pistons,Detroit Pistons,NBA
+37,1,Detroit Red Wings,Detroit Red Wings,NHL
+38,1,Edmonton Oilers,Edmonton Oilers,NHL
+39,1,Everton,Everton,EPL
+40,1,Florida Panthers,Florida Panthers,NHL
+41,1,Golden State Warriors,Golden State Warriors,NBA
+42,1,Green Bay Packers,Green Bay Packers,NFL
+43,1,Houston Rockets,Houston Rockets,NBA
+44,1,Houston Texans,Houston Texans,NFL
+45,1,Indiana Pacers,Indiana Pacers,NBA
+46,1,Indianapolis Colts,Indianapolis Colts,NFL
+47,1,Jacksonville Jaguars,Jacksonville Jaguars,NFL
+48,1,Kansas City Chiefs,Kansas City Chiefs,NFL
+49,1,Las Vegas Raiders,Las Vegas Raiders,NFL
+50,1,Leeds United,Leeds United,EPL
+51,1,Leicester City,Leicester City,EPL
+52,1,Liverpool,Liverpool,EPL
+53,1,Los Angeles Chargers,Los Angeles Chargers,NFL
+54,1,Los Angeles Clippers,Los Angeles Clippers,NBA
+55,1,Los Angeles Kings,Los Angeles Kings,NHL
+56,1,Los Angeles Lakers,Los Angeles Lakers,NBA
+57,1,Los Angeles Rams,Los Angeles Rams,NFL
+58,1,Manchester City,Manchester City,EPL
+59,1,Manchester United,Manchester United,EPL
+60,1,Memphis Grizzlies,Memphis Grizzlies,NBA
+61,1,Miami Dolphins,Miami Dolphins,NFL
+62,1,Miami Heat,Miami Heat,NBA
+63,1,Milwaukee Bucks,Milwaukee Bucks,NBA
+64,1,Minnesota Timberwolves,Minnesota Timberwolves,NBA
+65,1,Minnesota Vikings,Minnesota Vikings,NFL
+66,1,Minnesota Wild,Minnesota Wild,NHL
+67,1,Montreal Canadiens,Montreal Canadiens,NHL
+68,1,Nashville Predators,Nashville Predators,NHL
+69,1,New England Patriots,New England Patriots,NFL
+70,1,New Jersey Devils,New Jersey Devils,NHL
+71,1,New Orleans Pelicans,New Orleans Pelicans,NBA
+72,1,New Orleans Saints,New Orleans Saints,NFL
+73,1,New York Giants,New York Giants,NFL
+74,1,New York Islanders,New York Islanders,NHL
+75,1,New York Jets,New York Jets,NFL
+76,1,New York Knicks,New York Knicks,NBA
+77,1,New York Rangers,New York Rangers,NHL
+78,1,Newcastle United,Newcastle United,EPL
+79,1,Norwich City,Norwich City,EPL
+80,1,Oklahoma City Thunder,Oklahoma City Thunder,NBA
+81,1,Orlando Magic,Orlando Magic,NBA
+82,1,Ottawa Senators,Ottawa Senators,NHL
+83,1,Philadelphia 76ers,Philadelphia 76ers,NBA
+84,1,Philadelphia Eagles,Philadelphia Eagles,NFL
+85,1,Philadelphia Flyers,Philadelphia Flyers,NHL
+86,1,Phoenix Suns,Phoenix Suns,NBA
+87,1,Pittsburgh Penguins,Pittsburgh Penguins,NHL
+88,1,Pittsburgh Steelers,Pittsburgh Steelers,NFL
+89,1,Portland Trail Blazers,Portland Trail Blazers,NBA
+90,1,Sacramento Kings,Sacramento Kings,NBA
+91,1,San Antonio Spurs,San Antonio Spurs,NBA
+92,1,San Francisco 49ers,San Francisco 49ers,NFL
+93,1,San Jose Sharks,San Jose Sharks,NHL
+94,1,Seattle Kraken,Seattle Kraken,NHL
+95,1,Seattle Seahawks,Seattle Seahawks,NFL
+96,1,Southampton,Southampton,EPL
+97,1,St. Louis Blues,St. Louis Blues,NHL
+98,1,Tampa Bay Buccaneers,Tampa Bay Buccaneers,NFL
+99,1,Tampa Bay Lightning,Tampa Bay Lightning,NHL
+100,1,Tennessee Titans,Tennessee Titans,NFL
+101,1,Toronto Maple Leafs,Toronto Maple Leafs,NHL
+102,1,Toronto Raptors,Toronto Raptors,NBA
+103,1,Tottenham,Tottenham,EPL
+104,1,Utah Jazz,Utah Jazz,NBA
+105,1,Arizona Coyotes,Utah Mammoth,NHL
+106,1,Vancouver Canucks,Vancouver Canucks,NHL
+107,1,Vegas Golden Knights,Vegas Golden Knights,NHL
+108,1,Washington Capitals,Washington Capitals,NHL
+109,1,Washington Football Team,Washington Commanders,NFL
+110,1,Washington Wizards,Washington Wizards,NBA
+111,1,Watford,Watford,EPL
+112,1,West Ham,West Ham,EPL
+113,1,Winnipeg Jets,Winnipeg Jets,NHL
+114,1,Wolves,Wolves,EPL
+115,2,Anaheim Ducks,Anaheim Ducks,NHL
+116,2,Arizona Cardinals,Arizona Cardinals,NFL
+117,2,Arsenal,Arsenal,EPL
+118,2,Aston Villa,Aston Villa,EPL
+119,2,Atlanta Falcons,Atlanta Falcons,NFL
+120,2,Atlanta Hawks,Atlanta Hawks,NBA
+121,2,Baltimore Ravens,Baltimore Ravens,NFL
+122,2,Boston Bruins,Boston Bruins,NHL
+123,2,Boston Celtics,Boston Celtics,NBA
+124,2,Bournemouth,Bournemouth,EPL
+125,2,Brentford,Brentford,EPL
+126,2,Brighton,Brighton,EPL
+127,2,Brooklyn Nets,Brooklyn Nets,NBA
+128,2,Buffalo Bills,Buffalo Bills,NFL
+129,2,Buffalo Sabres,Buffalo Sabres,NHL
+130,2,Calgary Flames,Calgary Flames,NHL
+131,2,Carolina Hurricanes,Carolina Hurricanes,NHL
+132,2,Carolina Panthers,Carolina Panthers,NFL
+133,2,Charlotte Hornets,Charlotte Hornets,NBA
+134,2,Chelsea,Chelsea,EPL
+135,2,Chicago Bears,Chicago Bears,NFL
+136,2,Chicago Blackhawks,Chicago Blackhawks,NHL
+137,2,Chicago Bulls,Chicago Bulls,NBA
+138,2,Cincinnati Bengals,Cincinnati Bengals,NFL
+139,2,Cleveland Browns,Cleveland Browns,NFL
+140,2,Cleveland Cavaliers,Cleveland Cavaliers,NBA
+141,2,Colorado Avalanche,Colorado Avalanche,NHL
+142,2,Columbus Blue Jackets,Columbus Blue Jackets,NHL
+143,2,Crystal Palace,Crystal Palace,EPL
+144,2,Dallas Cowboys,Dallas Cowboys,NFL
+145,2,Dallas Mavericks,Dallas Mavericks,NBA
+146,2,Dallas Stars,Dallas Stars,NHL
+147,2,Denver Broncos,Denver Broncos,NFL
+148,2,Denver Nuggets,Denver Nuggets,NBA
+149,2,Detroit Lions,Detroit Lions,NFL
+150,2,Detroit Pistons,Detroit Pistons,NBA
+151,2,Detroit Red Wings,Detroit Red Wings,NHL
+152,2,Edmonton Oilers,Edmonton Oilers,NHL
+153,2,Everton,Everton,EPL
+154,2,Florida Panthers,Florida Panthers,NHL
+155,2,Fulham,Fulham,EPL
+156,2,Golden State Warriors,Golden State Warriors,NBA
+157,2,Green Bay Packers,Green Bay Packers,NFL
+158,2,Houston Rockets,Houston Rockets,NBA
+159,2,Houston Texans,Houston Texans,NFL
+160,2,Indiana Pacers,Indiana Pacers,NBA
+161,2,Indianapolis Colts,Indianapolis Colts,NFL
+162,2,Jacksonville Jaguars,Jacksonville Jaguars,NFL
+163,2,Kansas City Chiefs,Kansas City Chiefs,NFL
+164,2,Las Vegas Raiders,Las Vegas Raiders,NFL
+165,2,Leeds United,Leeds United,EPL
+166,2,Leicester City,Leicester City,EPL
+167,2,Liverpool,Liverpool,EPL
+168,2,Los Angeles Chargers,Los Angeles Chargers,NFL
+169,2,Los Angeles Clippers,Los Angeles Clippers,NBA
+170,2,Los Angeles Kings,Los Angeles Kings,NHL
+171,2,Los Angeles Lakers,Los Angeles Lakers,NBA
+172,2,Los Angeles Rams,Los Angeles Rams,NFL
+173,2,Manchester City,Manchester City,EPL
+174,2,Manchester United,Manchester United,EPL
+175,2,Memphis Grizzlies,Memphis Grizzlies,NBA
+176,2,Miami Dolphins,Miami Dolphins,NFL
+177,2,Miami Heat,Miami Heat,NBA
+178,2,Milwaukee Bucks,Milwaukee Bucks,NBA
+179,2,Minnesota Timberwolves,Minnesota Timberwolves,NBA
+180,2,Minnesota Vikings,Minnesota Vikings,NFL
+181,2,Minnesota Wild,Minnesota Wild,NHL
+182,2,Montreal Canadiens,Montreal Canadiens,NHL
+183,2,Nashville Predators,Nashville Predators,NHL
+184,2,New England Patriots,New England Patriots,NFL
+185,2,New Jersey Devils,New Jersey Devils,NHL
+186,2,New Orleans Pelicans,New Orleans Pelicans,NBA
+187,2,New Orleans Saints,New Orleans Saints,NFL
+188,2,New York Giants,New York Giants,NFL
+189,2,New York Islanders,New York Islanders,NHL
+190,2,New York Jets,New York Jets,NFL
+191,2,New York Knicks,New York Knicks,NBA
+192,2,New York Rangers,New York Rangers,NHL
+193,2,Newcastle United,Newcastle United,EPL
+194,2,Nottingham Forest,Nottingham Forest,EPL
+195,2,Oklahoma City Thunder,Oklahoma City Thunder,NBA
+196,2,Orlando Magic,Orlando Magic,NBA
+197,2,Ottawa Senators,Ottawa Senators,NHL
+198,2,Philadelphia 76ers,Philadelphia 76ers,NBA
+199,2,Philadelphia Eagles,Philadelphia Eagles,NFL
+200,2,Philadelphia Flyers,Philadelphia Flyers,NHL
+201,2,Phoenix Suns,Phoenix Suns,NBA
+202,2,Pittsburgh Penguins,Pittsburgh Penguins,NHL
+203,2,Pittsburgh Steelers,Pittsburgh Steelers,NFL
+204,2,Portland Trail Blazers,Portland Trail Blazers,NBA
+205,2,Sacramento Kings,Sacramento Kings,NBA
+206,2,San Antonio Spurs,San Antonio Spurs,NBA
+207,2,San Francisco 49ers,San Francisco 49ers,NFL
+208,2,San Jose Sharks,San Jose Sharks,NHL
+209,2,Seattle Kraken,Seattle Kraken,NHL
+210,2,Seattle Seahawks,Seattle Seahawks,NFL
+211,2,Southampton,Southampton,EPL
+212,2,St. Louis Blues,St. Louis Blues,NHL
+213,2,Tampa Bay Buccaneers,Tampa Bay Buccaneers,NFL
+214,2,Tampa Bay Lightning,Tampa Bay Lightning,NHL
+215,2,Tennessee Titans,Tennessee Titans,NFL
+216,2,Toronto Maple Leafs,Toronto Maple Leafs,NHL
+217,2,Toronto Raptors,Toronto Raptors,NBA
+218,2,Tottenham,Tottenham,EPL
+219,2,Utah Jazz,Utah Jazz,NBA
+220,2,Arizona Coyotes,Utah Mammoth,NHL
+221,2,Vancouver Canucks,Vancouver Canucks,NHL
+222,2,Vegas Golden Knights,Vegas Golden Knights,NHL
+223,2,Washington Capitals,Washington Capitals,NHL
+224,2,Washington Commanders,Washington Commanders,NFL
+225,2,Washington Wizards,Washington Wizards,NBA
+226,2,West Ham,West Ham,EPL
+227,2,Winnipeg Jets,Winnipeg Jets,NHL
+228,2,Wolves,Wolves,EPL
+229,3,Anaheim Ducks,Anaheim Ducks,NHL
+230,3,Arizona Cardinals,Arizona Cardinals,NFL
+231,3,Arsenal,Arsenal,EPL
+232,3,Aston Villa,Aston Villa,EPL
+233,3,Atlanta Falcons,Atlanta Falcons,NFL
+234,3,Atlanta Hawks,Atlanta Hawks,NBA
+235,3,Baltimore Ravens,Baltimore Ravens,NFL
+236,3,Boston Bruins,Boston Bruins,NHL
+237,3,Boston Celtics,Boston Celtics,NBA
+238,3,Bournemouth,Bournemouth,EPL
+239,3,Brentford,Brentford,EPL
+240,3,Brighton,Brighton,EPL
+241,3,Brooklyn Nets,Brooklyn Nets,NBA
+242,3,Buffalo Bills,Buffalo Bills,NFL
+243,3,Buffalo Sabres,Buffalo Sabres,NHL
+244,3,Burnley,Burnley,EPL
+245,3,Calgary Flames,Calgary Flames,NHL
+246,3,Carolina Hurricanes,Carolina Hurricanes,NHL
+247,3,Carolina Panthers,Carolina Panthers,NFL
+248,3,Charlotte Hornets,Charlotte Hornets,NBA
+249,3,Chelsea,Chelsea,EPL
+250,3,Chicago Bears,Chicago Bears,NFL
+251,3,Chicago Blackhawks,Chicago Blackhawks,NHL
+252,3,Chicago Bulls,Chicago Bulls,NBA
+253,3,Cincinnati Bengals,Cincinnati Bengals,NFL
+254,3,Cleveland Browns,Cleveland Browns,NFL
+255,3,Cleveland Cavaliers,Cleveland Cavaliers,NBA
+256,3,Colorado Avalanche,Colorado Avalanche,NHL
+257,3,Columbus Blue Jackets,Columbus Blue Jackets,NHL
+258,3,Crystal Palace,Crystal Palace,EPL
+259,3,Dallas Cowboys,Dallas Cowboys,NFL
+260,3,Dallas Mavericks,Dallas Mavericks,NBA
+261,3,Dallas Stars,Dallas Stars,NHL
+262,3,Denver Broncos,Denver Broncos,NFL
+263,3,Denver Nuggets,Denver Nuggets,NBA
+264,3,Detroit Lions,Detroit Lions,NFL
+265,3,Detroit Pistons,Detroit Pistons,NBA
+266,3,Detroit Red Wings,Detroit Red Wings,NHL
+267,3,Edmonton Oilers,Edmonton Oilers,NHL
+268,3,Everton,Everton,EPL
+269,3,Florida Panthers,Florida Panthers,NHL
+270,3,Fulham,Fulham,EPL
+271,3,Golden State Warriors,Golden State Warriors,NBA
+272,3,Green Bay Packers,Green Bay Packers,NFL
+273,3,Houston Rockets,Houston Rockets,NBA
+274,3,Houston Texans,Houston Texans,NFL
+275,3,Indiana Pacers,Indiana Pacers,NBA
+276,3,Indianapolis Colts,Indianapolis Colts,NFL
+277,3,Jacksonville Jaguars,Jacksonville Jaguars,NFL
+278,3,Kansas City Chiefs,Kansas City Chiefs,NFL
+279,3,Las Vegas Raiders,Las Vegas Raiders,NFL
+280,3,Liverpool,Liverpool,EPL
+281,3,Los Angeles Chargers,Los Angeles Chargers,NFL
+282,3,Los Angeles Clippers,Los Angeles Clippers,NBA
+283,3,Los Angeles Kings,Los Angeles Kings,NHL
+284,3,Los Angeles Lakers,Los Angeles Lakers,NBA
+285,3,Los Angeles Rams,Los Angeles Rams,NFL
+286,3,Luton Town,Luton Town,EPL
+287,3,Manchester City,Manchester City,EPL
+288,3,Manchester United,Manchester United,EPL
+289,3,Memphis Grizzlies,Memphis Grizzlies,NBA
+290,3,Miami Dolphins,Miami Dolphins,NFL
+291,3,Miami Heat,Miami Heat,NBA
+292,3,Milwaukee Bucks,Milwaukee Bucks,NBA
+293,3,Minnesota Timberwolves,Minnesota Timberwolves,NBA
+294,3,Minnesota Vikings,Minnesota Vikings,NFL
+295,3,Minnesota Wild,Minnesota Wild,NHL
+296,3,Montreal Canadiens,Montreal Canadiens,NHL
+297,3,Nashville Predators,Nashville Predators,NHL
+298,3,New England Patriots,New England Patriots,NFL
+299,3,New Jersey Devils,New Jersey Devils,NHL
+300,3,New Orleans Pelicans,New Orleans Pelicans,NBA
+301,3,New Orleans Saints,New Orleans Saints,NFL
+302,3,New York Giants,New York Giants,NFL
+303,3,New York Islanders,New York Islanders,NHL
+304,3,New York Jets,New York Jets,NFL
+305,3,New York Knicks,New York Knicks,NBA
+306,3,New York Rangers,New York Rangers,NHL
+307,3,Newcastle United,Newcastle United,EPL
+308,3,Nottingham Forest,Nottingham Forest,EPL
+309,3,Oklahoma City Thunder,Oklahoma City Thunder,NBA
+310,3,Orlando Magic,Orlando Magic,NBA
+311,3,Ottawa Senators,Ottawa Senators,NHL
+312,3,Philadelphia 76ers,Philadelphia 76ers,NBA
+313,3,Philadelphia Eagles,Philadelphia Eagles,NFL
+314,3,Philadelphia Flyers,Philadelphia Flyers,NHL
+315,3,Phoenix Suns,Phoenix Suns,NBA
+316,3,Pittsburgh Penguins,Pittsburgh Penguins,NHL
+317,3,Pittsburgh Steelers,Pittsburgh Steelers,NFL
+318,3,Portland Trail Blazers,Portland Trail Blazers,NBA
+319,3,Sacramento Kings,Sacramento Kings,NBA
+320,3,San Antonio Spurs,San Antonio Spurs,NBA
+321,3,San Francisco 49ers,San Francisco 49ers,NFL
+322,3,San Jose Sharks,San Jose Sharks,NHL
+323,3,Seattle Kraken,Seattle Kraken,NHL
+324,3,Seattle Seahawks,Seattle Seahawks,NFL
+325,3,Sheffield United,Sheffield United,EPL
+326,3,St. Louis Blues,St. Louis Blues,NHL
+327,3,Tampa Bay Buccaneers,Tampa Bay Buccaneers,NFL
+328,3,Tampa Bay Lightning,Tampa Bay Lightning,NHL
+329,3,Tennessee Titans,Tennessee Titans,NFL
+330,3,Toronto Maple Leafs,Toronto Maple Leafs,NHL
+331,3,Toronto Raptors,Toronto Raptors,NBA
+332,3,Tottenham,Tottenham,EPL
+333,3,Utah Jazz,Utah Jazz,NBA
+334,3,Arizona Coyotes,Utah Mammoth,NHL
+335,3,Vancouver Canucks,Vancouver Canucks,NHL
+336,3,Vegas Golden Knights,Vegas Golden Knights,NHL
+337,3,Washington Capitals,Washington Capitals,NHL
+338,3,Washington Commanders,Washington Commanders,NFL
+339,3,Washington Wizards,Washington Wizards,NBA
+340,3,West Ham,West Ham,EPL
+341,3,Winnipeg Jets,Winnipeg Jets,NHL
+342,3,Wolves,Wolves,EPL
+343,4,Anaheim Ducks,Anaheim Ducks,NHL
+344,4,Arizona Cardinals,Arizona Cardinals,NFL
+345,4,Arsenal,Arsenal,EPL
+346,4,Aston Villa,Aston Villa,EPL
+347,4,Atlanta Falcons,Atlanta Falcons,NFL
+348,4,Atlanta Hawks,Atlanta Hawks,NBA
+349,4,Baltimore Ravens,Baltimore Ravens,NFL
+350,4,Boston Bruins,Boston Bruins,NHL
+351,4,Boston Celtics,Boston Celtics,NBA
+352,4,Bournemouth,Bournemouth,EPL
+353,4,Brentford,Brentford,EPL
+354,4,Brighton,Brighton,EPL
+355,4,Brooklyn Nets,Brooklyn Nets,NBA
+356,4,Buffalo Bills,Buffalo Bills,NFL
+357,4,Buffalo Sabres,Buffalo Sabres,NHL
+358,4,Calgary Flames,Calgary Flames,NHL
+359,4,Carolina Hurricanes,Carolina Hurricanes,NHL
+360,4,Carolina Panthers,Carolina Panthers,NFL
+361,4,Charlotte Hornets,Charlotte Hornets,NBA
+362,4,Chelsea,Chelsea,EPL
+363,4,Chicago Bears,Chicago Bears,NFL
+364,4,Chicago Blackhawks,Chicago Blackhawks,NHL
+365,4,Chicago Bulls,Chicago Bulls,NBA
+366,4,Cincinnati Bengals,Cincinnati Bengals,NFL
+367,4,Cleveland Browns,Cleveland Browns,NFL
+368,4,Cleveland Cavaliers,Cleveland Cavaliers,NBA
+369,4,Colorado Avalanche,Colorado Avalanche,NHL
+370,4,Columbus Blue Jackets,Columbus Blue Jackets,NHL
+371,4,Crystal Palace,Crystal Palace,EPL
+372,4,Dallas Cowboys,Dallas Cowboys,NFL
+373,4,Dallas Mavericks,Dallas Mavericks,NBA
+374,4,Dallas Stars,Dallas Stars,NHL
+375,4,Denver Broncos,Denver Broncos,NFL
+376,4,Denver Nuggets,Denver Nuggets,NBA
+377,4,Detroit Lions,Detroit Lions,NFL
+378,4,Detroit Pistons,Detroit Pistons,NBA
+379,4,Detroit Red Wings,Detroit Red Wings,NHL
+380,4,Edmonton Oilers,Edmonton Oilers,NHL
+381,4,Everton,Everton,EPL
+382,4,Florida Panthers,Florida Panthers,NHL
+383,4,Fulham,Fulham,EPL
+384,4,Golden State Warriors,Golden State Warriors,NBA
+385,4,Green Bay Packers,Green Bay Packers,NFL
+386,4,Houston Rockets,Houston Rockets,NBA
+387,4,Houston Texans,Houston Texans,NFL
+388,4,Indiana Pacers,Indiana Pacers,NBA
+389,4,Indianapolis Colts,Indianapolis Colts,NFL
+390,4,Ipswich Town,Ipswich Town,EPL
+391,4,Jacksonville Jaguars,Jacksonville Jaguars,NFL
+392,4,Kansas City Chiefs,Kansas City Chiefs,NFL
+393,4,Las Vegas Raiders,Las Vegas Raiders,NFL
+394,4,Leicester City,Leicester City,EPL
+395,4,Liverpool,Liverpool,EPL
+396,4,Los Angeles Chargers,Los Angeles Chargers,NFL
+397,4,Los Angeles Clippers,Los Angeles Clippers,NBA
+398,4,Los Angeles Kings,Los Angeles Kings,NHL
+399,4,Los Angeles Lakers,Los Angeles Lakers,NBA
+400,4,Los Angeles Rams,Los Angeles Rams,NFL
+401,4,Manchester City,Manchester City,EPL
+402,4,Manchester United,Manchester United,EPL
+403,4,Memphis Grizzlies,Memphis Grizzlies,NBA
+404,4,Miami Dolphins,Miami Dolphins,NFL
+405,4,Miami Heat,Miami Heat,NBA
+406,4,Milwaukee Bucks,Milwaukee Bucks,NBA
+407,4,Minnesota Timberwolves,Minnesota Timberwolves,NBA
+408,4,Minnesota Vikings,Minnesota Vikings,NFL
+409,4,Minnesota Wild,Minnesota Wild,NHL
+410,4,Montreal Canadiens,Montreal Canadiens,NHL
+411,4,Nashville Predators,Nashville Predators,NHL
+412,4,New England Patriots,New England Patriots,NFL
+413,4,New Jersey Devils,New Jersey Devils,NHL
+414,4,New Orleans Pelicans,New Orleans Pelicans,NBA
+415,4,New Orleans Saints,New Orleans Saints,NFL
+416,4,New York Giants,New York Giants,NFL
+417,4,New York Islanders,New York Islanders,NHL
+418,4,New York Jets,New York Jets,NFL
+419,4,New York Knicks,New York Knicks,NBA
+420,4,New York Rangers,New York Rangers,NHL
+421,4,Newcastle United,Newcastle United,EPL
+422,4,Nottingham Forest,Nottingham Forest,EPL
+423,4,Oklahoma City Thunder,Oklahoma City Thunder,NBA
+424,4,Orlando Magic,Orlando Magic,NBA
+425,4,Ottawa Senators,Ottawa Senators,NHL
+426,4,Philadelphia 76ers,Philadelphia 76ers,NBA
+427,4,Philadelphia Eagles,Philadelphia Eagles,NFL
+428,4,Philadelphia Flyers,Philadelphia Flyers,NHL
+429,4,Phoenix Suns,Phoenix Suns,NBA
+430,4,Pittsburgh Penguins,Pittsburgh Penguins,NHL
+431,4,Pittsburgh Steelers,Pittsburgh Steelers,NFL
+432,4,Portland Trail Blazers,Portland Trail Blazers,NBA
+433,4,Sacramento Kings,Sacramento Kings,NBA
+434,4,San Antonio Spurs,San Antonio Spurs,NBA
+435,4,San Francisco 49ers,San Francisco 49ers,NFL
+436,4,San Jose Sharks,San Jose Sharks,NHL
+437,4,Seattle Kraken,Seattle Kraken,NHL
+438,4,Seattle Seahawks,Seattle Seahawks,NFL
+439,4,Southampton,Southampton,EPL
+440,4,St. Louis Blues,St. Louis Blues,NHL
+441,4,Tampa Bay Buccaneers,Tampa Bay Buccaneers,NFL
+442,4,Tampa Bay Lightning,Tampa Bay Lightning,NHL
+443,4,Tennessee Titans,Tennessee Titans,NFL
+444,4,Toronto Maple Leafs,Toronto Maple Leafs,NHL
+445,4,Toronto Raptors,Toronto Raptors,NBA
+446,4,Tottenham,Tottenham,EPL
+447,4,Utah Jazz,Utah Jazz,NBA
+448,4,Utah Hockey Club,Utah Mammoth,NHL
+449,4,Vancouver Canucks,Vancouver Canucks,NHL
+450,4,Vegas Golden Knights,Vegas Golden Knights,NHL
+451,4,Washington Capitals,Washington Capitals,NHL
+452,4,Washington Commanders,Washington Commanders,NFL
+453,4,Washington Wizards,Washington Wizards,NBA
+454,4,West Ham,West Ham,EPL
+455,4,Winnipeg Jets,Winnipeg Jets,NHL
+456,4,Wolves,Wolves,EPL
+457,5,Anaheim Ducks,Anaheim Ducks,NHL
+458,5,Arizona Cardinals,Arizona Cardinals,NFL
+459,5,Arsenal,Arsenal,EPL
+460,5,Aston Villa,Aston Villa,EPL
+461,5,Atlanta Falcons,Atlanta Falcons,NFL
+462,5,Atlanta Hawks,Atlanta Hawks,NBA
+463,5,Baltimore Ravens,Baltimore Ravens,NFL
+464,5,Boston Bruins,Boston Bruins,NHL
+465,5,Boston Celtics,Boston Celtics,NBA
+466,5,Bournemouth,Bournemouth,EPL
+467,5,Brentford,Brentford,EPL
+468,5,Brighton,Brighton,EPL
+469,5,Brooklyn Nets,Brooklyn Nets,NBA
+470,5,Buffalo Bills,Buffalo Bills,NFL
+471,5,Buffalo Sabres,Buffalo Sabres,NHL
+472,5,Burnley,Burnley,EPL
+473,5,Calgary Flames,Calgary Flames,NHL
+474,5,Carolina Hurricanes,Carolina Hurricanes,NHL
+475,5,Carolina Panthers,Carolina Panthers,NFL
+476,5,Charlotte Hornets,Charlotte Hornets,NBA
+477,5,Chelsea,Chelsea,EPL
+478,5,Chicago Bears,Chicago Bears,NFL
+479,5,Chicago Blackhawks,Chicago Blackhawks,NHL
+480,5,Chicago Bulls,Chicago Bulls,NBA
+481,5,Cincinnati Bengals,Cincinnati Bengals,NFL
+482,5,Cleveland Browns,Cleveland Browns,NFL
+483,5,Cleveland Cavaliers,Cleveland Cavaliers,NBA
+484,5,Colorado Avalanche,Colorado Avalanche,NHL
+485,5,Columbus Blue Jackets,Columbus Blue Jackets,NHL
+486,5,Crystal Palace,Crystal Palace,EPL
+487,5,Dallas Cowboys,Dallas Cowboys,NFL
+488,5,Dallas Mavericks,Dallas Mavericks,NBA
+489,5,Dallas Stars,Dallas Stars,NHL
+490,5,Denver Broncos,Denver Broncos,NFL
+491,5,Denver Nuggets,Denver Nuggets,NBA
+492,5,Detroit Lions,Detroit Lions,NFL
+493,5,Detroit Pistons,Detroit Pistons,NBA
+494,5,Detroit Red Wings,Detroit Red Wings,NHL
+495,5,Edmonton Oilers,Edmonton Oilers,NHL
+496,5,Everton,Everton,EPL
+497,5,Florida Panthers,Florida Panthers,NHL
+498,5,Fulham,Fulham,EPL
+499,5,Golden State Warriors,Golden State Warriors,NBA
+500,5,Green Bay Packers,Green Bay Packers,NFL
+501,5,Houston Rockets,Houston Rockets,NBA
+502,5,Houston Texans,Houston Texans,NFL
+503,5,Indiana Pacers,Indiana Pacers,NBA
+504,5,Indianapolis Colts,Indianapolis Colts,NFL
+505,5,Jacksonville Jaguars,Jacksonville Jaguars,NFL
+506,5,Kansas City Chiefs,Kansas City Chiefs,NFL
+507,5,Las Vegas Raiders,Las Vegas Raiders,NFL
+508,5,Leeds United,Leeds United,EPL
+509,5,Liverpool,Liverpool,EPL
+510,5,Los Angeles Chargers,Los Angeles Chargers,NFL
+511,5,Los Angeles Clippers,Los Angeles Clippers,NBA
+512,5,Los Angeles Kings,Los Angeles Kings,NHL
+513,5,Los Angeles Lakers,Los Angeles Lakers,NBA
+514,5,Los Angeles Rams,Los Angeles Rams,NFL
+515,5,Manchester City,Manchester City,EPL
+516,5,Manchester United,Manchester United,EPL
+517,5,Memphis Grizzlies,Memphis Grizzlies,NBA
+518,5,Miami Dolphins,Miami Dolphins,NFL
+519,5,Miami Heat,Miami Heat,NBA
+520,5,Milwaukee Bucks,Milwaukee Bucks,NBA
+521,5,Minnesota Timberwolves,Minnesota Timberwolves,NBA
+522,5,Minnesota Vikings,Minnesota Vikings,NFL
+523,5,Minnesota Wild,Minnesota Wild,NHL
+524,5,Montreal Canadiens,Montreal Canadiens,NHL
+525,5,Nashville Predators,Nashville Predators,NHL
+526,5,New England Patriots,New England Patriots,NFL
+527,5,New Jersey Devils,New Jersey Devils,NHL
+528,5,New Orleans Pelicans,New Orleans Pelicans,NBA
+529,5,New Orleans Saints,New Orleans Saints,NFL
+530,5,New York Giants,New York Giants,NFL
+531,5,New York Islanders,New York Islanders,NHL
+532,5,New York Jets,New York Jets,NFL
+533,5,New York Knicks,New York Knicks,NBA
+534,5,New York Rangers,New York Rangers,NHL
+535,5,Newcastle United,Newcastle United,EPL
+536,5,Nottingham Forest,Nottingham Forest,EPL
+537,5,Oklahoma City Thunder,Oklahoma City Thunder,NBA
+538,5,Orlando Magic,Orlando Magic,NBA
+539,5,Ottawa Senators,Ottawa Senators,NHL
+540,5,Philadelphia 76ers,Philadelphia 76ers,NBA
+541,5,Philadelphia Eagles,Philadelphia Eagles,NFL
+542,5,Philadelphia Flyers,Philadelphia Flyers,NHL
+543,5,Phoenix Suns,Phoenix Suns,NBA
+544,5,Pittsburgh Penguins,Pittsburgh Penguins,NHL
+545,5,Pittsburgh Steelers,Pittsburgh Steelers,NFL
+546,5,Portland Trail Blazers,Portland Trail Blazers,NBA
+547,5,Sacramento Kings,Sacramento Kings,NBA
+548,5,San Antonio Spurs,San Antonio Spurs,NBA
+549,5,San Francisco 49ers,San Francisco 49ers,NFL
+550,5,San Jose Sharks,San Jose Sharks,NHL
+551,5,Seattle Kraken,Seattle Kraken,NHL
+552,5,Seattle Seahawks,Seattle Seahawks,NFL
+553,5,St. Louis Blues,St. Louis Blues,NHL
+554,5,Sunderland,Sunderland,EPL
+555,5,Tampa Bay Buccaneers,Tampa Bay Buccaneers,NFL
+556,5,Tampa Bay Lightning,Tampa Bay Lightning,NHL
+557,5,Tennessee Titans,Tennessee Titans,NFL
+558,5,Toronto Maple Leafs,Toronto Maple Leafs,NHL
+559,5,Toronto Raptors,Toronto Raptors,NBA
+560,5,Tottenham,Tottenham,EPL
+561,5,Utah Jazz,Utah Jazz,NBA
+562,5,Utah Mammoth,Utah Mammoth,NHL
+563,5,Vancouver Canucks,Vancouver Canucks,NHL
+564,5,Vegas Golden Knights,Vegas Golden Knights,NHL
+565,5,Washington Capitals,Washington Capitals,NHL
+566,5,Washington Commanders,Washington Commanders,NFL
+567,5,Washington Wizards,Washington Wizards,NBA
+568,5,West Ham,West Ham,EPL
+569,5,Winnipeg Jets,Winnipeg Jets,NHL
+570,5,Wolves,Wolves,EPL
