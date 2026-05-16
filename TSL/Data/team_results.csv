@@ -68,7 +68,7 @@ result_id,season_id,team,points
 67,1,Columbus Blue Jackets,6
 68,1,Vancouver Canucks,6
 69,1,Los Angeles Chargers,6
-70,1,Washington Commanders,6
+70,1,Washington Football Team,6
 71,1,Charlotte Hornets,6
 72,1,San Antonio Spurs,6
 73,1,Brentford,6
@@ -104,7 +104,7 @@ result_id,season_id,team,points
 103,1,New York Giants,1
 104,1,Detroit Pistons,1
 105,1,Oklahoma City Thunder,1
-106,1,Utah Mammoth,0
+106,1,Arizona Coyotes,0
 107,1,Montreal Canadiens,0
 108,1,Detroit Lions,0
 109,1,Jacksonville Jaguars,0
@@ -198,7 +198,7 @@ result_id,season_id,team,points
 197,2,Dallas Mavericks,4
 198,2,Indiana Pacers,4
 199,2,Bournemouth,4
-200,2,Utah Mammoth,3
+200,2,Arizona Coyotes,3
 201,2,Washington Capitals,3
 202,2,Atlanta Falcons,3
 203,2,Las Vegas Raiders,3
@@ -318,7 +318,7 @@ result_id,season_id,team,points
 317,3,Toronto Raptors,3
 318,3,Utah Jazz,3
 319,3,New Jersey Devils,3
-320,3,Utah Mammoth,3
+320,3,Arizona Coyotes,3
 321,3,Nottingham Forest,2
 322,3,Tennessee Titans,2
 323,3,Washington Commanders,2
@@ -448,7 +448,7 @@ result_id,season_id,team,points
 447,4,Minnesota Wild,16
 448,4,St. Louis Blues,14
 449,4,Calgary Flames,7
-450,4,Utah Mammoth,6
+450,4,Utah Hockey Club,6
 451,4,Vancouver Canucks,5
 452,4,Anaheim Ducks,4
 453,4,Seattle Kraken,3
