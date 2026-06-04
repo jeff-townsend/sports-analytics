@@ -1,0 +1,161 @@
+team,wins,over_odds,under_odds
+Arizona Cardinals,2.5,-320,250
+Arizona Cardinals,3.5,-140,115
+Arizona Cardinals,4.5,136,-166
+Arizona Cardinals,5.5,270,-350
+Arizona Cardinals,6.5,500,-750
+Atlanta Falcons,5.5,-210,170
+Atlanta Falcons,6.5,-115,-105
+Atlanta Falcons,7.5,136,-166
+Atlanta Falcons,8.5,250,-320
+Atlanta Falcons,9.5,450,-650
+Baltimore Ravens,9.5,-280,220
+Baltimore Ravens,10.5,-150,125
+Baltimore Ravens,11.5,115,-140
+Baltimore Ravens,12.5,215,-270
+Baltimore Ravens,13.5,425,-600
+Buffalo Bills,8.5,-400,310
+Buffalo Bills,9.5,-210,170
+Buffalo Bills,10.5,-120,100
+Buffalo Bills,11.5,154,-190
+Buffalo Bills,12.5,290,-380
+Carolina Panthers,5.5,-310,245
+Carolina Panthers,6.5,-166,134
+Carolina Panthers,7.5,110,-130
+Carolina Panthers,8.5,180,-220
+Carolina Panthers,9.5,320,-430
+Chicago Bears,7.5,-320,250
+Chicago Bears,8.5,-175,144
+Chicago Bears,9.5,100,-120
+Chicago Bears,10.5,170,-210
+Chicago Bears,11.5,310,-400
+Cincinnati Bengals,7.5,-500,370
+Cincinnati Bengals,8.5,-265,210
+Cincinnati Bengals,9.5,-150,125
+Cincinnati Bengals,10.5,115,-140
+Cincinnati Bengals,11.5,210,-265
+Cleveland Browns,4.5,-290,230
+Cleveland Browns,5.5,-160,130
+Cleveland Browns,6.5,130,-160
+Cleveland Browns,7.5,205,-260
+Cleveland Browns,8.5,350,-470
+Dallas Cowboys,7.5,-275,220
+Dallas Cowboys,8.5,-150,125
+Dallas Cowboys,9.5,115,-140
+Dallas Cowboys,10.5,200,-250
+Dallas Cowboys,11.5,370,-500
+Denver Broncos,7.5,-370,280
+Denver Broncos,8.5,-200,164
+Denver Broncos,9.5,-110,-110
+Denver Broncos,10.5,164,-200
+Denver Broncos,11.5,285,-370
+Detroit Lions,8.5,-320,250
+Detroit Lions,9.5,-170,140
+Detroit Lions,10.5,-110,-112
+Detroit Lions,11.5,175,-215
+Detroit Lions,12.5,320,-430
+Green Bay Packers,8.5,-240,194
+Green Bay Packers,9.5,-140,115
+Green Bay Packers,10.5,125,-150
+Green Bay Packers,11.5,230,-290
+Green Bay Packers,12.5,395,-550
+Houston Texans,7.5,-400,305
+Houston Texans,8.5,-235,190
+Houston Texans,9.5,-125,105
+Houston Texans,10.5,136,-166
+Houston Texans,11.5,235,-300
+Indianapolis Colts,5.5,-450,340
+Indianapolis Colts,6.5,-240,194
+Indianapolis Colts,7.5,-140,115
+Indianapolis Colts,8.5,125,-150
+Indianapolis Colts,9.5,215,-270
+Jacksonville Jaguars,7.5,-220,180
+Jacksonville Jaguars,8.5,-125,105
+Jacksonville Jaguars,9.5,140,-166
+Jacksonville Jaguars,10.5,240,-300
+Jacksonville Jaguars,11.5,425,-600
+Kansas City Chiefs,8.5,-285,225
+Kansas City Chiefs,9.5,-160,134
+Kansas City Chiefs,10.5,115,-140
+Kansas City Chiefs,11.5,200,-250
+Kansas City Chiefs,12.5,370,-500
+Las Vegas Raiders,3.5,-550,400
+Las Vegas Raiders,4.5,-270,215
+Las Vegas Raiders,5.5,-146,120
+Las Vegas Raiders,6.5,125,-150
+Las Vegas Raiders,7.5,220,275
+Los Angeles Chargers,8.5,-230,184
+Los Angeles Chargers,9.5,-130,110
+Los Angeles Chargers,10.5,134,-166
+Los Angeles Chargers,11.5,240,-300
+Los Angeles Chargers,12.5,450,-650
+Los Angeles Rams,9.5,-370,285
+Los Angeles Rams,10.5,-200,164
+Los Angeles Rams,11.5,-115,-105
+Los Angeles Rams,12.5,175,-215
+Los Angeles Rams,13.5,320,-430
+Miami Dolphins,2.5,-480,350
+Miami Dolphins,3.5,-210,170
+Miami Dolphins,4.5,-105,-115
+Miami Dolphins,5.5,180,-220
+Miami Dolphins,6.5,320,-430
+Minnesota Vikings,6.5,-350,270
+Minnesota Vikings,7.5,-190,154
+Minnesota Vikings,8.5,-105,-115
+Minnesota Vikings,9.5,160,-196
+Minnesota Vikings,10.5,270,-350
+New England Patriots,7.5,-500,370
+New England Patriots,8.5,-280,220
+New England Patriots,9.5,-150,125
+New England Patriots,10.5,120,-146
+New England Patriots,11.5,205,-255
+New Orleans Saints,5.5,-400,310
+New Orleans Saints,6.5,-210,170
+New Orleans Saints,7.5,-120,100
+New Orleans Saints,8.5,150,-180
+New Orleans Saints,9.5,260,-330
+New York Giants,5.5,-350,270
+New York Giants,6.5,-190,154
+New York Giants,7.5,-110,-110
+New York Giants,8.5,160,-196
+New York Giants,9.5,285,-370
+New York Jets,3.5,-550,400
+New York Jets,4.5,-250,200
+New York Jets,5.5,-120,100
+New York Jets,6.5,140,-170
+New York Jets,7.5,245,-310
+Philadelphia Eagles,8.5,-270,215
+Philadelphia Eagles,9.5,-156,130
+Philadelphia Eagles,10.5,115,-140
+Philadelphia Eagles,11.5,215,-270
+Philadelphia Eagles,12.5,370,-500
+Pittsburgh Steelers,6.5,-330,255
+Pittsburgh Steelers,7.5,-180,150
+Pittsburgh Steelers,8.5,100,-120
+Pittsburgh Steelers,9.5,164,-205
+Pittsburgh Steelers,10.5,290,-380
+San Francisco 49ers,8.5,-250,200
+San Francisco 49ers,9.5,-146,120
+San Francisco 49ers,10.5,125,-150
+San Francisco 49ers,11.5,235,-300
+San Francisco 49ers,12.5,425,-600
+Seattle Seahawks,8.5,-340,265
+Seattle Seahawks,9.5,-196,160
+Seattle Seahawks,10.5,-115,-105
+Seattle Seahawks,11.5,162,-200
+Seattle Seahawks,12.5,305,-400
+Tampa Bay Buccaneers,6.5,-300,240
+Tampa Bay Buccaneers,7.5,-170,140
+Tampa Bay Buccaneers,8.5,105,-125
+Tampa Bay Buccaneers,9.5,170,-210
+Tampa Bay Buccaneers,10.5,300,-390
+Tennessee Titans,4.5,-430,320
+Tennessee Titans,5.5,-215,175
+Tennessee Titans,6.5,-110,-110
+Tennessee Titans,7.5,144,-175
+Tennessee Titans,8.5,250,-320
+Washington Commanders,5.5,-400,305
+Washington Commanders,6.5,-215,175
+Washington Commanders,7.5,-125,105
+Washington Commanders,8.5,140,-170
+Washington Commanders,9.5,245,-310
