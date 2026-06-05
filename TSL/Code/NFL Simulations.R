@@ -4,7 +4,58 @@ library(readr)
 
 games.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NFL/nfl_schedule_2425.csv")
 
-teams.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NFL/nfl_teams_2425.csv")
+#teams.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/data/NFL/nfl_teams_2425.csv")
+
+win.odds.import <- read_csv("https://raw.githubusercontent.com/jeff-townsend/sports-analytics/main/NFL/Data/win_total_odds_2627.csv")
+
+win.odds <-
+  win.odds.import %>%
+  mutate(over_implied = ifelse(over_odds < 0, over_odds / (over_odds - 100), 100 / (over_odds + 100)),
+         under_implied = ifelse(under_odds < 0, under_odds / (under_odds - 100), 100 / (under_odds + 100)),
+         over_prob = over_implied / (over_implied + under_implied),
+         under_prob = 1 - over_prob)
+
+teams <-
+  win.odds %>%
+  distinct(team)
+
+team.win.odds.matrix <- data.frame(team = rep(teams$team, each = 17),
+                                   wins = rep(0.5:16.5, times = 32))
+
+win.odds.full <-
+  team.win.odds.matrix %>%
+  left_join(win.odds %>% select(team, wins, over_prob, under_prob), by = c("team", "wins")) %>%
+  group_by(team) %>%
+  mutate(max_wins = max(wins*ifelse(!is.na(over_prob), 1, 0))) %>%
+  mutate(over_prob = ifelse(is.na(over_prob), ifelse(wins < max_wins, 1, 0), over_prob),
+         under_prob = ifelse(is.na(under_prob), ifelse(wins < max_wins, 0, 1), under_prob)) %>%
+  select(-max_wins)
+
+team.win.matrix <- data.frame(team = rep(teams$team, each = 18),
+                              wins = rep(0:17, times = 32))
+
+win.probs <-
+  team.win.matrix %>%
+  left_join(win.odds.full %>%
+              mutate(wins = wins - 0.5) %>%
+              select(team, wins, under_prob),
+            by = c("team", "wins")) %>%
+  mutate(under_prob = ifelse(is.na(under_prob), 1, under_prob)) %>%
+  left_join(win.odds.full %>%
+              mutate(wins = wins + 0.5) %>%
+              rename(next_under_prob = under_prob) %>%
+              select(team, wins, next_under_prob),
+            by = c("team", "wins")) %>%
+  mutate(next_under_prob = ifelse(is.na(next_under_prob), 0, next_under_prob),
+         win_total_prob = under_prob - next_under_prob) %>%
+  select(team, wins, win_total_prob)
+
+team.ratings <-
+  win.probs %>%
+  mutate(weight = wins * win_total_prob) %>%
+  group_by(team) %>%
+  summarize(expected_wins = sum(weight),
+            win_rate = sum(weight) / 17)
 
 tsl.scoring <- data.frame(placement = c(1:16),
                           tsl_points = c(32, 28, 25, 22, 19, 17, 15,
